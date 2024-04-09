@@ -1,0 +1,339 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5000;
+    padding: 2rem 7%;
+    
+}
+
+.sun-dark  svg{
+    color: yellow;
+}
+.navbar.fixed {background: white;
+    box-shadow: 0 4px 4px rgba(58, 57, 57, 0.333);
+    padding: 1.3rem 7%;
+    
+}
+
+.navbar.fixed.nav_dark{
+    background: #000;
+
+}
+
+.nav_body{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+
+.nav_link {
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+    font-size: 1rem;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.nav_dropdown{
+    display: flex;
+    align-items: center !important;
+    gap: 0.6rem;
+    color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+cursor: pointer;
+transition: ease-in-out 0.3s;
+}
+.nav_dropdown:hover{
+    color: #4499DA;
+
+}
+.nav_dropdown svg{
+    font-size: 1.1rem !important;
+}
+
+.nav_link a {
+    white-space: nowrap;
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: ease-in-out 0.3s;
+}
+
+.nav_link a:hover{
+    color: #4499DA;
+}
+.navDark a {
+    color: white
+}
+
+.dd-dark{
+    color: white
+}
+
+
+
+
+.nav_body button{
+    padding-right: 0.8rem;
+}
+.nav_body svg{
+    font-size: 1.3rem;
+    
+}
+.login_btn {
+  position: relative;
+  padding: 0.4rem 2.8rem;
+  color: white;
+  border-radius: 0.46288rem;
+  /* Removed background color */
+  font-size: 1.1rem;
+  border: 1px solid #DD0A35;
+  transition: color 0.5s ease, background-color 0.5s ease; /* Include background-color */
+}
+
+.login_btn:hover {
+  color: #DD0A35;
+  background-color: white; /* Set hover background color */
+}
+
+.login_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0; /* Position the background on the left */
+  width: 100%; /* Initially show the background (full width) */
+  height: 100%;
+  background-color: #DD0A35; /* Set initial background color of the element */
+  transition: width 0.5s ease; /* Transition for background width */
+  z-index: -1;
+}
+
+.login_btn:hover::before {
+  width: 0%; /* Collapse the background to the left on hover */
+}
+
+.logo img {
+    width: 10rem;
+    transition: ease-in-out 0.5s;
+}
+
+.nav_toggle {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.login_span{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1340px) {
+    
+    .nav_link{
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+
+    .login_btn{
+        padding: 0.4rem 2rem;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .login_btn{
+        display: none;
+    }
+
+    .hide .login_btn{
+        display: block;
+    }
+
+    .hide{
+        display: block !important;
+    }
+
+    .nav_hide{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+        width: 100%;
+      
+       
+    }
+
+    .nav_hide a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_hide span{
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+   
+    .login_span{
+        display: block;
+        background: #F40C3B;
+        color: white;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .login_span svg{
+        font-size: 2rem;
+    }
+
+
+    .nav_toggle {
+       
+        justify-content: center;
+        align-items: center;
+        display: flex !important;
+        border: none;
+        height: fit-content;
+        outline: none;
+        font-size: 1.2rem;
+        padding: 0.5em;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .nav_toggle svg {
+        color: var(--back);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    
+   
+
+    .nav_div {
+        position: absolute !important;
+        display: flex;
+        height: calc(100vh - 7rem);
+        background: white;
+        top: 0;
+        left: 0;
+       margin-top: 7rem;
+        box-shadow: 0 10px 10px rgba(58, 57, 57, 0.4);
+    }
+
+    
+    
+
+    .nav_link{
+        flex-direction: column;
+        width: 18rem;
+        padding: 0 !important;
+        perspective: 600px;
+        gap: 0;
+        text-align: end;
+    }
+
+    .active_nav::after {
+        display: none;
+
+    }
+
+    .nav_link a {
+        font-weight: 600;
+
+        height: 4rem;
+        width: 100%;
+        border-bottom: 1px solid rgb(220, 219, 219);
+        display: flex;
+        align-items: center;
+        padding: 2em 4em 2em 14%;
+        animation: nav 600ms ease forwards;
+        transform: rotateY(60deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    .nav_dropdown {
+        font-weight: 600;
+        height: 4rem;
+        width: 100%;
+        border-bottom: 1px solid rgb(220, 219, 219);
+        display: flex;
+        align-items: center;
+        padding: 2em 4em 2em 14%;
+        animation: nav 600ms ease forwards;
+        transform: rotateY(60deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    .show_nav {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .hide_nav {
+        display: none;
+    }
+
+    .navDark{
+        background: black;
+    }
+
+    .navDark .nav_link a{
+        color: white;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    .nav_link a:nth-child(2) {
+        animation-delay: 200ms;
+    }
+
+    .nav_link a:nth-child(3) {
+        animation-delay: 400ms;
+    }
+
+    .nav_link a:nth-child(4) {
+        animation-delay: 600ms;
+    }
+
+    .nav_link a:nth-child(5) {
+        animation-delay: 800ms;
+    }
+
+    .nav_link a:nth-child(6) {
+        animation-delay: 1s;
+    }
+
+    .nav_link a:nth-child(7) {
+        animation-delay: 1.2s;
+    }
+
+    @keyframes nav {
+        to {
+            transform: rotateY(0);
+            opacity: 1;
+        }
+    }
+    
+
+
+}

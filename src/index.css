@@ -1,6 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root{
+  --sky:  "Syne", sans-serif;
+  --blue: #2F8ED6;
+
+}
+
+
+.h2{
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+    
+}
+
+.why_text{
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.startbtn{
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  gap: 0.5rem;
+}
+.startbtn span{
+  text-decoration: underline;
+}
+
+.startbtn svg{
+   font-size: 1.4rem;
+}
+
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    #2f9bd6 -0.55%,
+    #44b0ff 22.86%,
+    #8b44ff 48.36%,
+    #dd0a35 73.33%,
+    #ebff70 99.34%
+  );
+  filter: blur(85.55000305175781px);
+  width: 13rem;
+  height: 13rem;
+  position: absolute;
+  z-index: 1;
+  left: -150px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  top: 135px;
+}
+  
+
+
+
+
+*{
+  font-family: "Montserrat", sans-serif !important;
+  margin: 0;   
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+html{
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;  
+  scroll-padding-top: 3rem;
+  
+
+}
+
 
 @layer components {
 
@@ -215,4 +305,48 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+
+@media screen and (max-width: 1024px){
+    
+  html{
+      font-size: 90%;
+  }
+}
+
+
+
+
+@media screen and (max-width: 850px){
+  
+  html{
+    font-size: 85%;
+  }
+}
+
+
+
+@media screen and (max-width: 640px){
+  
+  html{
+      font-size: 80%;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+  
+  html{
+      font-size: 75%;
+  }
+
+  .h2{
+    font-size: 2rem;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+ 
 }
