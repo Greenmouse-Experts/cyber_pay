@@ -154,7 +154,7 @@ const LandingHeader = () => {
               onClick={toggle}
               onBlur={hide}
               onFocus={show}
-              to="/"
+              to="/login"
             >
               Login
             </Link>
@@ -167,11 +167,11 @@ const LandingHeader = () => {
           onClick={toggle}
           onBlur={hide}
           onFocus={show}
-          to="/"
+          to="/login"
         >
           Login
         </Link>
-        <Link className="login_span ">
+        <Link to="/login" className="login_span ">
           <BiSolidUserCircle />
         </Link>
 

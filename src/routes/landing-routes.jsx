@@ -7,6 +7,8 @@ import Market from "../pages/landing/Market"
 import MicroPension from "../pages/landing/MicroPension"
 import Ussd from "../pages/landing/UssdCollect"
 import Payment from "../pages/landing/Payment"
+import Login from "../pages/landing/Login";
+import Register from "../pages/landing/Register";
 
 export const landingRoutes = [
     {
@@ -49,4 +51,12 @@ export const landingRoutes = [
           }
         ],
       },
+      {
+        path: "/login",
+        element: <Login/>
+      },
+      {
+        path: "/register",
+        element: <Register/>
+      }
 ]
