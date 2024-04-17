@@ -85,6 +85,9 @@
         align-items: center;
         justify-content: space-between;
         gap: 5.5rem;
+        h2{
+          color: black;
+        }
         p {
           padding-top: 0.5rem;
           line-height: 2rem;
@@ -223,6 +226,9 @@
   background: black;
 
   .about_main {
+    h2{
+      color: white;
+    }
     .story {
       .story_text {
         p {

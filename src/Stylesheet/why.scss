@@ -103,12 +103,16 @@
     .list_2 {
       grid-template-columns: 1fr;
     }
+
+    .list_card{
+      gap: 1rem;
+    }
   }
 
   @media screen and (max-width: 450px) {
     .list_1 {
       .dark_card {
-        padding: 1.5rem;
+        padding: 2rem;
         h2 {
           img {
             width: 1.3rem;
@@ -281,6 +285,7 @@
               font-family: 800;
               font-style: normal;
               width: fit-content;
+              color: #000;
             }
             h1 {
               color: #042e46;
@@ -331,4 +336,66 @@
 
 .darkprice {
   background: black;
+  
+}
+
+
+.darkabout{
+  .comp_text{
+    color: white;
+  }
+
+  .why_list{
+    color: white;
+  }
+
+  .whynow{
+    background: black ;
+    color: white;
+  p{
+    color: white;
+
+  }
+  .download_link{
+    background: white;
+    color: black;
+
+    p{
+      color: #000;
+    }
+  }
+
+  }
+
+  .benefit{
+    background: black;
+
+    
+  }
+  .list_card{
+    background: #181818;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    h3{
+      color: white ;
+    }
+    p{
+      color: white;
+    }
+  }
+
+  .merchant{
+    background: black;
+    color: white;
+  }
+
+  .to_pay{
+    background: #181818;
+
+  }
+  
+  .main_price{
+    h2{
+      color: white;
+    }
+  }
 }

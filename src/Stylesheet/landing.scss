@@ -9,7 +9,7 @@
   .landing {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 2rem;
     padding: 3rem 2rem 5rem 7%;
     gap: 3rem;
@@ -42,14 +42,14 @@
     .landing_text {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 2.5rem;
       z-index: 100;
       width: 45%;
 
       .h2 {
         color: #000;
         font-family: "Syne", sans-serif !important;
-        font-size: 3.8rem;
+        font-size: 3.5rem;
         font-style: normal;
         font-weight: 600;
         line-height: 5.1875rem; /* 110.667% */
@@ -79,7 +79,7 @@
 
     .landing_image {
       z-index: 100;
-      width: 56%;
+      width: 54%;
       img {
         transform: scale(110%);
       }
@@ -123,12 +123,13 @@
           align-items: flex-start;
           > div {
             gap: 1rem;
-            width: 100%;
+            width: 80%;
             display: grid;
             grid-template-columns: 1fr 1fr;
 
             a {
               width: 100%;
+              border-radius: 10px;
             }
           }
 
@@ -260,6 +261,7 @@
     gap: 3rem;
     width: 100%;
     align-items: center;
+    overflow-x: hidden !important;
 
     .h2 {
       text-align: center;
@@ -267,6 +269,7 @@
     }
 
     .get_img {
+      overflow-y: hidden;
       gap: 2rem;
       width: 100%;
       display: grid;
@@ -554,9 +557,13 @@
 }
 .lbg {
   background-color: #000;
-  .landing {
+   h2{
+      color: white;
+    }
     
-    .landing_text {
+    .la
+  .landing {
+   nding_text {
       > p {
         color: white;
       }
@@ -592,6 +599,9 @@
 
   .monitor {
     .monitor_text {
+      h2{
+        color: white;
+      }
       > p {
         color: whitesmoke;
       }

@@ -5,7 +5,7 @@
   padding: 10px 15px;
   border-radius: 16px;
   gap: 0.5rem;
-  transition: ease-in-out 1s; 
+  transition: ease-in-out 1s;
 
   div {
     display: flex;
@@ -30,13 +30,12 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05); 
+    transform: scale(1.05);
   }
   100% {
-    transform: scale(1); 
+    transform: scale(1);
   }
 }
-
 
 .bgsection {
   background: url(../assets/images/background.png);
@@ -58,7 +57,6 @@
     .absolute-img {
       transform: scale(95%);
     }
-   
   }
   .intro-text {
     width: 60%;
@@ -99,7 +97,7 @@
       padding-bottom: 0;
     }
 
-    .download_link{
+    .download_link {
       padding: 0.5rem;
     }
   }
@@ -112,8 +110,8 @@
     p {
       font-size: 1rem !important;
     }
-    .img-secction{
-      .img_sec{
+    .img-secction {
+      .img_sec {
         transform: scale(110.667%);
       }
     }
@@ -139,7 +137,7 @@
     font-size: 1rem;
   }
 
-  &:hover{
+  &:hover {
     transition: ease-in-out 0.4 !important;
     background: white;
     color: black;
@@ -151,10 +149,54 @@
   border: 1px solid white;
   color: black;
 
-  &:hover{
+  &:hover {
     background: transparent;
     color: white;
-    
   }
 }
 
+.cookie {
+  background: blue !important;
+  background: transparent !important;
+  color: black !important;
+  padding: 0 5% !important;
+  height: fit-content !important;
+  margin: 0 !important;
+  .cooks {
+    width: 100%;
+    padding: 1rem;
+    height: 100%;
+    background: white !important;
+    border-radius: 8px;
+    display: flex !important;
+    justify-content: space-between !important;
+    p {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    div {
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 100vw;
+    overflow-x: hidden;
+    .cooks {
+      flex-direction: column;
+      gap: 2rem;
+
+      p{
+        .break-on-mobile {
+          display: none; 
+        }
+      }
+      .cookie_btn{
+        .decline_button{
+          border: 2px solid #2F8ED6 !important;
+        }
+      }
+    }
+  }
+}

@@ -7,57 +7,126 @@
     position: fixed;
     z-index: 5000;
     padding: 2rem 7%;
-    
+
 }
 
-.sun-dark  svg{
+.sun-dark svg {
     color: yellow;
 }
-.navbar.fixed {background: white;
+
+.navbar.fixed {
+    background: white;
     box-shadow: 0 4px 4px rgba(58, 57, 57, 0.333);
     padding: 1.3rem 7%;
-    
+
 }
 
-.navbar.fixed.nav_dark{
+.navbar.fixed .drop_link {
+    margin-top: 12.1rem;
+}
+
+.navbar.fixed.nav_dark {
     background: #000;
 
 }
 
-.nav_body{
+.nav_body {
     display: flex;
     align-items: center;
     gap: 1rem;
-   
+
 }
 
 .nav_link {
     display: flex;
     flex-direction: row;
-    gap: 2.6rem;
+    gap: 2.3rem;
     font-size: 1rem;
     align-items: center;
     padding-right: 1.8rem;
 }
 
-.nav_dropdown{
+.nav_dropdown {
     display: flex;
     align-items: center !important;
     gap: 0.6rem;
-    color: #000;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-cursor: pointer;
-transition: ease-in-out 0.3s;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    position: relative;
 }
-.nav_dropdown:hover{
+.nav_dropdown span{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.nav_dropdown:hover {
     color: #4499DA;
 
 }
-.nav_dropdown svg{
+
+.drop_link {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 12rem;
+    padding: 1.5rem;
+    border-radius: 0.875rem;
+    box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.14);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 5000;
+    background: white;
+    width: fit-content;
+    animation-name: slideDown;
+    /* Use animation for smooth transition */
+    animation-duration: 0.5s;
+    /* Animation duration */
+    animation-timing-function: ease-in-out;
+}
+
+.drop_link a {
+    font-size: 0.85rem !important;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    height: inherit;
+}
+
+.drop_link a span {
+    padding: 0.7rem;
+}
+
+.drop_link a svg {
+    font-size: 1.5rem !important;
+}
+
+.nav_dropdown svg {
     font-size: 1.1rem !important;
+}
+
+@keyframes slideDown {
+    from {
+        top: -150%;
+        /* Start position above the dropdown */
+    }
+
+    to {
+        top: 50%;
+        /* End position at the bottom of the dropdown */
+    }
+}
+
+.navDark .drop_link {
+    background: black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .nav_link a {
@@ -70,57 +139,62 @@ transition: ease-in-out 0.3s;
     transition: ease-in-out 0.3s;
 }
 
-.nav_link a:hover{
+.nav_link a:hover {
     color: #4499DA;
 }
+
 .navDark a {
     color: white
 }
 
-.dd-dark{
+.nav_link .nav_dropdown:hover {
+    color: #4499DA;
+}
+
+.navDark .nav_dropdown {
     color: white
 }
 
 
-
-
-.nav_body button{
+.nav_body button {
     padding-right: 0.8rem;
 }
-.nav_body svg{
+
+.nav_body svg {
     font-size: 1.3rem;
-    
+
 }
+
 .login_btn {
-  position: relative;
-  padding: 0.4rem 2.2rem;
-  color: white;
-  border-radius: 0.46288rem;
-  /* Removed background color */
-  font-size: 1rem;
-  border: 1px solid #DD0A35;
-  transition: color 0.5s ease, background-color 0.5s ease; 
+    position: relative;
+    padding: 0.4rem 2.2rem;
+    color: white;
+    border-radius: 0.46288rem;
+    /* Removed background color */
+    font-size: 1rem;
+    border: 1px solid #DD0A35;
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .login_btn:hover {
-  color: #DD0A35;
-  background-color: white; 
+    color: #DD0A35;
+    background-color: white;
 }
 
 .login_btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  height: 100%;
-  background-color: #DD0A35; 
-  transition: width 0.5s ease; 
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #DD0A35;
+    transition: width 0.5s ease;
+    z-index: -1;
 }
 
 .login_btn:hover::before {
-  width: 0%;
+    width: 0%;
 }
 
 .logo img {
@@ -136,63 +210,125 @@ transition: ease-in-out 0.3s;
     display: none;
 }
 
-.login_span{
+.login_span {
+    display: none;
+}
+
+.drop{
     display: none;
 }
 
 
 
 
-
 @media screen and (max-width: 1340px) {
-    
-    .nav_link{
-        gap: 2rem;
-        padding-right: 2rem;
+
+    .nav_link {
+        gap: 1.8rem;
+        padding-right: 1.5rem;
     }
 
-    .login_btn{
+    .login_btn {
         padding: 0.4rem 2rem;
 
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .login_btn{
+    .navbar.fixed .nav_div{
+        height: calc(100vh - 5.8rem);
+        
+        margin-top: 5.8rem;
+    }
+    .nav_dropdown {
+        font-weight: 600;
+        
+        width: 100%;
+        
+        display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       
+    }
+    .nav_dropdown span{border-bottom: 1px solid rgb(220, 219, 219);
+         padding: 1.5em 4em 1.5em 14%;
+        animation: nav 600ms ease forwards;
+        transform: rotateY(60deg);
+        opacity: 0;
+        transform-origin: top;
+        width: 100%;
+        align-self: flex-start;
+    }
+    
+    .drop_link {
+      display: none;      
+
+    }
+    .drop{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px solid rgb(220, 219, 219);
+        padding-bottom: 0.5rem;
+    }
+    .drop a{
+        text-align: left;
+        font-weight: 600;
+        height: 4rem;
+        width:  inherit;
+        border-bottom: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 4em 2em 14%;
+        animation: nav 600ms ease forwards;
+        transform: rotateY(60deg);
+        opacity: 0;
+        transform-origin: top;
+        font-size: 0.85rem;
+    }
+    .drop span{
+        display: none;
+    
+    }
+
+  
+
+    .login_btn {
         display: none;
     }
 
-    .hide .login_btn{
+    .hide .login_btn {
         display: block;
     }
 
-    .hide{
+    .hide {
         display: block !important;
     }
 
-    .nav_hide{
+    .nav_hide {
         display: block;
         position: absolute;
         bottom: 0;
         padding: 2rem;
         width: 100%;
-      
-       
+
+
     }
 
-    .nav_hide a{
+    .nav_hide a {
         width: 100%;
         text-align: center;
     }
 
-    .nav_hide span{
+    .nav_hide span {
         display: flex;
         align-items: center;
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-   
-    .login_span{
+
+    .login_span {
         display: block;
         background: #F40C3B;
         color: white;
@@ -200,13 +336,13 @@ transition: ease-in-out 0.3s;
         border-radius: 8px;
     }
 
-    .login_span svg{
+    .login_span svg {
         font-size: 2rem;
     }
 
 
     .nav_toggle {
-       
+
         justify-content: center;
         align-items: center;
         display: flex !important;
@@ -225,8 +361,8 @@ transition: ease-in-out 0.3s;
         font-weight: bold;
     }
 
-    
-   
+
+
 
     .nav_div {
         position: absolute !important;
@@ -235,16 +371,16 @@ transition: ease-in-out 0.3s;
         background: white;
         top: 0;
         left: 0;
-       margin-top: 7rem;
+        margin-top: 7rem;
         box-shadow: 0 10px 10px rgba(58, 57, 57, 0.4);
     }
 
-    
-    
 
-    .nav_link{
+
+
+    .nav_link {
         flex-direction: column;
-        width: 18rem;
+        width: 22rem;
         padding: 0 !important;
         perspective: 600px;
         gap: 0;
@@ -256,22 +392,7 @@ transition: ease-in-out 0.3s;
 
     }
 
-    .nav_link a {
-        font-weight: 600;
-
-        height: 4rem;
-        width: 100%;
-        border-bottom: 1px solid rgb(220, 219, 219);
-        display: flex;
-        align-items: center;
-        padding: 2em 4em 2em 14%;
-        animation: nav 600ms ease forwards;
-        transform: rotateY(60deg);
-        opacity: 0;
-        transform-origin: top;
-    }
-
-    .nav_dropdown {
+    .nav_link > a {
         font-weight: 600;
         height: 4rem;
         width: 100%;
@@ -284,6 +405,7 @@ transition: ease-in-out 0.3s;
         opacity: 0;
         transform-origin: top;
     }
+
 
     .show_nav {
         display: flex !important;
@@ -294,11 +416,11 @@ transition: ease-in-out 0.3s;
         display: none;
     }
 
-    .navDark{
+    .navDark {
         background: black;
     }
 
-    .navDark .nav_link a{
+    .navDark .nav_link a {
         color: white;
         border-bottom: 1px solid whitesmoke;
     }
@@ -333,7 +455,7 @@ transition: ease-in-out 0.3s;
             opacity: 1;
         }
     }
-    
+
 
 
 }

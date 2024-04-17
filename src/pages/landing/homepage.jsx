@@ -34,6 +34,7 @@ import join3 from "../../assets/images/join3.png"
 import join4 from "../../assets/images/join4.png"
 import join5 from "../../assets/images/join5.png"
 import join6 from "../../assets/images/join6.png"
+import Cookie from "./Cookie";
 
 
 const LandingHomepage = () => {
@@ -78,6 +79,7 @@ const LandingHomepage = () => {
 
   return (
     <div className={`homepage ${theme === "light" ? "light" : "lbg"}`}>
+      <Cookie/>
       <div className="landing">
         <div className="gradient"></div>
 

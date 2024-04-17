@@ -4,17 +4,26 @@ import logo from "../../assets/images/logo.png";
 import { RiMenuFill, RiCloseFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
-import { BiSolidUserCircle } from "react-icons/bi";
+import { BiSolidUserCircle, BiTransferAlt } from "react-icons/bi";
 import ToggleBtn from "../../components/Togglebtn";
 import { useTheme } from "../../ThemeContext";
 import dark from "../../assets/images/dark-logo.png";
+import { BiWallet } from "react-icons/bi";
+import { FiShoppingBag } from "react-icons/fi";
+import { BsPhone } from "react-icons/bs";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 const LandingHeader = () => {
   const { theme, toggleTheme } = useTheme();
 
   const [isOpen, setIsOpen] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    setAboutDropdownOpen(false);
+  }
   const hide = () => {
     setIsOpen(false);
     setAboutDropdownOpen(false);
@@ -74,20 +83,45 @@ const LandingHeader = () => {
               Home
             </Link>
             <div
-              className={`nav_dropdown ${theme === "light" ? "" : "dd-dark"}`}
+              className="nav_dropdown"
               onClick={() => setAboutDropdownOpen(!aboutDropdownOpen)}
             >
-              Solution <IoIosArrowDown />
-              {/* {aboutDropdownOpen && (
-            <div className="C">
-              <div className="drop_link">
-                <Link to="/who-we-are">Who Are We  <RiArrowRightSLine /></Link>
-              <Link to="/careers">Careers  <RiArrowRightSLine /></Link>
-              <Link to="/our-clients">Our Clients <RiArrowRightSLine /></Link>
-              <Link to="/health-safety">Health Safety <RiArrowRightSLine /></Link>
-              </div>              
-            </div>
-          )} */}
+              <span>Solution <IoIosArrowDown /></span>
+              {aboutDropdownOpen && (
+                <div className="drop_link">
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/marketplace"> <span className="bg-stone-50 rounded-[9px]"><FiShoppingBag className=" !text-blue-500" /></span> Marketplace and Mobile App</Link>
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/micropension"><span className="bg-stone-50 rounded-[9px]"><BiWallet className="text-rose-600" /></span>Micropension</Link>
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/ussdcollection"><span className="bg-stone-50 rounded-[9px]"><BsPhone className="text-sky-950" /></span>USSD Collection</Link>
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/payment"><span className="bg-stone-50 rounded-[9px]"><BiTransferAlt className="text-purple-800" /></span>Cyberpay online (Web ? Mobile) <br /> Payment Processing</Link>
+                </div>
+
+              )}
+              {aboutDropdownOpen && (
+                <div className="drop">
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/marketplace">Marketplace and Mobile App <RiArrowRightSLine /></Link>
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/micropension">Micropension <RiArrowRightSLine /></Link>
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/ussdcollection">USSD Collection <RiArrowRightSLine /></Link>
+                  <Link onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show} to="/payment">Cyberpay online (Web ? Mobile) <br /> Payment Processing <RiArrowRightSLine /></Link>
+                </div>
+
+
+              )}
             </div>
             <Link onClick={toggle} onBlur={hide} onFocus={show} to="/about">
               Company
@@ -115,7 +149,7 @@ const LandingHeader = () => {
               Theme
             </span>
             <Link
-            data-aos="zoom-in-up" data-aos-duration="1000"
+              data-aos="zoom-in" data-aos-duration="1000"
               className="login_btn"
               onClick={toggle}
               onBlur={hide}

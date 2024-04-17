@@ -12,7 +12,7 @@ import { BsCheckCircleFill } from "react-icons/bs";
 const Pricing = () => {
     const { theme } = useTheme()
     return (
-        <div className={`price ${theme === 'light' ? 'price' : 'darkprice'}`}>
+        <div className={`price ${theme === 'light' ? 'price' : 'darkabout'}`}>
             <Header head="Pricing" body="Our pricing plans are simple with no hidden fee suitable for every business and individual." img={price} />
 
             <div className="main_price">
