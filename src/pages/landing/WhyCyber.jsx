@@ -50,7 +50,7 @@ const WhyCyber = () => {
         },
         {
             head: "Diverse Payment Options",
-            body: "Allows multiple payment methods( Cards, bank accounts, USSD and wallets)"
+            body: "Allows multiple payment methods( Cards, bank accounts, USSD and wallets)."
         },
     ]
     const { theme } = useTheme()
@@ -64,17 +64,17 @@ const WhyCyber = () => {
                     <div data-aos="fade-right" data-aos-duration="1100"  className="comp_text">
                         <h2 className="h2">Comprehensive Support</h2>
                         <div className="why_text">
-                            <p>✓ Multiple access channels (email, phone, online chat)</p>
-                            <p>✓ 100% availability and prompt respons</p>
-                            <p>✓ Proactive monitoring of transactions</p>
+                            <p>✓ Multiple access channels (email, phone, online chat).</p>
+                            <p>✓ 100% availability and prompt responses.</p>
+                            <p>✓ Proactive monitoring of transactions.</p>
                             <p>✓ 24/7 Customer Support System in multiple languages.</p>
-                            <p>✓ Provision shorter settlement cycle</p>
-                            <p>✓ Prompt resolution of disputes</p>
-                            <p>✓ Ensure complete settlement amount/value</p>
-                            <p>✓ Reporting – deploy customization, accurate and timely reports</p>
-                            <p>✓ Well defined escalation matrix and alert system</p>
-                            <p>✓ Education</p>
-                            <p>✓ Fraud prevention and management</p>
+                            <p>✓ Provides shorter settlement cycle.</p>
+                            <p>✓ Prompt resolution of disputes.</p>
+                            <p>✓ Ensure complete settlement amount/value.</p>
+                            <p>✓ Reporting - deploy customization, accurate and timely reports.</p>
+                            <p>✓ Well defined escalation matrix and alert system.</p>
+                            <p>✓ Education.</p>
+                            <p>✓ Fraud prevention and management.</p>
                         </div>
                     </div>
                     <div data-aos="fade-left" data-aos-duration="1100"  className="comp_img">
@@ -132,10 +132,10 @@ const WhyCyber = () => {
             <div className="why_list">
                 <h2 data-aos="fade-down" data-aos-duration="1100"  className="h2">Why us?</h2>
                 <div data-aos="zoom-in-right" data-aos-duration="1100"  className="why_text">
-                    <p><span>✓</span> Simple, API based integration: We are guaranteeing simple API integration</p>
+                    <p><span>✓</span> Simple, API based integration: We are guaranteeing simple API integration.</p>
                     <p><span>✓</span> Tokenization and Recurring Debit Opportunities: We offer a tokenization system that generates a string of random characters to replace the original credit card number. The token then allows payments to be processed without exposing sensitive account details that could breach security and privacy.</p>
                     <p><span>✓</span> Faster Settlement Cycle: We provide hourly settlement system. However, this is upon fulfilling terms of service.</p>
-                    <p><span>✓</span> We are innovating around alternate payment services that allow consumers and businesses to safely make and receive payments in all major currencies, regardless of locations. Payments can be made via Cards, Bank Accounts, USSD, eWallet, QR Code.</p>
+                    <p><span>✓</span> We are innovating around alternate payment services that allow consumers and businesses to safely make and receive payments in all major currencies, regardless of location. Payments can be made via Cards, Bank Accounts, USSD, eWallet and QR Code.</p>
                     <p><span>✓</span> Multiple Processing/Switching Channel – High PSR: We will be ensuring high transaction success rates, leveraging multiple processing and switching channels.</p>
                 </div>
             </div>

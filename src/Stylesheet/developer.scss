@@ -1,0 +1,138 @@
+.developer {
+  margin-top: 3rem;
+
+  @media screen and (max-width: 1300px) {
+  }
+
+  &_tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 7.2rem;
+    height: 90px;
+    gap: 1rem;
+
+   
+
+    @media screen and (max-width: 1300px) {
+      height: 70px;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: fit-content !important;
+        border-radius: 1rem;
+      }
+
+    p {
+      border-radius: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0 0.5rem;
+      font-weight: 500;
+      text-wrap: nowrap;
+      cursor: pointer;
+
+      @media screen and (max-width:768px ) {
+       padding: 1rem
+      }
+    }
+
+    @media screen and (max-width: 1300px) {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    @media screen and (max-width: 1300px) {
+        p {
+          font-size:1rem ;
+        }
+      }
+
+    .active {
+      background-color: var(--color-red);
+      height: 100%;
+      color: white;
+    }
+  }
+
+  &_what {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      width: 30%;
+      font-weight: 600;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    p {
+      width: 60%;
+      font-weight: 500;
+      line-height: 2.6rem;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  // &_info{
+  //     background-color: #E8F0FC;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+
+  //     &_text{
+  //         width: 60%;
+
+  //         h3{
+  //             font-size: 1.4rem;
+  //             font-weight: 600;
+  //             margin-bottom: 1rem;
+  //         }
+  //         p{
+  //             font-size: 1.08rem;
+  //             font-weight: 500;
+  //             line-height: 2.6rem;
+  //             color: var(--color-grey);
+  //         }
+  //     }
+
+  //     img{
+  //         width: 30%;
+  //     }
+  // }
+
+  &_error {
+    text-align: center;
+    background-color: #565656;
+
+    p {
+      color: #565656;
+    }
+
+    .grid-wrapper {
+      margin-top: 1.5rem;
+    }
+    .grid-wrapper > div {
+      box-shadow: 0px 17.69px 136.11px 0px #c7c7c717;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 1.5rem;
+      text-align: left;
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

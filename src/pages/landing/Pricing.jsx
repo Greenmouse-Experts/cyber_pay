@@ -13,7 +13,7 @@ const Pricing = () => {
     const { theme } = useTheme()
     return (
         <div className={`price ${theme === 'light' ? 'price' : 'darkabout'}`}>
-            <Header head="Pricing" body="Our pricing plans are simple with no hidden fee suitable for every business and individual." img={price} />
+            <Header head="Pricing" body="Our pricing plans are simple with no hidden fee, suitable for every business and individual." img={price} />
 
             <div className="main_price">
                 <div className="prices">

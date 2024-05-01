@@ -11,7 +11,7 @@ const Market = () => {
 
   return (
     <div className={`pension solution ${theme === 'light' ? "" : "darkabout"}`}>
-      <Heading img={solution} head="Cyberpay Marketplace & Mobile App" body="Experience seamless transactions and convenient shopping with Cyberpay Marketplace & Mobile App. Discover a world of endless possibilities at your fingertips!" />
+      <Heading img={solution} head="CyberPay Marketplace & Mobile App" body="Experience seamless transactions and convenient shopping with CyberPay Marketplace & Mobile App. Discover a world of endless possibilities at your fingertips!" />
         <div className="market padding">
         <div data-aos="fade-right" data-aos-duration="1000"  className="market_img">
             <img src={market} alt="" />

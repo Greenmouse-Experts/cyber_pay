@@ -32,7 +32,7 @@ const LandingAbout = () => {
               Our Story
             </h2>
             <p>
-              At CyberPay, we pride ourselves in the understanding of the industry pain points and the various other challenges faced by the merchants and their customers alike. Hence, we have developed various products and services that address the challenges, therby, making the process of digital payments and collections not only seamless but much more convenient, smarter and safer.
+              At CyberPay, we pride ourselves in the understanding of the industry pain points and the various other challenges faced by the merchants and their customers alike. Hence, we have developed various products and services that address the challenges, thereby, making the process of digital payments and collections not only seamless but much more convenient, smarter and safer.
             </p>
             <Link className='startbtn'>
               <span>
@@ -81,12 +81,12 @@ const LandingAbout = () => {
             data-aos-delay="800" className="quick_text bg-sky-950 text-white">
             <h3>Quick facts about us</h3>
             <p>
-              We are CBN (PSSP)- Licensed payment processing service for gateway providers, acquirers, merchants.
+              We are CBN (PSSP)- Licensed payment processing service for gateway providers, acquirers and merchants.
             </p>
             <div className="quick_list">
               <p>✓ We Accept multiple means of payment i.e. Cards, Bank Accounts, USSD, Wallet, QR Code.</p>
-              <p>✓ Secure , hassle-free and seamless payment platform for customers.</p>
-              <p>✓ Our platform allows a simple API Integration</p>
+              <p>✓ Secure, hassle-free and seamless payment platform for customers.</p>
+              <p>✓ Our platform allows a simple API Integration.</p>
               <p>✓ Cyberpay is PCIDSS compliant.</p>
             </div>
 

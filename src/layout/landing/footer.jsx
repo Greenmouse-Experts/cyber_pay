@@ -1,15 +1,17 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../Stylesheet/footer.css";
 import logo from "../../assets/images/dark-logo.png";
 import DownloadButton from '../../components/DownloadButton';
 import play from "../../assets/images/play.png";
-import apple from "../../assets/images/apple.png";
+// import apple from "../../assets/images/apple.png";
 import appledark from "../../assets/images/apple-logo.png";
 import { useTheme } from '@emotion/react';
 import { SiInstagram } from "react-icons/si";
 import { BiLogoFacebook } from "react-icons/bi";
 import { FaLinkedinIn,FaXTwitter } from "react-icons/fa6";
+import { IoLocationOutline } from "react-icons/io5";
+import { CiMobile1 } from "react-icons/ci";
 
 const LandingFooter = () => {
     const { theme } = useTheme();
@@ -19,8 +21,9 @@ const LandingFooter = () => {
                 <div className="foot1">
                     <img src={logo} alt="" />
                     <p>
-                        <span>care@cyberpay.net.ng </span>
-                        <span>support@cyberpay.net.ng</span>
+                        {/* <span>care@cyberpay.net.ng </span>
+                        <span>support@cyberpay.net.ng</span> */}
+                        <span>customercare@cybercloud.net.ng</span>
                     </p>
                     <div className="footer_links">
                         <DownloadButton img={play} span="GET IT ON" text="Google Play" />
@@ -36,37 +39,38 @@ const LandingFooter = () => {
                 <div className="links">
                     <h4>Quick Links</h4>
                     <div>
-                        <Link to="#over">Home</Link>
-                        <Link to="#over">About Us</Link>
-                        <Link to="#price">Features</Link>
-                        <Link to="#faq">Product</Link>
-                        <Link to="#contact">Pricing</Link>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">Company</Link>
+                        <Link to="/pricing">Pricing</Link>
+                        <Link to="/whycyberpay">Why CyberPay </Link>
+                        <Link to="/login">Login</Link>
                     </div>
                 </div>
                 <div className="links">
                     <h4>Support</h4>
                     <div>
-                        <Link to="#d">Terms and condition</Link>
-                        <Link to="#d">Privacy Policy</Link>
-                        <Link>Lisense</Link>
+                        <Link to="/terms-conditions">Terms and conditions</Link>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
+                        <Link to="/developer">Developer API</Link>
                         <Link>FAQs</Link>
-                        <Link>Cookies Policy</Link>
+                        <Link to="/cookies-policy">Cookies Policy</Link>
                     </div>
                 </div>
                 <div className="links">
-                    <h4>Dvelopers</h4>
+                    <h4>Solutions</h4>
                     <div>
-                        <Link to="#o">Documentation</Link>
-                        <Link to="#p">APIs</Link>
-                        
+                        <Link to="/marketplace">Market Place</Link>
+                        <Link to="/micropension">Micro Pension</Link>
+                        <Link to="/ussdcollection">USSD Collection</Link>
+                        <Link to="/payment">Payment</Link>                 
                     </div>
                 </div>
                 <div className="links">
                     <h4>Social</h4>
                     <div>
-                        <p>Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.</p>
-                        <p>Abuja Office: 2B street Abacha Estate Wuse zone , Abuja.</p>
-                        <p>09076555420, 01-5151118, 09-5150100</p>
+                        <p className='flex items-start gap-1'><span> <IoLocationOutline size={20} /></span>Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.</p>
+                        <p className='flex items-start gap-1'><span> <IoLocationOutline size={20} /></span>Abuja Office: 2B street Abacha Estate Wuse Zone , Abuja.</p>
+                        <p className='flex items-start gap-1'><span> <CiMobile1  size={20} /></span>02015151118</p>
                     </div>
                 </div>
             </div>

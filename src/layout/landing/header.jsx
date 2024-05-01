@@ -94,13 +94,13 @@ const LandingHeader = () => {
                     onFocus={show} to="/marketplace"> <span className="bg-stone-50 rounded-[9px]"><FiShoppingBag className=" !text-blue-500" /></span> Marketplace and Mobile App</Link>
                   <Link onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/micropension"><span className="bg-stone-50 rounded-[9px]"><BiWallet className="text-rose-600" /></span>Micropension</Link>
+                    onFocus={show} to="/micropension"><span className="bg-stone-50 rounded-[9px]"><BiWallet className="text-rose-600" /></span>Micro Pension</Link>
                   <Link onClick={toggle}
                     onBlur={hide}
                     onFocus={show} to="/ussdcollection"><span className="bg-stone-50 rounded-[9px]"><BsPhone className="text-sky-950" /></span>USSD Collection</Link>
                   <Link onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/payment"><span className="bg-stone-50 rounded-[9px]"><BiTransferAlt className="text-purple-800" /></span>Cyberpay online (Web ? Mobile) <br /> Payment Processing</Link>
+                    onFocus={show} to="/payment"><span className="bg-stone-50 rounded-[9px]"><BiTransferAlt className="text-purple-800" /></span>CyberPay online (Web / Mobile) <br /> Payment Processing</Link>
                 </div>
 
               )}
@@ -111,13 +111,13 @@ const LandingHeader = () => {
                     onFocus={show} to="/marketplace">Marketplace and Mobile App <RiArrowRightSLine /></Link>
                   <Link onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/micropension">Micropension <RiArrowRightSLine /></Link>
+                    onFocus={show} to="/micropension">Micro Pension <RiArrowRightSLine /></Link>
                   <Link onClick={toggle}
                     onBlur={hide}
                     onFocus={show} to="/ussdcollection">USSD Collection <RiArrowRightSLine /></Link>
                   <Link onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/payment">Cyberpay online (Web ? Mobile) <br /> Payment Processing <RiArrowRightSLine /></Link>
+                    onFocus={show} to="/payment">CyberPay online (Web / Mobile) <br /> Payment Processing <RiArrowRightSLine /></Link>
                 </div>
 
 

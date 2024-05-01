@@ -3,10 +3,12 @@ import "../../../../Stylesheet/section.scss";
 import PlayVideo from './PlayVideo';
 import { AiOutlinePlus, AiOutlineMinus, AiOutlinePlayCircle } from "react-icons/ai";
 import { FaPlay } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 const Videomodal = () => {
     
   const [showVideoPopup, setShowVideoPopup] = useState(false);
+  const navigate = useNavigate();
 
   const handleVideoClick = () => {
     setShowVideoPopup(true);
@@ -29,9 +31,10 @@ const Videomodal = () => {
   const faqData = [
     {
       id: 1,
-      head: "Our Solutions",
+      head: "Why Cyberpay",
       body: "",
       style: "fade-down",
+      link:"whycyberpay",
       delay: "1500"
 
     },
@@ -40,6 +43,7 @@ const Videomodal = () => {
       head: "Our Company",
       body: "",
       style: "fade-down",
+      link:"about",
       delay: "1200"
     },
     {
@@ -47,6 +51,7 @@ const Videomodal = () => {
       head: "Developers API",
       body: "",
       style: "fade-down",
+      link:"developer",
       delay: "900"
     },
     {
@@ -54,6 +59,7 @@ const Videomodal = () => {
       head: "FAQs",
       body: "",
       style: "fade-down",
+      link:"",
       delay: "600"
 
     }
@@ -66,7 +72,7 @@ const Videomodal = () => {
       </div>
       <div className="faq_main">
         {faqData.map((item) => (
-          <div data-aos={item.style} data-aos-duration={item.delay} key={item.id} className="faq_content">
+          <div data-aos={item.style} data-aos-duration={item.delay} key={item.id} onClick={() => navigate(`/${item.link}`)} className="faq_content cursor-pointer">
             <div onClick={() => handleItemClick(item.id)} className="faq_head">
              
               <p>{item.head}</p>
