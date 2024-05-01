@@ -1,9 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+:root {
+  --sky: "Syne", sans-serif;
+  --blue: #2f8ed6;
+  --color-red: #dd0a35;
+  --color-grey: #565656;
+}
 
+.padding {
+  padding: 3.5rem 7%;
+}
+
+.h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+.h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.para {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.why_text {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.startbtn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  gap: 0.5rem;
+}
+.startbtn span {
+  text-decoration: underline;
+}
+
+.startbtn svg {
+  font-size: 1.4rem;
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    #2f9bd6 -0.55%,
+    #44b0ff 22.86%,
+    #8b44ff 48.36%,
+    #dd0a35 73.33%,
+    #ebff70 99.34%
+  );
+  filter: blur(85.55000305175781px);
+  width: 13rem;
+  height: 13rem;
+  position: absolute;
+  z-index: 1;
+  left: -150px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  top: 135px;
+}
+.gradient2{
+  background: linear-gradient(90deg, #2F9BD6 -0.55%, #44B0FF 22.86%, #8B44FF 48.36%, #DD0A35 73.33%, #EBFF70 99.34%);
+  position: absolute;
+  filter: blur(85.55000305175781px);
+
+}
+
+* {
+  font-family: "Montserrat", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+@layer components {
   /* container settings */
   .box {
     width: 100%;
@@ -146,11 +248,11 @@
   }
 
   .text-primary {
-    color: #9847FE;
+    color: #9847fe;
   }
 
   .bg-primary {
-    background: #9847FE;
+    background: #9847fe;
   }
 
   .bg-pri {
@@ -166,7 +268,7 @@
   }
 
   .btn-primary {
-    background: linear-gradient(90deg, #9847FE 0%, #FC819F 100%);
+    background: linear-gradient(90deg, #9847fe 0%, #fc819f 100%);
     color: white;
     font-weight: 500;
     border-radius: 50px;
@@ -182,21 +284,21 @@
 
   .btn-primary:hover,
   .btn-like:hover {
-    background: #9847FE;
+    background: #9847fe;
     transform: scaleX(1.02);
     transition: 0.6s;
   }
 
   .btn-feel:hover {
-    background: #9847FE;
+    background: #9847fe;
     transform: scaleX(1.02);
     transition: 0.6s;
-    color: #fff
+    color: #fff;
   }
 
   .btn-feel {
     border-radius: 1000px;
-    background: #F3E8FF;
+    background: #f3e8ff;
     color: #291946;
     font-weight: 500;
     cursor: pointer;
@@ -214,5 +316,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 75%;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }

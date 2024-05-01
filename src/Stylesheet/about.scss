@@ -1,0 +1,244 @@
+.about_main {
+  padding: 1rem 7%;
+  .story {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 2.5rem;
+
+    .story_img {
+      width: 42%;
+    }
+    .story_text {
+      width: 68%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      p {
+        color: #565656;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2rem;
+      }
+     
+    }
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      gap: 3rem;
+      .story_img {
+        width: 60%;
+      }
+      .story_text {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 745px) {
+      .story_img {
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      .story_img {
+        width: 100%;
+      }
+    }
+  }
+
+  .our {
+    padding: 1rem 0 5rem 0;
+    .our_head {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 3rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        background: var(--blue);
+        color: white;
+        padding: 1rem 1.4rem;
+        border-radius: 40px;
+        font-size: 1.1rem;
+      }
+    }
+    .our_body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      padding-top: 4rem;
+      height: fit-content;
+
+      .our_card {
+        color: black;
+        height: 100%;
+        padding: 2rem 2.5rem;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5.5rem;
+        h2{
+          color: black;
+        }
+        p {
+          padding-top: 0.5rem;
+          line-height: 2rem;
+          font-size: 1.1rem;
+        }
+
+        .our_icon {
+          padding: 2rem;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .our_head {
+        flex-direction: column;
+        h2 {
+          text-align: center;
+        }
+      }
+      .our_body {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      .our_body {
+        .our_card {
+          gap: 2rem;
+          padding: 1.8rem 2rem;
+
+          .our_icon {
+            font-size: 1.3rem;
+            padding: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .quick {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: fit-content;
+    padding-bottom: 3rem;
+    .quick_text {
+      padding: 3rem 3.5rem;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      h3 {
+        font-size: 1.5rem;
+        font-family: var(--sky) !important;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+      }
+      .quick_list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    .quick_img {
+      height: 100%;
+      img {
+        height: 27rem;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+
+      .quick_img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 75%;
+          height: 80%;
+        }
+      }
+    }
+    @media screen and (max-width: 650px) {
+      .quick_text {
+        padding: 2rem;
+      }
+      .quick_img {
+        img {
+          width: 99%;
+        }
+      }
+    }
+  }
+}
+.enjoy {
+  background: url(../assets/images/enjoy.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .enjoy_cont {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 3.5rem 2.5rem;
+    .enjoy_cont {
+      width: 100%;
+    }
+  }
+}
+
+
+.darkabout {
+  background: black;
+
+  .about_main {
+    h2{
+      color: white;
+    }
+    .story {
+      .story_text {
+        p {
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+
+  .enjoy_cont {
+    color: black;
+  }
+}
