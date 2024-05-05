@@ -21,8 +21,8 @@ const Pricing = () => {
                         <h2 data-aos="fade-right" data-aos-duration="1000"  className="h2">
                             Providing users with convenient and <br /> secure payment methods to choose from.
                         </h2>
-                        <Link data-aos="fade-left" data-aos-duration="1000" >
-                            Learn More
+                        <Link data-aos="fade-left" data-aos-duration="1000" to="https://merchant.cyberpay.ng/" >
+                            Get Started
                             <RxArrowRight />
                         </Link>
                     </div>
@@ -39,7 +39,7 @@ const Pricing = () => {
                                     <p><BsCheckCircleFill />  Payment Gateway</p>
                                 </div>
                             </div>
-                            <Link data-aos="zoom-in" data-aos-duration="1100" >Start for free</Link>
+                            <Link data-aos="zoom-in" data-aos-duration="1100" to="https://merchant.cyberpay.ng/" >Start for free</Link>
 
                         </div>
                         <div data-aos="flip-right" data-aos-duration="1000"  className="price_card bg-pink-100 rounded-2xl">
@@ -50,15 +50,15 @@ const Pricing = () => {
                                     <p>Yearly / Monthly</p>
                                 </div>
                                 <div className="price_list">
-                                    <p><BsCheckCircleFill /> Domestic Cards 1.58% capped N2000 </p>
-                                    <p><BsCheckCircleFill />  Domestic Cards 1.48% capped at N1700</p>
-                                    <p><BsCheckCircleFill />  Domestic Cards 1.38% capped @ N1,600</p>
-                                    <p><BsCheckCircleFill />  Domestic Cards 1.33% capped @ N1,600</p>
-                                    <p><BsCheckCircleFill />  International Cards 3.78%</p>
+                                    <p><BsCheckCircleFill /> 1.58% capped N2000 </p>
+                                    <p><BsCheckCircleFill />  1.48% capped at N1700</p>
+                                    <p><BsCheckCircleFill />  1.38% capped @ N1,600</p>
+                                    <p><BsCheckCircleFill />  1.33% capped @ N1,600</p>
+                                    <p><BsCheckCircleFill />   Cards 3.78%</p>
 
                                 </div>
                             </div>
-                            <Link data-aos="zoom-in" data-aos-duration="1100" >Start for free</Link>
+                            <Link data-aos="zoom-in" data-aos-duration="1100" to="https://merchant.cyberpay.ng/" >Start for free</Link>
 
                         </div>
                     </div>

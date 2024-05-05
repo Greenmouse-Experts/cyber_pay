@@ -1,5 +1,5 @@
 // import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import "../../Stylesheet/footer.css";
 import logo from "../../assets/images/dark-logo.png";
 import DownloadButton from '../../components/DownloadButton';
@@ -66,7 +66,7 @@ const LandingFooter = () => {
                     </div>
                 </div>
                 <div className="links">
-                    <h4>Social</h4>
+                    <h4>Contact Us</h4>
                     <div>
                         <p className='flex items-start gap-1'><span> <IoLocationOutline size={20} /></span>Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.</p>
                         <p className='flex items-start gap-1'><span> <IoLocationOutline size={20} /></span>Abuja Office: 2B street Abacha Estate Wuse Zone , Abuja.</p>
@@ -75,7 +75,7 @@ const LandingFooter = () => {
                 </div>
             </div>
             <div className="c_tag">
-                <p>© 2024 <span>CyberPay</span> Limited. All rights reserved. | <span>Whistle Blower</span></p>
+                <p>© 2024 <span>CyberPay</span> Limited. All rights reserved. | <span><NavLink to="/whistle-blower">Whistle Blower</NavLink></span></p>
             </div>
         </footer>
     );

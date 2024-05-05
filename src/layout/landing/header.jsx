@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../../Stylesheet/navbar.css";
 import logo from "../../assets/images/logo.png";
 import { RiMenuFill, RiCloseFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { BiSolidUserCircle, BiTransferAlt } from "react-icons/bi";
 import ToggleBtn from "../../components/Togglebtn";
@@ -19,11 +19,10 @@ const LandingHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
 
-
   const toggle = () => {
     setIsOpen(!isOpen);
     setAboutDropdownOpen(false);
-  }
+  };
   const hide = () => {
     setIsOpen(false);
     setAboutDropdownOpen(false);
@@ -60,87 +59,165 @@ const LandingHeader = () => {
 
   return (
     <div
-      className={`navbar ${fix ? "fixed" : ""} ${theme === "light" ? "" : "nav_dark"
-        }`}
+      className={`navbar ${fix ? "fixed" : ""} ${
+        theme === "light" ? "" : "nav_dark"
+      }`}
     >
       <div className="logo">
-        {theme === "light" ? (
-          <img src={logo} alt="Cyberpay-logo" />
-        ) : (
-          <img src={dark} alt="Cyberpay-logo" />
-        )}
+        <Link to="/">
+          {theme === "light" ? (
+            <img src={logo} alt="Cyberpay-logo" />
+          ) : (
+            <img src={dark} alt="Cyberpay-logo" />
+          )}
+        </Link>
       </div>
 
       <div className={`nav_body`}>
         <div
           ref={dropdownRef}
-          className={`nav_div ${isOpen ? "show_nav" : "hide_nav"} ${theme === "light" ? "" : "navDark"
-            }`}
+          className={`nav_div ${isOpen ? "show_nav" : "hide_nav"} ${
+            theme === "light" ? "" : "navDark"
+          }`}
         >
           <div className="nav_link">
-            <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
+            <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/" className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")} >
               {" "}
               Home
-            </Link>
+            </NavLink>
             <div
               className="nav_dropdown"
               onClick={() => setAboutDropdownOpen(!aboutDropdownOpen)}
             >
-              <span>Solution <IoIosArrowDown /></span>
+              <span>
+                Solution <IoIosArrowDown />
+              </span>
               {aboutDropdownOpen && (
                 <div className="drop_link">
-                  <Link onClick={toggle}
+                  <NavLink
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/marketplace"> <span className="bg-stone-50 rounded-[9px]"><FiShoppingBag className=" !text-blue-500" /></span> Marketplace and Mobile App</Link>
-                  <Link onClick={toggle}
+                    onFocus={show}
+                    to="/marketplace"
+                  >
+                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <FiShoppingBag className=" !text-blue-500" />
+                    </span>{" "}
+                    Marketplace and Mobile App
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/micropension"><span className="bg-stone-50 rounded-[9px]"><BiWallet className="text-rose-600" /></span>Micro Pension</Link>
-                  <Link onClick={toggle}
+                    onFocus={show}
+                    to="/micropension"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <BiWallet className="text-rose-600" />
+                    </span>
+                    Micro Pension
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/ussdcollection"><span className="bg-stone-50 rounded-[9px]"><BsPhone className="text-sky-950" /></span>USSD Collection</Link>
-                  <Link onClick={toggle}
+                    onFocus={show}
+                    to="/ussdcollection"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <BsPhone className="text-sky-950" />
+                    </span>
+                    USSD Collection
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/payment"><span className="bg-stone-50 rounded-[9px]"><BiTransferAlt className="text-purple-800" /></span>CyberPay online (Web / Mobile) <br /> Payment Processing</Link>
+                    onFocus={show}
+                    to="/payment"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <BiTransferAlt className="text-purple-800" />
+                    </span>
+                    CyberPay online (Web / Mobile) <br /> Payment Processing
+                  </NavLink>
                 </div>
-
               )}
               {aboutDropdownOpen && (
                 <div className="drop">
-                  <Link onClick={toggle}
+                  <Link
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/marketplace">Marketplace and Mobile App <RiArrowRightSLine /></Link>
-                  <Link onClick={toggle}
+                    onFocus={show}
+                    to="/marketplace"
+                  >
+                    Marketplace and Mobile App <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/micropension">Micro Pension <RiArrowRightSLine /></Link>
-                  <Link onClick={toggle}
+                    onFocus={show}
+                    to="/micropension"
+                  >
+                    Micro Pension <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/ussdcollection">USSD Collection <RiArrowRightSLine /></Link>
-                  <Link onClick={toggle}
+                    onFocus={show}
+                    to="/ussdcollection"
+                  >
+                    USSD Collection <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
                     onBlur={hide}
-                    onFocus={show} to="/payment">CyberPay online (Web / Mobile) <br /> Payment Processing <RiArrowRightSLine /></Link>
+                    onFocus={show}
+                    to="/payment"
+                  >
+                    CyberPay online (Web / Mobile) <br /> Payment Processing{" "}
+                    <RiArrowRightSLine />
+                  </Link>
                 </div>
-
-
               )}
             </div>
-            <Link onClick={toggle} onBlur={hide} onFocus={show} to="/about">
+            <NavLink
+              onClick={toggle}
+              onBlur={hide}
+              onFocus={show}
+              to="/about"
+              className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")}
+            >
               Company
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               onClick={toggle}
               onBlur={hide}
               onFocus={show}
               to="/whycyberpay"
+              className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")}
             >
               Why CyberPay
-            </Link>
+            </NavLink>
 
-            <Link onClick={toggle} onBlur={hide} onFocus={show} to="/developer">
+            <NavLink
+              onClick={toggle}
+              onBlur={hide}
+              onFocus={show}
+              to="/developer"
+              className={({ isActive }) =>
+                isActive ? "!text-[#dd0a35] !font-medium" : ""
+              }
+            >
               Developer
-            </Link>
-            <Link onClick={toggle} onBlur={hide} onFocus={show} to="/pricing">
+            </NavLink>
+            <NavLink
+              onClick={toggle}
+              onBlur={hide}
+              onFocus={show}
+              to="/pricing"
+              className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")}
+            >
               Pricing
-            </Link>
+            </NavLink>
           </div>
 
           <div className="hide nav_hide">
@@ -149,7 +226,8 @@ const LandingHeader = () => {
               Theme
             </span>
             <Link
-              data-aos="zoom-in" data-aos-duration="1000"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
               className="login_btn"
               onClick={toggle}
               onBlur={hide}
@@ -167,7 +245,7 @@ const LandingHeader = () => {
           onClick={toggle}
           onBlur={hide}
           onFocus={show}
-          to="/login"
+          to="https://merchant.cyberpay.ng/"
         >
           Login
         </Link>

@@ -1,9 +1,7 @@
 .download_link {
-  background: black;
   color: white;
   align-items: center;
   padding: 10px 15px;
-  border-radius: 16px;
   gap: 0.5rem;
   transition: ease-in-out 1s;
 
@@ -119,7 +117,7 @@
 }
 
 .reuseable {
-  background: black;
+  background: #042E46;
   color: white;
   display: flex;
   width: fit-content;

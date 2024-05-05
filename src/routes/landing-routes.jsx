@@ -13,6 +13,7 @@ import Developer from "../pages/landing/Developer";
 import CookiePolicy from "../pages/landing/CookiePolicy";
 import DataPolicy from "../pages/landing/DataPolicy";
 import TermsAndCondition from "../pages/landing/TermsAndCondition";
+import WhistleBlower from "../pages/landing/WhistleBlower";
 
 export const landingRoutes = [
   {
@@ -66,6 +67,10 @@ export const landingRoutes = [
       {
         path: "terms-conditions",
         element: <TermsAndCondition />,
+      },
+      {
+        path: "whistle-blower",
+        element: <WhistleBlower />,
       },
     ],
   },

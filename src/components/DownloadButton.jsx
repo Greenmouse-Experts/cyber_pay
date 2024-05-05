@@ -2,11 +2,11 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import "../Stylesheet/downloadbtn.scss"
 
-const DownloadButton = ({link, img, span, text, delay, style}) => {
+const DownloadButton = ({link, img, span, text, delay, style, color, radius}) => {
   return (
 
-    <Link data-aos={style} data-aos-duration={delay}  to={link} className='download_link flex w-fit'>
-      <img className='h-9 w-9' src={img} alt="" />
+    <Link data-aos={style} data-aos-duration={delay}  to={link} className={`download_link flex w-fit ${radius ?  "rounded-2xl" : "rounded-lg"}  ${color === "black" ? "bg-[#000000]" : "bg-[#042E46]"}`}>
+      <img className='h-7 w-7' src={img} alt="" />
       <div>
         <span className='text-xs' >{span}</span>
         <p className='text-sm'>{text}</p>

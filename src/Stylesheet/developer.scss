@@ -1,29 +1,25 @@
 .developer {
   margin-top: 3rem;
 
+  // &_wrapper{
+  //   overflow-x: scroll;
+  // }
+
   @media screen and (max-width: 1300px) {
   }
 
   &_tab {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     padding: 0.5rem;
     align-items: center;
     border: 1px solid #dddddd;
     border-radius: 7.2rem;
-    height: 90px;
     gap: 1rem;
-
-   
-
-    @media screen and (max-width: 1300px) {
-      height: 70px;
-    }
-
+    flex-wrap: wrap;
+   justify-content: center;
     @media screen and (max-width: 768px) {
-        flex-direction: column;
-        height: fit-content !important;
-        border-radius: 1rem;
+        
       }
 
     p {
@@ -31,7 +27,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
       padding: 0 0.5rem;
       font-weight: 500;
       text-wrap: nowrap;
@@ -55,7 +50,6 @@
 
     .active {
       background-color: var(--color-red);
-      height: 100%;
       color: white;
     }
   }

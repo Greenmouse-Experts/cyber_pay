@@ -27,37 +27,38 @@ const Developer = () => {
         body="At CyberPay, we have put structures in place to ensure continuous high transaction success rate."
       />
       <div className="developer ">
-        <div className="padding">
+        <div className="padding developer_wrapper">
           <div className="developer_tab">
-            <p className={`${tab === 1 && "active"}`} onClick={() => setTab(1)}>
+            
+            <p className={`${tab === 1 && "active bg-[#dd0a35]"} min-w-28 h-[4.5rem] `} onClick={() => setTab(1)}>
               General
             </p>
-            <p className={`${tab === 2 && "active"}`} onClick={() => setTab(2)}>
+            <p className={`${tab === 2 && "active bg-[#dd0a35]"} min-w-28 h-[4.5rem] `} onClick={() => setTab(2)}>
               Getting Started
             </p>
-            <p className={`${tab === 3 && "active"}`} onClick={() => setTab(3)}>
+            <p className={`${tab === 3 && "active bg-[#dd0a35]"} min-w-28 h-[4.5rem] `} onClick={() => setTab(3)}>
               Setting Up
             </p>
-            <p className={`${tab === 4 && "active"}`} onClick={() => setTab(4)}>
+            <p className={`${tab === 4 && "active bg-[#dd0a35]"} min-w-28 h-[4.5rem] `} onClick={() => setTab(4)}>
               Account
             </p>
-            <p className={`${tab === 5 && "active"}`} onClick={() => setTab(5)}>
+            <p className={`${tab === 5 && "active bg-[#dd0a35]"} min-w-28 h-[4.5rem] `} onClick={() => setTab(5)}>
               Payment
             </p>
-            <p className={`${tab === 6 && "active"}`} onClick={() => setTab(6)}>
+            <p className={`${tab === 6 && "active"} min-w-28 h-[4.5rem] `} onClick={() => setTab(6)}>
               Dashboard
             </p>
-            <p className={`${tab === 7 && "active"}`} onClick={() => setTab(7)}>
+            <p className={`${tab === 7 && "active"} min-w-28 h-[4.5rem] `} onClick={() => setTab(7)}>
               Withdrawal
             </p>
-            <p className={`${tab === 8 && "active"}`} onClick={() => setTab(8)}>
+            <p className={`${tab === 8 && "active"} min-w-28 h-[4.5rem] `} onClick={() => setTab(8)}>
               Charges
             </p>
-            <p className={`${tab === 9 && "active"}`} onClick={() => setTab(9)}>
+            <p className={`${tab === 9 && "active"} min-w-28 h-[4.5rem] `} onClick={() => setTab(9)}>
               Management
             </p>
             <p
-              className={`${tab === 10 && "active"}`}
+              className={`${tab === 10 && "active"} min-w-28 h-[4.5rem] `}
               onClick={() => setTab(10)}
             >
               Security
