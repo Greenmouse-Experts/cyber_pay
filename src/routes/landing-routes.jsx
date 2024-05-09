@@ -14,6 +14,8 @@ import CookiePolicy from "../pages/landing/CookiePolicy";
 import DataPolicy from "../pages/landing/DataPolicy";
 import TermsAndCondition from "../pages/landing/TermsAndCondition";
 import WhistleBlower from "../pages/landing/WhistleBlower";
+import Faqs from "../pages/landing/Faq";
+import MobileApp from "../pages/landing/MobileApp";
 
 export const landingRoutes = [
   {
@@ -71,6 +73,14 @@ export const landingRoutes = [
       {
         path: "whistle-blower",
         element: <WhistleBlower />,
+      },
+      {
+        path: "faqs",
+        element: <Faqs />,
+      },
+      {
+        path: "mobile-app",
+        element: <MobileApp />,
       },
     ],
   },

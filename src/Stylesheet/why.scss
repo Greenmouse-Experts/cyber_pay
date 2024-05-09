@@ -59,9 +59,9 @@
 
   .list_1 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     align-items: center;
-    gap: 2rem;
+    gap: 10rem;
 
     .dark_card {
       background: black;

@@ -2,7 +2,7 @@ import { useTheme } from '../../ThemeContext'
 import React from 'react'
 import Header from "../../layout/landing/Heading"
 import { Link } from 'react-router-dom'
-import about from "../../assets/images/about.png"
+import about from "../../assets/images/about-header.png"
 import story from "../../assets/images/story.png"
 import { RiFlagFill } from "react-icons/ri";
 import { TbTargetArrow } from "react-icons/tb";

@@ -30,7 +30,7 @@ const Register = () => {
 
                     <div className="login_head">
 
-                        <h2 className="h2 text-sky-950">
+                        <h2 className="h2 text-black">
                             Sign Up
                         </h2>
                         <p>Fill in the form below to register on Cyberpay</p>

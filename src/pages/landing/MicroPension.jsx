@@ -19,7 +19,7 @@ const MicroPension = () => {
         </p>
       </div>
 
-      <div className="remit padding bg-sky-500">
+      <div className="remit padding bg-[#042E46]">
         <div className="remit_text">
           <h3 className='h3'>Remit Your Pension</h3>
           <p className='para'>The process of remitting your pension has become easier as a part of your monthly income can be credited into your pension savings account using the following channels:</p>

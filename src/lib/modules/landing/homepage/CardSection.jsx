@@ -11,7 +11,7 @@ const Card = ({ children, rotation }) => {
 
   return (
     <motion.div
-    className="flex absolute md:justify-end items-center top-0">
+    className="flex absolute md:justify-end items-center top-0 md:right-[-8%]">
       {children}
     </motion.div>
   );

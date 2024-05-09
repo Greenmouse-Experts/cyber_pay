@@ -81,7 +81,7 @@ const LandingHeader = () => {
           }`}
         >
           <div className="nav_link">
-            <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/" className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")} >
+            <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/" className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")} >
               {" "}
               Home
             </NavLink>
@@ -104,7 +104,19 @@ const LandingHeader = () => {
                     <span className="bg-stone-50 rounded-[9px]">
                       <FiShoppingBag className=" !text-blue-500" />
                     </span>{" "}
-                    Marketplace and Mobile App
+                    Marketplace
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/mobile-app"
+                  >
+                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                    <BsPhone className="text-sky-950" />
+                    </span>{" "}
+                    Mobile App
                   </NavLink>
                   <NavLink
                     onClick={toggle}
@@ -149,7 +161,15 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/marketplace"
                   >
-                    Marketplace and Mobile App <RiArrowRightSLine />
+                    Marketplace <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/mobile-app"
+                  >
+                    Mobile App <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
@@ -184,7 +204,7 @@ const LandingHeader = () => {
               onBlur={hide}
               onFocus={show}
               to="/about"
-              className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")}
+              className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")}
             >
               Company
             </NavLink>
@@ -193,7 +213,7 @@ const LandingHeader = () => {
               onBlur={hide}
               onFocus={show}
               to="/whycyberpay"
-              className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")}
+              className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")}
             >
               Why CyberPay
             </NavLink>
@@ -204,7 +224,7 @@ const LandingHeader = () => {
               onFocus={show}
               to="/developer"
               className={({ isActive }) =>
-                isActive ? "!text-[#dd0a35] !font-medium" : ""
+                isActive ? "!text-[#2F9BD6] " : ""
               }
             >
               Developer
@@ -213,10 +233,10 @@ const LandingHeader = () => {
               onClick={toggle}
               onBlur={hide}
               onFocus={show}
-              to="/pricing"
-              className={({ isActive }) => (isActive ? '!text-[#dd0a35] !font-medium' : "")}
+              to="/faqs"
+              className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")}
             >
-              Pricing
+              FAQs
             </NavLink>
           </div>
 
@@ -232,7 +252,7 @@ const LandingHeader = () => {
               onClick={toggle}
               onBlur={hide}
               onFocus={show}
-              to="/login"
+              to="https://merchant.cyberpay.ng"
             >
               Login
             </Link>

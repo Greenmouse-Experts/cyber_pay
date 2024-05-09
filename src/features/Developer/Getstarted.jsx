@@ -1,6 +1,6 @@
 import wallet from "../../assets/images/wallet.png";
 import AccordionItem from "../../components/Accordion";
-import paymentlink from "../../assets/videos/payment-link.mp4"
+import paymentlink from "../../assets/videos/payment-link.mp4";
 
 function Getstarted() {
   return (
@@ -66,54 +66,85 @@ function Getstarted() {
             <br />– Corporate bank account opening documentation – mandates etc.
           </p>
         </div>
-
-      
       </div>
       <div className="padding bg-[#FAFAF9]">
-          <p className="para font-medium">
-            In case you did not meet the requirements for Registered business,
-            you have an option of been activated under the CyberPay Beginners
-            Scheme after fulfilling the requirements for the beginner’s scheme
-            above.
-          </p>
-          <p className="para font-medium mt-10">Kindly access the Corporate Affairs Commission website for
-            more information about business registration.</p>
+        <p className="para font-medium">
+          In case you did not meet the requirements for Registered business, you
+          have an option of been activated under the CyberPay Beginners Scheme
+          after fulfilling the requirements for the beginner’s scheme above.
+        </p>
+        <p className="para font-medium mt-10">
+          Kindly access the Corporate Affairs Commission website for more
+          information about business registration.
+        </p>
 
-<div className="mt-20">
-    <AccordionItem title="Who bears the transactions charges?"
-    answer="Transaction charges are borne by the merchants in line with the CBN regulation and international best practice."/>
-    <AccordionItem title="How to activate your Beginner’s Scheme on CyberPay."
-    answer={<div>
-      <p className="para">
-      The CyberPay Beginner Scheme is designed to accommodate businesses that are unregistered or currently passing through the process of registration.
-      </p>
-      <p className="para mt-3">
-      The following are the requirements for such businesses:
-      </p>
-      <p className="para mt-5">Means of identification: Any of the government issued means of identification like an international passport, driver’s license, permanent voter’s card, or national ID can be used.
-<br/>Personal bank account
-<br/>BVN (Bank Verification Number)
-<br/>and international best practice.</p>
-    </div>}/>
-    <AccordionItem title="Requirements for using CyberPay as a Starter Business"
-   answer={<div>
-    <p className="para">
-    The CyberPay Beginner Scheme is designed to accommodate businesses that are unregistered or currently passing through the process of registration.
-    </p>
-    <p className="para mt-3">
-    The following are the requirements for such businesses:
-    </p>
-    <p className="para mt-5">Means of identification: Any of the government issued means of identification like an international passport, driver’s license, permanent voter’s card, or national ID can be used.
-<br/>Personal bank account
-<br/>BVN (Bank Verification Number)
-<br/>and international best practice.</p>
-  </div>}/>
-    <AccordionItem title="Customize your payment link" answer={
-    <div>
-<video src={paymentlink} controls autoPlay loop/>
-    </div>}/>
-</div>
+        <div className="mt-20">
+          <AccordionItem
+            title="Who bears the transactions charges?"
+            answer="Transaction charges are borne by the merchants in line with the CBN regulation and international best practice."
+          />
+          <AccordionItem
+            title="How to activate your Beginner’s Scheme on CyberPay."
+            answer={
+              <div>
+                <p className="para">
+                  The CyberPay Beginner Scheme is designed to accommodate
+                  businesses that are unregistered or currently passing through
+                  the process of registration.
+                </p>
+                <p className="para mt-3">
+                  The following are the requirements for such businesses:
+                </p>
+                <p className="para mt-5">
+                  Means of identification: Any of the government issued means of
+                  identification like an international passport, driver’s
+                  license, permanent voter’s card, or national ID can be used.
+                  <br />
+                  Personal bank account
+                  <br />
+                  BVN (Bank Verification Number)
+                  <br />
+                  and international best practice.
+                </p>
+              </div>
+            }
+          />
+          <AccordionItem
+            title="Requirements for using CyberPay as a Starter Business"
+            answer={
+              <div>
+                <p className="para">
+                  The CyberPay Beginner Scheme is designed to accommodate
+                  businesses that are unregistered or currently passing through
+                  the process of registration.
+                </p>
+                <p className="para mt-3">
+                  The following are the requirements for such businesses:
+                </p>
+                <p className="para mt-5">
+                  Means of identification: Any of the government issued means of
+                  identification like an international passport, driver’s
+                  license, permanent voter’s card, or national ID can be used.
+                  <br />
+                  Personal bank account
+                  <br />
+                  BVN (Bank Verification Number)
+                  <br />
+                  and international best practice.
+                </p>
+              </div>
+            }
+          />
+          <AccordionItem
+            title="Customize your payment link"
+            answer={
+              <div>
+                <video src={paymentlink} controls autoPlay loop />
+              </div>
+            }
+          />
         </div>
+      </div>
     </>
   );
 }

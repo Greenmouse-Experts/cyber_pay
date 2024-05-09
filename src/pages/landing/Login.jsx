@@ -38,7 +38,7 @@ const Login = () => {
                 />
               </div>
              </div> 
-             <button className='sign'>Sign In</button>
+             <button className='sign !bg-[#2F9BD6]'>Sign In</button>
              <button className='google'><img src={google} alt="" /> Continue with Google</button>
 
              <p>I don't have an account? <Link to="/register" className='text-blue-500'>Sign Up</Link></p>

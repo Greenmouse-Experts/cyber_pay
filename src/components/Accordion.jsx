@@ -1,10 +1,12 @@
 
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import { useTheme } from "../ThemeContext";
 
 
 const AccordionItem = ({ title, answer,open }) => {
   const [accordionOpen, setAccordionOpen] = useState(open);
+  const { theme } = useTheme();
 
   return (
     <>
@@ -16,7 +18,7 @@ const AccordionItem = ({ title, answer,open }) => {
       >
         <button className="flex justify-between w-full items-center">
           <span
-            className={`para font-normal underline text-[#565656]  ${
+            className={`para font-normal ${theme === "light" ? "text-[#565656]" : "text-white"}  ${
               accordionOpen ? "black" : "black"
             }`}
           >
@@ -27,7 +29,7 @@ const AccordionItem = ({ title, answer,open }) => {
         </button>
       </div>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"
@@ -38,7 +40,7 @@ const AccordionItem = ({ title, answer,open }) => {
             accordionOpen ? "mb-6" : ""
           }`}
         >
-         <p className="leading-[30px]  font-normal para"> {answer}</p>
+         <p className={`leading-[30px]  font-normal para  ${theme === "light" ? "" : "text-white"}  `}> {answer}</p>
         </div>
       </div>
     </>

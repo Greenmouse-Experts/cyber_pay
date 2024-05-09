@@ -6,14 +6,12 @@
   // background-color: var(--background-color);
   transition: ease-in-out 0.5s;
 
- 
-
   .landing {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 2rem;
-    padding: 8rem 2rem 5rem 7%;
+    padding: 5rem 2rem 5rem 7%;
     gap: 3rem;
     width: 100%;
     overflow: hidden !important;
@@ -52,7 +50,7 @@
       .h2 {
         color: white;
         font-family: 'Proxima Nova', sans-serif !important;
-        font-size: 4.5rem;
+        font-size: 4.3rem;
         font-style: normal;
         font-weight: 600;
         line-height: 75px; /* 110.667% */
@@ -242,7 +240,7 @@
       position: relative;
       margin-left: auto;
       img {
-        background-color: #fafaf994;
+        background-color: #fafaf9b9;
       margin-left: auto;
       border-radius: 21px;
         transform: scale(80%);
@@ -408,6 +406,9 @@
         height: fit-content;
         gap: 1.5rem;
         .simple_card {
+          background-image: linear-gradient(to right, rgba(109, 220, 255, 1), rgba(127, 96, 249, 1)) ;
+          border-radius: 17px;
+          padding: 1.5px;
           .simple_grad {
             z-index: -1;
             position: absolute;
@@ -446,7 +447,7 @@
             // border: 1.5px solid;
            
             border: 1px solid transparent; /* Set a transparent solid border to ensure space for the border image */
-            border-image: linear-gradient(to right, rgba(109, 220, 255, 1), rgba(127, 96, 249, 1)) 1; /* Specify the linear gradient as the border image */
+           /* Specify the linear gradient as the border image */
             border-image-slice: 1; /* Slice the border image */
             border-radius: 17px; /* Apply border radius */
             padding: 2rem;
