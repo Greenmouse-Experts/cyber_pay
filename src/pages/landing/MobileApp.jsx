@@ -17,15 +17,11 @@ const MobileApp = () => {
       />
       <div className="market padding">
         <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
           className="market_img"
         >
           <img src="/img/mobile-app.png" alt=""  className="md:max-h-[30rem] max-h-[20rem]"/>
         </div>
         <div
-          data-aos="fade-left"
-          data-aos-duration="1000"
           className="market_text"
         >
           <h2 className="h2">Embrace the future</h2>
