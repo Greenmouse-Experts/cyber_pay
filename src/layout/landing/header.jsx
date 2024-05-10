@@ -247,7 +247,7 @@ const LandingHeader = () => {
                 Company <IoIosArrowDown />
               </span>
               {aboutDropdownOpen2 && (
-                <div className="drop_link !gap-3 !mt-32">
+                <div className="drop_link !gap-5 !mt-32">
                   <NavLink
                     onClick={toggle}
                     onBlur={hide}
