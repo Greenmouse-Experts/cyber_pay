@@ -498,7 +498,7 @@ const LandingHomepage = () => {
                   className=" !w-16 !h-16"
                 />
                 <div className="flex flex-col  justify-center items-center">
-                  <h3 className="h3 pt-12 ">
+                  <h3 className="h3 sm:pt-12 pt-16 ">
                     Transfer anywhere around the world
                   </h3>
 
@@ -593,7 +593,7 @@ const LandingHomepage = () => {
                   className=" !w-16 !h-16"
                 />
                 <div className="flex flex-col  justify-center items-center">
-                  <h3 className="h3 pt-12 ">
+                  <h3 className="h3 sm:pt-12 pt-16 ">
                     Make bill payments online seamlessly.
                   </h3>
 
@@ -681,7 +681,7 @@ const LandingHomepage = () => {
                   className=" !w-16 !h-16"
                 />
                 <div className="flex flex-col  justify-center items-center">
-                  <h3 className="h3 pt-12 ">
+                  <h3 className="h3 sm:pt-12 pt-16 ">
                     Modify your financial insights and goals
                   </h3>
 
@@ -690,7 +690,7 @@ const LandingHomepage = () => {
                       theme === "light" ? "" : "bg-[#0D0D0D]"
                     }  absolute bottom-0 w-[80%]  flex flex-col gap-2 p-3`}
                   >
-                    <img src="/icons/revenue.svg" alt="" className="" />
+                    <img src="/icons/revenue.svg" alt="" className="!h-[10rem]" />
                     <div></div>
                   </div>
                 </div>
