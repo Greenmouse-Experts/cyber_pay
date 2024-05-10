@@ -23,7 +23,8 @@ const LandingFooter = () => {
           <p>
             {/* <span>care@cyberpay.net.ng </span>
                         <span>support@cyberpay.net.ng</span> */}
-            <span>customercare@cybercloud.net.ng</span>
+            <span>hello@cyberpay.net.ng</span>
+            <span>support@cyberpay.net.ng</span>
           </p>
           <div className="footer_links">
             <DownloadButton img={play} span="Get it on" text="Google Play" />
