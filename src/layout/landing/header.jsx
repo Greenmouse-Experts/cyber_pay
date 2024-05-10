@@ -10,14 +10,19 @@ import { useTheme } from "../../ThemeContext";
 import dark from "../../assets/images/dark-logo.png";
 import { BiWallet } from "react-icons/bi";
 import { FiShoppingBag } from "react-icons/fi";
-import { BsPhone } from "react-icons/bs";
+import { BsFilePostFill, BsPhone } from "react-icons/bs";
 import { RiArrowRightSLine } from "react-icons/ri";
+import { LiaToolsSolid } from "react-icons/lia";
+import { MdOutlineTextsms } from "react-icons/md";
+import { GiReceiveMoney } from "react-icons/gi";
 
 const LandingHeader = () => {
   const { theme, toggleTheme } = useTheme();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [aboutDropdownOpen2, setAboutDropdownOpen2] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -81,7 +86,13 @@ const LandingHeader = () => {
           }`}
         >
           <div className="nav_link">
-            <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/" className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")} >
+            <NavLink
+              onClick={toggle}
+              onBlur={hide}
+              onFocus={show}
+              to="/"
+              className={({ isActive }) => (isActive ? "!text-[#2F9BD6] " : "")}
+            >
               {" "}
               Home
             </NavLink>
@@ -104,7 +115,7 @@ const LandingHeader = () => {
                     <span className="bg-stone-50 rounded-[9px]">
                       <FiShoppingBag className=" !text-blue-500" />
                     </span>{" "}
-                    Marketplace
+                    CyberPay Marketplace
                   </NavLink>
                   <NavLink
                     onClick={toggle}
@@ -114,9 +125,37 @@ const LandingHeader = () => {
                   >
                     {" "}
                     <span className="bg-stone-50 rounded-[9px]">
-                    <BsPhone className="text-sky-950" />
+                      <BsPhone className="text-sky-950" />
                     </span>{" "}
-                    Mobile App
+                    CyberPay Mobile App
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <LiaToolsSolid className=" !text-green-500" />
+                    </span>{" "}
+                    Disbursement Solution
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <MdOutlineTextsms className="text-sky-950" />
+                    </span>{" "}
+                    Bulk SMS
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <GiReceiveMoney className=" !text-blue-500" />
+                    </span>{" "}
+                    Loan Repayment Made Simple
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <BsFilePostFill className="text-sky-950" />
+                    </span>{" "}
+                    POS Services
                   </NavLink>
                   <NavLink
                     onClick={toggle}
@@ -199,21 +238,104 @@ const LandingHeader = () => {
                 </div>
               )}
             </div>
-            <NavLink
-              onClick={toggle}
-              onBlur={hide}
-              onFocus={show}
-              to="/about"
-              className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")}
+            <div
+              onClick={() => setAboutDropdownOpen2(!aboutDropdownOpen2)}
+              className="nav_dropdown"
             >
-              Company
-            </NavLink>
+              <span>
+                {" "}
+                Company <IoIosArrowDown />
+              </span>
+              {aboutDropdownOpen2 && (
+                <div className="drop_link !gap-3 !mt-32">
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/about"
+                  >
+                    {" "}
+                   
+                    About CyberPay
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/mobile-app"
+                  >
+                    {" "}
+                    
+                    Our Story
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    {" "}
+                   
+                    Our People
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    {" "}
+                   
+                    Careers
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    {" "}
+                    Our Certification
+                  </NavLink>
+                </div>
+              )}
+              {/* {aboutDropdownOpen2 && (
+                <div className="drop">
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/marketplace"
+                  >
+                    Marketplace <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/mobile-app"
+                  >
+                    Mobile App <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/micropension"
+                  >
+                    Micro Pension <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/ussdcollection"
+                  >
+                    USSD Collection <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/payment"
+                  >
+                    CyberPay online (Web / Mobile) <br /> Payment Processing{" "}
+                    <RiArrowRightSLine />
+                  </Link>
+                </div>
+              )} */}
+            </div>
             <NavLink
               onClick={toggle}
               onBlur={hide}
               onFocus={show}
               to="/whycyberpay"
-              className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")}
+              className={({ isActive }) => (isActive ? "!text-[#2F9BD6] " : "")}
             >
               Why CyberPay
             </NavLink>
@@ -223,9 +345,7 @@ const LandingHeader = () => {
               onBlur={hide}
               onFocus={show}
               to="/developer"
-              className={({ isActive }) =>
-                isActive ? "!text-[#2F9BD6] " : ""
-              }
+              className={({ isActive }) => (isActive ? "!text-[#2F9BD6] " : "")}
             >
               Developer
             </NavLink>
@@ -234,7 +354,7 @@ const LandingHeader = () => {
               onBlur={hide}
               onFocus={show}
               to="/faqs"
-              className={({ isActive }) => (isActive ? '!text-[#2F9BD6] ' : "")}
+              className={({ isActive }) => (isActive ? "!text-[#2F9BD6] " : "")}
             >
               FAQs
             </NavLink>
