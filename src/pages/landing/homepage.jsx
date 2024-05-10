@@ -392,7 +392,7 @@ const LandingHomepage = () => {
           </p>
         </div>
 
-        <div className=" grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
+        <div className=" grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
           <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
             <p className="para text-[#5D5D5D] !font-semibold col-span-3">
               USSD Collection
@@ -490,7 +490,7 @@ const LandingHomepage = () => {
               <div
                 className={`${
                   theme === "light" ? "bg-[#E8F0FC]" : "bg-[#181818]"
-                }  rounded-3xl relative h-full lg:p-10 p-5 md:h-[25rem]`}
+                }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
                   src="/icons/transfer.svg"
@@ -585,7 +585,7 @@ const LandingHomepage = () => {
               <div
                 className={`${
                   theme === "light" ? "bg-[#FCEBEF]" : "bg-[#181818]"
-                }  rounded-3xl relative h-full lg:p-10 p-5 md:h-[25rem]`}
+                }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
                   src="/icons/credit-card.svg"
@@ -602,56 +602,56 @@ const LandingHomepage = () => {
                   >
                     <div>
                       <Slider {...settings}>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-1.svg"
                             alt=""
                             className=" justify-self-center self-center mx-auto"
                           />
                         </div>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-2.svg"
                             alt=""
                             className=" justify-self-center self-center mx-auto"
                           />
                         </div>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-3.svg"
                             alt=""
                             className=" justify-self-center self-center mx-auto"
                           />
                         </div>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-4.svg"
                             alt=""
                             className=" justify-self-center self-center mx-auto"
                           />
                         </div>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-1.svg"
                             alt=""
                             className=" justify-self-center self-center mx-auto"
                           />
                         </div>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-2.svg"
                             alt=""
                             className=" justify-self-center self-center mx-auto"
                           />
                         </div>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-3.svg"
                             alt=""
                             className=" justify-self-center self-center mx-auto"
                           />
                         </div>
-                        <div className=" px-1 h-28 !grid rounded-2xl items-center  bg-white">
+                        <div className=" px-1 lg:h-24 h-20 lg:py-0 py-2 md:!grid rounded-2xl items-center  bg-white">
                           <img
                             src="/icons/bill-4.svg"
                             alt=""
@@ -673,7 +673,7 @@ const LandingHomepage = () => {
               <div
                 className={`${
                   theme === "light" ? "bg-[#EDF0F2]" : "bg-[#181818]"
-                }  rounded-3xl relative h-full lg:p-10 p-5 md:h-[25rem]`}
+                }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
                   src="/icons/pie-chart.svg"
