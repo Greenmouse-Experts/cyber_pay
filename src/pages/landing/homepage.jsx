@@ -278,12 +278,13 @@ const LandingHomepage = () => {
             delay="1000"
             sec_style="zoom-in"
             sec_delay="1200"
+            
             img="/img/online-solution.png"
             heading="We provide premium online payment solutions."
             paragraph="Say goodbye to payment hassles and hello to effortless transactions with CyberPay! Experience convenience like never before with CyberPay's flexible payment options.  "
           >
             <div style={{ marginTop: 25 }}>
-              <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] w-fit transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
+              <NavLink to="/about" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] w-fit transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
                 Read More
                 <span>
                   <IoMdArrowForward />
