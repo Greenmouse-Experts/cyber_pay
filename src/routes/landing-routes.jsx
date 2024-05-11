@@ -16,6 +16,7 @@ import TermsAndCondition from "../pages/landing/TermsAndCondition";
 import WhistleBlower from "../pages/landing/WhistleBlower";
 import Faqs from "../pages/landing/Faq";
 import MobileApp from "../pages/landing/MobileApp";
+import Contact from "../pages/landing/Contact";
 
 export const landingRoutes = [
   {
@@ -81,6 +82,10 @@ export const landingRoutes = [
       {
         path: "mobile-app",
         element: <MobileApp />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },
