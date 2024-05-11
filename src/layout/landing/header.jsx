@@ -358,6 +358,15 @@ const LandingHeader = () => {
             >
               FAQs
             </NavLink>
+            <NavLink
+              onClick={toggle}
+              onBlur={hide}
+              onFocus={show}
+              to="/contact"
+              className={({ isActive }) => (isActive ? "!text-[#2F9BD6] " : "")}
+            >
+              Contact Us
+            </NavLink>
           </div>
 
           <div className="hide nav_hide">
