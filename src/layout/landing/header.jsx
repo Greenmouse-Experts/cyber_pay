@@ -267,7 +267,7 @@ const LandingHeader = () => {
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/mobile-app"
+                    to="/story"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
                       <PiBookOpenUserFill className="text-sky-950" />

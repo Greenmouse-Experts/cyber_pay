@@ -641,8 +641,8 @@ const LandingHomepage = () => {
         </div>
 
         <div className="flex gap-3">
-        <NavLink to="/about" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
-             Contact Us
+        <NavLink to="/https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+             Get Started
                   <span>
                     <IoMdArrowForward />
                   </span>
@@ -803,7 +803,7 @@ const LandingHomepage = () => {
       <div className="app">
         <div className="app_div">
           <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2">
-            Get the Cyber App
+          Get the CyberPay Mobile App
           </h2>
           <p data-aos="zoom-in-down" data-aos-duration="1000">
             Experience hassle-free and secure payment processing with CyberPay.
