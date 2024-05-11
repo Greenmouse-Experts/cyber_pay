@@ -40,7 +40,7 @@ function OurProducts() {
         </div>
         <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
           <p className="para text-[#5D5D5D] !font-semibold col-span-3">
-            Cyberpay Marketplace
+            CyberPay Marketplace
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
@@ -188,7 +188,7 @@ function OurProducts() {
         </div>
         <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
           <p className="para text-[#5D5D5D] !font-semibold col-span-3">
-            Cyberpay Online (Web and Mobile) Payment Processing
+            CyberPay Online (Web and Mobile) Payment Processing
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
