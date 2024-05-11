@@ -44,6 +44,7 @@ import { IoArrowForwardCircleOutline, IoEyeOutline } from "react-icons/io5";
 import Slider from "react-slick";
 import { settings, settings2 } from "../../lib/utils/helpers";
 import { IoMdArrowForward } from "react-icons/io";
+import OurProducts from "../../components/HomeComp/OurProducts";
 
 const LandingHomepage = () => {
   const [value, setValue] = useState(0);
@@ -332,104 +333,7 @@ const LandingHomepage = () => {
         </div>
       </div>
 
-      <div className="bg-[url('/img/pattarn-bg.png')] padding mb-10 !py-20">
-        <div className="text-center mb-20">
-          <p className=" tracking-widest para text-[#DFDFDF]">SOLUTIONS</p>
-          <h2 className="h2 text-white">Our Products</h2>
-          <p className="para text-white">
-            Learn more about our products offering solutions to your everyday
-            payments.
-          </p>
-        </div>
-
-        <div className=" grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
-          <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
-            <p className="para text-[#5D5D5D] !font-semibold col-span-3">
-              USSD Collection
-            </p>
-
-            <div className="flex justify-between items-center mt-4">
-              <NavLink
-                to="/ussdcollection"
-                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
-              >
-                View more{" "}
-                <span>
-                  <IoArrowForwardCircleOutline size={23} />
-                </span>
-              </NavLink>
-              <img
-                src="/icons/product-1.svg"
-                alt=""
-                className="w-[4rem] h-[4rem]"
-              />
-            </div>
-          </div>
-          <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
-            <p className="para text-[#5D5D5D] !font-semibold col-span-3">
-              Cyberpay Marketplace and Mobile App
-            </p>
-            <div className="flex justify-between items-center mt-4">
-              <NavLink
-                to="/marketplace"
-                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
-              >
-                View more{" "}
-                <span>
-                  <IoArrowForwardCircleOutline size={23} />
-                </span>
-              </NavLink>
-              <img
-                src="/icons/product-2.svg"
-                alt=""
-                className="w-[4rem] h-[4rem]"
-              />
-            </div>
-          </div>
-          <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
-            <p className="para text-[#5D5D5D] !font-semibold col-span-3">
-              Micropension
-            </p>
-            <div className="flex justify-between items-center mt-4">
-              <NavLink
-                to="/micropension"
-                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
-              >
-                View more{" "}
-                <span>
-                  <IoArrowForwardCircleOutline size={23} />
-                </span>
-              </NavLink>
-              <img
-                src="/icons/product-3.svg"
-                alt=""
-                className="w-[4rem] h-[4rem]"
-              />
-            </div>
-          </div>
-          <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
-            <p className="para text-[#5D5D5D] !font-semibold col-span-3">
-              Cyberpay Online (Web and Mobile) Payment Processing
-            </p>
-            <div className="flex justify-between items-center mt-4">
-              <NavLink
-                to="payment"
-                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
-              >
-                View more{" "}
-                <span>
-                  <IoArrowForwardCircleOutline size={23} />
-                </span>
-              </NavLink>
-              <img
-                src="/icons/product-4.svg"
-                alt=""
-                className="w-[4rem] h-[4rem]"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+   <OurProducts/>
       <div className={`home ${theme === "light" ? "light" : "lbg"}`}>
         <div className="get">
           <h2
