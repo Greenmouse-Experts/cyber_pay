@@ -15,6 +15,9 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import { LiaToolsSolid } from "react-icons/lia";
 import { MdOutlineTextsms } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
+import { PiBookOpenUserFill, PiCertificateBold } from "react-icons/pi";
+import {  FaUserTie, FaUsers } from "react-icons/fa";
+import { LuSmartphoneNfc } from "react-icons/lu";
 
 const LandingHeader = () => {
   const { theme, toggleTheme } = useTheme();
@@ -247,14 +250,16 @@ const LandingHeader = () => {
                 Company <IoIosArrowDown />
               </span>
               {aboutDropdownOpen2 && (
-                <div className="drop_link !gap-5 !mt-32">
+                <div className="drop_link !mt-44">
                   <NavLink
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
                     to="/about"
                   >
-                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <LuSmartphoneNfc className="text-blue-500" />
+                    </span>{" "}
                    
                     About CyberPay
                   </NavLink>
@@ -264,22 +269,30 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/mobile-app"
                   >
-                    {" "}
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <PiBookOpenUserFill className="text-sky-950" />
+                    </span>{" "}
                     
                     Our Story
                   </NavLink>
                   <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
-                    {" "}
+                  <span className="bg-stone-50 rounded-[9px]">
+                      <FaUsers className="text-green-500" />
+                    </span>{" "}
                    
                     Our People
                   </NavLink>
                   <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
-                    {" "}
+                  <span className="bg-stone-50 rounded-[9px]">
+                      <FaUserTie className="text-sky-950" />
+                    </span>{" "}
                    
                     Careers
                   </NavLink>
                   <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
-                    {" "}
+                  <span className="bg-stone-50 rounded-[9px]">
+                      <PiCertificateBold className="text-red-500" />
+                    </span>{" "}
                     Our Certification
                   </NavLink>
                 </div>
