@@ -17,6 +17,7 @@ import WhistleBlower from "../pages/landing/WhistleBlower";
 import Faqs from "../pages/landing/Faq";
 import MobileApp from "../pages/landing/MobileApp";
 import Contact from "../pages/landing/Contact";
+import Careers from "../pages/landing/Careers";
 
 export const landingRoutes = [
   {
@@ -86,6 +87,10 @@ export const landingRoutes = [
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "careers",
+        element: <Careers />,
       },
     ],
   },

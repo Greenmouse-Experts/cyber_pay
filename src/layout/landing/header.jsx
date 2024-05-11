@@ -282,7 +282,7 @@ const LandingHeader = () => {
                    
                     Our People
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/careers">
                   <span className="bg-stone-50 rounded-[9px]">
                       <FaUserTie className="text-sky-950" />
                     </span>{" "}
