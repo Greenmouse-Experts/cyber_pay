@@ -91,11 +91,6 @@ function Contact() {
                 <h5 className="font-montserrat text-[22px] font-semibold  ">
                   Contact Us
                 </h5>
-                <p className="leading-5 font-medium font-montserrat text-white 2xl:leading-6">
-                  Complete control over products allows us to ensure our
-                  customers receive the best quality prices and service. We take
-                  great pride in everything that we do in our factory.
-                </p>
                 <div className=" flex md:flex-row flex-col justify-between gap-8 ">
                   <input
                     type="text"
