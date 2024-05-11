@@ -10,7 +10,7 @@ const BgSection = ({heading, children, paragraph,img, absolute, style, delay, se
   return (
     <div className="bgsection">
         <div className="img-secction" data-aos={style} data-aos-duration={delay}>
-            <img src={img} className={`${absolute ? 'absolute-img': 'img_sec'}`} alt="" />
+            <img src={img} className={`${absolute ? 'absolute-img': 'img_sec'} scale-[.80]`} alt="" />
         </div>
         <div className="intro-text">
            <div data-aos={sec_style} data-aos-duration={sec_delay}>

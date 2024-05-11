@@ -10,7 +10,7 @@ import { useTheme } from "../../ThemeContext";
 import landBlack from "../../assets/images/land-black.png";
 import appledark from "../../assets/images/apple-logo.png";
 import BgSection from "../../components/BgSection";
-import prov from "../../assets/images/prov.png";
+
 import provdark from "../../assets/images/provdark.png";
 import lead from "../../assets/images/image-min.png";
 import Resuablebtn from "../../components/Resuablebtn";
@@ -43,6 +43,7 @@ import { motion } from "framer-motion";
 import { IoArrowForwardCircleOutline, IoEyeOutline } from "react-icons/io5";
 import Slider from "react-slick";
 import { settings, settings2 } from "../../lib/utils/helpers";
+import { IoMdArrowForward } from "react-icons/io";
 
 const LandingHomepage = () => {
   const [value, setValue] = useState(0);
@@ -150,24 +151,14 @@ const LandingHomepage = () => {
               before with CyberPay's flexible payment options.
             </p>
 
-            <div className="landing_link flex items-center gap-2">
+            <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <DownloadButton
-                  style="zoom-in-right"
-                  delay="1100"
-                  img={play}
-                  span="Get it on"
-                  text="Google Play"
-                  radius="16"
-                />
-                <DownloadButton
-                  style="zoom-in-left"
-                  delay="1100"
-                  img={theme === "light" ? apple : appledark}
-                  span="Download on"
-                  text="Apple Store"
-                  radius="16"
-                />
+                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
+                  Get Started
+                  <span>
+                    <IoMdArrowForward />
+                  </span>
+                </NavLink>
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
@@ -193,24 +184,14 @@ const LandingHomepage = () => {
               payment experience.
             </p>
 
-            <div className="landing_link flex items-center gap-2">
+            <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <DownloadButton
-                  style="zoom-in-right"
-                  delay="1100"
-                  img={play}
-                  span="Get it on"
-                  text="Google Play"
-                  radius="16"
-                />
-                <DownloadButton
-                  style="zoom-in-left"
-                  delay="1100"
-                  img={theme === "light" ? apple : appledark}
-                  span="Download on"
-                  text="Apple Store"
-                  radius="16"
-                />
+                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
+                  Get Started
+                  <span>
+                    <IoMdArrowForward />
+                  </span>
+                </NavLink>
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
@@ -236,24 +217,14 @@ const LandingHomepage = () => {
               Security.
             </p>
 
-            <div className="landing_link flex items-center gap-2">
+            <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <DownloadButton
-                  style="zoom-in-right"
-                  delay="1100"
-                  img={play}
-                  span="Get it on"
-                  text="Google Play"
-                  radius="16"
-                />
-                <DownloadButton
-                  style="zoom-in-left"
-                  delay="1100"
-                  img={theme === "light" ? apple : appledark}
-                  span="Download on"
-                  text="Apple Store"
-                  radius="16"
-                />
+                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
+                  Get Started
+                  <span>
+                    <IoMdArrowForward />
+                  </span>
+                </NavLink>
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
@@ -279,24 +250,14 @@ const LandingHomepage = () => {
               and customer satisfaction.
             </p>
 
-            <div className="landing_link flex items-center gap-2">
+            <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <DownloadButton
-                  style="zoom-in-right"
-                  delay="1100"
-                  img={play}
-                  span="Get it on"
-                  text="Google Play"
-                  radius="16"
-                />
-                <DownloadButton
-                  style="zoom-in-left"
-                  delay="1100"
-                  img={theme === "light" ? apple : appledark}
-                  span="Download on"
-                  text="Apple Store"
-                  radius="16"
-                />
+                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
+                  Get Started
+                  <span>
+                    <IoMdArrowForward />
+                  </span>
+                </NavLink>
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
@@ -316,28 +277,17 @@ const LandingHomepage = () => {
             delay="1000"
             sec_style="zoom-in"
             sec_delay="1200"
-            absolute
-            route="/about"
-            link="Read more"
-            img={theme === "light" ? prov : provdark}
+            img="/img/online-solution.png"
             heading="We provide premium online payment solutions."
             paragraph="Say goodbye to payment hassles and hello to effortless transactions with CyberPay! Experience convenience like never before with CyberPay's flexible payment options.  "
           >
             <div style={{ marginTop: 25 }}>
-              <div className="flex items-center gap-2">
-                <DownloadButton
-                  img={play}
-                  span="Get it on"
-                  text="Google Play"
-                  color="black"
-                />
-                <DownloadButton
-                  img={theme === "light" ? apple : appledark}
-                  span="Download on"
-                  text="Apple Store"
-                  color="black"
-                />
-              </div>
+              <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] w-fit transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
+                Read More
+                <span>
+                  <IoMdArrowForward />
+                </span>
+              </NavLink>
             </div>
           </BgSection>
         </div>
@@ -397,75 +347,86 @@ const LandingHomepage = () => {
             <p className="para text-[#5D5D5D] !font-semibold col-span-3">
               USSD Collection
             </p>
-            
-              <div className="flex justify-between items-center mt-4">
-                <NavLink to="/ussdcollection" className="text-[#DD0A35] text-lg font-medium flex items-center gap-1">
-                  View more{" "}
-                  <span>
-                    <IoArrowForwardCircleOutline size={23} />
-                  </span>
-                </NavLink>
-                <img
-                  src="/icons/product-1.svg"
-                  alt=""
-                  className="w-[4rem] h-[4rem]"
-                />
-              </div>
-            
+
+            <div className="flex justify-between items-center mt-4">
+              <NavLink
+                to="/ussdcollection"
+                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
+              >
+                View more{" "}
+                <span>
+                  <IoArrowForwardCircleOutline size={23} />
+                </span>
+              </NavLink>
+              <img
+                src="/icons/product-1.svg"
+                alt=""
+                className="w-[4rem] h-[4rem]"
+              />
+            </div>
           </div>
           <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
             <p className="para text-[#5D5D5D] !font-semibold col-span-3">
               Cyberpay Marketplace and Mobile App
             </p>
             <div className="flex justify-between items-center mt-4">
-                <NavLink to="/marketplace" className="text-[#DD0A35] text-lg font-medium flex items-center gap-1">
-                  View more{" "}
-                  <span>
-                    <IoArrowForwardCircleOutline size={23} />
-                  </span>
-                </NavLink>
-                <img
-                  src="/icons/product-2.svg"
-                  alt=""
-                  className="w-[4rem] h-[4rem]"
-                />
-              </div>
+              <NavLink
+                to="/marketplace"
+                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
+              >
+                View more{" "}
+                <span>
+                  <IoArrowForwardCircleOutline size={23} />
+                </span>
+              </NavLink>
+              <img
+                src="/icons/product-2.svg"
+                alt=""
+                className="w-[4rem] h-[4rem]"
+              />
+            </div>
           </div>
           <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
             <p className="para text-[#5D5D5D] !font-semibold col-span-3">
               Micropension
             </p>
             <div className="flex justify-between items-center mt-4">
-                <NavLink to="/micropension" className="text-[#DD0A35] text-lg font-medium flex items-center gap-1">
-                  View more{" "}
-                  <span>
-                    <IoArrowForwardCircleOutline size={23} />
-                  </span>
-                </NavLink>
-                <img
-                  src="/icons/product-3.svg"
-                  alt=""
-                  className="w-[4rem] h-[4rem]"
-                />
-              </div>
+              <NavLink
+                to="/micropension"
+                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
+              >
+                View more{" "}
+                <span>
+                  <IoArrowForwardCircleOutline size={23} />
+                </span>
+              </NavLink>
+              <img
+                src="/icons/product-3.svg"
+                alt=""
+                className="w-[4rem] h-[4rem]"
+              />
+            </div>
           </div>
           <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between">
             <p className="para text-[#5D5D5D] !font-semibold col-span-3">
               Cyberpay Online (Web and Mobile) Payment Processing
             </p>
             <div className="flex justify-between items-center mt-4">
-                <NavLink to="payment" className="text-[#DD0A35] text-lg font-medium flex items-center gap-1">
-                  View more{" "}
-                  <span>
-                    <IoArrowForwardCircleOutline size={23} />
-                  </span>
-                </NavLink>
-                <img
-                  src="/icons/product-4.svg"
-                  alt=""
-                  className="w-[4rem] h-[4rem]"
-                />
-              </div>
+              <NavLink
+                to="payment"
+                className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
+              >
+                View more{" "}
+                <span>
+                  <IoArrowForwardCircleOutline size={23} />
+                </span>
+              </NavLink>
+              <img
+                src="/icons/product-4.svg"
+                alt=""
+                className="w-[4rem] h-[4rem]"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -690,7 +651,11 @@ const LandingHomepage = () => {
                       theme === "light" ? "" : "bg-[#0D0D0D]"
                     }  absolute bottom-0 w-[80%]  flex flex-col gap-2 p-3`}
                   >
-                    <img src="/icons/revenue.svg" alt="" className="!h-[10rem]" />
+                    <img
+                      src="/icons/revenue.svg"
+                      alt=""
+                      className="!h-[10rem]"
+                    />
                     <div></div>
                   </div>
                 </div>
