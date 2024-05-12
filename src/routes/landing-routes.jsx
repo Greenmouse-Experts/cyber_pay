@@ -23,6 +23,7 @@ import People from "../pages/landing/OurPeople";
 import Disbursement from "../pages/landing/Disbursement";
 import BulkSms from "../pages/landing/BulkSms";
 import LoanRepayment from "../pages/landing/LoanRepayment";
+import PenRemit from "../pages/landing/PenRemit";
 
 export const landingRoutes = [
   {
@@ -116,6 +117,10 @@ export const landingRoutes = [
       {
         path: "loan-repayment",
         element: <LoanRepayment />,
+      },
+      {
+        path: "penremit",
+        element: <PenRemit />,
       },
     ],
   },

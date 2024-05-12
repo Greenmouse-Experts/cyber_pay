@@ -183,7 +183,7 @@ const LandingHeader = () => {
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/micropension"
+                    to="/penremit"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
                       <BiWallet className="text-rose-600" />
@@ -258,7 +258,7 @@ const LandingHeader = () => {
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/micropension"
+                    to="/penremit"
                   >
                     PenRemit <RiArrowRightSLine />
                   </Link>
