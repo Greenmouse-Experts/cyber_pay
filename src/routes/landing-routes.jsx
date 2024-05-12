@@ -21,6 +21,7 @@ import Careers from "../pages/landing/Careers";
 import Story from "../pages/landing/Story";
 import People from "../pages/landing/OurPeople";
 import Disbursement from "../pages/landing/Disbursement";
+import BulkSms from "../pages/landing/BulkSms";
 
 export const landingRoutes = [
   {
@@ -106,6 +107,10 @@ export const landingRoutes = [
       {
         path: "disbursement-solutions",
         element: <Disbursement />,
+      },
+      {
+        path: "bulksms",
+        element: <BulkSms />,
       },
     ],
   },

@@ -64,8 +64,6 @@ const LandingHeader = () => {
     };
   }, []);
 
- 
-
   const [fix, setFix] = useState(false);
 
   function setFixed() {
@@ -148,14 +146,19 @@ const LandingHeader = () => {
                     </span>{" "}
                     CyberPay Mobile App
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/disbursement-solutions">
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/disbursement-solutions"
+                  >
                     {" "}
                     <span className="bg-stone-50 rounded-[9px]">
                       <LiaToolsSolid className=" !text-green-500" />
                     </span>{" "}
                     Disbursement Solution
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/bulksms">
                     {" "}
                     <span className="bg-stone-50 rounded-[9px]">
                       <MdOutlineTextsms className="text-sky-950" />
@@ -185,7 +188,7 @@ const LandingHeader = () => {
                     <span className="bg-stone-50 rounded-[9px]">
                       <BiWallet className="text-rose-600" />
                     </span>
-                    Penremit
+                    PenRemit
                   </NavLink>
                   <NavLink
                     onClick={toggle}
@@ -229,14 +232,19 @@ const LandingHeader = () => {
                   >
                     CyberPay Mobile App <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/disbursement-solutions">
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/disbursement-solutions"
+                  >
                     Disbursement Solution <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/marketplace"
+                    to="/bulksms"
                   >
                     Bulk SMS <RiArrowRightSLine />
                   </Link>
@@ -252,7 +260,7 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/micropension"
                   >
-                    Penremit <RiArrowRightSLine />
+                    PenRemit <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
