@@ -172,7 +172,7 @@ const LandingHeader = () => {
                     </span>{" "}
                     Loan Repayment Made Simple
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/pos-service">
                     {" "}
                     <span className="bg-stone-50 rounded-[9px]">
                       <BsFilePostFill className="text-sky-950" />
@@ -251,7 +251,7 @@ const LandingHeader = () => {
                   <Link onClick={toggle} onBlur={hide} onFocus={show} to="/loan-repayment">
                     Loan Repayment Made Simple <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/pos-service">
                     POS Services <RiArrowRightSLine />
                   </Link>
                   <Link

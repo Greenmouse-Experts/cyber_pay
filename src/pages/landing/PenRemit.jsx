@@ -13,7 +13,7 @@ const PenRemit = () => {
       <Heading
         img={solution}
         head="Pensions with Peace of Mind"
-        body="Welcome to CyberPay’s comprehensive pension solutions. We understand that your financial future is non-negotiable, and we’re here to make sure it’s secure, seamless, and hassle-free."
+        body="Welcome to CyberPay’s comprehensive pension solutions. We understand that your financial future is non-negotiable, and we’re here to make sure it’s secure, seamless, and hassle-free"
       />
       <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
         <div

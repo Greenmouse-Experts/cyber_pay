@@ -24,6 +24,7 @@ import Disbursement from "../pages/landing/Disbursement";
 import BulkSms from "../pages/landing/BulkSms";
 import LoanRepayment from "../pages/landing/LoanRepayment";
 import PenRemit from "../pages/landing/PenRemit";
+import PosService from "../pages/landing/PosService";
 
 export const landingRoutes = [
   {
@@ -121,6 +122,10 @@ export const landingRoutes = [
       {
         path: "penremit",
         element: <PenRemit />,
+      },
+      {
+        path: "pos-service",
+        element: <PosService />,
       },
     ],
   },

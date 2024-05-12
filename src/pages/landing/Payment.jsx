@@ -51,7 +51,7 @@ const Payment = () => {
               Results.
             </p>
             <Resuablebtn
-              link="/pricing"
+              link="https://merchant.cyberpay.ng"
               place="center-bottom"
               delay="1300"
               style="zoom-in"
