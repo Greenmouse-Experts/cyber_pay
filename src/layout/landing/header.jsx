@@ -203,7 +203,7 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/marketplace"
                   >
-                    Marketplace <RiArrowRightSLine />
+                      CyberPay Marketplace <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
@@ -211,7 +211,39 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/mobile-app"
                   >
-                    Mobile App <RiArrowRightSLine />
+                      CyberPay Mobile App <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/"
+                  >
+                    Disbursement Solution <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/marketplace"
+                  >
+                    Bulk SMS <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/"
+                  >
+                    Loan Repayment Made Simple <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/"
+                  >
+                    POS Services <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
@@ -297,51 +329,51 @@ const LandingHeader = () => {
                   </NavLink>
                 </div>
               )}
-              {/* {aboutDropdownOpen2 && (
+              {aboutDropdownOpen2 && (
                 <div className="drop">
                   <Link
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/marketplace"
+                    to="/about"
                   >
-                    Marketplace <RiArrowRightSLine />
+                    About CyberPay <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/mobile-app"
+                    to="/story"
                   >
-                    Mobile App <RiArrowRightSLine />
+                     Our Story<RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/micropension"
+                    to="/people"
                   >
-                    Micro Pension <RiArrowRightSLine />
+                    Our People <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/ussdcollection"
+                    to="/careers"
                   >
-                    USSD Collection <RiArrowRightSLine />
+                    Careers <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
-                    to="/payment"
+                    to="/"
                   >
-                    CyberPay online (Web / Mobile) <br /> Payment Processing{" "}
+                   Our Certification
                     <RiArrowRightSLine />
                   </Link>
                 </div>
-              )} */}
+              )}
             </div>
             <NavLink
               onClick={toggle}
