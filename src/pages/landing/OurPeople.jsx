@@ -18,7 +18,8 @@ const People = () => {
       />
 
       <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] ">
-        <div className="bg-white p-6 rounded-2xl shadow-sm">
+        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+          data-aos-duration="1000">
           <h3 className="h3">Catalysts of Innovation</h3>
           <p className="para">
             At CyberPay, our team is more than just a collection of
@@ -30,7 +31,8 @@ const People = () => {
             drive it.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm">
+        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+          data-aos-duration="1500">
           <h3 className="h3">Masters of Customization</h3>
           <p className="para">
             With years of experience under our belts, we excel in the art of
@@ -40,7 +42,8 @@ const People = () => {
             finely tuned to add exceptional value to our partners' businesses.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm">
+        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+          data-aos-duration="1500">
           <h3 className="h3">Navigators of Transformation</h3>
           <p className="para">
             In the ever-evolving tech landscape, we don't just keep pace; we
@@ -49,7 +52,8 @@ const People = () => {
             that transformative journey.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm">
+        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+          data-aos-duration="1000">
           <h3 className="h3">Partners in Innovation</h3>
           <p className="para">
             When you choose CyberPay, you're not just selecting a service
@@ -61,8 +65,9 @@ const People = () => {
         </div>
       </div>
 
-      <div className="padding bg-[#FAFAF9]">
-        <p className="para font-medium">
+      <div className="padding bg-[#FAFAF9]"   >
+        <p className="para font-medium" data-aos="fade-up"
+          data-aos-duration="1000">
           Join us on this journey of exploration, where technology isn't just a
           tool; it's a force for change. Together, we'll shape the future and
           redefine what's possible. Because at CyberPay, our people are at the
