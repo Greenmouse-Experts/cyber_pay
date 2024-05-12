@@ -22,6 +22,7 @@ import Story from "../pages/landing/Story";
 import People from "../pages/landing/OurPeople";
 import Disbursement from "../pages/landing/Disbursement";
 import BulkSms from "../pages/landing/BulkSms";
+import LoanRepayment from "../pages/landing/LoanRepayment";
 
 export const landingRoutes = [
   {
@@ -111,6 +112,10 @@ export const landingRoutes = [
       {
         path: "bulksms",
         element: <BulkSms />,
+      },
+      {
+        path: "loan-repayment",
+        element: <LoanRepayment />,
       },
     ],
   },

@@ -14,7 +14,7 @@ function BulkSms() {
       <Heading
        img={BulkBanner}
         head="Bulk SMS"
-        body="Turbocharge your marketing with Bulk SMS."
+        body="Turbocharge your marketing with Bulk SMS"
       />
       <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
         <div
