@@ -18,6 +18,7 @@ import Faqs from "../pages/landing/Faq";
 import MobileApp from "../pages/landing/MobileApp";
 import Contact from "../pages/landing/Contact";
 import Careers from "../pages/landing/Careers";
+import Story from "../pages/landing/Story";
 
 export const landingRoutes = [
   {
@@ -91,6 +92,10 @@ export const landingRoutes = [
       {
         path: "careers",
         element: <Careers />,
+      },
+      {
+        path: "story",
+        element: <Story />,
       },
     ],
   },

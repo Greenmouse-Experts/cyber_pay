@@ -154,7 +154,7 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -187,7 +187,7 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -220,7 +220,7 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -253,7 +253,7 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -641,7 +641,7 @@ const LandingHomepage = () => {
         </div>
 
         <div className="flex gap-3">
-        <NavLink to="/https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+        <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
              Get Started
                   <span>
                     <IoMdArrowForward />
