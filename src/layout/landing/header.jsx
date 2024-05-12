@@ -148,7 +148,7 @@ const LandingHeader = () => {
                     </span>{" "}
                     CyberPay Mobile App
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/disbursement-solutions">
                     {" "}
                     <span className="bg-stone-50 rounded-[9px]">
                       <LiaToolsSolid className=" !text-green-500" />
@@ -229,7 +229,7 @@ const LandingHeader = () => {
                   >
                     CyberPay Mobile App <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/disbursement-solutions">
                     Disbursement Solution <RiArrowRightSLine />
                   </Link>
                   <Link
