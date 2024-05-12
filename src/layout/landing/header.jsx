@@ -185,7 +185,7 @@ const LandingHeader = () => {
                     <span className="bg-stone-50 rounded-[9px]">
                       <BiWallet className="text-rose-600" />
                     </span>
-                    Micro Pension
+                    Penremit
                   </NavLink>
                   <NavLink
                     onClick={toggle}
@@ -252,7 +252,7 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/micropension"
                   >
-                    Micro Pension <RiArrowRightSLine />
+                    Penremit <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
