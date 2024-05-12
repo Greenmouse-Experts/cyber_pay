@@ -16,7 +16,7 @@ import { LiaToolsSolid } from "react-icons/lia";
 import { MdOutlineTextsms } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
 import { PiBookOpenUserFill, PiCertificateBold } from "react-icons/pi";
-import {  FaUserTie, FaUsers } from "react-icons/fa";
+import { FaUserTie, FaUsers } from "react-icons/fa";
 import { LuSmartphoneNfc } from "react-icons/lu";
 
 const LandingHeader = () => {
@@ -31,9 +31,18 @@ const LandingHeader = () => {
     setIsOpen(!isOpen);
     setAboutDropdownOpen(false);
   };
+
+  const toggle2 = () => {
+    setIsOpen2(!isOpen);
+    setAboutDropdownOpen2(false);
+  };
   const hide = () => {
     setIsOpen(false);
     setAboutDropdownOpen(false);
+  };
+  const hide2 = () => {
+    setIsOpen2(false);
+    setAboutDropdownOpen2(false);
   };
   const show = () => setIsOpen(true);
   const dropdownRef = useRef(null);
@@ -43,6 +52,8 @@ const LandingHeader = () => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);
         setAboutDropdownOpen(false);
+        setIsOpen2(false);
+        setAboutDropdownOpen2(false);
       }
     };
 
@@ -52,6 +63,8 @@ const LandingHeader = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+ 
 
   const [fix, setFix] = useState(false);
 
@@ -101,7 +114,10 @@ const LandingHeader = () => {
             </NavLink>
             <div
               className="nav_dropdown"
-              onClick={() => setAboutDropdownOpen(!aboutDropdownOpen)}
+              onClick={() => {
+                setAboutDropdownOpen(!aboutDropdownOpen);
+                setAboutDropdownOpen2(false);
+              }}
             >
               <span>
                 Solution <IoIosArrowDown />
@@ -203,7 +219,7 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/marketplace"
                   >
-                      CyberPay Marketplace <RiArrowRightSLine />
+                    CyberPay Marketplace <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
@@ -211,14 +227,9 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/mobile-app"
                   >
-                      CyberPay Mobile App <RiArrowRightSLine />
+                    CyberPay Mobile App <RiArrowRightSLine />
                   </Link>
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/"
-                  >
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
                     Disbursement Solution <RiArrowRightSLine />
                   </Link>
                   <Link
@@ -229,20 +240,10 @@ const LandingHeader = () => {
                   >
                     Bulk SMS <RiArrowRightSLine />
                   </Link>
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/"
-                  >
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
                     Loan Repayment Made Simple <RiArrowRightSLine />
                   </Link>
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/"
-                  >
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
                     POS Services <RiArrowRightSLine />
                   </Link>
                   <Link
@@ -274,7 +275,10 @@ const LandingHeader = () => {
               )}
             </div>
             <div
-              onClick={() => setAboutDropdownOpen2(!aboutDropdownOpen2)}
+              onClick={() => {
+                setAboutDropdownOpen2(!aboutDropdownOpen2);
+                setAboutDropdownOpen(false);
+              }}
               className="nav_dropdown"
             >
               <span>
@@ -292,7 +296,6 @@ const LandingHeader = () => {
                     <span className="bg-stone-50 rounded-[9px]">
                       <LuSmartphoneNfc className="text-blue-500" />
                     </span>{" "}
-                   
                     About CyberPay
                   </NavLink>
                   <NavLink
@@ -304,25 +307,32 @@ const LandingHeader = () => {
                     <span className="bg-stone-50 rounded-[9px]">
                       <PiBookOpenUserFill className="text-sky-950" />
                     </span>{" "}
-                    
                     Our Story
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/people">
-                  <span className="bg-stone-50 rounded-[9px]">
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/people"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
                       <FaUsers className="text-green-500" />
                     </span>{" "}
-                   
                     Our People
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/careers">
-                  <span className="bg-stone-50 rounded-[9px]">
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/careers"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
                       <FaUserTie className="text-sky-950" />
                     </span>{" "}
-                   
                     Careers
                   </NavLink>
                   <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
-                  <span className="bg-stone-50 rounded-[9px]">
+                    <span className="bg-stone-50 rounded-[9px]">
                       <PiCertificateBold className="text-red-500" />
                     </span>{" "}
                     Our Certification
@@ -345,7 +355,8 @@ const LandingHeader = () => {
                     onFocus={show}
                     to="/story"
                   >
-                     Our Story<RiArrowRightSLine />
+                    Our Story
+                    <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
@@ -363,13 +374,8 @@ const LandingHeader = () => {
                   >
                     Careers <RiArrowRightSLine />
                   </Link>
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/"
-                  >
-                   Our Certification
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                    Our Certification
                     <RiArrowRightSLine />
                   </Link>
                 </div>
