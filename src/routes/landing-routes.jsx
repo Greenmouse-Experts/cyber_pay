@@ -19,6 +19,7 @@ import MobileApp from "../pages/landing/MobileApp";
 import Contact from "../pages/landing/Contact";
 import Careers from "../pages/landing/Careers";
 import Story from "../pages/landing/Story";
+import People from "../pages/landing/OurPeople";
 
 export const landingRoutes = [
   {
@@ -96,6 +97,10 @@ export const landingRoutes = [
       {
         path: "story",
         element: <Story />,
+      },
+      {
+        path: "people",
+        element: <People />,
       },
     ],
   },

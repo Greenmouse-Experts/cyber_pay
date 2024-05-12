@@ -275,7 +275,7 @@ const LandingHeader = () => {
                     
                     Our Story
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/people">
                   <span className="bg-stone-50 rounded-[9px]">
                       <FaUsers className="text-green-500" />
                     </span>{" "}
