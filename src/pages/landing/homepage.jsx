@@ -359,7 +359,7 @@ const LandingHomepage = () => {
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
-                  src="/icons/transfer.jpg"
+                  src="/icons/transfer.png"
                   alt=""
                   className=" !w-16 !h-16"
                 />
@@ -454,7 +454,7 @@ const LandingHomepage = () => {
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
-                  src="/icons/credit-card.jpg"
+                  src="/icons/credit-card.png"
                   alt=""
                   className=" !w-16 !h-16"
                 />
@@ -542,7 +542,7 @@ const LandingHomepage = () => {
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
-                  src="/icons/brain.jpg"
+                  src="/icons/brain.png"
                   alt=""
                   className=" !w-16 !h-16"
                 />
