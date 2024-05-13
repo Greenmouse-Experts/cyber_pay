@@ -157,7 +157,7 @@ const LandingHeader = () => {
                   >
                     {" "}
                     <span className="bg-stone-50 rounded-[9px]">
-                      <LiaToolsSolid className=" !text-green-500" />
+                      <LiaToolsSolid className=" !text-green-800" />
                     </span>{" "}
                     Disbursement Solution
                   </NavLink>
@@ -222,7 +222,7 @@ const LandingHeader = () => {
                     to="/payment"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
-                      <FaMoneyBillTransfer className="text-purple-800" />
+                      <FaMoneyBillTransfer className="text-green-800" />
                     </span>
                     CyberPay online (Web / Mobile) <br /> Payment Processing
                   </NavLink>
