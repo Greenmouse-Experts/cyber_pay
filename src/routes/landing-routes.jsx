@@ -25,6 +25,8 @@ import BulkSms from "../pages/landing/BulkSms";
 import LoanRepayment from "../pages/landing/LoanRepayment";
 import PenRemit from "../pages/landing/PenRemit";
 import PosService from "../pages/landing/PosService";
+import Certification from "../pages/landing/Certification";
+import PaymentLink from "../pages/landing/PaymentLink";
 
 export const landingRoutes = [
   {
@@ -126,6 +128,14 @@ export const landingRoutes = [
       {
         path: "pos-service",
         element: <PosService />,
+      },
+      {
+        path: "certifications",
+        element: <Certification />,
+      },
+      {
+        path: "payment-link",
+        element: <PaymentLink />,
       },
     ],
   },

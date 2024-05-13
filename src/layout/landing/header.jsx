@@ -18,6 +18,7 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { PiBookOpenUserFill, PiCertificateBold } from "react-icons/pi";
 import { FaUserTie, FaUsers } from "react-icons/fa";
 import { LuSmartphoneNfc } from "react-icons/lu";
+import { IoLinkSharp } from "react-icons/io5";
 
 const LandingHeader = () => {
   const { theme, toggleTheme } = useTheme();
@@ -194,6 +195,17 @@ const LandingHeader = () => {
                     onClick={toggle}
                     onBlur={hide}
                     onFocus={show}
+                    to="/payment-link"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <IoLinkSharp className="text-rose-600" />
+                    </span>
+                    Online Sales with Payment Link
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
                     to="/ussdcollection"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
@@ -261,6 +273,14 @@ const LandingHeader = () => {
                     to="/penremit"
                   >
                     PenRemit <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/payment-link"
+                  >
+                    Online Sales with Payment Link <RiArrowRightSLine />
                   </Link>
                   <Link
                     onClick={toggle}
@@ -339,7 +359,7 @@ const LandingHeader = () => {
                     </span>{" "}
                     Careers
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
                     <span className="bg-stone-50 rounded-[9px]">
                       <PiCertificateBold className="text-red-500" />
                     </span>{" "}
@@ -382,7 +402,7 @@ const LandingHeader = () => {
                   >
                     Careers <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/">
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
                     Our Certification
                     <RiArrowRightSLine />
                   </Link>

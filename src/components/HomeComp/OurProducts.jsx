@@ -53,7 +53,7 @@ function OurProducts() {
               </span>
             </NavLink>
             <img
-              src="/icons/product-2.svg"
+              src="/icons/market.png"
               alt=""
               className="w-[4rem] h-[4rem]"
             />
@@ -86,7 +86,7 @@ function OurProducts() {
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
-              to="/"
+              to="/bulksms"
               className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
             >
               View more{" "}
@@ -95,7 +95,7 @@ function OurProducts() {
               </span>
             </NavLink>
             <img
-              src="/icons/product-5.png"
+              src="/icons/bulksms.png"
               alt=""
               className="w-[4rem] h-[4rem]"
             />
@@ -107,7 +107,7 @@ function OurProducts() {
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
-              to="/"
+              to="/disbursement-solutions"
               className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
             >
               View more{" "}
@@ -116,7 +116,7 @@ function OurProducts() {
               </span>
             </NavLink>
             <img
-              src="/icons/product-5.png"
+              src="/icons/solution.png"
               alt=""
               className="w-[4rem] h-[4rem]"
             />
@@ -128,7 +128,7 @@ function OurProducts() {
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
-              to="/"
+              to="/loan-repayment"
               className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
             >
               View more{" "}
@@ -137,7 +137,7 @@ function OurProducts() {
               </span>
             </NavLink>
             <img
-              src="/icons/product-5.png"
+              src="/icons/loan-payment.png"
               alt=""
               className="w-[4rem] h-[4rem]"
             />
@@ -149,7 +149,7 @@ function OurProducts() {
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
-              to="/"
+              to="/pos-service"
               className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
             >
               View more{" "}
@@ -170,7 +170,7 @@ function OurProducts() {
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
-              to="/micropension"
+              to="/penremit"
               className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
             >
               View more{" "}
@@ -179,7 +179,28 @@ function OurProducts() {
               </span>
             </NavLink>
             <img
-              src="/icons/product-3.svg"
+              src="/icons/pension.png"
+              alt=""
+              className="w-[4rem] h-[4rem]"
+            />
+          </div>
+        </div>
+        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+          Online Sales with Payment Link
+          </p>
+          <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
+            <NavLink
+              to="/payment-link"
+              className="text-[#DD0A35] text-lg font-medium flex items-center gap-1"
+            >
+              View more{" "}
+              <span>
+                <IoArrowForwardCircleOutline size={23} />
+              </span>
+            </NavLink>
+            <img
+              src="/icons/online.png"
               alt=""
               className="w-[4rem] h-[4rem]"
             />
