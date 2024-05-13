@@ -751,7 +751,7 @@ const LandingHomepage = () => {
         </div>
       </div>
       <div
-        className={`bg-[url('/img/coin-bg.png')] padding `}
+        className={`bg-[url('/img/coin-bg.png')] padding lg:!pr-0 `}
         // data-aos="zoom-in-up"
         // data-aos-duration="1000"
       >
