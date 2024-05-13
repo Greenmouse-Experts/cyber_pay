@@ -464,7 +464,7 @@ const LandingHomepage = () => {
                   </h3>
 
                   <div
-                    className={`  absolute bottom-1 w-[95%] rounded-t-[21px] flex flex-col gap-2 py-3`}
+                    className={`  absolute bottom-1 w-[85%] rounded-t-[21px] flex flex-col gap-2 py-5`}
                   >
                     <div>
                       <Slider {...settings}>
@@ -554,7 +554,7 @@ const LandingHomepage = () => {
                   <div
                     className={`${
                       theme === "light" ? "" : "bg-[#0D0D0D]"
-                    }  absolute bottom-0 w-[80%]  flex flex-col gap-2 p-3`}
+                    }  absolute bottom-0 w-[100%]  flex flex-col gap-2 px-8`}
                   >
                     <img
                       src="/icons/revenue.svg"
