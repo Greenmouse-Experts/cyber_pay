@@ -13,7 +13,7 @@ import { FiShoppingBag } from "react-icons/fi";
 import { BsFilePostFill, BsPhone } from "react-icons/bs";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { LiaToolsSolid } from "react-icons/lia";
-import { MdOutlineTextsms } from "react-icons/md";
+import { MdOutlineTextsms, MdVerifiedUser } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
 import { PiBookOpenUserFill, PiCertificateBold } from "react-icons/pi";
 import { FaUserTie, FaUsers } from "react-icons/fa";
@@ -324,7 +324,7 @@ const LandingHeader = () => {
                     to="/about"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
-                      <LuSmartphoneNfc className="text-blue-500" />
+                      <MdVerifiedUser className="text-blue-500" />
                     </span>{" "}
                     About CyberPay
                   </NavLink>
@@ -346,7 +346,7 @@ const LandingHeader = () => {
                     to="/people"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
-                      <FaUsers className="text-green-500" />
+                      <FaUsers className="text-green-800" />
                     </span>{" "}
                     Our People
                   </NavLink>
