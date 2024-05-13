@@ -35,16 +35,16 @@ const LandingFooter = () => {
             />
           </div>
           <div className="social">
-            <Link>
+            <Link to="https://www.instagram.com/cyberpaynaija/">
               <SiInstagram />
             </Link>
-            <Link>
+            <Link to="https://www.linkedin.com/company/cyberpay-limited/">
               <FaLinkedinIn />
             </Link>
-            <Link>
+            <Link to="https://www.facebook.com/CyberPayNaija">
               <BiLogoFacebook />
             </Link>
-            <Link>
+            <Link to="https://twitter.com/Cyberpaynaija">
               <FaXTwitter />
             </Link>
           </div>

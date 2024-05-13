@@ -14,13 +14,13 @@ function Contact() {
   });
 
   const [center, setcenter] = useState({
-    lat: 6.584041,
-    lng: 3.2464628,
+    lat: 6.431111,
+    lng: 3.415833,
   });
-//   if (loadError) {
-//     return <div>Error loading maps</div>;
-//   }
- 
+  //   if (loadError) {
+  //     return <div>Error loading maps</div>;
+  //   }
+
   return (
     <div
       className={`landing-about ${theme === "light" ? "about" : "darkabout"}`}
@@ -73,57 +73,55 @@ function Contact() {
         {/* map */}
         <div className="flex lg:flex-row gap-10 flex-col mt-20">
           <div className="w-[50%] ">
-           {isLoaded ? 
-           <GoogleMap
-              mapContainerStyle={{width:"100%", height:"100%" }}
-              zoom={10}
-              center={center}>
-              <Marker position={center} />
-            </GoogleMap> :
-            <h4>Loading...</h4>
-  }
-  </div>
-  <div className="bg-bluePrimary text-white px-8 2xl:py-[70px] py-10 md:w-[50%] w-full   md:ml-3 ml-0 shadow-md">
-              <form
-                className="flex flex-col 2xl:gap-8 gap-5 "
-                onSubmit={(e) => e.preventDefault()}
+            {isLoaded ? (
+              <GoogleMap
+                mapContainerStyle={{ width: "100%", height: "100%" }}
+                zoom={16}
+                center={center}
               >
-                <h5 className="font-montserrat text-[22px] font-semibold  ">
-                  Contact Us
-                </h5>
-                <div className=" flex md:flex-row flex-col justify-between gap-8 ">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-grayPrimary2 h-[50px] pl-5 md:w-[373px] w-full"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Email"
-                    className="bg-[#F4F4F4] md:w-[373px] w-full 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5"
-                  />
-                </div>
-                <div className=" ">
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
-                  />
-                </div>
-                <div className=" ">
-                  <textarea
-                    placeholder="Additional details"
-                    className="bg-[#F4F4F4] text-black h-[120px] pl-5 w-full pt-4"
-                  />
-                </div>
-                <button type="sunmit bg-red-500">Submit Form</button>
-              </form>
-            </div>
-           </div>
-          
-          
-       
-     
+                <Marker position={center} />
+              </GoogleMap>
+            ) : (
+              <h4>Loading...</h4>
+            )}
+          </div>
+          <div className="bg-bluePrimary text-white px-8 2xl:py-[70px] py-10 md:w-[50%] w-full   md:ml-3 ml-0 shadow-md">
+            <form
+              className="flex flex-col 2xl:gap-8 gap-5 "
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <h5 className="font-montserrat text-[22px] font-semibold  ">
+                Contact Us
+              </h5>
+              <div className=" flex md:flex-row flex-col justify-between gap-8 ">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-grayPrimary2 h-[50px] pl-5 md:w-[373px] w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="bg-[#F4F4F4] md:w-[373px] w-full 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5"
+                />
+              </div>
+              <div className=" ">
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px] pl-5 w-full"
+                />
+              </div>
+              <div className=" ">
+                <textarea
+                  placeholder="Additional details"
+                  className="bg-[#F4F4F4] text-black h-[120px] pl-5 w-full pt-4"
+                />
+              </div>
+              <button type="submit" className="bg-white text-black py-3">Submit Form</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );

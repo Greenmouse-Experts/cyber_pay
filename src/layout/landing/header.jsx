@@ -19,6 +19,8 @@ import { PiBookOpenUserFill, PiCertificateBold } from "react-icons/pi";
 import { FaUserTie, FaUsers } from "react-icons/fa";
 import { LuSmartphoneNfc } from "react-icons/lu";
 import { IoLinkSharp } from "react-icons/io5";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { TbPasswordMobilePhone } from "react-icons/tb";
 
 const LandingHeader = () => {
   const { theme, toggleTheme } = useTheme();
@@ -209,7 +211,7 @@ const LandingHeader = () => {
                     to="/ussdcollection"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
-                      <BsPhone className="text-sky-950" />
+                      <TbPasswordMobilePhone className="text-sky-950" />
                     </span>
                     USSD Collection
                   </NavLink>
@@ -220,7 +222,7 @@ const LandingHeader = () => {
                     to="/payment"
                   >
                     <span className="bg-stone-50 rounded-[9px]">
-                      <BiTransferAlt className="text-purple-800" />
+                      <FaMoneyBillTransfer className="text-purple-800" />
                     </span>
                     CyberPay online (Web / Mobile) <br /> Payment Processing
                   </NavLink>

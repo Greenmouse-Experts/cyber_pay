@@ -359,7 +359,7 @@ const LandingHomepage = () => {
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
-                  src="/icons/transfer.svg"
+                  src="/icons/transfer.jpg"
                   alt=""
                   className=" !w-16 !h-16"
                 />
@@ -454,7 +454,7 @@ const LandingHomepage = () => {
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
-                  src="/icons/credit-card.svg"
+                  src="/icons/credit-card.jpg"
                   alt=""
                   className=" !w-16 !h-16"
                 />
@@ -542,7 +542,7 @@ const LandingHomepage = () => {
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
                 <img
-                  src="/icons/pie-chart.svg"
+                  src="/icons/brain.jpg"
                   alt=""
                   className=" !w-16 !h-16"
                 />
@@ -756,46 +756,53 @@ const LandingHomepage = () => {
         // data-aos-duration="1000"
       >
         <Slider {...settings2}>
-          <div className="bg-[#042E46]">
+          <div className="bg-[#042E46] flex justify-center">
             <img
               src="/img/coin1.png"
               alt="coin"
-              className="mix-blend-luminosity w-[5rem]"
+              className="mix-blend-luminosity w-[6rem] "
             />
           </div>
-          <div className="bg-[#042E46]">
+          <div className="bg-[#042E46] flex justify-center">
             <img
               src="/img/coin2.png"
               alt="coin"
-              className="mix-blend-luminosity w-[5rem]"
+              className="mix-blend-luminosity w-[6rem] "
             />
           </div>
-          <div className="bg-[#042E46]">
+          <div className="bg-[#042E46] flex justify-center">
             <img
               src="/img/coin3.png"
               alt="coin"
-              className="mix-blend-luminosity w-[5rem]"
+              className="mix-blend-luminosity w-[6rem] "
             />
           </div>
-          <div className="bg-[#042E46]">
+          <div className="bg-[#042E46] flex justify-center">
             <img
               src="/img/coin4.png"
               alt="coin"
-              className="mix-blend-luminosity w-[5rem]"
+              className="mix-blend-luminosity w-[6rem] "
             />
           </div>
-          <div className="bg-[#042E46]">
+          <div className="bg-[#042E46] flex justify-center">
             <img
               src="/img/coin5.png"
               alt="coin"
-              className="mix-blend-luminosity w-[5rem]"
+              className="mix-blend-luminosity w-[6rem] "
             />
           </div>
-          <div className="bg-[#042E46]">
+          <div className="bg-[#042E46] flex justify-center">
             <img
               src="/img/coin6.png"
               alt="coin"
-              className="mix-blend-luminosity w-[5rem]"
+              className="mix-blend-luminosity w-[6rem] "
+            />
+          </div>
+          <div className="bg-[#042E46] flex justify-center">
+            <img
+              src="/img/coin1.png"
+              alt="coin"
+              className="mix-blend-luminosity w-[6rem] "
             />
           </div>
         </Slider>
