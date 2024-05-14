@@ -20,7 +20,7 @@ const Market = () => {
        
           className="market_img"
         >
-          <img src="/img/market.png" alt=""  className="md:max-h-[30rem] max-h-[20rem]"/>
+          <img src="/img/market.jpg" alt=""  className="md:max-h-[30rem] max-h-[20rem] rounded-2xl"/>
         </div>
         <div
          

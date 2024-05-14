@@ -19,7 +19,7 @@ const MobileApp = () => {
         <div
           className="market_img"
         >
-          <img src="/img/mobile-app.png" alt=""  className="md:max-h-[30rem] max-h-[20rem]"/>
+          <img src="/img/mobile-app.jpg" alt=""  className="md:max-h-[30rem] max-h-[20rem] rounded-2xl"/>
         </div>
         <div
           className="market_text"
