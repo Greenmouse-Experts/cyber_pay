@@ -1,6 +1,4 @@
 import Heading from "../../layout/landing/Heading";
-import banner from "../../assets/images/developer-banner.png";
-
 import { useTheme } from "../../ThemeContext";
 import "../../Stylesheet/developer.scss";
 import AccordionItem from "../../components/Accordion";
@@ -12,7 +10,7 @@ const Faqs = () => {
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={banner}
+        img="/img/faq.png"
         head="FAQs"
         body="Our frequently asked questions"
       />
