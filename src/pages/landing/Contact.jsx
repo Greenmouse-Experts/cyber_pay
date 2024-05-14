@@ -1,6 +1,6 @@
 import { useTheme } from "../../ThemeContext";
 import Header from "../../layout/landing/Heading";
-import about from "../../assets/images/about-header.png";
+import about from "../../assets/images/contact-img.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaHeadset } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
