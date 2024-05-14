@@ -40,6 +40,8 @@
         }
         .header_img{
             width: 35% !important;
+            display: flex;
+            justify-content: flex-end;
             img{
                 width: 70%;
                 height: 20rem;
