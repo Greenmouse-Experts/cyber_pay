@@ -19,6 +19,14 @@
   url("./assets/fonts/Mark-Simonson-Proxima-Nova-Semibold.otf")
     format("opentype");
 }
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Mark-Simonson-Proxima-Nova-Regular"),
+  url("./assets/fonts/Mark-Simonson-Proxima-Nova-Regular.otf")
+    format("opentype");
+}
 
 @tailwind base;
 @tailwind components;
@@ -124,6 +132,10 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Proxima Nova', sans-serif !important;
+}
+
+p{
+  font-family: 'Proxima Nova', sans-serif !important; 
 }
 
 html {
