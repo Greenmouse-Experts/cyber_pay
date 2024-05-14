@@ -1,9 +1,11 @@
 footer{
+    font-family: 'Proxima Nova', sans-serif !important; 
     background: #042E46;
     width: 100%;
 }
 
 .footer_links{
+    font-family: 'Proxima Nova', sans-serif !important; 
     display: flex;
     flex-direction: row;
     gap: 1rem;
