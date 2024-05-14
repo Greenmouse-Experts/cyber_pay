@@ -48,7 +48,7 @@ const Cookie = () => {
                             
                             }}
                         >
-                            Decline
+                            Close
                         </button>
                         <button
                             onClick={handleAccept}
