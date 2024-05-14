@@ -154,7 +154,10 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink
+                  to="https://merchant.cyberpay.ng"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                >
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -187,7 +190,10 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink
+                  to="https://merchant.cyberpay.ng"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                >
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -220,7 +226,10 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink
+                  to="https://merchant.cyberpay.ng"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                >
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -253,7 +262,10 @@ const LandingHomepage = () => {
 
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
+                <NavLink
+                  to="https://merchant.cyberpay.ng"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                >
                   Get Started
                   <span>
                     <IoMdArrowForward />
@@ -278,13 +290,15 @@ const LandingHomepage = () => {
             delay="1000"
             sec_style="zoom-in"
             sec_delay="1200"
-            
             img="/img/online-solution.png"
             heading="We provide premium online payment solutions."
             paragraph="Say goodbye to payment hassles and hello to effortless transactions with CyberPay! Experience convenience like never before with CyberPay's flexible payment options.  "
           >
             <div style={{ marginTop: 25 }}>
-              <NavLink to="/about" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] w-fit transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2">
+              <NavLink
+                to="/about"
+                className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] w-fit transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2"
+              >
                 Read More
                 <span>
                   <IoMdArrowForward />
@@ -334,7 +348,7 @@ const LandingHomepage = () => {
         </div>
       </div>
 
-   <OurProducts/>
+      <OurProducts />
       <div className={`home ${theme === "light" ? "light" : "lbg"}`}>
         <div className="get">
           <h2
@@ -358,11 +372,13 @@ const LandingHomepage = () => {
                   theme === "light" ? "bg-[#E8F0FC]" : "bg-[#181818]"
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
-                <img
-                  src="/icons/transfer.png"
-                  alt=""
-                  className=" !w-16 !h-16"
-                />
+                <div className=" !w-16 !h-16 rounded-full bg-white">
+                  <img
+                    src="/icons/transfer.png"
+                    alt=""
+                    className=" !w-16 !h-16"
+                  />
+                </div>
                 <div className="flex flex-col  justify-center items-center">
                   <h3 className="h3 sm:pt-12 pt-16 ">
                     Transfer anywhere around the world
@@ -453,11 +469,13 @@ const LandingHomepage = () => {
                   theme === "light" ? "bg-[#FCEBEF]" : "bg-[#181818]"
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
-                <img
-                  src="/icons/credit-card.png"
-                  alt=""
-                  className=" !w-16 !h-16"
-                />
+                <div className=" !w-16 !h-16 rounded-full bg-white">
+                  <img
+                    src="/icons/credit-card.png"
+                    alt=""
+                    className=" !w-16 !h-16"
+                  />
+                </div>
                 <div className="flex flex-col  justify-center items-center">
                   <h3 className="h3 sm:pt-12 pt-16 ">
                     Make bill payments online seamlessly.
@@ -541,11 +559,9 @@ const LandingHomepage = () => {
                   theme === "light" ? "bg-[#EDF0F2]" : "bg-[#181818]"
                 }  rounded-3xl relative h-full lg:p-10 p-5 sm:h-[25rem]`}
               >
-                <img
-                  src="/icons/brain.png"
-                  alt=""
-                  className=" !w-16 !h-16"
-                />
+                <div className=" !w-16 !h-16 rounded-full bg-white overflow-hidden">
+                  <img src="/icons/brain.png" alt="" className=" !w-16 !h-16" />
+                </div>
                 <div className="flex flex-col  justify-center items-center">
                   <h3 className="h3 sm:pt-12 pt-16 ">
                     Modify your financial insights and goals
@@ -641,12 +657,15 @@ const LandingHomepage = () => {
         </div>
 
         <div className="flex gap-3">
-        <NavLink to="https://merchant.cyberpay.ng" className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap">
-             Get Started
-                  <span>
-                    <IoMdArrowForward />
-                  </span>
-                </NavLink>
+          <NavLink
+            to="https://merchant.cyberpay.ng"
+            className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+          >
+            Get Started
+            <span>
+              <IoMdArrowForward />
+            </span>
+          </NavLink>
         </div>
       </div>
 
@@ -810,7 +829,7 @@ const LandingHomepage = () => {
       <div className="app">
         <div className="app_div">
           <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2">
-          Get the CyberPay Mobile App
+            Get the CyberPay Mobile App
           </h2>
           <p data-aos="zoom-in-down" data-aos-duration="1000">
             Experience hassle-free and secure payment processing with CyberPay.
