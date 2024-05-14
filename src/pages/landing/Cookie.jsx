@@ -63,7 +63,7 @@ const Cookie = () => {
                                 fontWeight: 500
                             }}
                         >
-                            Accept All
+                            Accept Cookies
                         </button>
                         
                     </div>

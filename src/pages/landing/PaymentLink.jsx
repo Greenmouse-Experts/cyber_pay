@@ -2,15 +2,7 @@ import React from "react";
 import "../../Stylesheet/pension.scss";
 import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
-import solution from "../../assets/images/solution.png";
-import seam1 from "../../assets/images/seam1.png";
-import seam2 from "../../assets/images/seam2.png";
-import seam3 from "../../assets/images/seam3.png";
-import { BsCheckCircleFill } from "react-icons/bs";
-import ease from "../../assets/images/ease.png";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import Resuablebtn from "../../components/Resuablebtn";
-import { RxArrowRight } from "react-icons/rx";
+
 
 const PaymentLink = () => {
   const { theme } = useTheme();
@@ -44,7 +36,7 @@ const PaymentLink = () => {
   return (
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img="img/payment.svg"
+        img="img/payment.png"
         head="Unlock online sales with Payment Links"
         body="Welcome to a new era of online sales. With our Payment Links, small businesses without dedicated websites can now easily receive payments online. "
       />

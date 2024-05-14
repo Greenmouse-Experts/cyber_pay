@@ -3,7 +3,7 @@ import "../../Stylesheet/pension.scss";
 import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
 import solution from "../../assets/images/accept-pay.png";
-import payment from "../../assets/images/payment-global.png";
+import payment from "../../assets/images/payment-global.jpg";
 import Resuablebtn from "../../components/Resuablebtn";
 import { RxArrowRight } from "react-icons/rx";
 
@@ -34,7 +34,7 @@ const Payment = () => {
       <div className="benefit pay ">
         <div className="list_1">
           <div data-aos="zoom-in-right" data-aos-duration="1100" className="">
-            <img src={payment} alt="" />
+            <img src={payment} alt=""  className="rounded-2xl"/>
           </div>
           <div
             data-aos="zoom-in-left"

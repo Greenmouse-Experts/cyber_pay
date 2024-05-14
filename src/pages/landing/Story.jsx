@@ -14,7 +14,7 @@ const Story = () => {
       <Header
         head="Our Story"
         body="At CyberPay, we're not just shaping the future of payments; we're redefining the way businesses and customers connect in the digital realm. Experience the difference – it's our story, and it's yours too."
-        img="/img/digital-payment1.png"
+        img="/img/story.png"
       />
 
       <div className="flex lg:flex-row flex-col  padding justify-between items-center lg:gap-0 gap-5">

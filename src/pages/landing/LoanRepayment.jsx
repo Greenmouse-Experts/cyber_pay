@@ -9,7 +9,7 @@ function LoanRepayment() {
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img="/img/loan-repayment.jpg"
+        img="/img/loan-repayment.png"
         head="Loan Repayment Made Simple"
         body="Welcome to a world of hassle-free loan repayment. Our Loan Repayment Solution empowers businesses to effortlessly manage their customers’ debt repayment schedules"
       />
