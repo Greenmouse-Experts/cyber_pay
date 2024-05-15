@@ -6,7 +6,7 @@ function Charges() {
       <h2 className="h2">How much does CyberPay charge per transaction?</h2>
     </div>
     <div className="padding md:!pt-0 grid md:grid-cols-3 grid-cols-1 gap-8">
-    <div className=" col-span-1 w-full leading-10 bg-[#E8F0FC] rounded-2xl p-10">
+    <div className=" col-span-1 w-full leading-10 bg-[#E8F0FC] rounded-2xl p-10 fixedcolor ">
           <h3 className="h3">
           Charges for card usage:
           </h3>
@@ -16,7 +16,7 @@ function Charges() {
           </p>
         </div>
 
-        <div className=" w-full col-span-2 leading-10 bg-[#FCEBEF] rounded-2xl p-10">
+        <div className=" w-full col-span-2 leading-10 bg-[#FCEBEF] rounded-2xl p-10 fixedcolor ">
           <h3 className="h3">
           Transaction Charges when paying with bank account:
           </h3>

@@ -2,7 +2,7 @@ import wallet from "../../assets/images/wallet.png";
 import AccordionItem from "../../components/Accordion";
 import paymentlink from "../../assets/videos/payment-link.mp4";
 
-function Getstarted() {
+function Getstarted({theme}) {
   return (
     <>
       <div className=" padding !pt-3">
@@ -12,13 +12,13 @@ function Getstarted() {
         </p>
       </div>
 
-      <div className="bg-[#E8F0FC] padding">
+      <div className="bg-[#E8F0FC] padding fixedcolor">
         <h3 className="h3">
           Business Requirements on CyberPay. Eligible merchants on CyberPay fall
           in two categories:
         </h3>
-        <div className="flex md:flex-row flex-col justify-center items-center gap-6 mt-8">
-          <div className="bg-white rounded-2xl px-10 py-12 w-full">
+        <div className="flex md:flex-row flex-col justify-center items-center gap-6 mt-8 ">
+          <div className="bg-white rounded-2xl px-10 py-12 w-full ">
             <p className="para">
               Registered services – CyberPay Consolidated Scheme (CCS)
             </p>
@@ -31,7 +31,7 @@ function Getstarted() {
         </div>
       </div>
 
-      <div className="bg-[#2F9BD6] flex md:flex-row flex-col justify-between items-center padding">
+      <div className="bg-[#2F9BD6] flex md:flex-row flex-col justify-between items-center padding fixedcolor">
         <div className="text-white md:w-[55%] w-full leading-10">
           <h3 className="h3">
             If your business is registered (CCS) and you want to integrate to
@@ -67,7 +67,7 @@ function Getstarted() {
           </p>
         </div>
       </div>
-      <div className="padding bg-[#FAFAF9]">
+      <div className={`padding ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"}`}>
         <p className="para font-medium">
           In case you did not meet the requirements for Registered business, you
           have an option of been activated under the CyberPay Beginners Scheme

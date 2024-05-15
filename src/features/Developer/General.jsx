@@ -1,6 +1,7 @@
 import thinking from "../../assets/images/thinking.png";
 import subscribe from "../../assets/images/subscribe.png";
-function General() {
+function General({theme}) {
+
   return (
     <>
       <div className="developer_what padding !pt-3">
@@ -11,7 +12,7 @@ function General() {
           platform via web, mobile or any user interface.
         </p>
       </div>
-      <div className="bg-[#E8F0FC] flex md:flex-row flex-col justify-between items-center  padding">
+      <div className={`${theme === "light" ? "bg-[#E8F0FC] " : "bg-black"} flex md:flex-row flex-col justify-between items-center  padding`}>
         <div className="md:w-[60%] w-full">
           <h3 className="h3 mb-4">
             What kind of companies/ businesses are eligible to use CyberPay?
@@ -27,7 +28,7 @@ function General() {
           <img src={thinking} alt="thinking" />
         </div>
       </div>
-      <div className="developer_error bg-[#FAFAF9] padding">
+      <div className={`developer_error ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"}  padding`}>
         <h3 className="h3">Common Transaction Errors</h3>
         <p className="para">
           At CyberPay, we have put structures in place to ensure continuous high
@@ -65,7 +66,7 @@ function General() {
             </div>
           </div>
           {/* 2 */}
-          <div className="grid-wrapper grid md:grid-cols-3 grid-cols-1 gap-6">
+          <div className="grid-wrapper grid md:grid-cols-3 grid-cols-1 gap-6 !text-black">
             <div className="">
               <h3 className="h3">Suspected Fraud:</h3>
               <p className="para">

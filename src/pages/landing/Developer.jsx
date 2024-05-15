@@ -20,7 +20,7 @@ const Developer = () => {
   const { theme } = useTheme();
   const [tab, setTab] = useState(1);
   return (
-    <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
+    <div className={`pension ${theme === "light" ? "" : "darkabout text-white"}`}>
       <Heading
         img={banner}
         head="Developers"
@@ -67,8 +67,8 @@ const Developer = () => {
         </div>
 
 
-       {tab === 1 && <General/>}
-       {tab === 2 && <Getstarted/>}
+       {tab === 1 && <General theme={theme}/>}
+       {tab === 2 && <Getstarted  theme={theme}/>}
        {tab === 3 && <Setting/>}
        {tab === 4 && <Account/>}
        {tab === 5 && <Payment/>}
