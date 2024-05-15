@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useTheme } from "../../ThemeContext";
 import Header from "../../layout/landing/Heading";
 import why from "../../assets/images/why.png";
@@ -158,8 +158,8 @@ const WhyCyber = () => {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1100" className="list_2">
-          {data.map((item) => (
-            <div className="list_card">
+          {data.map((item, index) => (
+            <div className="list_card" key={index}>
               <h3>{item.head}</h3>
               <p>{item.body}</p>
             </div>
@@ -211,11 +211,12 @@ const WhyCyber = () => {
           <span className="text-rose-600">Merchants</span>
         </h2>
         <div className="merchant_list">
-          {list.map((item) => (
+          {list.map((item, index) => (
             <div
               data-aos="flip-right"
               data-aos-duration="1100"
               className="list_card"
+              key={index}
             >
               <h3>{item.head}</h3>
               <p>{item.body}</p>
