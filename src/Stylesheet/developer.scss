@@ -118,7 +118,7 @@
       margin-top: 1.5rem;
 
       h3{
-        color: black !important;
+     
       }
     }
     .grid-wrapper > div {
@@ -132,5 +132,21 @@
         margin-top: 1rem;
       }
     }
+    .dark  .grid-wrapper > div{
+      background-color: #565656 
+      !important;
+    }
   }
 }
+
+.dark  .grid-wrapper > div{
+  background-color: #030712 ;
+  
+}
+.dark  .grid-wrapper  {
+ p{
+  color: white;
+ }
+  
+}
+

@@ -17,7 +17,7 @@ function General({theme}) {
           <h3 className="h3 mb-4">
             What kind of companies/ businesses are eligible to use CyberPay?
           </h3>
-          <p className="para text-[#565656]">
+          <p className="para text-[#565656]  dark:text-white">
             CyberPay welcomes all companies and businesses, from the large
             international conglomerates to the small scale and fast-growing
             businesses. We have solutions that cater for all classes of business
@@ -28,15 +28,15 @@ function General({theme}) {
           <img src={thinking} alt="thinking" />
         </div>
       </div>
-      <div className={`developer_error ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"}  padding`}>
+      <div className={`developer_error ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"} dark:bg-gray-900 dark:text-white  padding`}>
         <h3 className="h3">Common Transaction Errors</h3>
-        <p className="para">
+        <p className="para  dark:!text-white">
           At CyberPay, we have put structures in place to ensure continuous high
           transaction success rate. We are guaranteeing that your customers will
           have smooth and seamless payment experience without transaction
           failures.
         </p>
-        <p className="para">
+        <p className="para dark:!text-white">
           However, regardless of the structures and plans, there are instances
           when a transaction fails due to various errors which cannot be
           avoided. We have listed some of the instances below as a guide to why

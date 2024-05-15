@@ -606,7 +606,7 @@ const LandingHomepage = () => {
 
       {/* <Videomodal /> */}
 
-      <div className="join flex flex-col items-center gap-8 bg-[url(/img/map.png)] bg-center bg-cover">
+      <div className="join flex flex-col items-center gap-8 bg-[url(/img/map.png)] dark:bg-[url(/)] dark:!bg-black bg-center bg-cover">
         <h2 className="h2 text-center">
           Join thousands who use the CyberPay mobile app
         </h2>

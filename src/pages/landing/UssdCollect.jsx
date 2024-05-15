@@ -179,8 +179,8 @@ const UssdCollect = () => {
         </h2>
 
         <div className="procedure_list">
-          {data.map((item) => (
-            <div className="ussd_card rounded-[15px]">
+          {data.map((item, index) => (
+            <div className="ussd_card dark:!bg-gray-600 dark:text-white rounded-[15px]" key={index}>
               <span className="bg-rose-200  text-rose-600">{item.num}</span>
               <p className="para">{item.body}</p>
             </div>

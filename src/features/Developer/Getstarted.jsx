@@ -12,18 +12,18 @@ function Getstarted({theme}) {
         </p>
       </div>
 
-      <div className="bg-[#E8F0FC] padding fixedcolor">
+      <div className="bg-[#E8F0FC] padding dark:bg-gray-900 dark:text-white">
         <h3 className="h3">
           Business Requirements on CyberPay. Eligible merchants on CyberPay fall
           in two categories:
         </h3>
         <div className="flex md:flex-row flex-col justify-center items-center gap-6 mt-8 ">
-          <div className="bg-white rounded-2xl px-10 py-12 w-full ">
+          <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full ">
             <p className="para">
               Registered services – CyberPay Consolidated Scheme (CCS)
             </p>
           </div>
-          <div className="bg-white rounded-2xl px-10 py-12 w-full">
+          <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full">
             <p className="para">
               Unregistered services – CyberPay Beginner Scheme
             </p>
@@ -31,7 +31,7 @@ function Getstarted({theme}) {
         </div>
       </div>
 
-      <div className="bg-[#2F9BD6] flex md:flex-row flex-col justify-between items-center padding fixedcolor">
+      <div className="bg-[#2F9BD6] flex md:flex-row flex-col justify-between items-center padding dark:bg-gray-900 dark:text-white">
         <div className="text-white md:w-[55%] w-full leading-10">
           <h3 className="h3">
             If your business is registered (CCS) and you want to integrate to
@@ -58,7 +58,7 @@ function Getstarted({theme}) {
             The following are the documents acceptable for Business Registration
             Document for a Registered Business?
           </h3>
-          <p className="mt-3 leading-8 text-[#565656]">
+          <p className="mt-3 leading-8 text-[#565656] dark:text-white">
             – Certified True Copy of Certificate of Incorporation issued by the
             Corporate Affairs Commission (RC/CAC_IT)
             <br />– Certified True Copy of Business Name Registration

@@ -144,12 +144,7 @@ html {
   scroll-padding-top: 3rem;
 }
 
-.fixedcolor h3{
-  color: black;
-}
-.fixedcolor  p{
-  color: black;
-}
+
 
 @layer components {
   /* container settings */

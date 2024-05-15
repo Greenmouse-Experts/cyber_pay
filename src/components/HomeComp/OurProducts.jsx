@@ -16,8 +16,8 @@ function OurProducts() {
       </div>
 
       <Slider {...productSettings}>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             USSD Collection
           </p>
 
@@ -38,8 +38,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             CyberPay Marketplace
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
@@ -59,8 +59,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             Mobile App
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
@@ -80,8 +80,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             Bulk SMS
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
@@ -101,8 +101,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             Disbursement Solutions
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
@@ -122,8 +122,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             Loan Repayment made simple
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
@@ -143,8 +143,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             POS Services
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
@@ -164,8 +164,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             PenRemit
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
@@ -185,8 +185,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
           Online Sales with Payment Link
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
@@ -206,8 +206,8 @@ function OurProducts() {
             />
           </div>
         </div>
-        <div className="bg-[#FFFFFF] p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
-          <p className="para text-[#5D5D5D] !font-semibold col-span-3">
+        <div className="bg-[#FFFFFF] dark:bg-gray-900 dark:text-white p-5 rounded-xl flex flex-col justify-between min-h-[11.5rem] mr-3 relative">
+          <p className="para text-[#5D5D5D] dark:text-white !font-semibold col-span-3">
             CyberPay Online (Web and Mobile) Payment Processing
           </p>
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
