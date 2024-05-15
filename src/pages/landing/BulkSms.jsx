@@ -52,10 +52,7 @@ function BulkSms() {
               title="Customer Satisfaction"
               answer="Keep your customers engaged and satisfied, fostering long-term loyalty."
             />
-            <AccordionItem
-              title="Effective Communication"
-              answer="Communicate with your audience in real time, creating immediate impact."
-            />
+          
           </div>
         </div>
       </div>

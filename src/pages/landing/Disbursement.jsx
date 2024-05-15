@@ -48,7 +48,7 @@ const Disbursement = () => {
             Let’s settle your payments with the utmost convenience and
             cost-effectiveness. Join the businesses for whom this is not just a
             dream but a reality. We handle your payments seamlessly, so you can
-            focus on what truly matters. you.
+            focus on what truly matters.
           </p>
         </div>
         <div
