@@ -17,8 +17,8 @@ const People = () => {
         img="/img/our-people.png"
       />
 
-      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] ">
-        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-black ">
+        <div className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
           data-aos-duration="1000">
           <h3 className="h3">Catalysts of Innovation</h3>
           <p className="para">
@@ -31,7 +31,7 @@ const People = () => {
             drive it.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+        <div className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
           data-aos-duration="1500">
           <h3 className="h3">Masters of Customization</h3>
           <p className="para">
@@ -42,7 +42,7 @@ const People = () => {
             finely tuned to add exceptional value to our partners' businesses.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+        <div className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
           data-aos-duration="1500">
           <h3 className="h3">Navigators of Transformation</h3>
           <p className="para">
@@ -52,7 +52,7 @@ const People = () => {
             that transformative journey.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+        <div className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
           data-aos-duration="1000">
           <h3 className="h3">Partners in Innovation</h3>
           <p className="para">
@@ -65,7 +65,7 @@ const People = () => {
         </div>
       </div>
 
-      <div className="padding bg-[#FAFAF9]"   >
+      <div className="padding bg-[#FAFAF9] dark:bg-black dark:text-white"   >
         <p className="para font-medium" data-aos="fade-up"
           data-aos-duration="1000">
           Join us on this journey of exploration, where technology isn't just a

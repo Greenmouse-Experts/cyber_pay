@@ -67,12 +67,12 @@ const PaymentLink = () => {
       </div>
 
       <div className="procedure padding bg-sky-950 mb-20">
-        <h2 className="h2 text-center text-white mb-5">
+        <h2 className="h2 text-center text-white mb-5 ">
           Three simple steps to success:
         </h2>
 
         <div className="flex lg:flex-row flex-col items-center gap-8">
-          <div className="bg-white p-6 rounded-2xl">
+          <div className="bg-white p-6 rounded-2xl dark:bg-gray-900 dark:text-white">
             <h3 className="h3 mb-3">Generate a Link</h3>
             <p className="para">
               Create a specific link for the product or service you’re selling.
@@ -80,7 +80,7 @@ const PaymentLink = () => {
               involved.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-2xl">
+          <div className="bg-white p-6 rounded-2xl dark:bg-gray-900 dark:text-white">
             <h3 className="h3 mb-3">Share the Link</h3>
             <p className="para">
               Distribute the link to your customers through any online platform.
@@ -88,7 +88,7 @@ const PaymentLink = () => {
               yours.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-2xl">
+          <div className="bg-white p-6 rounded-2xl dark:bg-gray-900 dark:text-white">
             <h3 className="h3 mb-3">Start accepting payments</h3>
             <p className="para">
               Your business immediately starts to grow as more people are able

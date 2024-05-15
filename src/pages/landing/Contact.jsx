@@ -33,7 +33,7 @@ function Contact() {
 
       <div className="padding">
         <div className="flex lg:flex-row flex-col gap-10 items-center">
-          <div className="bg-[#f4f4f4]  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">
+          <div className="bg-[#f4f4f4] dark:bg-bluePrimary  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">
             <div className=" bg-bluePrimary p-4 rounded-full w-fit">
               {" "}
               <FaLocationDot color="white" size={50} />
@@ -47,7 +47,7 @@ function Contact() {
               <p> Abuja Office: 2B street Abacha Estate Wuse Zone , Abuja.</p>
             </div>
           </div>
-          <div className="bg-[#f4f4f4]  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">
+          <div className="bg-[#f4f4f4]  dark:bg-bluePrimary  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">
             <div className=" bg-bluePrimary p-4 rounded-full w-fit">
               {" "}
               <FaHeadset color="white" size={50} />
@@ -57,7 +57,7 @@ function Contact() {
               <p> 02015151118</p>
             </div>
           </div>
-          <div className="bg-[#f4f4f4]  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">
+          <div className="bg-[#f4f4f4] dark:bg-bluePrimary   shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">
             <div className=" bg-bluePrimary p-4 rounded-full w-fit">
               {" "}
               <IoIosMail color="white" size={50} />

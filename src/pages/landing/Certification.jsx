@@ -17,9 +17,9 @@ const Certification = () => {
         img="/img/certificate.png"
       />
 
-      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] ">
+      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-black">
         <div
-          className="bg-white p-6 rounded-2xl shadow-sm"
+          className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -34,7 +34,7 @@ const Certification = () => {
           </p>
         </div>
         <div
-          className="bg-white p-6 rounded-2xl shadow-sm"
+          className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -48,7 +48,7 @@ const Certification = () => {
           </p>
         </div>
         <div
-          className="bg-white p-6 rounded-2xl shadow-sm"
+          className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -62,7 +62,7 @@ const Certification = () => {
           </p>
         </div>
         <div
-          className="bg-white p-6 rounded-2xl shadow-sm"
+          className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -79,7 +79,7 @@ const Certification = () => {
         </div>
 
         <div
-          className="bg-white p-6 rounded-2xl shadow-sm"
+          className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -94,7 +94,7 @@ const Certification = () => {
           </p>
         </div>
         <div
-          className="bg-white p-6 rounded-2xl shadow-sm"
+          className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
           data-aos="fade-up"
           data-aos-duration="1500"
         >

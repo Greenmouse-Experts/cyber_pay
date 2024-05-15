@@ -39,7 +39,7 @@ const PenRemit = () => {
         </div>
       </div>
 
-      <div className=" bg-[#FAFAF9] padding flex flex-col mt-10"  data-aos="fade-up"
+      <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding flex flex-col mt-10"  data-aos="fade-up"
           data-aos-duration="1000">
         <h2 className="h2">Micro Pensions: Inclusivity at its core</h2>
         <p className="para mt-5">
@@ -58,7 +58,7 @@ const PenRemit = () => {
         </p>
       </div>
 
-      <div className=" bg-[#FAFAF9] padding flex flex-col"  data-aos="fade-up"
+      <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding flex flex-col"  data-aos="fade-up"
           data-aos-duration="1000">
         <h2 className="h2">PenRemit: Effortless Remittance Management</h2>
         <p className="para mt-5">

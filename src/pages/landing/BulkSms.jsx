@@ -57,7 +57,7 @@ function BulkSms() {
         </div>
       </div>
 
-      <div className=" bg-[#FAFAF9] padding text-center mt-10 mb-20">
+      <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding text-center mt-10 mb-20">
         <h2 className="h2">Worldwide Reach, Local Expertise</h2>
         <p className="para mt-5">
           With our Bulk SMS solution, you can access optimal delivery rates

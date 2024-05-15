@@ -123,8 +123,8 @@ const PosService = () => {
         </div>
       </div>
 
-      <div className=" grid lg:grid-cols-2 grid-cols-1 padding gap-10 bg-[#FAFAF9] ">
-        <div className="bg-white p-6 rounded-2xl shadow-sm "   data-aos="fade-up"
+      <div className=" grid lg:grid-cols-2 grid-cols-1 padding gap-10 bg-[#FAFAF9] dark:bg-black dark:text-white ">
+        <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900 dark:text-white "   data-aos="fade-up"
           data-aos-duration="1000">
           <h3 className="h3">POS: In-store card acceptance made easy</h3>
           <p className="para">
@@ -135,7 +135,7 @@ const PosService = () => {
             improve their bottom line.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm"   data-aos="fade-up"
+        <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900 dark:text-white"    data-aos="fade-up"
           data-aos-duration="1400">
           <h3 className="h3">Payments accepted, anywhere, anytime</h3>
           <p className="para">

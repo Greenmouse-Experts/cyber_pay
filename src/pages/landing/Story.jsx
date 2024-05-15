@@ -17,7 +17,7 @@ const Story = () => {
         img="/img/story.png"
       />
 
-      <div className="flex lg:flex-row flex-col  padding justify-between items-center lg:gap-0 gap-5">
+      <div className="flex lg:flex-row flex-col  padding justify-between items-center lg:gap-0 gap-5 dark:text-white">
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
@@ -71,9 +71,9 @@ const Story = () => {
         </div>
       </div>
 
-      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] ">
+      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-black dark:text-white ">
        
-          <div className="bg-white p-6 rounded-2xl shadow-sm">
+          <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
             <h3 className="h3">Seamlessness Redefined</h3>
             <p className="para">
               Our commitment to seamlessness is unwavering. Our products are
@@ -82,7 +82,7 @@ const Story = () => {
               we're setting new standards for ease and efficiency.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-2xl shadow-sm">
+          <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
             <h3 className="h3">Smarter, Together</h3>
             <p className="para">
               We believe in the power of smart solutions that simplify
@@ -91,7 +91,7 @@ const Story = () => {
               evolving world of digital finance intelligently.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-2xl shadow-sm">
+          <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
             <h3 className="h3">Safety Above All</h3>
             <p className="para">
               Security is at the heart of everything we do. We've implemented
@@ -99,7 +99,7 @@ const Story = () => {
               your peace of mind as you grow your business in the digital age.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-2xl shadow-sm">
+          <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
             <h3 className="h3">Join Us on the Journey</h3>
             <p className="para">
               As we continue to innovate and adapt, we invite you to join us on
