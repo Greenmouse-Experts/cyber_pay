@@ -84,7 +84,7 @@ const LandingFooter = () => {
             <Link to="/penremit">PenRemit</Link>
             <Link to="/payment-link">Online Sales with Payment Link</Link>
             <Link to="/ussdcollection">USSD Collection</Link>
-            <Link to="/payment">Payment</Link>
+            <Link to="/payment"> CyberPay online (Web / Mobile) <br /> Payment Processing</Link>
           </div>
         </div>
         <div className="links">

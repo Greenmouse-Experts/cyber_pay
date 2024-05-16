@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {Link} from "react-router-dom"
 import img from "../assets/images/play.png"
 
@@ -16,7 +16,7 @@ const downloadBtn = () => {
     <Link to="/" className='download_link flex '>
       <img src={img} alt="" />
       <div>
-        <span>GET IT ON</span>
+        <span>GET it on</span>
         <p>Google Play</p>
       </div>
     </Link>
