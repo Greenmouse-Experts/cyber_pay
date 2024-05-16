@@ -10,11 +10,11 @@ function BulkSms() {
   const { theme } = useTheme();
 
   return (
-    <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
+    <div className={`pension solution ${theme === "light" ? "" : "darkabout"} pb-20`}>
       <Heading
        img={BulkBanner}
         head="Bulk SMS"
-        body="Turbocharge your marketing with Bulk SMS"
+        body="Turbocharge your marketing with bulk SMS. Our bulk SMS service is your gateway to connecting and marketing your products or services directly to your target audience, in real time."
       />
       <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
         <div
@@ -29,8 +29,8 @@ function BulkSms() {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <h2 className="h2">Unleash the power of Bulk SMS</h2>
-          <p className="para">
+          <h2 className="h2 dark:text-white">Unleash the power of Bulk SMS</h2>
+          <p className="para dark:text-white">
             With our expertise, we offer a Bulk SMS solution that does more than
             just sending messages. It’s a tool to increase Brand Awareness as
             you reach your audience in an instant and leave a lasting
@@ -57,7 +57,7 @@ function BulkSms() {
         </div>
       </div>
 
-      <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding text-center mt-10 mb-20">
+      <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding text-center mt-10 pb-20">
         <h2 className="h2">Worldwide Reach, Local Expertise</h2>
         <p className="para mt-5">
           With our Bulk SMS solution, you can access optimal delivery rates
