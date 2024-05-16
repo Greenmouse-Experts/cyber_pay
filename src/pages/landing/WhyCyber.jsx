@@ -125,7 +125,7 @@ const WhyCyber = () => {
             </h2>
 
             <div className="benefit_card_link">
-              <Link className="startbtn">
+              <Link    to="https://merchant.cyberpay.ng/" className="startbtn">
                 <span>Get Started</span>
                 <HiMiniArrowRightCircle />
               </Link>
