@@ -127,6 +127,7 @@
   scroll-behavior: smooth;
 }
 
+
 body {
   overflow-x: hidden !important;
 }
@@ -384,6 +385,39 @@ html {
 
 .hero-4 {
   background-image: url("/img/hero4.png");
+}
+
+.dark span {
+  color: white;
+  transition: color 0.3s;
+}
+.dark li {
+  color: white;
+  transition: color 0.3s;
+}
+.dark p {
+  color: white;
+  transition: color 0.3s;
+}
+.dark h3 {
+  color: white;
+  transition: color 0.3s;
+}
+.dark h2 {
+  color: white;
+  transition: color 0.3s;
+}
+.dark h4 {
+  color: white;
+  transition: color 0.3s;
+}
+.dark h6 {
+  color: white;
+  transition: color 0.3s;
+}
+.dark label {
+  color: white;
+  transition: color 0.3s;
 }
 
 @media screen and (max-width: 1024px) {
