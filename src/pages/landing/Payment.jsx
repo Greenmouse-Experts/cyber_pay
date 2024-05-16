@@ -20,7 +20,7 @@ const Payment = () => {
     },
     {
       head: "Secure Transactions.",
-      body: "We ensure top-notch security with full compliance to PCI-DSS, MasterCard Secure, Verified by Visa (VbyV), and Verve Safetoken standards for seamless payment processing.",
+      body: "We offer the very highest security standards for your transactions as we are compliant with all regulatory security standards for processing payments. Our platform is PCI-DSS compliant and aligns with MasterCard Secure, Verified by Visa (VbyV) and Verve Safetoken.",
     },
   ];
 
@@ -34,7 +34,7 @@ const Payment = () => {
       <div className="benefit pay ">
         <div className="list_1">
           <div data-aos="zoom-in-right" data-aos-duration="1100" className="">
-            <img src={payment} alt=""  className="rounded-2xl"/>
+            <img src={payment} alt="" className="rounded-2xl" />
           </div>
           <div
             data-aos="zoom-in-left"
