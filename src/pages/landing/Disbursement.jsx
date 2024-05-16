@@ -82,7 +82,7 @@ const Disbursement = () => {
       </div>
 
       <div className="padding flex lg:flex-row flex-col-reverse justify-between lg:gap-20 gap-10 items-center">
-      <div
+        <div
           className="flex flex-col gap-8 lg:w-[60%] w-full"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -102,10 +102,8 @@ const Disbursement = () => {
         >
           <img src="/img/disbursement-4.png" alt="" className="w-full" />
         </div>
-       
       </div>
       <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
-       
         <div
           className="lg:w-[40%] w-full "
           data-aos="fade-left"
@@ -127,29 +125,16 @@ const Disbursement = () => {
           </p>
         </div>
       </div>
-      <div className="padding flex lg:flex-row flex-col-reverse justify-between lg:gap-20 gap-10 items-center">
-      <div
-          className="flex flex-col gap-8 lg:w-[60%] w-full"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h2 className="h2">Experience Payment Intelligence</h2>
-          <p className="para">
-            Discover the intelligent way to manage your payments with CyberPay.
+      <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding text-center flex flex-col justify-center items-center mt-10 pb-20">
+      <h2 className="h2">Experience Payment Intelligence</h2>
+        <p className="para mt-5 xl:w-[70%] w-full text-center">
+        Discover the intelligent way to manage your payments with CyberPay.
             It’s more than a solution; it’s a partnership that streamlines your
             financial processes, so you can reach new heights. Discover the
             future of payments with CyberPay today.
-          </p>
-        </div>
-        <div
-          className="lg:w-[40%] w-full "
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          <img src="/img/disbursement-6.png" alt="" className="w-full" />
-        </div>
-       
+        </p>
       </div>
+     
     </div>
   );
 };

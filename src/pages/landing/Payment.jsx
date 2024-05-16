@@ -34,7 +34,7 @@ const Payment = () => {
       <div className="benefit pay ">
         <div className="list_1">
           <div data-aos="zoom-in-right" data-aos-duration="1100" className="">
-            <img src={payment} alt="" className="rounded-2xl" />
+            <img src={payment} alt="" className="rounded-2xl scale-90" />
           </div>
           <div
             data-aos="zoom-in-left"

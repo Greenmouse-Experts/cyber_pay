@@ -59,7 +59,7 @@ function BulkSms() {
 
       <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding text-center mt-10 pb-20">
         <h2 className="h2">Worldwide Reach, Local Expertise</h2>
-        <p className="para mt-5">
+        <p className="para mt-5 xl:w-[70%] w-full">
           With our Bulk SMS solution, you can access optimal delivery rates
           worldwide. Whether you’re connecting with customers near or far, our
           unified interface ensures your message reaches its destination

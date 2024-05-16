@@ -683,7 +683,7 @@ const LandingHomepage = () => {
           <p
             data-aos="zoom-in-down"
             data-aos-duration="1000"
-            className="text-center"
+            className="text-center xl:w-[70%] w-full flex justify-center mx-auto"
           >
             Explore our range of pricing packages tailored to suit your
             transaction needs. Whether you're processing large volumes or
@@ -831,7 +831,7 @@ const LandingHomepage = () => {
           <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2">
             Get the CyberPay Mobile App
           </h2>
-          <p data-aos="zoom-in-down" data-aos-duration="1000">
+          <p data-aos="zoom-in-down" data-aos-duration="1000" className="xl:w-[70%] w-full">
             Experience hassle-free and secure payment processing with CyberPay.
             Our reliable platform guarantees smooth transactions, enabling you
             to concentrate on your business growth.

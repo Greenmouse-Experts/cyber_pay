@@ -429,7 +429,7 @@ const LandingHeader = () => {
               to="/developer"
               className={({ isActive }) => (isActive ? "!text-[#2F9BD6] " : "")}
             >
-              Developer
+              Developer API
             </NavLink>
             <NavLink
               onClick={toggle}

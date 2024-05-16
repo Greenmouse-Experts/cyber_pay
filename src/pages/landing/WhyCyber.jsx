@@ -98,35 +98,18 @@ const WhyCyber = () => {
           </div>
         </div>
       </div>
-      <div className="whynow">
+      <div className="whynow ">
         <h2 data-aos="fade-down" data-aos-duration="1100" className="h2">
-          Why now?
+          Why Now?
         </h2>
-        <p data-aos="zoom-in" data-aos-duration="1100">
+        <p data-aos="zoom-in" data-aos-duration="1100" className="lg:w-[80%] lg:text3xl">
           We have identified gaps in the existing payment and collection
           solutions that are still resulting in pain points and bad checkout
           experiences for the customers. Hence why CyberPay is out to address
           the pain points and make payments, collections and interactions
           between Merchants and their customers seamless, convenient and safer.
         </p>
-        <div className="flex items-center gap-2">
-          <DownloadButton
-            style="zoom-in-right"
-            delay="1100"
-            img={play}
-            span="Get it on"
-            text="Google Play"
-            color="black"
-          />
-          <DownloadButton
-            style="zoom-in-left"
-            delay="1100"
-            img={theme === "light" ? apple : appledark}
-            span="Download on"
-            text="Apple Store"
-            color="black"
-          />
-        </div>
+      
       </div>
       <div className="benefit">
         <div className="list_1 md:!grid-cols-3 !gap-6">
