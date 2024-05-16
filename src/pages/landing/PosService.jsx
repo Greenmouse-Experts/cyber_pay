@@ -116,7 +116,7 @@ const PosService = () => {
           data-aos-duration="1000"
         >
           <img
-            src="/img/software.jpg"
+            src="/img/software.png"
             alt=""
             className="w-full rounded-2xl h-[20rem]"
           />

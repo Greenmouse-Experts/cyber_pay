@@ -24,9 +24,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
               to="/ussdcollection"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -45,9 +45,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
               to="/marketplace"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -66,9 +66,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
               to="/mobile-app"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -87,9 +87,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
               to="/bulksms"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -108,9 +108,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
               to="/disbursement-solutions"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -129,9 +129,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
               to="/loan-repayment"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -150,9 +150,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%] ">
             <NavLink
               to="/pos-service"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -171,9 +171,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
               to="/penremit"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -192,9 +192,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
               to="/payment-link"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>
@@ -213,9 +213,9 @@ function OurProducts() {
           <div className="flex justify-between items-center absolute bottom-5 w-[90%]">
             <NavLink
               to="payment"
-              className="text-[#DD0A35] dark:text-white text-lg font-medium flex items-center gap-1"
+              className="text-black dark:text-white text-lg font-medium flex items-center gap-1"
             >
-              View more{" "}
+              View More{" "}
               <span>
                 <IoArrowForwardCircleOutline size={23} />
               </span>

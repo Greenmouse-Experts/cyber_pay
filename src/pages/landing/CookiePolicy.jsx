@@ -3,6 +3,7 @@ import Heading from "../../layout/landing/Heading";
 import banner from "../../assets/images/cookie-policy.png";
 import { FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import PolicyFooter from "../../components/PolicyFooter";
 
 function CookiePolicy() {
   const { theme } = useTheme();
@@ -63,12 +64,12 @@ function CookiePolicy() {
       </div>
 
       <div className="bg-[#2F9BD6] padding flex md:flex-row flex-col md:gap-0 gap-5 justify-between items-center mt-5">
-        <h3 className="h3 md:w-[55%] w-full text-white leading-10">CyberPay offers effortless setup and provides customers with a range of convenient and secure payment options.</h3>
+        <h3 className="h3 md:w-[55%] w-full text-white leading-10">
+          CyberPay offers effortless setup and provides customers with a range
+          of convenient and secure payment options.
+        </h3>
 
-        <div className="md:w-[30%] w-full flex gap-5">
-            <NavLink to="/about" className="bg-white text-[#2F9BD6] flex items-center gap-2 text-[1.1rem] font-medium py-4 px-9 text-nowrap">Learn More <span><FaArrowRight /></span></NavLink>
-            <NavLink to="/pricing" className="bg-white text-[#2F9BD6] flex items-center gap-2 text-[1.1rem] font-medium py-4 px-9 text-nowrap">Get Started <span><FaArrowRight /></span></NavLink>
-            </div>
+       <PolicyFooter/>
       </div>
     </div>
   );

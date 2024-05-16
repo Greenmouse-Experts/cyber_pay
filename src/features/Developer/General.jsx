@@ -12,7 +12,7 @@ function General({theme}) {
           platform via web, mobile or any user interface.
         </p>
       </div>
-      <div className={`${theme === "light" ? "bg-[#E8F0FC] " : "bg-black"} flex md:flex-row flex-col justify-between items-center  padding`}>
+      <div className={`${theme === "light" ? "bg-[#E8F0FC] " : "bg-black"} flex md:flex-row flex-col justify-between items-center  padding !py-10`}>
         <div className="md:w-[60%] w-full">
           <h3 className="h3 mb-4">
             What kind of companies/ businesses are eligible to use CyberPay?
@@ -25,7 +25,7 @@ function General({theme}) {
           </p>
         </div>
         <div className="md:w-[30%] w-full">
-          <img src={thinking} alt="thinking" />
+          <img src={thinking} alt="thinking" className=" scale-75"/>
         </div>
       </div>
       <div className={`developer_error ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"} dark:bg-gray-900 dark:text-white  padding`}>
@@ -479,7 +479,7 @@ function General({theme}) {
         </div>
 
         <div className="md:w-[30%] md:block hidden">
-          <img src={subscribe} className="w-full" alt="" />
+          <img src={subscribe} className="w-full scale-75" alt="" />
         </div>
       </div>
     </>

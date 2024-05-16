@@ -3,6 +3,7 @@ import banner from "../../assets/images/privacy-policy.png";
 import { useTheme } from "../../ThemeContext";
 import { FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import PolicyFooter from "../../components/PolicyFooter";
 
 function DataPolicy() {
   const { theme } = useTheme();
@@ -76,10 +77,7 @@ function DataPolicy() {
           of convenient and secure payment options.
         </h3>
 
-        <div className="md:w-[30%] w-full flex gap-5">
-            <NavLink to="/about" className="bg-white text-[#2F9BD6] flex items-center gap-2 text-[1.1rem] font-medium py-4 px-9 text-nowrap">Learn More <span><FaArrowRight /></span></NavLink>
-            <NavLink to="/pricing" className="bg-white text-[#2F9BD6] flex items-center gap-2 text-[1.1rem] font-medium py-4 px-9 text-nowrap">Get Started <span><FaArrowRight /></span></NavLink>
-            </div>
+        <PolicyFooter/>
       </div>
     </div>
   );

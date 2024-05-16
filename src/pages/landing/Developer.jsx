@@ -23,7 +23,7 @@ const Developer = () => {
     <div className={`pension ${theme === "light" ? "" : "darkabout text-white"}`}>
       <Heading
         img={banner}
-        head="Developers"
+        head="Developer Api"
         body="At CyberPay, we have put structures in place to ensure continuous high transaction success rate."
       />
       <div className="developer ">

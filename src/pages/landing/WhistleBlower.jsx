@@ -40,7 +40,7 @@ function WhistleBlower() {
         </div>
         <div className="flex flex-col mt-20">
           <label className="para">Supporting Document</label>
-          <input type="file" name="" id="" className="mt-5" />
+          <input type="file" name="" id="" className="mt-5"  style={{}}/>
         </div>
 
         <div className="mt-20 flex justify-end ">
