@@ -12,7 +12,7 @@ const Faqs = () => {
       <Heading
         img="/img/faq.png"
         head="FAQs"
-        body="Our frequently asked questions"
+        body="Our Frequently Asked Questions"
       />
       
 
