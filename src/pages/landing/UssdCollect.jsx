@@ -94,47 +94,47 @@ const UssdCollect = () => {
           <h2 className="h2">Benefits to the members</h2>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />A member can use code
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />A member can use code
             with any bank account tied to his/her mobile number.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             Easy and Simple to Use.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             One Time dial to Pay code.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             Convenient for giving at any location and time.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             Instant Notification/Receipt.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             Smart Phone not required.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             Promotes instant giving.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             Prevents chargeback issues.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             Saves time.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline color="#042E46" />
+            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
             No restrictions to a single bank.
           </p>
         </div>
@@ -181,7 +181,7 @@ const UssdCollect = () => {
         <div className="procedure_list">
           {data.map((item, index) => (
             <div className="ussd_card dark:!bg-gray-600 dark:text-white rounded-[15px]" key={index}>
-              <span className="bg-rose-200  text-rose-600">{item.num}</span>
+              <span className="bg-rose-200  text-rose-600 dark:bg-rose-800">{item.num}</span>
               <p className="para">{item.body}</p>
             </div>
           ))}
