@@ -84,7 +84,7 @@ const UssdCollect = () => {
           data-aos-duration="1000"
           className="seam_img"
         >
-          <img src={seam2} alt="" />
+          <img src={seam2} alt="" className="rounded-2xl"/>
         </div>
         <div
           data-aos="zoom-in-left"
