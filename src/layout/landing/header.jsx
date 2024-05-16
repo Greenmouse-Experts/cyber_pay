@@ -114,6 +114,113 @@ const LandingHeader = () => {
               Home
             </NavLink>
             <div
+              onClick={() => {
+                setAboutDropdownOpen2(!aboutDropdownOpen2);
+                setAboutDropdownOpen(false);
+              }}
+              className="nav_dropdown"
+            >
+              <span>
+                {" "}
+                Company <IoIosArrowDown />
+              </span>
+              {aboutDropdownOpen2 && (
+                <div className="drop_link !mt-44">
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/about"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <MdVerifiedUser className="text-blue-500" />
+                    </span>{" "}
+                    About CyberPay
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/story"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <PiBookOpenUserFill className="text-sky-950" />
+                    </span>{" "}
+                    Our Story
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/people"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <FaUsers className="text-green-800" />
+                    </span>{" "}
+                    Our People
+                  </NavLink>
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/careers"
+                  >
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <FaUserTie className="text-sky-950" />
+                    </span>{" "}
+                    Careers
+                  </NavLink>
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
+                    <span className="bg-stone-50 rounded-[9px]">
+                      <PiCertificateBold className="text-red-500" />
+                    </span>{" "}
+                    Our Certification
+                  </NavLink>
+                </div>
+              )}
+              {aboutDropdownOpen2 && (
+                <div className="drop">
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/about"
+                  >
+                    About CyberPay <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/story"
+                  >
+                    Our Story
+                    <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/people"
+                  >
+                    Our People <RiArrowRightSLine />
+                  </Link>
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/careers"
+                  >
+                    Careers <RiArrowRightSLine />
+                  </Link>
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
+                    Our Certification
+                    <RiArrowRightSLine />
+                  </Link>
+                </div>
+              )}
+            </div>
+            <div
               className="nav_dropdown"
               onClick={() => {
                 setAboutDropdownOpen(!aboutDropdownOpen);
@@ -304,113 +411,7 @@ const LandingHeader = () => {
                 </div>
               )}
             </div>
-            <div
-              onClick={() => {
-                setAboutDropdownOpen2(!aboutDropdownOpen2);
-                setAboutDropdownOpen(false);
-              }}
-              className="nav_dropdown"
-            >
-              <span>
-                {" "}
-                Company <IoIosArrowDown />
-              </span>
-              {aboutDropdownOpen2 && (
-                <div className="drop_link !mt-44">
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/about"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <MdVerifiedUser className="text-blue-500" />
-                    </span>{" "}
-                    About CyberPay
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/story"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <PiBookOpenUserFill className="text-sky-950" />
-                    </span>{" "}
-                    Our Story
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/people"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <FaUsers className="text-green-800" />
-                    </span>{" "}
-                    Our People
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/careers"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <FaUserTie className="text-sky-950" />
-                    </span>{" "}
-                    Careers
-                  </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <PiCertificateBold className="text-red-500" />
-                    </span>{" "}
-                    Our Certification
-                  </NavLink>
-                </div>
-              )}
-              {aboutDropdownOpen2 && (
-                <div className="drop">
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/about"
-                  >
-                    About CyberPay <RiArrowRightSLine />
-                  </Link>
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/story"
-                  >
-                    Our Story
-                    <RiArrowRightSLine />
-                  </Link>
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/people"
-                  >
-                    Our People <RiArrowRightSLine />
-                  </Link>
-                  <Link
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/careers"
-                  >
-                    Careers <RiArrowRightSLine />
-                  </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
-                    Our Certification
-                    <RiArrowRightSLine />
-                  </Link>
-                </div>
-              )}
-            </div>
+           
             <NavLink
               onClick={toggle}
               onBlur={hide}

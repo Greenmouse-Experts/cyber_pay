@@ -25,7 +25,7 @@ const LandingAbout = () => {
       <div className="about_main">
         <div className="story">
           <div data-aos="fade-right" data-aos-duration="1000" className="story_img">
-            <img src={story} alt="" />
+            <img src="/img/about-img1.png" alt="" />
           </div>
           <div data-aos="fade-left" data-aos-duration="1000" className="story_text">
             <h2 data-aos="zoom-out" data-aos-duration="1100" className="h2">
@@ -55,18 +55,18 @@ const LandingAbout = () => {
             </Link>
           </div>
           <div className="our_body">
-            <div data-aos="zoom-in-right" data-aos-duration="1100" className="our_card vision bg-blue-100">
+            <div data-aos="zoom-in-right" data-aos-duration="1100" className="our_card vision bg-blue-100 dark:bg-gray-600 ">
               <div className="our_text">
-                <h2 className="h2">Our Vision</h2>
+                <h2 className="h2 dark:!text-white">Our Vision</h2>
                 <p>To be the partner of choice in the financial technology industry.</p>
               </div>
               <div className="our_icon bg-blue-500 bg-opacity-10 rounded-full">
                 <RiFlagFill className='text-sky-500' />
               </div>
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="1100" className="our_card mission bg-pink-100">
+            <div data-aos="zoom-in-left" data-aos-duration="1100" className="our_card mission bg-pink-100 dark:bg-sky-950">
               <div className="our_text">
-                <h2 className="h2">Our Mission</h2>
+                <h2 className="h2 dark:!text-white">Our Mission</h2>
                 <p>To facilitate transactions globally.</p>
               </div>
               <div className="our_icon bg-rose-600 bg-opacity-10 rounded-full">

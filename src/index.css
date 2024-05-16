@@ -139,6 +139,10 @@ p,a, span{
   font-family: 'Proxima Nova', sans-serif !important; 
 }
 
+a{
+  text-wrap: nowrap;
+}
+
 html {
   overflow-x: hidden !important;
   scroll-behavior: smooth;

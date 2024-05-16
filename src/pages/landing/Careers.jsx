@@ -69,10 +69,7 @@ const Careers = () => {
               become part of a forward-thinking team dedicated to making a
               difference in the world of financial technology.
             </p>
-            <Link className="startbtn" to="https://merchant.cyberpay.ng">
-              <span>Get Started</span>
-              <HiMiniArrowRightCircle />
-            </Link>
+            
           </div>
         </div>
       </div>

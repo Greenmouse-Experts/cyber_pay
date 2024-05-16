@@ -34,7 +34,7 @@ const PaymentLink = () => {
   ];
 
   return (
-    <div className={`pension ussd ${theme === "light" ? "" : "darkabout"}`}>
+    <div className={`pension ussd ${theme === "light" ? "" : "darkabout"} pb-20`}>
       <Heading
         img="img/payment.png"
         head="Unlock online sales with Payment Links"

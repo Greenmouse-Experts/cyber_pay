@@ -25,7 +25,7 @@ const AccordionItem = ({ title, answer,open }) => {
             {title}
           </span>
           {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
-          <FaPlus  size={10} color={accordionOpen ? "black" : "black"} />
+          <FaPlus  size={10} className="text-black dark:text-white"  />
         </button>
       </div>
       <div

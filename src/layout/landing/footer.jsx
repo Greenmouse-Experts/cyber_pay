@@ -53,7 +53,11 @@ const LandingFooter = () => {
           <h4>Quick Links</h4>
           <div>
             <Link to="/">Home</Link>
-            <Link to="/about">Company</Link>
+            <Link to="/about">About CyberPay</Link>
+            <Link to="/story">Our Story</Link>
+            <Link to="/people">Our People</Link>
+            <Link to="/careers">Careers</Link>
+            <Link to="/certifications">Our Certification</Link>
             <Link to="/whycyberpay">Why CyberPay </Link>
             <Link to="https://merchant.cyberpay.ng">Login</Link>
           </div>
@@ -71,8 +75,14 @@ const LandingFooter = () => {
         <div className="links">
           <h4>Solutions</h4>
           <div>
-            <Link to="/marketplace">Market Place</Link>
-            <Link to="/micropension">Micro Pension</Link>
+            <Link to="/marketplace">CyberPay Marketplace</Link>
+            <Link to="/mobile-app">CyberPay Mobile App</Link>
+            <Link to="/disbursement-solutions">Disbursement Solution</Link>
+            <Link to="/bulksms">Bulk SMS</Link>
+            <Link to="/loan-repayment">Loan Repayment Made Simple</Link>
+            <Link to="/pos-service">POS Services</Link>
+            <Link to="/penremit">PenRemit</Link>
+            <Link to="/payment-link">Online Sales with Payment Link</Link>
             <Link to="/ussdcollection">USSD Collection</Link>
             <Link to="/payment">Payment</Link>
           </div>

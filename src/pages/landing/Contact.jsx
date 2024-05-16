@@ -39,7 +39,7 @@ function Contact() {
               <FaLocationDot color="white" size={50} />
             </div>
             <div className=" flex flex-col gap-3 mt-3">
-              <h4 className="text-xl">Our Office</h4>
+              <h4 className="text-xl font-semibold">Our Office</h4>
               <p>
                 {" "}
                 Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.
@@ -53,7 +53,7 @@ function Contact() {
               <FaHeadset color="white" size={50} />
             </div>
             <div className=" flex flex-col gap-3 mt-3">
-              <h4 className="text-xl">Phone Number</h4>
+              <h4 className="text-xl font-semibold">Phone Number</h4>
               <p> 02015151118</p>
             </div>
           </div>
@@ -63,7 +63,7 @@ function Contact() {
               <IoIosMail color="white" size={50} />
             </div>
             <div className=" flex flex-col gap-3 mt-3">
-              <h4 className="text-xl">Email Address</h4>
+              <h4 className="text-xl font-semibold">Email Address</h4>
               <p> hello@cyberpay.net.ng</p>
               <p>support@cyberpay.net.ng</p>
             </div>
@@ -118,7 +118,9 @@ function Contact() {
                   className="bg-[#F4F4F4] text-black h-[120px] pl-5 w-full pt-4 placeholder:text-bluePrimary"
                 />
               </div>
-              <button type="submit" className="bg-white text-black py-3">Submit Form</button>
+              <button type="submit" className="bg-white text-black py-3">
+                Submit Form
+              </button>
             </form>
           </div>
         </div>

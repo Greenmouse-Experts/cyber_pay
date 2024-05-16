@@ -11,7 +11,7 @@ const PenRemit = () => {
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={solution}
+        img="/img/pension-banner.png"
         head="Pensions with Peace of Mind"
         body="Welcome to CyberPay’s comprehensive pension solutions. We understand that your financial future is non-negotiable, and we’re here to make sure it’s secure, seamless, and hassle-free"
       />
