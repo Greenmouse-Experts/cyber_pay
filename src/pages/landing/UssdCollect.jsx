@@ -44,7 +44,7 @@ const UssdCollect = () => {
   return (
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={solution}
+        img="img/ussd-banner.png"
         head="USSD Collection"
         body="The current circumstances have necessitated a change in the way things are done. The changes cut across every sphere of life and also affect the way things are done in our churches."
       />
@@ -195,7 +195,7 @@ const UssdCollect = () => {
           <div
             data-aos="zoom-in-down"
             data-aos-duration="1000"
-            className="code bg-indigo-50 rounded-2xl"
+            className="code bg-indigo-50 rounded-2xl dark:!bg-gray-600"
           >
             <h3 className="h3">Dedicated Code</h3>
             <p>
@@ -220,7 +220,7 @@ const UssdCollect = () => {
           <div
             data-aos="zoom-in-down"
             data-aos-duration="1000"
-            className="code bg-pink-100 rounded-2xl"
+            className="code bg-pink-100 rounded-2xl dark:!bg-gray-600"
           >
             <h3 className="h3">Shared Code</h3>
             <p>
