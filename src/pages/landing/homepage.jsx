@@ -387,7 +387,7 @@ const LandingHomepage = () => {
                   <div
                     className={`${
                       theme === "light" ? "bg-white" : "bg-[#0D0D0D]"
-                    }  absolute bottom-6 w-[85%] rounded-[21px] flex flex-col gap-2 p-3`}
+                    }  absolute bottom-7 w-[85%] rounded-[21px] flex flex-col gap-2 p-3`}
                   >
                     <div className="flex justify-between">
                       <span className="text-[0.8rem]">Your balance</span>
@@ -570,12 +570,12 @@ const LandingHomepage = () => {
                   <div
                     className={`${
                       theme === "light" ? "" : "bg-[#181818]"
-                    }  absolute bottom-[-.6rem] w-[100%]  flex flex-col gap-2 md:px-7 px-5`}
+                    }  absolute 2xl:bottom-[3%] xl:bottom-[-2%] sm:bottom-[-3%] w-[100%] bottom-[1rem]  flex flex-col gap-2 md:px-7 px-14`}
                   >
                     <img
                       src="/icons/revenue.svg"
                       alt=""
-                      className="xl:!h-[10rem] h-[8rem]"
+                      className="xl:!h-[10rem] !h-[8rem] !w-full"
                     />
                     <div></div>
                   </div>
