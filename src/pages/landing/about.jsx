@@ -49,10 +49,10 @@ const LandingAbout = () => {
               className="h2">
               Providing users with convenient and <br /> secure payment methods to choose from.
             </h2>
-            <Link data-aos="zoom-out-left" data-aos-duration="1100">
+            {/* <Link data-aos="zoom-out-left" data-aos-duration="1100">
               Learn More
               <RxArrowRight />
-            </Link>
+            </Link> */}
           </div>
           <div className="our_body">
             <div data-aos="zoom-in-right" data-aos-duration="1100" className="our_card vision bg-blue-100 dark:bg-gray-600 ">
