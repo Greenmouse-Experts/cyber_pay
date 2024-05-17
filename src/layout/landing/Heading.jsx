@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "../../Stylesheet/header.scss"
 import Resuablebtn from "../../components/Resuablebtn";
 import { RxArrowRight } from "react-icons/rx";
@@ -6,9 +6,7 @@ import { RxArrowRight } from "react-icons/rx";
 
 
 const Heading = ({head, body, img}) => {
-  useEffect(() => {
-    window.scrollTo(0, 150);
-  }, []);
+ 
   return (
     <div className='header'>
       <div className="main_head items-center">
