@@ -1,7 +1,5 @@
 import React from 'react'
 import "../../Stylesheet/header.scss"
-import Resuablebtn from "../../components/Resuablebtn";
-import { RxArrowRight } from "react-icons/rx";
 
 
 
