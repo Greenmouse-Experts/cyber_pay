@@ -15,7 +15,7 @@ function PolicyFooter() {
       </span>
     </NavLink>
     <NavLink
-        to="https://merchant.cyberpay.ng/"
+        to="https://merchant.cyberpay.ng/signup"
       className="bg-white text-[#2F9BD6] flex items-center gap-2 text-[1.1rem] font-medium py-4 px-9 text-nowrap"
     >
       Get Started{" "}

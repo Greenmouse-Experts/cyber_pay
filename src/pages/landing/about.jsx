@@ -34,7 +34,7 @@ const LandingAbout = () => {
             <p>
               At CyberPay, we pride ourselves in the understanding of the industry pain points and the various other challenges faced by the merchants and their customers alike. Hence, we have developed various products and services that address the challenges, thereby, making the process of digital payments and collections not only seamless but much more convenient, smarter and safer.
             </p>
-            <Link className='startbtn' to="https://merchant.cyberpay.ng">
+            <Link className='startbtn' to="https://merchant.cyberpay.ng/signup">
               <span>
                 Get Started
               </span>

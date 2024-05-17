@@ -480,7 +480,7 @@ const LandingHeader = () => {
         >
           Login
         </Link>
-        <Link to="/login" className="login_span ">
+        <Link to="https://merchant.cyberpay.ng/" className="login_span ">
           <BiSolidUserCircle />
         </Link>
 

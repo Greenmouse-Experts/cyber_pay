@@ -21,7 +21,7 @@ const Pricing = () => {
                         <h2 data-aos="fade-right" data-aos-duration="1000"  className="h2">
                             Providing users with convenient and <br /> secure payment methods to choose from.
                         </h2>
-                        <Link data-aos="fade-left" data-aos-duration="1000" to="https://merchant.cyberpay.ng/" >
+                        <Link data-aos="fade-left" data-aos-duration="1000" to="https://merchant.cyberpay.ng/signup" >
                             Get Started
                             <RxArrowRight />
                         </Link>

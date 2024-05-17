@@ -155,7 +155,7 @@ const LandingHomepage = () => {
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <NavLink
-                  to="https://merchant.cyberpay.ng"
+                  to="https://merchant.cyberpay.ng/signup"
                   className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
@@ -191,7 +191,7 @@ const LandingHomepage = () => {
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <NavLink
-                  to="https://merchant.cyberpay.ng"
+                  to="https://merchant.cyberpay.ng/signup"
                   className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
@@ -227,7 +227,7 @@ const LandingHomepage = () => {
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <NavLink
-                  to="https://merchant.cyberpay.ng"
+                  to="https://merchant.cyberpay.ng/signup"
                   className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
@@ -263,7 +263,7 @@ const LandingHomepage = () => {
             <div className="landing_link flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <NavLink
-                  to="https://merchant.cyberpay.ng"
+                  to="https://merchant.cyberpay.ng/signup"
                   className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
@@ -380,14 +380,14 @@ const LandingHomepage = () => {
                   />
                 </div>
                 <div className="flex flex-col  justify-center items-center">
-                  <h3 className="h3 sm:pt-12 pt-16 ">
+                  <h3 className="h3 sm:pt-10 pt-16 ">
                     Transfer anywhere around the world
                   </h3>
 
                   <div
                     className={`${
                       theme === "light" ? "bg-white" : "bg-[#0D0D0D]"
-                    }  absolute bottom-4 w-[80%] rounded-[21px] flex flex-col gap-2 p-3`}
+                    }  absolute bottom-6 w-[85%] rounded-[21px] flex flex-col gap-2 p-3`}
                   >
                     <div className="flex justify-between">
                       <span className="text-[0.8rem]">Your balance</span>
@@ -477,7 +477,7 @@ const LandingHomepage = () => {
                   />
                 </div>
                 <div className="flex flex-col  justify-center items-center">
-                  <h3 className="h3 sm:pt-12 pt-16 ">
+                  <h3 className="h3 sm:pt-10 pt-16 ">
                     Make bill payments online seamlessly.
                   </h3>
 
@@ -563,14 +563,14 @@ const LandingHomepage = () => {
                   <img src="/icons/brain.png" alt="" className=" !w-16 !h-16" />
                 </div>
                 <div className="flex flex-col  justify-center items-center">
-                  <h3 className="h3 sm:pt-12 pt-16 ">
+                  <h3 className="h3 sm:pt-10 pt-16 ">
                     Modify your financial insights and goals
                   </h3>
 
                   <div
                     className={`${
-                      theme === "light" ? "" : "bg-[#0D0D0D]"
-                    }  absolute bottom-0 w-[100%]  flex flex-col gap-2 px-8`}
+                      theme === "light" ? "" : "bg-[#181818]"
+                    }  absolute bottom-2 w-[100%]  flex flex-col gap-2 px-8`}
                   >
                     <img
                       src="/icons/revenue.svg"
@@ -660,7 +660,7 @@ const LandingHomepage = () => {
 
         <div className="flex gap-3">
           <NavLink
-            to="https://merchant.cyberpay.ng"
+            to="https://merchant.cyberpay.ng/signup"
             className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
           >
             Get Started
@@ -758,7 +758,7 @@ const LandingHomepage = () => {
                         ))}
                       </div>
                       <NavLink
-                        to="https://merchant.cyberpay.ng"
+                        to="https://merchant.cyberpay.ng/signup"
                         className="select_btn"
                       >
                         Get Started
@@ -843,7 +843,7 @@ const LandingHomepage = () => {
             <DownloadButton
               style="fade-right"
               delay="1200"
-              className="white_btn"
+              className=""
               img={play}
               span="Get it on"
               text="Google Play"

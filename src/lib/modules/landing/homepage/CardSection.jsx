@@ -45,7 +45,7 @@ const CardSection = () => {
           complex financial tasks is effortless.
         </p>
       </div>
-      <div data-aos="fade-right" data-aos-duration="1200" className="flex md:justify-end md:ml-auto card_img relative">
+      <div data-aos="fade-right" data-aos-duration="1200" className="flex md:justify-end md:ml-auto card_img relative lg:mt-0 mt-16">
        
           <Card rotation={135}>
             <motion.div

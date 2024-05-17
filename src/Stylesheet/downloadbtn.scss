@@ -110,7 +110,7 @@
     }
     .img-secction {
       .img_sec {
-        transform: scale(110.667%);
+        transform: unset;
       }
     }
   }
@@ -160,6 +160,10 @@
   padding: 0 5% !important;
   height: fit-content !important;
   margin: 0 !important;
+
+  @media screen and (max-width: 500px){
+    display: unset !important;
+  }
   .cooks {
     width: 100%;
     padding: 1rem;

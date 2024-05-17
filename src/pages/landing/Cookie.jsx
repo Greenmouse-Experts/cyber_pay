@@ -27,6 +27,7 @@ const Cookie = () => {
 
                     expires={150}
                     buttonStyle={{ display: "none" }}
+                    
                 >
                     <div className="cooks">
                     <p>

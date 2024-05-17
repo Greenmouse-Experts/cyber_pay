@@ -65,7 +65,7 @@ const UssdCollect = () => {
             impacting every aspect of life, including church operations.
           </p>
           <Resuablebtn
-              link="/pricing"
+              link="https://merchant.cyberpay.ng/signup"
               place="center-bottom"
               delay="1300"
               style="zoom-in"
