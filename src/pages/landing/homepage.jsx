@@ -586,22 +586,24 @@ const LandingHomepage = () => {
         </div>
       </div>
       <div className={`home ${theme === "light" ? "light" : "lbg"}`}>
-        <div className="sec_bg ">
+        
           <BgSection
             style="fade-up"
             delay="900"
             sec_delay="1000"
             sec_style="fade-down"
             link="Learn more"
-            img={lead}
+            img="/img/why-home.png"
             route="/whycyberpay"
             heading="Why CyberPay"
             paragraph2="Hence why CyberPay is out to address the pain points and make payments, collections and interactions between Merchants and their customers seamless, convenient and safer."
             paragraph="We have identified gaps in the existing payment and collection solutions that are still resulting in pain points and bad checkout experiences for the customers."
           >
-            <div></div>
+            <div>
+
+            </div>
           </BgSection>
-        </div>
+        
       </div>
 
       {/* <Videomodal /> */}
