@@ -64,7 +64,7 @@ const Story = () => {
           className="lg:w-[45%] w-full"
         >
           <img
-            src="/img/digital-payment.jpg"
+            src="/img/story-img.jpg"
             alt=""
             className="w-full rounded-2xl"
           />
