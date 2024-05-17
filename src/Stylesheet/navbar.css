@@ -309,12 +309,14 @@
     }
 
     .nav_hide {
-        display: block;
+       
         position: absolute;
         bottom: 0;
         padding: 2rem;
         width: 100%;
 
+            display: none !important;
+        
 
     }
 
