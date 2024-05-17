@@ -372,7 +372,7 @@
         height: calc(100vh - 7rem);
         background: white;
         top: 0;
-        left: 0;
+        right: 0;
         margin-top: 7rem;
         box-shadow: 0 10px 10px rgba(58, 57, 57, 0.4);
     }

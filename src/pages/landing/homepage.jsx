@@ -570,12 +570,12 @@ const LandingHomepage = () => {
                   <div
                     className={`${
                       theme === "light" ? "" : "bg-[#181818]"
-                    }  absolute bottom-2 w-[100%]  flex flex-col gap-2 px-8`}
+                    }  absolute bottom-[-.6rem] w-[100%]  flex flex-col gap-2 md:px-7 px-5`}
                   >
                     <img
                       src="/icons/revenue.svg"
                       alt=""
-                      className="!h-[10rem]"
+                      className="xl:!h-[10rem] h-[8rem]"
                     />
                     <div></div>
                   </div>
