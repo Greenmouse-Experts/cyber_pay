@@ -65,8 +65,8 @@ const People = () => {
         </div>
       </div>
 
-      <div className="padding bg-[#FAFAF9] dark:bg-black dark:text-white"   >
-        <p className="para font-medium" data-aos="fade-up"
+      <div className="padding bg-[#FAFAF9] dark:bg-black dark:text-white flex justify-center items-center"   >
+        <p className="para font-medium lg:w-[70%] w-full text-center" data-aos="fade-up"
           data-aos-duration="1000">
           Join us on this journey of exploration, where technology isn't just a
           tool; it's a force for change. Together, we'll shape the future and

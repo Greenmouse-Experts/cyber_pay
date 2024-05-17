@@ -228,7 +228,7 @@ const LandingHeader = () => {
               }}
             >
               <span>
-                Solution <IoIosArrowDown />
+                Solutions <IoIosArrowDown />
               </span>
               {aboutDropdownOpen && (
                 <div className="drop_link">
