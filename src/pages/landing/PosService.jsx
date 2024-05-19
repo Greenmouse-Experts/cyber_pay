@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../../Stylesheet/pension.scss";
 import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";

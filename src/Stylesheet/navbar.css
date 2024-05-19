@@ -383,6 +383,7 @@
 
 
     .nav_link {
+        overflow-y: scroll;
         flex-direction: column;
         width: 22rem;
         padding: 0 !important;

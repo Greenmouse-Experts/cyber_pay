@@ -1,9 +1,8 @@
-import React from "react";
+
 import "../../Stylesheet/pension.scss";
 import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
 import solution from "../../assets/images/solution.png";
-import market from "../../assets/images/market.png";
 
 const Disbursement = () => {
   const { theme } = useTheme();
