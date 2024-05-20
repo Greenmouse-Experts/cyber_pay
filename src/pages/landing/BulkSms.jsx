@@ -1,13 +1,20 @@
 import "../../Stylesheet/pension.scss";
 import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
-import solution from "../../assets/images/solution.png";
-import market from "../../assets/images/market.png";
+
 import AccordionItem from "../../components/Accordion";
 import BulkBanner from "../../assets/images/bulk-banner.png"
+import { useState } from "react";
 
 function BulkSms() {
   const { theme } = useTheme();
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
 
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"} pb-20`}>
@@ -43,14 +50,23 @@ function BulkSms() {
             <AccordionItem
               title="Effective Communication"
               answer="Communicate with your audience in real time, creating immediate impact."
+              index={0}
+              open={openIndex === 0}
+              toggleAccordion={toggleAccordion}
             />
             <AccordionItem
               title="Brand Excellence"
               answer="Elevate your brand recognition and establish a strong presence in the market."
+              index={1}
+              open={openIndex === 1}
+              toggleAccordion={toggleAccordion}
             />
             <AccordionItem
               title="Customer Satisfaction"
               answer="Keep your customers engaged and satisfied, fostering long-term loyalty."
+              index={2}
+              open={openIndex === 2}
+              toggleAccordion={toggleAccordion}
             />
           
           </div>
