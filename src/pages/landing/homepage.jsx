@@ -586,24 +586,20 @@ const LandingHomepage = () => {
         </div>
       </div>
       <div className={`home ${theme === "light" ? "light" : "lbg"}`}>
-        
-          <BgSection
-            style="fade-up"
-            delay="900"
-            sec_delay="1000"
-            sec_style="fade-down"
-            link="Learn more"
-            img="/img/why-home.png"
-            route="/whycyberpay"
-            heading="Why CyberPay"
-            paragraph2="Hence why CyberPay is out to address the pain points and make payments, collections and interactions between Merchants and their customers seamless, convenient and safer."
-            paragraph="We have identified gaps in the existing payment and collection solutions that are still resulting in pain points and bad checkout experiences for the customers."
-          >
-            <div>
-
-            </div>
-          </BgSection>
-        
+        <BgSection
+          style="fade-up"
+          delay="900"
+          sec_delay="1000"
+          sec_style="fade-down"
+          link="Learn more"
+          img="/img/why-home.png"
+          route="/whycyberpay"
+          heading="Why CyberPay"
+          paragraph2="Hence why CyberPay is out to address the pain points and make payments, collections and interactions between Merchants and their customers seamless, convenient and safer."
+          paragraph="We have identified gaps in the existing payment and collection solutions that are still resulting in pain points and bad checkout experiences for the customers."
+        >
+          <div></div>
+        </BgSection>
       </div>
 
       {/* <Videomodal /> */}
@@ -692,41 +688,6 @@ const LandingHomepage = () => {
             occasional payments, we have flexible options to accommodate your
             requirements.
           </p>
-
-          {/* <div style={{ position: "relative" }}>
-            <input
-              type="range"
-              min={0}
-              max={100}
-              value={value}
-              onChange={(e) => handleInputChange(parseInt(e.target.value))}
-              style={{
-                width: "100%",
-                height: "10px",
-                position: "absolute",
-                appearance: "none",
-                outline: "none",
-                background: `linear-gradient(
-            to right,
-            rgba(109, 220, 255, 1),
-            rgba(127, 96, 249, 1)
-          )`,
-              }}
-            />
-            {[0, 20, 40, 60, 80, 100].map((position) => (
-              <div
-                key={position}
-                style={{
-                  position: "absolute",
-                  top: "-3px",
-                  left: `${position}%`,
-                  width: "1px",
-                  height: "15px",
-                  background: "black",
-                }}
-              />
-            ))}
-          </div> */}
 
           <div className="simple_div mt-8">
             <div className="simple_list">
@@ -828,12 +789,35 @@ const LandingHomepage = () => {
           </div>
         </Slider>
       </div>
+      <div className="padding flex lg:flex-row flex-col justify-center gap-5">
+        <div className=" bg-[#DD0A35] w-fit px-5 py-3 rounded-2xl"
+         data-aos-easing="ease-in-sine"
+         data-aos="zoom-in"
+         data-aos-duration="1100">
+          <NavLink to="/isms" className="para text-white flex flex-col">
+            <span>ISMS</span>
+            <span>Information Security Policy Statement</span>
+          </NavLink>
+        </div>
+        <div className=" bg-bluePrimary w-fit px-5 py-3 rounded-2xl"  data-aos-easing="ease-in-sine"
+              data-aos="zoom-in"
+              data-aos-duration="1000">
+          <NavLink to="bcms" className="para text-white flex flex-col">
+            <span>BCMS</span>
+            <span> 22301 Business Continuity Policy Statement</span>
+          </NavLink>
+        </div>
+      </div>
       <div className="app">
         <div className="app_div">
           <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2">
             Get the CyberPay Mobile App
           </h2>
-          <p data-aos="zoom-in-down" data-aos-duration="1000" className="xl:w-[70%] w-full">
+          <p
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            className="xl:w-[70%] w-full"
+          >
             Experience hassle-free and secure payment processing with CyberPay.
             Our reliable platform guarantees smooth transactions, enabling you
             to concentrate on your business growth.

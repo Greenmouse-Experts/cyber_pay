@@ -27,6 +27,8 @@ import PenRemit from "../pages/landing/PenRemit";
 import PosService from "../pages/landing/PosService";
 import Certification from "../pages/landing/Certification";
 import PaymentLink from "../pages/landing/PaymentLink";
+import ISMS from "../pages/landing/ISMS";
+import BCMS from "../pages/landing/BCMS";
 
 export const landingRoutes = [
   {
@@ -136,6 +138,14 @@ export const landingRoutes = [
       {
         path: "payment-link",
         element: <PaymentLink />,
+      },
+      {
+        path: "isms",
+        element: <ISMS />,
+      },
+      {
+        path: "bcms",
+        element: <BCMS />,
       },
     ],
   },

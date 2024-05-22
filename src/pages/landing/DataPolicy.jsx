@@ -60,15 +60,6 @@ function DataPolicy() {
             employment or business relationship.
           </p>
         </div>
-
-        {/* <div className="mt-20">
-          <button className="bg-[#2F9BD6] cursor-pointer text-white underline mx-auto rounded-[4.8rem] flex items-center gap-2 text-[1.1rem] font-medium py-4 px-9 text-nowrap">
-            Read all our Privacy Policies
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
-        </div> */}
       </div>
 
       <div className="bg-[#2F9BD6] padding flex md:flex-row flex-col md:gap-0 gap-5 justify-between items-center mt-5">
@@ -77,7 +68,7 @@ function DataPolicy() {
           of convenient and secure payment options.
         </h3>
 
-        <PolicyFooter/>
+        <PolicyFooter />
       </div>
     </div>
   );
