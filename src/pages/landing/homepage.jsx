@@ -789,8 +789,8 @@ const LandingHomepage = () => {
           </div>
         </Slider>
       </div>
-      <div className="padding flex lg:flex-row flex-col justify-center gap-5">
-        <div className=" bg-[#DD0A35] w-fit px-5 py-3 rounded-2xl"
+      <div className="padding flex lg:flex-row flex-col justify-center items-center gap-5">
+        <div className=" bg-[#DD0A35] sm:w-[25rem] w-full px-5 py-3 rounded-2xl"
          data-aos-easing="ease-in-sine"
          data-aos="zoom-in"
          data-aos-duration="1100">
@@ -799,7 +799,7 @@ const LandingHomepage = () => {
             <span>Information Security Policy Statement</span>
           </NavLink>
         </div>
-        <div className=" bg-bluePrimary w-fit px-5 py-3 rounded-2xl"  data-aos-easing="ease-in-sine"
+        <div className=" bg-bluePrimary sm:w-[25rem] w-full px-5 py-3 rounded-2xl"  data-aos-easing="ease-in-sine"
               data-aos="zoom-in"
               data-aos-duration="1000">
           <NavLink to="bcms" className="para text-white flex flex-col">
