@@ -1,6 +1,12 @@
+import { useState } from "react";
 import AccordionItem from "../../components/Accordion";
 
 function Security() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <div className=" padding !pt-3">
@@ -45,6 +51,9 @@ function Security() {
               </div>
             </div>
           }
+          index={0}
+open={openIndex === 0}
+toggleAccordion={toggleAccordion}
         />
          <AccordionItem
           title="How does CyberPay protect my money?"
@@ -61,6 +70,9 @@ function Security() {
               </div>
             </div>
           }
+          index={1}
+open={openIndex === 1}
+toggleAccordion={toggleAccordion}
         />
 
 <AccordionItem
@@ -78,6 +90,10 @@ function Security() {
               </div>
             </div>
           }
+
+          index={2}
+open={openIndex === 2}
+toggleAccordion={toggleAccordion}
         />
       </div>
     </>

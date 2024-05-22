@@ -1,3 +1,4 @@
+import { FaAsterisk } from "react-icons/fa";
 import { useTheme } from "../../ThemeContext";
 
 function WhistleBlower() {
@@ -35,7 +36,9 @@ function WhistleBlower() {
           </div>
         </div>
         <div className="mt-10">
-          <label className="para">Description</label>
+        <label className="para flex items-center gap-1">
+            Description <span className=" text-redPrimary"><FaAsterisk size={10} /></span>
+          </label>
           <textarea className="h-40 p-4 w-full border rounded-md border-grey-300 mt-5"></textarea>
         </div>
         <div className="flex flex-col mt-20">

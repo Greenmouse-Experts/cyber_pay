@@ -1,8 +1,14 @@
 import wallet from "../../assets/images/wallet.png";
 import AccordionItem from "../../components/Accordion";
 import paymentlink from "../../assets/videos/payment-link.mp4";
+import { useState } from "react";
 
 function Getstarted({theme}) {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <div className=" padding !pt-3">
@@ -82,6 +88,9 @@ function Getstarted({theme}) {
           <AccordionItem
             title="Who bears the transactions charges?"
             answer="Transaction charges are borne by the merchants in line with the CBN regulation and international best practice."
+            index={0}
+            open={openIndex === 0}
+            toggleAccordion={toggleAccordion}
           />
           <AccordionItem
             title="How to activate your Beginner’s Scheme on CyberPay."
@@ -108,6 +117,9 @@ function Getstarted({theme}) {
                 </p>
               </div>
             }
+            index={1}
+            open={openIndex === 1}
+            toggleAccordion={toggleAccordion}
           />
           <AccordionItem
             title="Requirements for using CyberPay as a Starter Business"
@@ -134,6 +146,9 @@ function Getstarted({theme}) {
                 </p>
               </div>
             }
+            index={2}
+            open={openIndex === 2}
+            toggleAccordion={toggleAccordion}
           />
           <AccordionItem
             title="Customize your payment link"
@@ -142,6 +157,9 @@ function Getstarted({theme}) {
                 <video src={paymentlink} controls autoPlay loop />
               </div>
             }
+            index={3}
+            open={openIndex === 3}
+            toggleAccordion={toggleAccordion}
           />
         </div>
       </div>

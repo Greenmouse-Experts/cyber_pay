@@ -1,7 +1,14 @@
+import { useState } from "react";
 import openaccount from "../../assets/videos/open-account.mp4";
 import AccordionItem from "../../components/Accordion";
 
 function Account() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <>
       <div className=" padding !pt-3">
@@ -16,14 +23,23 @@ function Account() {
         <AccordionItem
           title="Is there a cost for creating a CyberPay Account?"
           answer="It costs totally nothing to open a Cyberpay Account!"
+          index={0}
+          open={openIndex === 0}
+          toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           title=" How do I connect to CyberPay?"
           answer="Require demo screens"
+          index={1}
+          open={openIndex === 1}
+          toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           title="Add Business documents"
           answer="Require demo screens"
+          index={2}
+          open={openIndex === 2}
+          toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           title="How do I check my CyberPay balance?"
@@ -36,11 +52,17 @@ function Account() {
               </p>
             </div>
           }
+          index={3}
+          open={openIndex === 3}
+          toggleAccordion={toggleAccordion}
         />
 
         <AccordionItem
           title="Upgrading from an individual account to a business account"
           answer="Require demo screens"
+          index={4}
+          open={openIndex === 4}
+          toggleAccordion={toggleAccordion}
         />
       </div>
     </>

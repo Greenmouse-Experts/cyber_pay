@@ -5,8 +5,14 @@ import access from "../../assets/images/access.png";
 import firstbank from "../../assets/images/firstbank.png";
 import zenith from "../../assets/images/zenith.png";
 import uba from "../../assets/images/uba.png";
+import { useState } from "react";
 
 function Payment() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <div className=" padding !pt-3">
@@ -60,9 +66,21 @@ function Payment() {
             <p className="mt-5">We are currently working on acceptance of International cards and this will be available soon.</p>
             <p className="mt-5">Charge per transaction is 1.58%</p>
           </div>
-        }/>
-        <AccordionItem title="USSD" answer="Require demo screens" />
-        <AccordionItem title="E-Wallet" answer="Require demo screens" />
+        }
+        index={0}
+        open={openIndex === 0}
+        toggleAccordion={toggleAccordion}
+        />
+        <AccordionItem title="USSD" answer="Require demo screens" 
+          index={1}
+          open={openIndex === 1}
+          toggleAccordion={toggleAccordion}
+        />
+        <AccordionItem title="E-Wallet" answer="Require demo screens" 
+          index={2}
+          open={openIndex === 2}
+          toggleAccordion={toggleAccordion}
+        />
       </div>
     </>
   );

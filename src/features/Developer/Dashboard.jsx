@@ -1,6 +1,12 @@
+import { useState } from "react";
 import AccordionItem from "../../components/Accordion";
 
 function Dashboard() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <div className=" padding !pt-3">
@@ -27,14 +33,23 @@ function Dashboard() {
           answer="At CyberPay, we continue to provide you multiple means of collecting payments from your customers. The CyberPay invoicing service allows you to generate a link that you can share with your customers via WhatsApp, emails, direct messaging on Twitter etc.
 
 "
+index={0}
+open={openIndex === 0}
+toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           title="How to split a payment across multiple bank accounts"
           answer="This is a feature to be added later"
+          index={1}
+          open={openIndex === 1}
+          toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           title="CyberPay Subscriptions"
           answer="This is a feature to be added later"
+          index={2}
+          open={openIndex === 2}
+          toggleAccordion={toggleAccordion}
         />
       </div>
     </>
