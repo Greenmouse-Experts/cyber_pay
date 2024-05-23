@@ -45,6 +45,7 @@ import Slider from "react-slick";
 import { settings, settings2 } from "../../lib/utils/helpers";
 import { IoMdArrowForward } from "react-icons/io";
 import OurProducts from "../../components/HomeComp/OurProducts";
+import PolicyFooter from "../../components/PolicyFooter";
 
 const LandingHomepage = () => {
   const [value, setValue] = useState(0);
@@ -789,25 +790,7 @@ const LandingHomepage = () => {
           </div>
         </Slider>
       </div>
-      <div className="padding flex lg:flex-row flex-col justify-center items-center gap-5">
-        <div className=" bg-[#DD0A35] sm:w-[25rem] w-full px-5 py-3 rounded-2xl"
-         data-aos-easing="ease-in-sine"
-         data-aos="zoom-in"
-         data-aos-duration="1100">
-          <NavLink to="/isms" className="para text-white flex flex-col">
-            <span>ISMS</span>
-            <span>Information Security Policy Statement</span>
-          </NavLink>
-        </div>
-        <div className=" bg-bluePrimary sm:w-[25rem] w-full px-5 py-3 rounded-2xl"  data-aos-easing="ease-in-sine"
-              data-aos="zoom-in"
-              data-aos-duration="1000">
-          <NavLink to="bcms" className="para text-white flex flex-col">
-            <span>BCMS</span>
-            <span> 22301 Business Continuity Policy Statement</span>
-          </NavLink>
-        </div>
-      </div>
+     <PolicyFooter/>
       <div className="app">
         <div className="app_div">
           <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2">

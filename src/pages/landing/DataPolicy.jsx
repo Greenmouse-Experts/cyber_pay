@@ -1,8 +1,6 @@
 import Heading from "../../layout/landing/Heading";
 import banner from "../../assets/images/privacy-policy.png";
 import { useTheme } from "../../ThemeContext";
-import { FaArrowRight } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 import PolicyFooter from "../../components/PolicyFooter";
 
 function DataPolicy() {
@@ -62,14 +60,9 @@ function DataPolicy() {
         </div>
       </div>
 
-      <div className="bg-[#2F9BD6] padding flex md:flex-row flex-col md:gap-0 gap-5 justify-between items-center mt-5">
-        <h3 className="h3 md:w-[55%] w-full text-white leading-10">
-          CyberPay offers effortless setup and provides customers with a range
-          of convenient and secure payment options.
-        </h3>
 
         <PolicyFooter />
-      </div>
+     
     </div>
   );
 }

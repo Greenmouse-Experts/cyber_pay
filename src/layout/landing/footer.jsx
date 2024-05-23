@@ -69,7 +69,8 @@ const LandingFooter = () => {
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/developer">Developer API</Link>
             <Link to="/faqs">FAQs</Link>
-            <Link to="/cookies-policy">Cookies Policy</Link>
+            <Link to="/isms">ISMS</Link>
+            <Link to="/bcms">BCMS</Link>
           </div>
         </div>
         <div className="links">
