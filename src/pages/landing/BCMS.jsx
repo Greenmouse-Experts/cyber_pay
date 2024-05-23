@@ -12,7 +12,7 @@ function BCMS() {
         body="SO 22301 Business Continuity Policy Statement"
       />
 
-      <div className="padding mt-5">
+      <div className="padding mt-5 xl:!px-[20%]">
         <div className="mb-12">
           <h3 className="h3">ISO 22301 Business Continuity Policy Statement</h3>
         </div>
@@ -77,16 +77,15 @@ function BCMS() {
             effectiveness of our Business Continuity Management System.
           </p>
         </div>
-      <div className="mb-10">
-        <h4 className="h4 mb-3">Policy Review</h4>
-        <p className="para text-[#565656]">
-          This policy statement is periodically reviewed by the Leadership Team
-          to ensure that it remains relevant and appropriate to the scope of
-          activities conducted by CyberPay.
-        </p>
+        <div className="mb-10">
+          <h4 className="h4 mb-3">Policy Review</h4>
+          <p className="para text-[#565656]">
+            This policy statement is periodically reviewed by the Leadership
+            Team to ensure that it remains relevant and appropriate to the scope
+            of activities conducted by CyberPay.
+          </p>
+        </div>
       </div>
-      </div>
-
     </div>
   );
 }

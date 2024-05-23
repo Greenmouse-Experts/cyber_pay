@@ -13,7 +13,7 @@ function DataPolicy() {
         body="Data Privacy Policy: Safeguarding Your Information"
       />
 
-      <div className="padding mt-5">
+      <div className="padding mt-5 xl:!px-[20%]">
         <div className="mb-12">
           <h3 className="h3 mb-5">
             Data Privacy & Protection Policy at CyberPay Limited: Safeguarding

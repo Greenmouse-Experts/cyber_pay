@@ -15,7 +15,7 @@ function TermsAndCondition() {
         body="Data Privacy Policy: Safeguarding Your Information"
       />
 
-      <div className="padding mt-5">
+      <div className="padding mt-5 xl:!px-[20%]">
         <div className="mb-12">
           <h3 className="h3 mb-5">What’s in these terms?</h3>
           <p className="para text-[#565656]">
@@ -85,43 +85,60 @@ function TermsAndCondition() {
           <p className="para text-[#565656] mt-12">
             You undertake, warrant, and covenant not to use the site in the
             following manner:
-            <br />&bull; to harass, abuse or threaten others or otherwise violate any
-            person’s legal rights; <br />&bull; to perpetrate fraud, financial or
-            other financial/illicit crime; <br />&bull; breach any of our other
-            policies; <br />&bull; to create or transmit unnecessary spam to any
-            person or URL; <br />&bull; to post, transmit or cause to be posted or
-            transmitted, any communication or solicitation designed to obtain
-            password, account, or private information of other users or persons
-            <br />&bull; (to post copyrighted content that does not belong to you and
+            <br />
+            &bull; to harass, abuse or threaten others or otherwise violate any
+            person’s legal rights; <br />
+            &bull; to perpetrate fraud, financial or other financial/illicit
+            crime; <br />
+            &bull; breach any of our other policies; <br />
+            &bull; to create or transmit unnecessary spam to any person or URL;{" "}
+            <br />
+            &bull; to post, transmit or cause to be posted or transmitted, any
+            communication or solicitation designed to obtain password, account,
+            or private information of other users or persons
+            <br />
+            &bull; (to post copyrighted content that does not belong to you and
             without obtaining the prior consent of the author;
-            <br />&bull; to use a robot, spider, scraper, or other automated means to
+            <br />
+            &bull; to use a robot, spider, scraper, or other automated means to
             access this site without our prior and express written consent;
-            <br />&bull; to engage in or create any unlawful gambling, sweepstakes,
-            or scheme;
-            <br />&bull; publishing or distributing any obscene or defamatory
+            <br />
+            &bull; to engage in or create any unlawful gambling, sweepstakes, or
+            scheme;
+            <br />
+            &bull; publishing or distributing any obscene or defamatory
             material;
-            <br />&bull; using this site in any way that impacts user access to the
+            <br />
+            &bull; using this site in any way that impacts user access to the
             site;
-            <br />&bull; to engage in the advertisement or solicit any user to buy or
+            <br />
+            &bull; to engage in the advertisement or solicit any user to buy or
             sell products or services without our prior and express written
             consent;
-            <br />&bull; disseminating computer viruses/bugs or other software;
-            <br />&bull; violating our intellectual property rights or any third
+            <br />
+            &bull; disseminating computer viruses/bugs or other software;
+            <br />
+            &bull; violating our intellectual property rights or any third
             party;
-            <br />&bull; to reverse engineer or permit the reverse engineering or
+            <br />
+            &bull; to reverse engineer or permit the reverse engineering or
             disassemble of any code or software from or on the site or our
             services; and
-            <br />&bull; In any way that is unlawful or fraudulent or has any
-            unlawful or fraudulent purpose or effect.
-            <br />&bull; transmit any data, send or upload any material that contains
+            <br />
+            &bull; In any way that is unlawful or fraudulent or has any unlawful
+            or fraudulent purpose or effect.
+            <br />
+            &bull; transmit any data, send or upload any material that contains
             viruses, Trojan horses, worms, timebombs, keystroke loggers,
             spyware, adware, or any other harmful programs or similar computer
             code designed to adversely affect the operation of any computer
             software or hardware.
-            <br />&bull; not to violate the security of the site by or through any
+            <br />
+            &bull; not to violate the security of the site by or through any
             unauthorized access, circumvention of encryption or other security
             tools, data mining, or interference with any host or user, or
-            network. <br />&bull; to use the site for illegal spam activities.
+            network. <br />
+            &bull; to use the site for illegal spam activities.
           </p>
         </div>
 
@@ -280,33 +297,44 @@ function TermsAndCondition() {
         <div className="mb-12">
           <h3 className="h3 mb-5">Disclaimer</h3>
           <p className="para text-[#565656]">
-            <br />&bull; The content on our site is provided on an “as is” basis. We
+            <br />
+            &bull; The content on our site is provided on an “as is” basis. We
             make no warranties, expressed or implied, and hereby disclaim and
             negate all other warranties including, without limitation, implied
             warranties or conditions of merchantability, fitness for a
             particular purpose, or non-infringement of intellectual property or
             other violation of rights.
-            <br />&bull; We do not warrant or make any representations concerning the
+            <br />
+            &bull; We do not warrant or make any representations concerning the
             accuracy, completeness, likely results, or reliability of the use of
             the content on the site or otherwise relating to such content or on
             any link or third-party content to the site.
-            <br />&bull; We disclaim all implied or express conditions, warranties,
+            <br />
+            &bull; We disclaim all implied or express conditions, warranties,
             representations, or other terms that may apply to our site or any
             content on it.
-            <br />&bull; We will not be liable to you for any loss or damage, whether
+            <br />
+            &bull; We will not be liable to you for any loss or damage, whether
             in contract, tort (including negligence), breach of statutory duty,
             or otherwise, even if foreseeable, arising under or in connection
             with:
-            <br />&bull; Access, navigate, or visit our site; <br />&bull; use of, or
-            inability to use our site; and or
-            <br />&bull; Use of or reliance on any content displayed on our site.
-            <br />&bull; In particular, we will not be liable for and in no event
-            will we be liable for, including the following:
-            <br />&bull; loss of profits, sales, business, or revenue; <br />&bull;
-            business interruption; <br />&bull; loss of anticipated savings; <br />&bull;
-            loss of business opportunity, goodwill, or reputation; or
-            <br />&bull; Any indirect or consequential loss or damage.
-            <br />&bull; You agree not to use our site for any commercial or business
+            <br />
+            &bull; Access, navigate, or visit our site; <br />
+            &bull; use of, or inability to use our site; and or
+            <br />
+            &bull; Use of or reliance on any content displayed on our site.
+            <br />
+            &bull; In particular, we will not be liable for and in no event will
+            we be liable for, including the following:
+            <br />
+            &bull; loss of profits, sales, business, or revenue; <br />
+            &bull; business interruption; <br />
+            &bull; loss of anticipated savings; <br />
+            &bull; loss of business opportunity, goodwill, or reputation; or
+            <br />
+            &bull; Any indirect or consequential loss or damage.
+            <br />
+            &bull; You agree not to use our site for any commercial or business
             purposes, except otherwise designated by us, and we have no
             liability to you for any loss of profit, loss of business, business
             interruption, or loss of business opportunity
@@ -381,19 +409,21 @@ function TermsAndCondition() {
 
           <p className="para text-[#565656] mt-12">
             &bull;Immediate, temporary or permanent withdrawal of your right to
-            navigate visit, use or access our site. <br />&bull; Immediate, temporary
-            or permanent removal of any content uploaded by you (directly or
-            indirectly) to our site. <br />&bull; Issue a warning to you. <br />&bull;
-            Legal proceedings against you for reimbursement of all costs,
+            navigate visit, use or access our site. <br />
+            &bull; Immediate, temporary or permanent removal of any content
+            uploaded by you (directly or indirectly) to our site. <br />
+            &bull; Issue a warning to you. <br />
+            &bull; Legal proceedings against you for reimbursement of all costs,
             liabilities, damages, and or claims on an indemnity basis
             (including, but not limited to, reasonable administrative and legal
-            costs) resulting from the breach. <br />&bull; Further legal action
-            against you. <br />&bull; Disclosure of such information to law
-            enforcement authorities as we reasonably feel is necessary or as
-            required by law. We exclude our liability for all actions we may
-            take in response to breaches of this acceptable use policy. The
-            actions we may take are not limited to those described above, and we
-            may take any other action we reasonably deem appropriate.
+            costs) resulting from the breach. <br />
+            &bull; Further legal action against you. <br />
+            &bull; Disclosure of such information to law enforcement authorities
+            as we reasonably feel is necessary or as required by law. We exclude
+            our liability for all actions we may take in response to breaches of
+            this acceptable use policy. The actions we may take are not limited
+            to those described above, and we may take any other action we
+            reasonably deem appropriate.
           </p>
         </div>
 
