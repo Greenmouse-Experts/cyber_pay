@@ -7,9 +7,9 @@ function BCMS() {
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={banner}
-        head="Data Privacy Policy"
-        body="ISO 22301 Business Continuity Policy Statement"
+        img="/img/bcms-banner.png"
+        head="BCMS"
+        body="SO 22301 Business Continuity Policy Statement"
       />
 
       <div className="padding mt-5">
