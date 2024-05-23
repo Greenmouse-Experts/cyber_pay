@@ -5,12 +5,12 @@ import { useTheme } from "../../ThemeContext";
 function ISMS() {
   const { theme } = useTheme();
   return (
-    <div className={`pension ${theme === "light" ? "" : "darkabout"} pt-20`}>
-      {/* <Heading
+    <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
+      <Heading
         img={banner}
-        head="Data Privacy Policy"
-        body="Data Privacy Policy: Safeguarding Your Information"
-      /> */}
+        head="ISMS"
+        body="ISO 27001 Information Security Policy Statement"
+      />
 
       <div className="padding mt-5">
         <div className="mb-12">

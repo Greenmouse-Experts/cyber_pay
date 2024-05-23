@@ -5,12 +5,12 @@ import { useTheme } from "../../ThemeContext";
 function BCMS() {
   const { theme } = useTheme();
   return (
-    <div className={`pension ${theme === "light" ? "" : "darkabout"} pt-20`}>
-      {/* <Heading
+    <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
+      <Heading
         img={banner}
         head="Data Privacy Policy"
-        body="Data Privacy Policy: Safeguarding Your Information"
-      /> */}
+        body="ISO 22301 Business Continuity Policy Statement"
+      />
 
       <div className="padding mt-5">
         <div className="mb-12">
