@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import banner from "../../assets/images/privacy-policy.png";
 import Heading from "../../layout/landing/Heading";
 import { useTheme } from "../../ThemeContext";
@@ -84,7 +85,7 @@ function ISMS() {
           </p>
           <p className="para text-[#565656] mb-10">
             For questions related to this Policy or Information Security contact
-            the Information Security Team cybersecurity@cyberspace.net.ng.
+            the Information Security Team <span><NavLink to="mailto:cybersecurity@cyberspace.net.ng.">cybersecurity@cyberspace.net.ng.</NavLink></span>
           </p>
         </div>
       </div>
