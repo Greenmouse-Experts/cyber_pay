@@ -429,6 +429,14 @@ html {
   transition: color 0.3s;
 }
 
+.dark input, textarea {
+  border: #f4f4f4 1px solid;
+  border-radius: 10px !important;
+  background-color: #1111;
+  color: white;
+  transition: color 0.3s;
+}
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 90%;
