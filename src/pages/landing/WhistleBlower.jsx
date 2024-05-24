@@ -44,7 +44,7 @@ function WhistleBlower() {
         <label className="para flex items-center gap-1">
             Description of tip <span className=" text-[#DD0A35]"><FaAsterisk size={10}  /></span>
           </label>
-          <textarea required={true} className="h-40 p-4 w-full border rounded-md border-grey-300 mt-5"></textarea>
+          <textarea required={true} className="h-40 p-4 w-full border rounded-md bg-white border-grey-300 mt-5"></textarea>
         </div>
         <div className="flex flex-col mt-20">
           <label className="para">Supporting Document</label>
