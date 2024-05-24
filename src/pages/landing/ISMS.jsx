@@ -64,9 +64,9 @@ function ISMS() {
             </div>
           </div>
           <p className="para text-[#565656] mb-10">
-            CyberPay Management acknowledges the need of continual improvement
+            CyberPay Management acknowledges the need for continual improvement
             and has introduced various methods to ensure that effectiveness and
-            continual improvement for the processes are achieved.
+            continual improvement of the processes are achieved.
           </p>
 
           <p className="para text-[#565656] mb-10">
