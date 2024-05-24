@@ -15,9 +15,26 @@ function WhistleBlower() {
         </div>
         <div className=" flex md:flex-row flex-col items-center gap-10 mt-16">
           <div className="md:w-[33%] w-full">
-            <label className="para">Fullname</label>
+            <label className="para">Full Name</label>
             <input
+            placeholder="Your Name"
               type="text"
+              className="w-full h-12 outline-none border rounded-md p-2 border-grey-300 mt-5"
+            />
+          </div>
+          <div className="md:w-[33%] w-full">
+            <label className="para">Email Address</label>
+            <input
+            placeholder="Email Address"
+              type="email"
+              className="w-full h-12 outline-none border rounded-md p-2 border-grey-300 mt-5"
+            />
+          </div>
+          <div className="md:w-[33%] w-full">
+            <label className="para">Phone Number</label>
+            <input
+            placeholder="Phone Number"
+              type="tel"
               className="w-full h-12 outline-none border rounded-md p-2 border-grey-300 mt-5"
             />
           </div>
@@ -25,9 +42,9 @@ function WhistleBlower() {
         </div>
         <div className="mt-10">
         <label className="para flex items-center gap-1">
-            Description <span className=" text-[#DD0A35]"><FaAsterisk size={10}  /></span>
+            Description of tip <span className=" text-[#DD0A35]"><FaAsterisk size={10}  /></span>
           </label>
-          <textarea className="h-40 p-4 w-full border rounded-md border-grey-300 mt-5"></textarea>
+          <textarea required={true} className="h-40 p-4 w-full border rounded-md border-grey-300 mt-5"></textarea>
         </div>
         <div className="flex flex-col mt-20">
           <label className="para">Supporting Document</label>

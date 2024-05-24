@@ -9,7 +9,7 @@ function BCMS() {
       <Heading
         img="/img/bcms-banner.png"
         head="BCMS"
-        body="SO 22301 Business Continuity Policy Statement"
+        body="ISO 22301 Business Continuity Policy Statement"
       />
 
       <div className="padding mt-5 xl:!px-[20%]">
@@ -19,10 +19,10 @@ function BCMS() {
         <div className="mb-10">
           <h4 className="h4 mb-3">Introduction</h4>
           <p className="para text-[#565656]">
-            CyberPay Limited is committed to protecting the security of
-            information, regardless of media type in accordance with applicable
-            laws and regulations. Information is critical and a valuable asset
-            for CyberPay
+          This Business Continuity Policy Statement provides a commitment by CyberPay to meet the
+business continuity requirements of our customers and other stakeholders by operating a 
+business continuity management system (BCMS) that conforms to ISO 22301:2019, the 
+International Standard for Business Continuity Management.
           </p>
         </div>
         <div className="mb-10">

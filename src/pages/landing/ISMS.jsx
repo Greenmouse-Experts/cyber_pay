@@ -32,7 +32,7 @@ function ISMS() {
           </p>
           <div className="mb-10">
             <h3 className="h3">
-              The management of CyberPay group is committed to ensuring:
+              The management of CyberPay is committed to ensuring:
             </h3>
             <div
              
@@ -65,7 +65,7 @@ function ISMS() {
           <p className="para text-[#565656] mb-10">
             CyberPay Management acknowledges the need of continual improvement
             and has introduced various methods to ensure that effectiveness and
-            continual improvement of the processes are achieved.
+            continual improvement for the processes are achieved.
           </p>
 
           <p className="para text-[#565656] mb-10">
