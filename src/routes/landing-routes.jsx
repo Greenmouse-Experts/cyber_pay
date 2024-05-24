@@ -7,8 +7,8 @@ import Market from "../pages/landing/Market";
 import MicroPension from "../pages/landing/MicroPension";
 import Ussd from "../pages/landing/UssdCollect";
 import Payment from "../pages/landing/Payment";
-import Login from "../pages/landing/Login";
-import Register from "../pages/landing/Register";
+// import Login from "../pages/landing/Login";
+// import Register from "../pages/landing/Register";
 import Developer from "../pages/landing/Developer";
 import CookiePolicy from "../pages/landing/CookiePolicy";
 import DataPolicy from "../pages/landing/DataPolicy";
@@ -149,12 +149,12 @@ export const landingRoutes = [
       },
     ],
   },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
+  // {
+  //   path: "/login",
+  //   element: <Login />,
+  // },
+  // {
+  //   path: "/register",
+  //   element: <Register />,
+  // },
 ];
