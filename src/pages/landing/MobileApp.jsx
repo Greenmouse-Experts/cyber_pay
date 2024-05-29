@@ -4,6 +4,8 @@ import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
 import solution from "../../assets/images/mobile-banner.png";
 import market from "../../assets/images/market.png";
+import { GoDotFill } from "react-icons/go";
+import { NavLink } from "react-router-dom";
 
 const MobileApp = () => {
   const { theme } = useTheme();
@@ -36,12 +38,12 @@ const MobileApp = () => {
 
          <div className="mt-5">
          <h2 className="h2">Features</h2>
-         <p className="para">Airtime</p>
-         <p className="para">Bills Payment </p>
-         <p className="para">Wallet transfers </p>
-         <p className="para">Betting</p>
-         <p className="para">Fund request</p>
-         <p className="para">QR Code</p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Airtime</p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Bills Payment </p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Wallet transfers </p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Betting</p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Fund request</p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span><NavLink to="https://apps.apple.com/ng/app/cyberpay/id6466426786">QR Code</NavLink></p>
          </div>
         </div>
       </div>

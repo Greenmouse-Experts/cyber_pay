@@ -102,7 +102,7 @@ const Disbursement = () => {
           <img src="/img/disbursement-4.png" alt="" className="w-full" />
         </div>
       </div>
-      <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
+      {/* <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
         <div
           className="lg:w-[40%] w-full "
           data-aos="fade-left"
@@ -123,7 +123,7 @@ const Disbursement = () => {
             team that’s always ready to assist.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding text-center flex flex-col justify-center items-center mt-10 pb-20">
       <h2 className="h2">Experience Payment Intelligence</h2>
         <p className="para mt-5 xl:w-[70%] w-full text-center">

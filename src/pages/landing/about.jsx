@@ -78,7 +78,7 @@ const LandingAbout = () => {
         </div>
         <div className="quick">
           <div data-aos="zoom-in"
-            data-aos-delay="800" className="quick_text bg-sky-950 text-white">
+            data-aos-delay="800" className="quick_text bg-sky-950 text-white mx-auto">
             <h3>Quick facts about us</h3>
             <p>
               We are CBN (PSSP)- Licensed payment processing service for gateway providers, acquirers and merchants.
@@ -91,20 +91,20 @@ const LandingAbout = () => {
             </div>
 
           </div>
-          <div data-aos="flip-left"
+          {/* <div data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000" className="quick_img">
             <img src={quick} alt="" />
-          </div>
+          </div> */}
 
         </div>
       </div>
       <div className="enjoy">
         <div className="enjoy_cont">
-          <h2 data-aos="fade-up"
+          {/* <h2 data-aos="fade-up"
         data-aos-delay="1000" className="h2">
             Enjoy Hassle Free Payment Solutions with the CyberPay Mobile App Today
-          </h2>
+          </h2> */}
 
           <div className="flex items-center gap-2">
             <DownloadButton style="zoom-in-right" delay="1100" img={play} span="GET IT ON" text="Google Play" />
