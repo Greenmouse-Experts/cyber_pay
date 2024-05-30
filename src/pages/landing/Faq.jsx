@@ -87,7 +87,7 @@ const Faqs = () => {
         head="FAQs"
         body="Our Frequently Asked Questions"
       />
-      <div className="mt-20 padding">
+      <div className="mt-20 padding xl:!px-[20%]">
         {faqs.map((faq, index) => (
           <AccordionItem
             key={index}
