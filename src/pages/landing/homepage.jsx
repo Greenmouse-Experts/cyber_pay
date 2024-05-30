@@ -658,7 +658,7 @@ const LandingHomepage = () => {
         <div className="flex gap-3">
           <NavLink
             to="https://merchant.cyberpay.ng/signup"
-            className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+            className="bg-bluePrimary  hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
           >
             Get Started
             <span>
