@@ -460,9 +460,9 @@ function General({theme}) {
             You can close your business on CyberPay at any time. To do this, log
             into your CyberPay Dashboard, go to “Settings”. <br />
             [1] then click on the Business tab. <br />
-            [2], scroll all the way down, and click on “Close this business”.
+            [2] scroll all the way down, and click on “Close this business”.
             <br />
-            [3]. Here’re a few things you should know about closing a business
+            [3] Here’re a few things you should know about closing a business
             on CyberPay:
           </p>
           <p className="mt-5 leading-8">
