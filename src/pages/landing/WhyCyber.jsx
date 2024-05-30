@@ -4,13 +4,13 @@ import Header from "../../layout/landing/Heading";
 import why from "../../assets/images/why.png";
 import "../../Stylesheet/why.scss";
 import comp from "../../assets/images/comp.png";
-import DownloadButton from "../../components/DownloadButton";
-import play from "../../assets/images/play.png";
-import apple from "../../assets/images/apple.png";
-import appledark from "../../assets/images/apple-logo.png";
+// import DownloadButton from "../../components/DownloadButton";
+// import play from "../../assets/images/play.png";
+// import apple from "../../assets/images/apple.png";
+// import appledark from "../../assets/images/apple-logo.png";
 import icon from "../../assets/images/icon.svg";
-import { Link } from "react-router-dom";
-import { HiMiniArrowRightCircle } from "react-icons/hi2";
+// import { Link } from "react-router-dom";
+// import { HiMiniArrowRightCircle } from "react-icons/hi2";
 
 const WhyCyber = () => {
   const list = [
@@ -94,7 +94,7 @@ const WhyCyber = () => {
             data-aos-duration="1100"
             className="comp_img"
           >
-            <img src={comp} alt="" />
+            <img src="/img/why-img.jpg" alt="" className="rounded-xl" />
           </div>
         </div>
       </div>

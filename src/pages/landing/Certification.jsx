@@ -17,6 +17,18 @@ const Certification = () => {
         img="/img/certificate.png"
       />
 
+      <div className=" bg-[#FAFAF9]  dark:bg-black padding ">
+        <h4 className="h4 text-center mb-10">
+          PAPSS is compliant to global regulatory standards to build the highest
+          level of trust assurance with its stakeholders
+        </h4>
+        <div className="flex sm:flex-row flex-col gap-10 justify-center items-center ">
+          <img src="/img/cert-1.png" alt="" className="w-36 h-36" />
+          <img src="/img/cert-2.png" alt="" className="w-36 h-36" />
+          <img src="/img/cert-3.png" alt="" className="w-36 h-36" />
+        </div>
+      </div>
+
       <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-black">
         <div
           className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
@@ -107,8 +119,6 @@ const Certification = () => {
           </p>
         </div>
       </div>
-
-     
     </div>
   );
 };
