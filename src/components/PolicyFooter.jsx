@@ -6,40 +6,51 @@ function PolicyFooter() {
     <div className="padding flex lg:flex-row flex-col justify-center items-center gap-5">
     <NavLink
       to="/isms"
-      className=" bg-[#DD0A35] sm:w-[24rem] w-full px-5 py-3 flex justify-between items-center rounded-2xl"
+      className=" bg-[#DD0A35] sm:w-[30rem] w-full px-5 py-3 flex flex-col gap-1 justify-between items-center rounded-2xl"
       data-aos-easing="ease-in-sine"
       data-aos="zoom-in"
       data-aos-duration="1100"
     >
-      <div className="para text-white flex flex-col w-[70%]">
-        <span>ISMS - ISO</span>
-        <span> 27001 Information Security Policy</span>
-      </div>
-      <div className="w-[30%] flex justify-end">
+       <div className=" flex justify-end">
         <img
           src="/img/isms.png"
           alt=""
           className=" w-16 h-16 rounded-full"
         />
       </div>
+      <div className="para text-white flex items-center">
+        <span>ISMS - ISO</span>
+        <span> 27001 Information Security Policy</span>
+      </div>
+     
     </NavLink>
     <NavLink
       to="/bcms"
-      className=" bg-bluePrimary sm:w-[24rem] w-full px-5 py-3 justify-between flex items-center rounded-2xl"
+      className=" bg-bluePrimary sm:w-[30rem] w-full px-5 py-3 justify-between flex flex-col gap-1 items-center rounded-2xl"
       data-aos-easing="ease-in-sine"
       data-aos="zoom-in"
       data-aos-duration="1100"
     >
-      <div className="para text-white flex flex-col  w-[70%]">
-        <span>BCMS - ISO </span>
-        <span> 22301 Business Continuity Policy</span>
-      </div>
-      <div className="w-[30%] flex justify-end">
+      <div className=" flex items-center gap-4">
         <img
           src="/img/bcms.webp"
           alt=""
-          className=" w-16 h-16 rounded-full "
+          className="  h-16 rounded-full "
         />
+           <img
+            src="/img/audit-1.png "
+            alt=""
+            className="  bg-white   h-16 "
+          />
+          <img
+            src="/img/audit-2.png"
+            alt=""
+            className="  bg-white  h-16 "
+          />
+      </div>
+      <div className="para text-white flex items-center">
+        <span>BCMS - ISO </span>
+        <span> 22301 Business Continuity Policy</span>
       </div>
     </NavLink>
   </div>
