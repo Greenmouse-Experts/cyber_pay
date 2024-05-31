@@ -37,11 +37,11 @@ function PolicyFooter() {
           />
         </div>
       </NavLink>
-      <div  className=" bg-bluePrimary w-full px-5 py-3 justify-center flex items-center rounded-2xl">
-        <img src="/img/audit-1.png " alt="" className="  bg-white rounded-md   h-20 " />
+      <div  className=" bg-gray-300 w-full px-5 py-3 justify-center flex items-center rounded-2xl">
+        <img src="/img/audit-1.png " alt="" className="  rounded-md   h-20 " />
       </div>
-      <div  className=" bg-bluePrimary w-full px-5 py-3 justify-center flex items-center rounded-2xl">
-        <img src="/img/audit-2.png" alt="" className="  bg-white rounded-md  h-20 " />
+      <div  className=" bg-gray-300 w-full px-5 py-3 justify-center flex items-center rounded-2xl">
+        <img src="/img/audit-2.png" alt="" className="   rounded-md  h-20 " />
       </div>
     </div>
   );
