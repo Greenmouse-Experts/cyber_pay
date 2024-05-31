@@ -12,9 +12,9 @@ function PolicyFooter() {
       >
         <div className="para text-white flex flex-col w-[70%]">
           <span>ISMS - ISO</span>
-          <span> 27001 Information Policy</span>
+          <span> 27001 Policy</span>
         </div>
-        <div className="w-[30%] flex justify-end">
+        <div className="w-[40%] flex justify-end">
           <img src="/img/isms.png" alt="" className=" w-20 h-20 rounded-full" />
         </div>
       </NavLink>
@@ -27,9 +27,9 @@ function PolicyFooter() {
       >
         <div className="para text-white flex flex-col  w-[70%]">
           <span>BCMS - ISO </span>
-          <span> 22301 Business Policy</span>
+          <span> 22301 Policy</span>
         </div>
-        <div className="w-[30%] flex justify-end">
+        <div className="w-[40%] flex justify-end">
           <img
             src="/img/bcms.webp"
             alt=""
