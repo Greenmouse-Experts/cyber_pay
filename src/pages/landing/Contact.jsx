@@ -85,7 +85,7 @@ function Contact() {
               <h4>Loading...</h4>
             )}
           </div>
-          <div className="bg-bluePrimary text-white px-8 2xl:py-[70px] py-10 md:w-[50%] w-full   md:ml-3 ml-0 shadow-md">
+          <div className=" text-black px-8 2xl:py-[70px] py-10 md:w-[50%] w-full   md:ml-3 ml-0 shadow-md">
             <form
               className="flex flex-col 2xl:gap-8 gap-5 "
               onSubmit={(e) => e.preventDefault()}
@@ -118,7 +118,7 @@ function Contact() {
                   className="bg-[#F4F4F4] text-black h-[120px] pl-5 w-full pt-4 placeholder:text-bluePrimary"
                 />
               </div>
-              <button type="submit" className="bg-white text-black py-3">
+              <button type="submit" className="bg-[#DD0A35] text-white font-medium py-3">
                 Submit Form
               </button>
             </form>

@@ -670,7 +670,7 @@ const LandingHomepage = () => {
 
       <CardSection />
 
-      <div className="home">
+      {/* <div className="home">
         <div className="simple">
           <h2
             data-aos="zoom-in-up"
@@ -732,7 +732,7 @@ const LandingHomepage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div
         className={`bg-[url('/img/coin-bg.png')] padding lg:!pr-0 `}
         // data-aos="zoom-in-up"

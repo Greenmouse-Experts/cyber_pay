@@ -10,7 +10,7 @@ function LoanRepayment() {
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
         img="/img/loan-repayment.png"
-        head="Loan Repayment Made Simple"
+        head="Direct Debit"
         body="Welcome to a world of hassle-free loan repayment. Our Loan Repayment Solution empowers businesses to effortlessly manage their customers’ debt repayment schedules"
       />
       <div className="flex lg:flex-row flex-col  padding justify-between items-center lg:gap-0 gap-5">
