@@ -29,6 +29,7 @@ import Certification from "../pages/landing/Certification";
 import PaymentLink from "../pages/landing/PaymentLink";
 import ISMS from "../pages/landing/ISMS";
 import BCMS from "../pages/landing/BCMS";
+import Liscence from "../pages/landing/Liscence";
 
 export const landingRoutes = [
   {
@@ -147,6 +148,10 @@ export const landingRoutes = [
         path: "bcms",
         element: <BCMS />,
       },
+      {
+        path: "license",
+        element: <Liscence/>,
+      }
     ],
   },
   // {

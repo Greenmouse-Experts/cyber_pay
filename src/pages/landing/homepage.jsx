@@ -790,7 +790,9 @@ const LandingHomepage = () => {
           </div>
         </Slider>
       </div>
+     <div className="padding">
      <PolicyFooter/>
+     </div>
       <div className="app">
         <div className="app_div">
           <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2">
