@@ -38,12 +38,12 @@ const MobileApp = () => {
 
          <div className="mt-5">
          <h2 className="h2">Features</h2>
-         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Airtime</p>
-         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Bills Payment </p>
-         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Wallet transfers </p>
-         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Betting</p>
-         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span>Fund request</p>
-         <p className="para flex items-center gap-2"> <span><GoDotFill size={14} color="black" /></span><NavLink to="https://apps.apple.com/ng/app/cyberpay/id6466426786">QR Code</NavLink></p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14}  /></span>Airtime</p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14}  /></span>Bills Payment </p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14}  /></span>Wallet transfers </p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14}  /></span>Betting</p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14}  /></span>Fund request</p>
+         <p className="para flex items-center gap-2"> <span><GoDotFill size={14}  /></span><NavLink to="https://apps.apple.com/ng/app/cyberpay/id6466426786">QR Code</NavLink></p>
          </div>
         </div>
       </div>

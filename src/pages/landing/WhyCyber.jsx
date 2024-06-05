@@ -9,6 +9,7 @@ import comp from "../../assets/images/comp.png";
 // import apple from "../../assets/images/apple.png";
 // import appledark from "../../assets/images/apple-logo.png";
 import icon from "../../assets/images/icon.svg";
+import { GoDotFill } from "react-icons/go";
 // import { Link } from "react-router-dom";
 // import { HiMiniArrowRightCircle } from "react-icons/hi2";
 
@@ -74,19 +75,19 @@ const WhyCyber = () => {
           >
             <h2 className="h2">Comprehensive Support</h2>
             <div className="why_text">
-              <p>✓ Multiple access channels (email, phone, online chat).</p>
-              <p>✓ 100% availability and prompt responses.</p>
-              <p>✓ Proactive monitoring of transactions.</p>
-              <p>✓ 24/7 Customer Support System in multiple languages.</p>
-              <p>✓ Provides shorter settlement cycle.</p>
-              <p>✓ Prompt resolution of disputes.</p>
-              <p>✓ Ensure complete settlement amount/value.</p>
-              <p>
-                ✓ Reporting - deploy customization, accurate and timely reports.
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Multiple access channels (email, phone, online chat).</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> 100% availability and prompt responses.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Proactive monitoring of transactions.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> 24/7 Customer Support System in multiple languages.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Provides shorter settlement cycle.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Prompt resolution of disputes.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Ensure complete settlement amount/value.</p>
+              <p className="para flex items-center gap-2">
+                <span><GoDotFill size={14}  /></span> Reporting - deploy customization, accurate and timely reports.
               </p>
-              <p>✓ Well defined escalation matrix and alert system.</p>
-              <p>✓ Education.</p>
-              <p>✓ Fraud prevention and management.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Well defined escalation matrix and alert system.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Education.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Fraud prevention and management.</p>
             </div>
           </div>
           <div
@@ -159,29 +160,29 @@ const WhyCyber = () => {
           data-aos-duration="1100"
           className="why_text"
         >
-          <p>
-            <span>✓</span> Simple, API based integration: We are guaranteeing
+          
+            <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  Simple, API based integration: We are guaranteeing
             simple API integration.
           </p>
-          <p>
-            <span>✓</span> Tokenization and Recurring Debit Opportunities: We
+          
+            <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  Tokenization and Recurring Debit Opportunities: We
             offer a tokenization system that generates a string of random
             characters to replace the original credit card number. The token
             then allows payments to be processed without exposing sensitive
             account details that could breach security and privacy.
           </p>
-          <p>
-            <span>✓</span> Faster Settlement Cycle: We provide hourly settlement
+          
+            <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  Faster Settlement Cycle: We provide hourly settlement
             system. However, this is upon fulfilling terms of service.
           </p>
-          <p>
-            <span>✓</span> We are innovating around alternate payment services
+          
+            <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  We are innovating around alternate payment services
             that allow consumers and businesses to safely make and receive
             payments in all major currencies, regardless of location. Payments
             can be made via Cards, Bank Accounts, USSD, eWallet and QR Code.
           </p>
-          <p>
-            <span>✓</span> Multiple Processing/Switching Channel – High PSR: We
+          
+            <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  Multiple Processing/Switching Channel – High PSR: We
             will be ensuring high transaction success rates, leveraging multiple
             processing and switching channels.
           </p>

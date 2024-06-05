@@ -14,7 +14,7 @@ const Disbursement = () => {
         body="When it comes to automating your payroll, we don’t believe in hidden charges or unnecessary delays. "
       />
       <div className="padding grid lg:grid-cols-2 grid-cols-1 justify-between lg:gap-16 gap-10 items-center">
-        <div className="bg-white card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
+        <div className="bg-white xl:h-[24rem] lg:h-[30rem] card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
           <div className=" bg-white border-2 border-[#F40C3B] p-4 rounded-full w-32 h-32 scale-90">
             {" "}
             <img src="/icons/dist-1.gif" alt="location" className=" scale-90" />
@@ -32,7 +32,7 @@ const Disbursement = () => {
           </div>
         </div>
 
-        <div className="bg-white card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
+        <div className="bg-white xl:h-[24rem] lg:h-[30rem] card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
           <div className=" bg-white border-2 border-[#F40C3B] p-4 rounded-full w-32 h-32 scale-90">
             {" "}
             <img src="/icons/dist-2.gif" alt="location" className=" scale-90" />
@@ -50,7 +50,7 @@ const Disbursement = () => {
           </div>
         </div>
 
-        <div className="bg-white card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
+        <div className="bg-white xl:h-[24rem] lg:h-[30rem] card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
           <div className=" bg-white border-2 border-[#F40C3B] p-4 rounded-full w-32 h-32 scale-90">
             {" "}
             <img src="/icons/dist-3.gif" alt="location" className=" scale-90" />
@@ -68,7 +68,7 @@ const Disbursement = () => {
           </div>
         </div>
 
-        <div className="bg-white card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
+        <div className="bg-white xl:h-[24rem] lg:h-[30rem] card-shadow dark:bg-bluePrimary dark:text-white rounded-md px-14 py-8 flex flex-col items-center  w-full">
           <div className=" bg-white border-2 border-[#F40C3B] p-4 rounded-full w-32 h-32 scale-90">
             {" "}
             <img src="/icons/dist-4.gif" alt="location" className=" scale-90" />
