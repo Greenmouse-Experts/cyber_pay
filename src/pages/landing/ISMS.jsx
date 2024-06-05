@@ -3,12 +3,13 @@ import banner from "../../assets/images/privacy-policy.png";
 import Heading from "../../layout/landing/Heading";
 import { useTheme } from "../../ThemeContext";
 import { GoDotFill } from "react-icons/go";
+import Heading2 from "../../components/Heading2";
 
 function ISMS() {
   const { theme } = useTheme();
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading
+      <Heading2
         img="/img/isms-banner.png"
         head="ISMS ISO 27001:2022"
         body="ISO 27001 Information Security Policy Statement"

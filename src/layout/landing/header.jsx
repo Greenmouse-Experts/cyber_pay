@@ -53,7 +53,7 @@ const LandingHeader = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsOpen(false);
+        // setIsOpen(false);
         setAboutDropdownOpen(false);
         setIsOpen2(false);
         setAboutDropdownOpen2(false);

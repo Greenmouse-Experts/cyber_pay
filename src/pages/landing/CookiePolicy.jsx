@@ -4,12 +4,13 @@ import banner from "../../assets/images/cookie-policy.png";
 import { FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import PolicyFooter from "../../components/PolicyFooter";
+import Heading2 from "../../components/Heading2";
 
 function CookiePolicy() {
   const { theme } = useTheme();
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading
+      <Heading2
         img="/img/-banner.png"
         head="Cookies Policy"
         body=" You can manage your cookie preferences or opt-out at any time through your browser settings."

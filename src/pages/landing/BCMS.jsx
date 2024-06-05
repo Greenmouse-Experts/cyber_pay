@@ -2,12 +2,13 @@ import { NavLink } from "react-router-dom";
 import banner from "../../assets/images/privacy-policy.png";
 import Heading from "../../layout/landing/Heading";
 import { useTheme } from "../../ThemeContext";
+import Heading2 from "../../components/Heading2";
 
 function BCMS() {
   const { theme } = useTheme();
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading
+      <Heading2
         img="/img/bcms-banner.png"
         head="BCMS ISO 22301:2019"
         body="ISO 22301 Business Continuity Policy Statement"

@@ -2,12 +2,13 @@ import Heading from "../../layout/landing/Heading";
 import banner from "../../assets/images/privacy-policy.png";
 import { useTheme } from "../../ThemeContext";
 import PolicyFooter from "../../components/PolicyFooter";
+import Heading2 from "../../components/Heading2";
 
 function DataPolicy() {
   const { theme } = useTheme();
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading
+      <Heading2
         img={banner}
         head="Data Privacy Policy"
         body="Data Privacy Policy: Safeguarding Your Information"

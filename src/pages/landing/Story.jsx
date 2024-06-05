@@ -11,6 +11,7 @@ const Story = () => {
     <div
       className={`landing-about ${theme === "light" ? "about" : "darkabout"}`}
     >
+      
       <Header
         head="Our Story"
         body="At CyberPay, we're not just shaping the future of payments; we're redefining the way businesses and customers connect in the digital realm. Experience the difference – it's our story, and it's yours too."

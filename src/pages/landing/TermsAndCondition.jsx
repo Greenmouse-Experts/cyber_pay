@@ -1,15 +1,13 @@
-import Heading from "../../layout/landing/Heading";
+
 import banner from "../../assets/images/terms.png";
-import { FaArrowRight } from "react-icons/fa";
 import { useTheme } from "../../ThemeContext";
-import { NavLink } from "react-router-dom";
-import PolicyFooter from "../../components/PolicyFooter";
+import Heading2 from "../../components/Heading2";
 
 function TermsAndCondition() {
   const { theme } = useTheme();
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading
+      <Heading2
         img={banner}
         head="Terms and Conditions"
         body=" We amend these terms from time to time. Every time you wish to use
