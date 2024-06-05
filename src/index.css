@@ -436,7 +436,14 @@ html {
 
 
 
-.dark input, textarea {
+.dark input {
+  border: #f4f4f4 1px solid;
+  border-radius: 10px !important;
+  background-color: #1111;
+  color: white;
+  transition: color 0.3s;
+}
+.dark  textarea {
   border: #f4f4f4 1px solid;
   border-radius: 10px !important;
   background-color: #1111;

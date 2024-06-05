@@ -24,7 +24,7 @@ const Certification = () => {
         </h4>
         <div className="flex sm:flex-row flex-col gap-10 justify-center items-center ">
           <img src="/img/cert-1.png" alt="" className="w-36 h-36" />
-          <img src="/img/cert-2.png" alt="" className="w-36 h-36" />
+          <img src="/img/audit-1.png " alt="" className="lg:w-52  h-36" />
           <img src="/img/cert-3.png" alt="" className="w-36 h-36" />
         </div>
       </div>
