@@ -19,7 +19,7 @@ const Certification = () => {
 
       <div className=" bg-[#FAFAF9]  dark:bg-black padding ">
         <h4 className="h4 text-center mb-10">
-          PAPSS is compliant to global regulatory standards to build the highest
+          CyberPay is compliant to global regulatory standards to build the highest
           level of trust assurance with its stakeholders
         </h4>
         <div className="flex sm:flex-row flex-col gap-10 justify-center items-center ">
