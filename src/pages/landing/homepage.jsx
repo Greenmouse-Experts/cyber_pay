@@ -167,7 +167,7 @@ const LandingHomepage = () => {
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Fully Licensed by the CBN</span>
+                <span>Licensed by the CBN</span>
 
                 <img src={bank} alt="" />
               </p>
@@ -203,7 +203,7 @@ const LandingHomepage = () => {
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Fully Licensed by the CBN</span>
+                <span>Licensed by the CBN</span>
 
                 <img src={bank} alt="" />
               </p>
@@ -239,7 +239,7 @@ const LandingHomepage = () => {
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Fully Licensed by the CBN</span>
+                <span>Licensed by the CBN</span>
 
                 <img src={bank} alt="" />
               </p>
@@ -275,7 +275,7 @@ const LandingHomepage = () => {
               </div>
 
               <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Fully Licensed by the CBN</span>
+                <span>Licensed by the CBN</span>
 
                 <img src={bank} alt="" />
               </p>
