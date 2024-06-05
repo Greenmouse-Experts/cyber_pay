@@ -81,7 +81,7 @@ const LandingFooter = () => {
             <Link to="/mobile-app">CyberPay Mobile App</Link>
             <Link to="/disbursement-solutions">Disbursement Solution</Link>
             <Link to="/bulksms">Bulk SMS</Link>
-            <Link to="/loan-repayment">Loan Repayment Made Simple</Link>
+            <Link to="/loan-repayment">Direct Debit</Link>
             <Link to="/pos-service">POS Services</Link>
             <Link to="/penremit">PenRemit</Link>
             <Link to="/payment-link">Online Sales with Payment Link</Link>

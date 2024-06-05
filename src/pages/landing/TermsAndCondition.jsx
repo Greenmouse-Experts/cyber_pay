@@ -11,8 +11,10 @@ function TermsAndCondition() {
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
         img={banner}
-        head="Data Privacy Policy"
-        body="Data Privacy Policy: Safeguarding Your Information"
+        head="Terms and Conditions"
+        body=" We amend these terms from time to time. Every time you wish to use
+        our site, please check these terms to ensure you understand the
+        terms that apply at that time."
       />
 
       <div className="padding mt-5 xl:!px-[20%]">
