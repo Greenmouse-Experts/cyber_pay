@@ -9,7 +9,7 @@ function ISMS() {
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
         img="/img/isms-banner.png"
-        head="ISMS"
+        head="ISMS ISO 27001:2022"
         body="ISO 27001 Information Security Policy Statement"
       />
 
