@@ -12,7 +12,7 @@ function PolicyFooter() {
        <div  className=" bg-[#DD0A35] w-full px-5 py-3 flex justify-between  items-center rounded-2xl">
        <div className="para text-white flex flex-col w-[70%]">
           <span>ISMS - ISO</span>
-          <span> 27001 Policy</span>
+          <span> 27001 </span>
         </div>
         <div className="w-[40%] flex justify-end">
           <img src="/img/isms.png" alt="" className=" w-20 h-20 rounded-full" />
@@ -26,7 +26,7 @@ function PolicyFooter() {
           <div  className=" w-full px-5 py-3 flex justify-between  items-center ">
         <div className="para text-white flex flex-col  w-[70%]">
           <span>BCMS - ISO </span>
-          <span> 22301 Policy</span>
+          <span> 22301 </span>
         </div>
         <div className="w-[40%] flex justify-end">
           <img

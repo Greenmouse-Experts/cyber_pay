@@ -85,7 +85,7 @@ function ISMS() {
           </p>
           <p className="para text-[#565656] mb-10">
             For questions related to this Policy or Information Security contact
-            the Information Security Team <span><NavLink to="mailto:cybersecurity@cyberspace.net.ng.">cybersecurity@cyberspace.net.ng.</NavLink></span>
+            the Information Security Team <span><NavLink to="mailto:isms@cyberspace.net.ng">isms@cyberspace.net.ng</NavLink></span>
           </p>
         </div>
       </div>

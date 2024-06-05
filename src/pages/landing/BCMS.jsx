@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import banner from "../../assets/images/privacy-policy.png";
 import Heading from "../../layout/landing/Heading";
 import { useTheme } from "../../ThemeContext";
@@ -83,6 +84,11 @@ International Standard for Business Continuity Management.
             This policy statement is periodically reviewed by the Leadership
             Team to ensure that it remains relevant and appropriate to the scope
             of activities conducted by CyberPay.
+          </p>
+
+          <p className="para text-[#565656] mt-5 mb-10">
+            For questions related to this Policy or Information Security contact
+            the Information Security Team <span><NavLink to="mailto:bcms@cyberspace.net.ng">bcms@cyberspace.net.ng</NavLink></span>
           </p>
         </div>
       </div>

@@ -113,7 +113,7 @@ export const getPageCount = (count, limit) => {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, // Enable autoplay
+    autoplay: false, // Enable autoplay
     autoplaySpeed: 2000,
     responsive: [
       {
