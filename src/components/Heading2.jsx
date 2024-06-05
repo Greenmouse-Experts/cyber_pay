@@ -13,7 +13,7 @@ const Heading2 = ({ head, body, img }) => {
           {/* <Resuablebtn link='/whycyberpay' text="View our Solutions" icon={<RxArrowRight />} /> */}
         </div>
         <div className="header_img">
-          <img src={img} alt="" />
+          {/* <img src={img} alt="" /> */}
         </div>
       </div>
     </section>

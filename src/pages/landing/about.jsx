@@ -61,8 +61,8 @@ const LandingAbout = () => {
                 <h2 className="h2 dark:!text-white">Our Vision</h2>
                 <p>To be the partner of choice in the financial technology industry.</p>
               </div>
-              <div className="our_icon bg-blue-500 bg-opacity-10 rounded-full">
-                <RiFlagFill className='text-sky-500' />
+              <div className="our_icon bg-blue-500 bg-opacity-10 rounded-full ">
+                <img src="/img/vision.png" alt="" className='object-center h-8 w-8' />
               </div>
             </div>
             <div data-aos="zoom-in-left" data-aos-duration="1100" className="our_card mission bg-pink-100 dark:bg-sky-950">
@@ -71,7 +71,7 @@ const LandingAbout = () => {
                 <p>To facilitate transactions globally.</p>
               </div>
               <div className="our_icon bg-rose-600 bg-opacity-10 rounded-full">
-                <TbTargetArrow className='text-rose-600' />
+              <img src="/img/mission.png" alt="" className='object-center h-8 w-8' />
               </div>
             </div>
           </div>
