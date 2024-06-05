@@ -10,6 +10,7 @@ import { GoDotFill } from "react-icons/go";
 import ease from "../../assets/images/ease.png";
 import Resuablebtn from "../../components/Resuablebtn";
 import { RxArrowRight } from "react-icons/rx";
+import Heading2 from "../../components/Heading2";
 
 const UssdCollect = () => {
   const { theme } = useTheme();
@@ -42,8 +43,8 @@ const UssdCollect = () => {
 
   return (
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading
-        img="img/ussd-banner.png"
+      <Heading2
+        // img="img/ussd-banner.png"
         head="USSD Collection"
         body="The current circumstances have necessitated a change in the way things are done. The changes cut across every sphere of life and also affect the way things are done in our churches."
       />
