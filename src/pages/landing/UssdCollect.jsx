@@ -6,9 +6,8 @@ import solution from "../../assets/images/solution.png";
 import seam1 from "../../assets/images/seam1.png";
 import seam2 from "../../assets/images/seam2.png";
 import seam3 from "../../assets/images/seam3.png";
-import { BsCheckCircleFill } from "react-icons/bs";
+import { GoDotFill } from "react-icons/go";
 import ease from "../../assets/images/ease.png";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import Resuablebtn from "../../components/Resuablebtn";
 import { RxArrowRight } from "react-icons/rx";
 
@@ -94,47 +93,47 @@ const UssdCollect = () => {
           <h2 className="h2">Benefits to the members</h2>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />A member can use code
+            <GoDotFill className="text-bluePrimary dark:text-white" />A member can use code
             with any bank account tied to his/her mobile number.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             Easy and Simple to Use.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             One Time dial to Pay code.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             Convenient for giving at any location and time.
           </p>
 
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             Instant Notification/Receipt.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             Smart Phone not required.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             Promotes instant giving.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             Prevents chargeback issues.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             Saves time.
           </p>
           <p className="flex items-center gap-1">
-            <IoMdCheckmarkCircleOutline className="text-bluePrimary dark:text-white" />
+            <GoDotFill className="text-bluePrimary dark:text-white" />
             No restrictions to a single bank.
           </p>
         </div>
@@ -199,22 +198,22 @@ const UssdCollect = () => {
           >
             <h3 className="h3">Dedicated Code</h3>
             <p>
-              <BsCheckCircleFill /> Example: *5599#{" "}
+              <GoDotFill /> Example: *5599#{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> XYZ Church as Single User{" "}
+              <GoDotFill /> XYZ Church as Single User{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> Special Menu List Creation{" "}
+              <GoDotFill /> Special Menu List Creation{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> Multiple Settlement Account{" "}
+              <GoDotFill /> Multiple Settlement Account{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> Free Integration{" "}
+              <GoDotFill /> Free Integration{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> 24/7 Support{" "}
+              <GoDotFill /> 24/7 Support{" "}
             </p>
           </div>
           <div
@@ -224,23 +223,23 @@ const UssdCollect = () => {
           >
             <h3 className="h3">Shared Code</h3>
             <p>
-              <BsCheckCircleFill /> Example: *5599*5#{" "}
+              <GoDotFill /> Example: *5599*5#{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> *5599 String Code Shared with other users{" "}
+              <GoDotFill /> *5599 String Code Shared with other users{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> Predetermined menu details: offering, tithe,
+              <GoDotFill /> Predetermined menu details: offering, tithe,
               e.t.c{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> Multiple Settlement Account{" "}
+              <GoDotFill /> Multiple Settlement Account{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> Free Integration{" "}
+              <GoDotFill /> Free Integration{" "}
             </p>
             <p>
-              <BsCheckCircleFill /> 24/7 Support{" "}
+              <GoDotFill /> 24/7 Support{" "}
             </p>
           </div>
         </div>

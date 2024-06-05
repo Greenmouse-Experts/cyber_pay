@@ -14,6 +14,7 @@ import appledark from "../../assets/images/apple-logo.png";
 import DownloadButton from "../../components/DownloadButton";
 import play from "../../assets/images/play.png";
 import apple from "../../assets/images/apple.png";
+import { GoDotFill } from "react-icons/go";
 
 const LandingAbout = () => {
   const { theme } = useTheme();
@@ -84,10 +85,10 @@ const LandingAbout = () => {
               We are CBN (PSSP)- Licensed payment processing service for gateway providers, acquirers and merchants.
             </p>
             <div className="quick_list">
-              <p>✓ We Accept multiple means of payment i.e. Cards, Bank Accounts, USSD, Wallet, QR Code.</p>
-              <p>✓ Secure, hassle-free and seamless payment platform for customers.</p>
-              <p>✓ Our platform allows a simple API Integration.</p>
-              <p>✓ Cyberpay is PCIDSS compliant.</p>
+               <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  We Accept multiple means of payment i.e. Cards, Bank Accounts, USSD, Wallet, QR Code.</p>
+               <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  Secure, hassle-free and seamless payment platform for customers.</p>
+               <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  Our platform allows a simple API Integration.</p>
+               <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  Cyberpay is PCIDSS compliant.</p>
             </div>
 
           </div>
