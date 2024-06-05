@@ -8,7 +8,7 @@ function TermsAndCondition() {
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading2
-        img={banner}
+        // img={banner}
         head="Terms and Conditions"
         body=" We amend these terms from time to time. Every time you wish to use
         our site, please check these terms to ensure you understand the

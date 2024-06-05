@@ -9,7 +9,7 @@ function DataPolicy() {
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading2
-        img={banner}
+        // img={banner}
         head="Data Privacy Policy"
         body="Data Privacy Policy: Safeguarding Your Information"
       />

@@ -11,7 +11,7 @@ function CookiePolicy() {
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading2
-        img="/img/-banner.png"
+        // img="/img/-banner.png"
         head="Cookies Policy"
         body=" You can manage your cookie preferences or opt-out at any time through your browser settings."
       />
