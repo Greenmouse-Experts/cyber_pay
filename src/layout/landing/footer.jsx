@@ -48,7 +48,11 @@ const LandingFooter = () => {
               <FaXTwitter />
             </Link>
           </div>
-          <span className="text-[#bdbdbd] text-sm">Fully Licensed by CBN</span>
+          <div className="flex items-center h-10 ">
+
+          <span className="text-[#bdbdbd] text-base "> Licensed by CBN    </span>
+          <img src="/img/bank.png" alt="" className=" -ml-8 scale-[0.2]" />
+          </div>
         </div>
         <div className="links">
           <h4>Quick Links</h4>
