@@ -68,8 +68,6 @@ function CookiePolicy() {
           CyberPay offers effortless setup and provides customers with a range
           of convenient and secure payment options.
         </h3>
-
-       <PolicyFooter/>
       </div>
     </div>
   );

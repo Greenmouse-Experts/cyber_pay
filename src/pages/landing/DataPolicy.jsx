@@ -60,8 +60,6 @@ function DataPolicy() {
         </div>
       </div>
 
-
-        <PolicyFooter />
      
     </div>
   );

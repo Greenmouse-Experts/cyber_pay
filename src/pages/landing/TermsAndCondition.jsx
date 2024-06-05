@@ -512,7 +512,7 @@ function TermsAndCondition() {
         </div>
       </div>
 
-      <PolicyFooter />
+    
     </div>
   );
 }

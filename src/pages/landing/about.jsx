@@ -99,12 +99,12 @@ const LandingAbout = () => {
 
         </div>
       </div>
-      <div className="enjoy">
+      {/* <div className="enjoy">
         <div className="enjoy_cont">
-          {/* <h2 data-aos="fade-up"
+          <h2 data-aos="fade-up"
         data-aos-delay="1000" className="h2">
             Enjoy Hassle Free Payment Solutions with the CyberPay Mobile App Today
-          </h2> */}
+          </h2>
 
           <div className="flex items-center gap-2">
             <DownloadButton style="zoom-in-right" delay="1100" img={play} span="GET IT ON" text="Google Play" />
@@ -117,7 +117,7 @@ const LandingAbout = () => {
 
         </div>
 
-      </div>
+      </div> */}
     </div>
   )
 }
