@@ -18,7 +18,7 @@ const Story = () => {
         img="/img/story.png"
       />
 
-      <div className="flex lg:flex-row flex-col  padding justify-between items-center lg:gap-0 gap-5 dark:text-white">
+      <div className="flex lg:flex-row flex-col  padding justify-between items-start lg:gap-0 gap-5 dark:text-white">
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
@@ -56,7 +56,15 @@ const Story = () => {
               transaction at a time.
             </p>
           </div>
-          {/* <div>
+         
+        </div>
+
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="lg:w-[45%] flex flex-col gap-10  w-full"
+        >
+         <div>
             <h3 className="h3">A Vision Born from Industry Insight</h3>
             <p className="para">
               Our story begins with a vision fueled by empathy. We've walked in
@@ -78,15 +86,7 @@ const Story = () => {
               payments not just seamless, but remarkably convenient, smarter,
               and safer.
             </p>
-          </div> */}
-        </div>
-
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          className="lg:w-[45%] w-full"
-        >
-          <img src="/img/story-img.jpg" alt="" className="w-full rounded-2xl" />
+          </div>
         </div>
       </div>
 
