@@ -63,7 +63,7 @@ const WhyCyber = () => {
       <Header
         head="Why CyberPay"
         body="We identified gaps in the existing payment and collection solutions, hence why we are here to make your life easier."
-        img={why}
+        img="/img/why-banner.png"
       />
 
       <div className="why">

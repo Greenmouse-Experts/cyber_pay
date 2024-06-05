@@ -9,7 +9,7 @@ const Disbursement = () => {
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={solution}
+        img="/img/disburstment-banner.png"
         head="Disbursement Solution"
         body="When it comes to automating your payroll, we don’t believe in hidden charges or unnecessary delays. "
       />

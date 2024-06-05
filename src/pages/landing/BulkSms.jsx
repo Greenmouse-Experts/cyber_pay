@@ -3,7 +3,7 @@ import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
 
 import AccordionItem from "../../components/Accordion";
-import BulkBanner from "../../assets/images/bulk-banner.png"
+import BulkBanner from "../../assets/images/bulk-banner.png";
 import { useState } from "react";
 
 function BulkSms() {
@@ -15,11 +15,14 @@ function BulkSms() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-
   return (
-    <div className={`pension solution ${theme === "light" ? "" : "darkabout"} pb-20`}>
+    <div
+      className={`pension solution ${
+        theme === "light" ? "" : "darkabout"
+      } pb-20`}
+    >
       <Heading
-       img={BulkBanner}
+      img="/img/bulk-banner.png"
         head="Bulk SMS"
         body="Turbocharge your marketing with bulk SMS. Our bulk SMS service is your gateway to connecting and marketing your products or services directly to your target audience, in real time."
       />
@@ -68,7 +71,6 @@ function BulkSms() {
               open={openIndex === 2}
               toggleAccordion={toggleAccordion}
             />
-          
           </div>
         </div>
       </div>

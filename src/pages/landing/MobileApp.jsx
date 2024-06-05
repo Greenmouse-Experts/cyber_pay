@@ -13,7 +13,7 @@ const MobileApp = () => {
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={solution}
+      img="/img/mobile-banner.png"
         head="Mobile App"
         body="Experience seamless transactions and convenient shopping with CyberPay Mobile App."
       />

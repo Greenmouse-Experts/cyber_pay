@@ -14,7 +14,7 @@ const People = () => {
       <Header
         head="Our People"
         body="Our shared mission is to not only understand the intricacies of this dynamic field but to shape its evolution"
-        img="/img/our-people.png"
+        img="/img/people-banner.png"
       />
 
       <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-black ">

@@ -21,7 +21,7 @@ const LandingAbout = () => {
 
   return (
     <div className={`landing-about ${theme === 'light' ? "about" : "darkabout"}`}>
-      <Header head="About Us" body="Setting up CyberPay is a breeze, offering your customers a range of secure and user-friendly payment options." img={about} />
+      <Header head="About Us" body="Setting up CyberPay is a breeze, offering your customers a range of secure and user-friendly payment options." img="/img/about-banner.png" />
 
       <div className="about_main">
         <div className="story">

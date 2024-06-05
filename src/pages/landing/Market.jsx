@@ -12,7 +12,7 @@ const Market = () => {
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       
       <Heading
-        img="/img/market-banner.png"
+       img="/img/market-banner.png"
         head="CyberPay Marketplace"
         body="Discover a world of endless possibilities at your fingertips!"
       />

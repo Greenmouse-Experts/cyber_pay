@@ -83,7 +83,7 @@ const Faqs = () => {
   return (
     <div className={`pension ${theme === 'light' ? '' : 'darkabout'}`}>
       <Heading
-        img="/img/faq.png"
+        img="/img/faq-banner.png"
         head="FAQs"
         body="Our Frequently Asked Questions"
       />

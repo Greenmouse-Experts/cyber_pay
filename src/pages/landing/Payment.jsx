@@ -27,7 +27,7 @@ const Payment = () => {
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={solution}
+        img="/img/online-banner.png"
         head="Accept Payments Securely on your Website"
         body="CyberPay offers a smart, convenient, and highly secure process of receiving payments from your customers all over the world"
       />

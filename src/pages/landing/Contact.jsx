@@ -28,7 +28,7 @@ function Contact() {
       <Header
         head="Contact Us"
         body="Setting up CyberPay is a breeze, offering your customers a range of secure and user-friendly payment options."
-        img={about}
+        img="/img/contact-banner.png"
       />
 
       <div className="padding">

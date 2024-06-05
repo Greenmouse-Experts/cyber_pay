@@ -2,7 +2,6 @@
 import "../../Stylesheet/pension.scss";
 import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
-import PosServiceImg from "../../assets/images/pos-service-1.png";
 
 const PosService = () => {
   const { theme } = useTheme();
@@ -10,7 +9,7 @@ const PosService = () => {
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
-        img={PosServiceImg}
+        img="/img/pos-banner.png"
         head="POS Service"
         body="Elevate your business with our versatile Point Of Sale (POS) systems offering unmatched flexibility, swift setup and customization"
       />

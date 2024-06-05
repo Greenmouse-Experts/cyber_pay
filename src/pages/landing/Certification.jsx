@@ -14,7 +14,7 @@ const Certification = () => {
       <Header
         head="Our Certifications"
         body="We offer cutting-edge solutions to meet the e-payment requirements of our diverse clientele"
-        img="/img/certificate.png"
+        img="/img/certificate-banner.png"
       />
 
       <div className=" bg-[#FAFAF9]  dark:bg-black padding ">
