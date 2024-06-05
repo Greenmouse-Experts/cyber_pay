@@ -275,7 +275,7 @@ const LandingHeader = () => {
                     </span>{" "}
                     Bulk SMS
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/loan-repayment">
+                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/direct-debit">
                     {" "}
                     <span className="bg-stone-50 rounded-[9px]">
                       <GiReceiveMoney className=" !text-blue-500" />
@@ -369,7 +369,7 @@ const LandingHeader = () => {
                   >
                     Bulk SMS <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/loan-repayment">
+                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/direct-debit">
                   Direct Debit <RiArrowRightSLine />
                   </Link>
                   <Link onClick={toggle} onBlur={hide} onFocus={show} to="/pos-service">

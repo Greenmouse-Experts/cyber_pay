@@ -120,7 +120,7 @@ export const landingRoutes = [
         element: <BulkSms />,
       },
       {
-        path: "loan-repayment",
+        path: "direct-debit",
         element: <LoanRepayment />,
       },
       {

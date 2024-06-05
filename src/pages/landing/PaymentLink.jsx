@@ -37,7 +37,7 @@ const PaymentLink = () => {
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"} pb-20`}>
       <Heading
         img="/img/payment.png"
-        head="Unlock online sales with Payment Links"
+        head="Online sales with Payment Links"
         body="Welcome to a new era of online sales. With our Payment Links, small businesses without dedicated websites can now easily receive payments online. "
       />
 
