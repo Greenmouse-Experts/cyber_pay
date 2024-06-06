@@ -62,94 +62,98 @@ const LandingAbout = () => {
           </div>
         </div>
 
-        <div className="our flex items-center justify-between ">
-          <div className="xl:w-[40%] w-full">
-            <h2   className="h2">
-              Providing users with convenient and secure payment methods
-              to choose from.
-            </h2>
-            <div
-            data-aos="zoom-in"
-            data-aos-delay="800"
-            className=" mx-auto !text-black"
-          >
-            <h3 className=" font-semibold mt-10 text-3xl">Quick facts about us</h3>
-            <p className="text-[1.1rem] font-medium mt-5">
-              We are CBN (PSSP and PTSP) Licensed payment processing service for
-              gateway providers, acquirers and merchants.
-            </p>
-            <div className=" flex flex-col gap-4 mt-5">
-              <p className="text-[1.1rem] font-medium flex items-start gap-2">
-                <span>
-                  <GoDotFill size={14} />
-                </span>{" "}
-                We Accept multiple means of payment i.e. Cards, Bank Accounts,
-                USSD, Wallet, QR Code.
-              </p>
-              <p className="text-[1.1rem] font-medium flex items-start gap-2">
-                <span>
-                  <GoDotFill size={14} />
-                </span>{" "}
-                Secure, hassle-free and seamless payment platform for customers.
-              </p>
-              <p className="text-[1.1rem] font-medium flex items-start gap-2">
-                <span>
-                  <GoDotFill size={14} />
-                </span>{" "}
-                Our platform allows a simple API Integration.
-              </p>
-              <p className="text-[1.1rem] font-medium flex items-start gap-2">
-                <span>
-                  <GoDotFill size={14} />
-                </span>{" "}
-                Cyberpay is PCIDSS compliant.
-              </p>
-            </div>
-          </div>
-          </div>
-          <div className="our_body xl:w-[45%] w-full ">
-            <div
-              data-aos="zoom-in-right"
-              data-aos-duration="1100"
-              className="our_card vision bg-bluePrimary !h-40"
-            >
-               <div className="our_icon bg-white bg-opacity-10 rounded-full ">
-                <img
-                  src="/img/vision.png"
-                  alt=""
-                  className="object-center h-8 w-8"
-                />
-              </div>
-              <div className="our_text">
-                <h2 className="h2 !text-white">Our Vision</h2>
-                <p className="text-white">
-                  To be the partner of choice in the financial technology
-                  industry.
+        <div className="our ">
+          <h2 className="h2">
+            Providing users with convenient and secure payment methods to choose
+            from.
+          </h2>
+          <div className="flex items-center justify-between ">
+            <div className="xl:w-[40%] w-full">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                className=" mx-auto !text-black"
+              >
+                <h3 className=" font-semibold mt-10 text-3xl">
+                  Quick facts about us
+                </h3>
+                <p className="text-[1.1rem] font-medium mt-5">
+                  We are CBN (PSSP and PTSP) Licensed payment processing service
+                  for gateway providers, acquirers and merchants.
                 </p>
+                <div className=" flex flex-col gap-4 mt-5">
+                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                    <span>
+                      <GoDotFill size={14} />
+                    </span>{" "}
+                    We Accept multiple means of payment i.e. Cards, Bank
+                    Accounts, USSD, Wallet, QR Code.
+                  </p>
+                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                    <span>
+                      <GoDotFill size={14} />
+                    </span>{" "}
+                    Secure, hassle-free and seamless payment platform for
+                    customers.
+                  </p>
+                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                    <span>
+                      <GoDotFill size={14} />
+                    </span>{" "}
+                    Our platform allows a simple API Integration.
+                  </p>
+                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                    <span>
+                      <GoDotFill size={14} />
+                    </span>{" "}
+                    Cyberpay is PCIDSS compliant.
+                  </p>
+                </div>
               </div>
-             
             </div>
-            <div
-              data-aos="zoom-in-left"
-              data-aos-duration="1100"
-              className="our_card mission bg-bluePrimary !h-40"
-            >
+            <div className="our_body xl:w-[45%] w-full ">
+              <div
+                data-aos="zoom-in-right"
+                data-aos-duration="1100"
+                className="our_card vision bg-bluePrimary !h-40"
+              >
+                <div className="our_icon bg-white bg-opacity-10 rounded-full ">
+                  <img
+                    src="/img/vision.png"
+                    alt=""
+                    className="object-center h-8 w-8"
+                  />
+                </div>
+                <div className="our_text">
+                  <h2 className="h2 !text-white">Our Vision</h2>
+                  <p className="text-white">
+                    To be the partner of choice in the financial technology
+                    industry.
+                  </p>
+                </div>
+              </div>
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="1100"
+                className="our_card mission bg-bluePrimary !h-40"
+              >
                 <div className="our_icon bg-white bg-opacity-10 rounded-full">
-                <img
-                  src="/img/mission.png"
-                  alt=""
-                  className="object-center h-8 w-8"
-                />
+                  <img
+                    src="/img/mission.png"
+                    alt=""
+                    className="object-center h-8 w-8"
+                  />
+                </div>
+                <div className="our_text">
+                  <h2 className="h2 !text-white">Our Mission</h2>
+                  <p className="text-white">
+                    To facilitate transactions globally.
+                  </p>
+                </div>
               </div>
-              <div className="our_text">
-                <h2 className="h2 !text-white">Our Mission</h2>
-                <p className="text-white">To facilitate transactions globally.</p>
-              </div>
-            
             </div>
           </div>
         </div>
-       
       </div>
       {/* <div className="enjoy">
         <div className="enjoy_cont">
