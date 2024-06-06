@@ -343,7 +343,7 @@ const LandingHomepage = () => {
             data-aos-duration="800"
             className="h2"
           >
-            Get the best Experience with the CyberPay mobile app
+            Get the best experience with the CyberPay Mobile App
           </h2>
 
           <div className="get_img">
@@ -591,7 +591,7 @@ const LandingHomepage = () => {
 
       <div className="join flex flex-col items-center gap-8 bg-[url(/img/map.png)] dark:bg-[url(/)] dark:!bg-black bg-center bg-cover">
         <h2 className="h2 text-center">
-          Join thousands who use the CyberPay mobile app
+          Join thousands who use the CyberPay Mobile App
         </h2>
 
         <div className="join_img">
