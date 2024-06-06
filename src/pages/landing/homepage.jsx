@@ -372,7 +372,7 @@ const LandingHomepage = () => {
 
                   <div
                     className={`${
-                      theme === "light" ? "bg-white" : "bg-[#0D0D0D]"
+                      theme === "light" ? "bg-white" : "bg-[#1a1a1a]"
                     }  absolute bottom-7 w-[85%] rounded-[21px] flex flex-col gap-2 p-3`}
                   >
                     <div className="flex justify-between">
