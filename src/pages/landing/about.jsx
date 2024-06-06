@@ -47,7 +47,7 @@ const LandingAbout = () => {
             <h2 data-aos="zoom-out" data-aos-duration="1100" className="h2">
               About CyberPay
             </h2>
-            <p className="!text-black">
+            <p className="">
               At CyberPay, we pride ourselves in the understanding of the
               industry pain points and the various other challenges faced by the
               merchants and their customers alike. Hence, we have developed
