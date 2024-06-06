@@ -191,7 +191,7 @@ const WhyCyber = () => {
 
       <div className="merchant dark:!bg-[#1a1a1a]">
         <h2 data-aos="zoom-in" data-aos-duration="1100" className="h2">
-          Benefits of the CyberPay App to{" "}
+          Benefits of the CyberPay Solutions to{" "}
           <span className="text-rose-600">Merchants</span>
         </h2>
         <div className="merchant_list">
