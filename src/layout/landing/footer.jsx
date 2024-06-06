@@ -11,7 +11,7 @@ import { SiInstagram } from "react-icons/si";
 import { BiLogoFacebook } from "react-icons/bi";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
-import { CiMobile1 } from "react-icons/ci";
+import { CiMail, CiMobile1 } from "react-icons/ci";
 
 const LandingFooter = () => {
   const { theme } = useTheme();
@@ -23,8 +23,7 @@ const LandingFooter = () => {
           <p>
             {/* <span>care@cyberpay.net.ng </span>
                         <span>support@cyberpay.net.ng</span> */}
-            <span className="text-[#bdbdbd]">hello@cyberpay.net.ng</span>
-            <span className="text-[#bdbdbd]">support@cyberpay.net.ng</span>
+           
           </p>
           <div className="footer_links">
             <DownloadButton img={play} span="Get it on" text="Google Play" />
@@ -111,7 +110,16 @@ const LandingFooter = () => {
               </span>
               Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja
             </p>
+            <span className="text-[#bdbdbd] flex items-start gap-1">  <span>
+                {" "}
+                <CiMail size={20} />
+              </span> hello@cyberpay.net.ng</span>
+            <span className="text-[#bdbdbd] flex items-start gap-1">  <span>
+                {" "}
+                <CiMail size={20} />
+              </span> support@cyberpay.net.ng</span>
             <p className="flex items-start gap-1">
+
               <span>
                 {" "}
                 <CiMobile1 size={20} />
