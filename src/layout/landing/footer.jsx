@@ -118,6 +118,14 @@ const LandingFooter = () => {
                 {" "}
                 <CiMail size={20} />
               </span> support@cyberpay.net.ng</p>
+              <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
+
+<span>
+  {" "}
+  <CiMobile1 size={20} />
+</span>
+02015151118
+</p>
             <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
 
               <span>
