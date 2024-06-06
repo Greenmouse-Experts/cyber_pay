@@ -19,7 +19,7 @@ const LandingFooter = () => {
   return (
     <footer>
       <div className="footer_body !text-[#bdbdbd]">
-        <div className="foot1">
+        <div className="foot1 w-full">
           <img src={logo} alt="" />
           <p>
             {/* <span>care@cyberpay.net.ng </span>
