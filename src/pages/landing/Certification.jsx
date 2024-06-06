@@ -17,10 +17,10 @@ const Certification = () => {
         img="/img/certificate-banner.png"
       />
 
-      <div className=" bg-[#FAFAF9]  dark:bg-black padding ">
+      <div className=" bg-[#FAFAF9]  dark:bg-[#1a1a1a] padding ">
         <h4 className="h4 text-center mb-10">
-          CyberPay is compliant to global regulatory standards to build the highest
-          level of trust assurance with its stakeholders
+          CyberPay is compliant to global regulatory standards to build the
+          highest level of trust assurance with its stakeholders
         </h4>
         <div className="flex sm:flex-row flex-col gap-10 justify-center items-center ">
           <img src="/img/cert-1.png" alt="" className="w-36 h-36" />
@@ -29,7 +29,7 @@ const Certification = () => {
         </div>
       </div>
 
-      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-black">
+      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a]">
         <div
           className="bg-white dark:bg-gray-950 p-6 rounded-2xl shadow-sm"
           data-aos="fade-up"

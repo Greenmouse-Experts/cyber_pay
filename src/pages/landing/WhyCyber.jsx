@@ -99,7 +99,7 @@ const WhyCyber = () => {
           </div>
         </div>
       </div>
-      <div className="whynow ">
+      <div className="whynow dark:!bg-[#1a1a1a]">
         <h2 data-aos="fade-down" data-aos-duration="1100" className="h2">
           Why Now?
         </h2>
@@ -112,7 +112,7 @@ const WhyCyber = () => {
         </p>
       
       </div>
-      <div className="benefit">
+      <div className="benefit dark:!bg-[#1a1a1a] ">
         <div className="list_1 md:!grid-cols-3 !gap-6">
           <div
             data-aos="zoom-in-right"
@@ -189,7 +189,7 @@ const WhyCyber = () => {
         </div>
       </div>
 
-      <div className="merchant">
+      <div className="merchant dark:!bg-[#1a1a1a]">
         <h2 data-aos="zoom-in" data-aos-duration="1100" className="h2">
           Benefits of the CyberPay App to{" "}
           <span className="text-rose-600">Merchants</span>

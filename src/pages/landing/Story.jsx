@@ -11,7 +11,6 @@ const Story = () => {
     <div
       className={`landing-about ${theme === "light" ? "about" : "darkabout"}`}
     >
-      
       <Header
         head="Our Story"
         body="At CyberPay, we're not just shaping the future of payments; we're redefining the way businesses and customers connect in the digital realm. Experience the difference – it's our story, and it's yours too."
@@ -56,7 +55,6 @@ const Story = () => {
               transaction at a time.
             </p>
           </div>
-         
         </div>
 
         <div
@@ -64,7 +62,7 @@ const Story = () => {
           data-aos-duration="1000"
           className="lg:w-[45%] flex flex-col gap-10  w-full"
         >
-         <div>
+          <div>
             <h3 className="h3">A Vision Born from Industry Insight</h3>
             <p className="para">
               Our story begins with a vision fueled by empathy. We've walked in
@@ -90,7 +88,7 @@ const Story = () => {
         </div>
       </div>
 
-      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-black dark:text-white ">
+      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a] dark:text-white ">
         <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
           <h3 className="h3">Seamlessness Redefined</h3>
           <p className="para">
@@ -128,7 +126,7 @@ const Story = () => {
         </div>
       </div>
 
-      <div className="padding bg-[#FAFAF9] dark:bg-black dark:text-white flex justify-center items-center">
+      <div className="padding bg-[#FAFAF9] dark:bg-[#1a1a1a] dark:text-white flex justify-center items-center">
         <p
           className="para font-medium lg:w-[70%] w-full text-center"
           data-aos="fade-up"
