@@ -14,8 +14,8 @@ function Contact() {
   });
 
   const [center, setcenter] = useState({
-    lat: 6.431111,
-    lng: 3.415833,
+    lat: 6.427050,
+    lng: 3.416480,
   });
   //   if (loadError) {
   //     return <div>Error loading maps</div>;
