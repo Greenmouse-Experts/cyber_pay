@@ -27,7 +27,7 @@
 }
 
 .navbar.fixed.nav_dark {
-    background: #000;
+    background: #1a1a1a;
 
 }
 
@@ -126,7 +126,7 @@
 }
 
 .navDark .drop_link {
-    background: black;
+    background: #1a1a1a;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -424,7 +424,7 @@
     }
 
     .navDark {
-        background: black;
+        background: #1a1a1a;
     }
 
     .navDark .nav_link a {
