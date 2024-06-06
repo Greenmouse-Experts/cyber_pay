@@ -65,6 +65,7 @@ const LandingFooter = () => {
             <Link to="/certifications">Our Certification</Link>
             <Link to="/whycyberpay">Why CyberPay </Link>
             <Link to="https://merchant.cyberpay.ng">Login</Link>
+            <Link to="/contact">Contact US</Link>
           </div>
         </div>
         <div className="links">

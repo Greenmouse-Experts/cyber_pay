@@ -54,10 +54,12 @@ function Contact() {
             </div>
             <div className=" flex flex-col gap-3 mt-3">
               <h4 className="text-xl font-semibold">Phone Number</h4>
-              <p> 02015151118</p>
+            <div className=" grid grid-cols-2 gap-3">
+            <p> 02015151118</p>
               <p> 02015150277</p>
               <p> 02015150173</p>
               <p> 02015150140</p>
+            </div>
             </div>
           </div>
           <div className="bg-[#f4f4f4] dark:bg-bluePrimary dark:text-white   shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">

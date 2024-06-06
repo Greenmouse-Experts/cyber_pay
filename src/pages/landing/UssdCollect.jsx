@@ -91,7 +91,7 @@ const UssdCollect = () => {
           data-aos-duration="1000"
           className="seam_text"
         >
-          <h2 className="h2">Benefits to the users</h2>
+          <h2 className="h2">Benefits to the Users</h2>
 
           <p className="flex items-center gap-1">
             <GoDotFill className="text-bluePrimary dark:text-white" />A user can use code
