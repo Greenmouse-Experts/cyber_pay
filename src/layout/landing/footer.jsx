@@ -24,7 +24,6 @@ const LandingFooter = () => {
           <p>
             {/* <span>care@cyberpay.net.ng </span>
                         <span>support@cyberpay.net.ng</span> */}
-           
           </p>
           <div className="footer_links">
             <DownloadButton img={play} span="Get it on" text="Google Play" />
@@ -49,9 +48,8 @@ const LandingFooter = () => {
             </Link>
           </div>
           <div className="flex items-center h-10 ">
-
-          <span className="text-[#bdbdbd] text-base "> Licensed by CBN    </span>
-          <img src="/img/bank.png" alt="" className=" -ml-10 scale-[0.2]" />
+            <span className="text-[#bdbdbd] text-base "> Licensed by CBN </span>
+            <img src="/img/bank.png" alt="" className=" -ml-10 scale-[0.2]" />
           </div>
         </div>
         <div className="links">
@@ -77,7 +75,6 @@ const LandingFooter = () => {
             <Link to="/faqs">FAQs</Link>
             <Link to="/isms">ISMS Policy Statement</Link>
             <Link to="/bcms">BCMS Policy Statement</Link>
-           
           </div>
         </div>
         <div className="links">
@@ -92,7 +89,10 @@ const LandingFooter = () => {
             <Link to="/penremit">PenRemit</Link>
             <Link to="/payment-link">Online Sales with Payment Link</Link>
             <Link to="/ussdcollection">USSD Collection</Link>
-            <Link to="/payment"> CyberPay online (Web / Mobile) <br /> Payment Processing</Link>
+            <Link to="/payment">
+              {" "}
+              CyberPay online (Web / Mobile) <br /> Payment Processing
+            </Link>
           </div>
         </div>
         <div className="links">
@@ -112,51 +112,60 @@ const LandingFooter = () => {
               </span>
               Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja
             </p>
-            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">  <span>
-                {" "}
-                <CiMail size={20} />
-              </span> hello@cyberpay.net.ng</p>
-            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">  <span>
-                {" "}
-                <CiMail size={20} />
-              </span> support@cyberpay.net.ng</p>
-              <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-
-<Link to="tel:02015151118">
-<span>
-  {" "}
-  <FiPhone size={18} />
-</span>
-
-02015151118
-</Link>
-</p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-            <Link to="tel:02015150277">
+            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">
+              {" "}
+              <Link to="mailto:hello@cyberpay.net.ng">
               <span>
                 {" "}
-                <FiPhone size={18} />
-              </span>
-              02015150277
+                <CiMail size={20} />
+              </span>{" "}
+              hello@cyberpay.net.ng
               </Link>
-             
             </p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-            <Link to="tel:02015150173">
+            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">
+              {" "}
+              <Link to="mailto:support@cyberpay.net.ng">
               <span>
                 {" "}
-                <FiPhone size={18} />
-              </span>
-              02015150173
+                <CiMail size={20} />
+              </span>{" "}
+              support@cyberpay.net.ng
               </Link>
             </p>
             <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-            <Link to="tel:02015150173">
-              <span>
-                {" "}
-                <FiPhone size={18} />
-              </span>
-              02015150140
+              <Link to="tel:02015151118">
+                <span>
+                  {" "}
+                  <FiPhone size={18} />
+                </span>
+                02015151118
+              </Link>
+            </p>
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
+              <Link to="tel:02015150277">
+                <span>
+                  {" "}
+                  <FiPhone size={18} />
+                </span>
+                02015150277
+              </Link>
+            </p>
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
+              <Link to="tel:02015150173">
+                <span>
+                  {" "}
+                  <FiPhone size={18} />
+                </span>
+                02015150173
+              </Link>
+            </p>
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
+              <Link to="tel:02015150140">
+                <span>
+                  {" "}
+                  <FiPhone size={18} />
+                </span>
+                02015150140
               </Link>
             </p>
           </div>
