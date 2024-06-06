@@ -67,7 +67,7 @@ const LandingAbout = () => {
             Providing users with convenient and secure payment methods to choose
             from.
           </h2>
-          <div className="flex items-center justify-between ">
+          <div className="flex lg:flex-row flex-col items-center justify-between ">
             <div className="xl:w-[40%] w-full">
               <div
                 data-aos="zoom-in"
@@ -77,32 +77,32 @@ const LandingAbout = () => {
                 <h3 className=" font-semibold mt-10 text-3xl">
                   Quick facts about us
                 </h3>
-                <p className="text-[1.1rem] font-medium mt-5">
+                <p className="font-medium mt-5">
                   We are CBN (PSSP and PTSP) Licensed payment processing service
                   for gateway providers, acquirers and merchants.
                 </p>
                 <div className=" flex flex-col gap-4 mt-5">
-                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                  <p className="font-medium flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
                     We Accept multiple means of payment i.e. Cards, Bank
                     Accounts, USSD, Wallet, QR Code.
                   </p>
-                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                  <p className="font-medium flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
                     Secure, hassle-free and seamless payment platform for
                     customers.
                   </p>
-                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                  <p className="font-medium flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
                     Our platform allows a simple API Integration.
                   </p>
-                  <p className="text-[1.1rem] font-medium flex items-center gap-2">
+                  <p className="font-medium flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
