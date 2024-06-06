@@ -86,7 +86,7 @@ const WhyCyber = () => {
                 <span><GoDotFill size={14}  /></span> Reporting - deploy customization, accurate and timely reports.
               </p>
               <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Well defined escalation matrix and alert system.</p>
-              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Education.</p>
+              <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Training.</p>
               <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span> Fraud prevention and management.</p>
             </div>
           </div>
