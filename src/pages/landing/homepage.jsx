@@ -276,7 +276,7 @@ const LandingHomepage = () => {
             sec_style="zoom-in"
             sec_delay="1200"
             first={true}
-            img="/img/online-solution.png"
+            img="/img/first-img.png"
             heading="We provide premium online payment solutions."
             paragraph="Say goodbye to payment hassles and hello to effortless transactions with CyberPay! Experience convenience like never before with CyberPay's flexible payment options.  "
           >

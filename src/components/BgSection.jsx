@@ -8,9 +8,9 @@ import { MdArrowOutward } from 'react-icons/md'
 
 const BgSection = ({heading, children, paragraph,img, absolute, style, delay, sec_delay, sec_style , title, paragraph2 , link, route, first}) => {
   return (
-    <div className={`bgsection ${first && "bg-first"}`}>
+    <div className={`bgsection `}>
         <div className="img-secction" data-aos={style} data-aos-duration={delay}>
-        {!first &&    <img src={img} className={`${absolute ? 'absolute-img': 'img_sec'} scale-[.60]`} alt="" />}
+      <img src={img} className={`${absolute ? 'absolute-img': 'img_sec'} scale-[.70]`} alt="" />
         </div>
         <div className="intro-text">
            <div data-aos={sec_style} data-aos-duration={sec_delay}>
