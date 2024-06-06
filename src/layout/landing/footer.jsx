@@ -17,14 +17,14 @@ const LandingFooter = () => {
   const { theme } = useTheme();
   return (
     <footer>
-      <div className="footer_body">
+      <div className="footer_body !text-[#bdbdbd]">
         <div className="foot1">
           <img src={logo} alt="" />
           <p>
             {/* <span>care@cyberpay.net.ng </span>
                         <span>support@cyberpay.net.ng</span> */}
-            <span>hello@cyberpay.net.ng</span>
-            <span>support@cyberpay.net.ng</span>
+            <span className="text-[#bdbdbd]">hello@cyberpay.net.ng</span>
+            <span className="text-[#bdbdbd]">support@cyberpay.net.ng</span>
           </p>
           <div className="footer_links">
             <DownloadButton img={play} span="Get it on" text="Google Play" />
