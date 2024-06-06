@@ -85,7 +85,7 @@ function Contact() {
               <h4>Loading...</h4>
             )}
           </div>
-          <div className=" text-black dark:text-white px-8 2xl:py-[70px] py-10 md:w-[50%] w-full   md:ml-3 ml-0 shadow-md">
+          <div className=" text-black border border-gray-400 rounded-md dark:text-white px-8 2xl:py-[70px] py-10 md:w-[50%] w-full   md:ml-3 ml-0 shadow-md">
             <form
               className="flex flex-col 2xl:gap-8 gap-5 "
               onSubmit={(e) => e.preventDefault()}
@@ -97,25 +97,25 @@ function Contact() {
                 <input
                   type="text"
                   placeholder="Name"
-                  className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white h-[50px] pl-5 md:w-[373px] w-full"
+                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white h-[50px] pl-5 md:w-[373px] w-full"
                 />
                 <input
                   type="text"
                   placeholder="Email"
-                  className="bg-[#F4F4F4] md:w-[373px] w-full 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white  h-[50px] pl-5"
+                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg md:w-[373px] w-full 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white  h-[50px] pl-5"
                 />
               </div>
               <div className=" ">
                 <input
                   type="tel"
                   placeholder="Phone"
-                  className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white  h-[50px] pl-5 w-full"
+                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white  h-[50px] pl-5 w-full"
                 />
               </div>
               <div className=" ">
                 <textarea
                   placeholder="Additional details"
-                  className="bg-[#F4F4F4] text-black h-[120px] pl-5 w-full pt-4 placeholder:text-bluePrimary dark:placeholder:text-white"
+                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg text-black h-[120px] pl-5 w-full pt-4 placeholder:text-bluePrimary dark:placeholder:text-white"
                 />
               </div>
               <button type="submit" className="bg-[#DD0A35] text-white font-medium py-3">

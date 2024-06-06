@@ -438,7 +438,7 @@ html {
 
 .dark input {
   border: #f4f4f4 1px solid;
-  border-radius: 10px !important;
+  border-radius: 8px !important;
   background-color: #1111;
   color: white;
   transition: color 0.3s;
