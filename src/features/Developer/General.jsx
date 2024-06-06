@@ -12,7 +12,7 @@ function General({theme}) {
           platform via web, mobile or any user interface.
         </p>
       </div>
-      <div className={`${theme === "light" ? "bg-[#E8F0FC] " : "bg-black"} flex md:flex-row flex-col justify-between items-center  padding !py-10`}>
+      <div className={`${theme === "light" ? "bg-[#E8F0FC] " : "bg-[#1a1a1a]"} flex md:flex-row flex-col justify-between items-center  padding !py-10`}>
         <div className="md:w-[60%] w-full">
           <h3 className="h3 mb-4">
             What kind of companies/ businesses are eligible to use CyberPay?
@@ -28,8 +28,10 @@ function General({theme}) {
           <img src={thinking} alt="thinking" className=" scale-75"/>
         </div>
       </div>
-      <div className={`developer_error ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"} dark:bg-gray-900 dark:text-white  padding`}>
-        <h3 className="h3">Common Transaction Errors</h3>
+      <div className={`developer_error  ${theme === "light" ? "bg-[#FAFAF9] " : "bg-[#1a1a1a]"} dark:!bg-[#1a1a1a] dark:text-white  padding`}>
+        <div className="xl:w-[70%] w-full mx-auto">
+
+        <h3 className="h3 text-center">Common Transaction Errors</h3>
         <p className="para  dark:!text-white">
           At CyberPay, we have put structures in place to ensure continuous high
           transaction success rate. We are guaranteeing that your customers will
@@ -42,6 +44,7 @@ function General({theme}) {
           avoided. We have listed some of the instances below as a guide to why
           or how a transaction failure occurs.
         </p>
+        </div>
 
         <div className=" mt-16">
           {/* 1 */}

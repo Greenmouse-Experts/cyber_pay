@@ -107,8 +107,9 @@
   // }
 
   &_error {
-    text-align: center;
+  
     background-color: #565656;
+
 
     p {
       color: #565656;
@@ -133,7 +134,7 @@
       }
     }
     .dark  .grid-wrapper > div{
-      background-color: #565656 
+      background-color: #1a1a1a
       !important;
     }
   }
