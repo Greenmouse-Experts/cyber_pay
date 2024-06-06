@@ -44,6 +44,10 @@ function Contact() {
                 {" "}
                 Head Office: 12 Ologun Agbaje Street, VI Lagos.
               </p>
+              <p className=" text-left">
+                {" "}
+                33, Saka Tinubu, Victoria Island,Lagos
+              </p>
               <p className=" text-left"> Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja</p>
             </div>
           </div>

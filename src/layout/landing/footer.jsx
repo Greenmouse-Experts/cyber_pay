@@ -103,7 +103,14 @@ const LandingFooter = () => {
                 {" "}
                 <IoLocationOutline size={20} />
               </span>
-              Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.
+              Head Office: 12 Ologun Agbaje Street Victoria Island Lagos
+            </p>
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
+              <span>
+                {" "}
+                <IoLocationOutline size={20} />
+              </span>
+              33, Saka Tinubu, Victoria Island,Lagos
             </p>
             <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
               <span>
@@ -174,7 +181,7 @@ const LandingFooter = () => {
       <div className="c_tag">
         <p>
           © 2024 CyberPay Limited. All Rights Reserved. |{" "}
-          <span className=" text-[#DD0A35] dark:!text-[#DD0A35]">
+          <span className=" text-[#BDBDBD] dark:!text-[#BDBDBD]">
             <NavLink to="/whistle-blower">Whistle Blower</NavLink>
           </span>
         </p>
