@@ -124,7 +124,23 @@ const LandingFooter = () => {
                 {" "}
                 <CiMobile1 size={20} />
               </span>
-              02015151118
+              02015150277
+            </p>
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
+
+              <span>
+                {" "}
+                <CiMobile1 size={20} />
+              </span>
+              02015150173
+            </p>
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
+
+              <span>
+                {" "}
+                <CiMobile1 size={20} />
+              </span>
+              02015150140
             </p>
           </div>
         </div>

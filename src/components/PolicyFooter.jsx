@@ -5,7 +5,7 @@ import { settings3 } from "../lib/utils/helpers";
 function PolicyFooter() {
   return (
     <Slider {...settings3}>
-      <NavLink
+      {/* <NavLink
         to="/isms"
         className=" bg-gray-100 w-full  rounded-2xl"
       >
@@ -36,15 +36,21 @@ function PolicyFooter() {
           />
         </div>
         </div>
-      </NavLink>
-      <div className=" bg-gray-100  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
-        <img src="/img/audit-1.png " alt="" className="  rounded-md   h-20  mx-auto" />
+      </NavLink> */}
+      <div className="  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
+        <img src="/img/audit-4.png" alt="" className="  rounded-md   h-32  mx-auto" />
       </div>
-      <div className=" bg-gray-100  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
-        <img src="/img/audit-2.png" alt="" className="   rounded-md  h-20  mx-auto" />
+      <div className="  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
+        <img   src="/img/audit-5.png" alt="" className="  rounded-md   h-32  mx-auto" />
       </div>
-      <div className=" bg-gray-100  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
-        <img src="/img/audit-3.png" alt="" className="   rounded-md  h-20  mx-auto" />
+      <div className="  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
+        <img src="/img/audit-1.png " alt="" className="  rounded-md   h-32  mx-auto" />
+      </div>
+      <div className="  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
+        <img src="/img/audit-2.png" alt="" className="   rounded-md  h-32  mx-auto" />
+      </div>
+      <div className="  w-full px-5 py-3 justify-center flex items-center rounded-2xl">
+        <img src="/img/audit-3.png" alt="" className="   rounded-md  h-32  mx-auto" />
       </div>
     </Slider>
   );

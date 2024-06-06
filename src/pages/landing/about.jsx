@@ -82,7 +82,7 @@ const LandingAbout = () => {
             data-aos-delay="800" className="quick_text bg-sky-950 text-white mx-auto">
             <h3>Quick facts about us</h3>
             <p>
-              We are CBN (PSSP)- Licensed payment processing service for gateway providers, acquirers and merchants.
+              We are CBN (PSSP and PTSP) Licensed payment processing service for gateway providers, acquirers and merchants.
             </p>
             <div className="quick_list">
                <p className="para flex items-center gap-2"><span><GoDotFill size={14}  /></span>  We Accept multiple means of payment i.e. Cards, Bank Accounts, USSD, Wallet, QR Code.</p>
