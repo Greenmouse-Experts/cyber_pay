@@ -3,6 +3,7 @@ import Header from "../../layout/landing/Heading";
 import about from "../../assets/images/about-header.png";
 
 import "../../Stylesheet/about.scss";
+import CertificateSlider from "../../components/CertificateSlide";
 
 const Certification = () => {
   const { theme } = useTheme();
@@ -22,11 +23,7 @@ const Certification = () => {
           CyberPay is compliant to global regulatory standards to build the
           highest level of trust assurance with its stakeholders
         </h4>
-        <div className="flex sm:flex-row flex-col gap-10 justify-center items-center ">
-          <img src="/img/cert-1.png" alt="" className="w-36 h-36" />
-          <img src="/img/audit-1.png " alt="" className="lg:w-52  h-36" />
-          <img src="/img/cert-3.png" alt="" className="w-36 h-36" />
-        </div>
+        <CertificateSlider/>
       </div>
 
       <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a]">
