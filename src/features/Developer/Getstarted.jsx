@@ -24,12 +24,12 @@ function Getstarted({theme}) {
           in two categories:
         </h3>
         <div className="flex md:flex-row flex-col justify-center items-center gap-6 mt-8 ">
-          <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full ">
+          <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full md:h-36 ">
             <p className="para">
               Registered services – CyberPay Consolidated Scheme (CCS)
             </p>
           </div>
-          <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full">
+          <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full md:h-36">
             <p className="para">
               Unregistered services – CyberPay Beginner Scheme
             </p>
@@ -40,7 +40,7 @@ function Getstarted({theme}) {
       <div className="bg-[#2F9BD6] flex md:flex-row flex-col justify-between items-center padding dark:bg-gray-900 dark:text-white">
         <div className="text-white md:w-[55%] w-full leading-10">
           <h3 className="h3">
-            If your business is registered (CCS) and you want to integrate to
+            If your business is registered and you want to integrate to
             CyberPay, the following are the requirements:
           </h3>
           <p className="mt-3 leading-8">

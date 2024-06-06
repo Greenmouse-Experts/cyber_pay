@@ -122,7 +122,7 @@ const WhyCyber = () => {
             <h2 className="h2">
               <img src={icon} alt="" />
               Benefits of the CyberPay to{" "} <br/>
-              <span className="text-sky-500">Customers </span>
+              Customers 
             </h2>
 
             {/* <div className="benefit_card_link">
