@@ -119,6 +119,7 @@ const Faqs = () => {
         body="Our Frequently Asked Questions"
       />
       <div className="mt-20 padding xl:!px-[20%]">
+      <h2 className="h2 mb-3">General</h2>
         {faqs.map((faq, index) => (
           <AccordionItem
             key={index}
