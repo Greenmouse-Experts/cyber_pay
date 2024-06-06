@@ -96,29 +96,29 @@ const LandingFooter = () => {
         <div className="links">
           <h4>Contact Us</h4>
           <div>
-            <p className="flex items-start gap-1">
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
               <span>
                 {" "}
                 <IoLocationOutline size={20} />
               </span>
               Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.
             </p>
-            <p className="flex items-start gap-1">
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
               <span>
                 {" "}
                 <IoLocationOutline size={20} />
               </span>
               Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja
             </p>
-            <p className="text-[#bdbdbd] flex items-start gap-1">  <span>
+            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">  <span>
                 {" "}
                 <CiMail size={20} />
               </span> hello@cyberpay.net.ng</p>
-            <p className="text-[#bdbdbd] flex items-start gap-1">  <span>
+            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">  <span>
                 {" "}
                 <CiMail size={20} />
               </span> support@cyberpay.net.ng</p>
-            <p className="flex items-start gap-1">
+            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
 
               <span>
                 {" "}
