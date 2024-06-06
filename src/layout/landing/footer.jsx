@@ -114,7 +114,7 @@ const LandingFooter = () => {
             </p>
             <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">
               {" "}
-              <Link to="mailto:hello@cyberpay.net.ng">
+              <Link className="flex items-start gap-2" to="mailto:hello@cyberpay.net.ng">
               <span>
                 {" "}
                 <CiMail size={20} />
@@ -124,7 +124,7 @@ const LandingFooter = () => {
             </p>
             <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">
               {" "}
-              <Link to="mailto:hello@cyberpay.net.ng">
+              <Link className="flex items-start gap-2" to="mailto:hello@cyberpay.net.ng">
               <span>
                 {" "}
                 <CiMail size={20} />
@@ -133,7 +133,7 @@ const LandingFooter = () => {
               </Link>
             </p>
             <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link to="tel:02015151118">
+              <Link className="flex items-start gap-2" to="tel:02015151118">
                 <span>
                   {" "}
                   <FiPhone size={18} />
@@ -142,7 +142,7 @@ const LandingFooter = () => {
               </Link>
             </p>
             <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link to="tel:02015150277">
+              <Link className="flex items-start gap-2" to="tel:02015150277">
                 <span>
                   {" "}
                   <FiPhone size={18} />
@@ -151,7 +151,7 @@ const LandingFooter = () => {
               </Link>
             </p>
             <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link to="tel:02015150173">
+              <Link className="flex items-start gap-2" to="tel:02015150173">
                 <span>
                   {" "}
                   <FiPhone size={18} />
@@ -160,7 +160,7 @@ const LandingFooter = () => {
               </Link>
             </p>
             <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link to="tel:02015150140">
+              <Link className="flex items-start gap-2" to="tel:02015150140">
                 <span>
                   {" "}
                   <FiPhone size={18} />
