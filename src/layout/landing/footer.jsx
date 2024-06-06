@@ -124,7 +124,7 @@ const LandingFooter = () => {
             </p>
             <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">
               {" "}
-              <Link to="mailto:support@cyberpay.net.ng">
+              <Link to="mailto:hello@cyberpay.net.ng">
               <span>
                 {" "}
                 <CiMail size={20} />
@@ -173,7 +173,7 @@ const LandingFooter = () => {
       </div>
       <div className="c_tag">
         <p>
-          © 2024 <span>CyberPay</span> Limited. All rights reserved. |{" "}
+          © 2024 CyberPay Limited. All rights reserved. |{" "}
           <span>
             <NavLink to="/whistle-blower">Whistle Blower</NavLink>
           </span>
