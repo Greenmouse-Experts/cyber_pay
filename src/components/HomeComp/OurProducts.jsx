@@ -7,7 +7,7 @@ function OurProducts() {
   return (
     <div className="bg-[url('/img/pattarn-bg.png')] padding mb-10 !py-20">
       <div className="text-center mb-20">
-        <p className=" tracking-widest para text-[#DFDFDF]">SOLUTIONS</p>
+        {/* <p className=" tracking-widest para text-[#DFDFDF]">SOLUTIONS</p> */}
         <h2 className="h2 text-white">Our Solutions</h2>
         <p className="para text-white">
           Learn more about our products offering solutions to your everyday

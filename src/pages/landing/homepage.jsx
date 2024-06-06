@@ -591,7 +591,7 @@ const LandingHomepage = () => {
 
       <div className="join flex flex-col items-center gap-8 bg-[url(/img/map.png)] dark:bg-[url(/)] dark:!bg-black bg-center bg-cover">
         <h2 className="h2 text-center">
-          Join thousands who use the CyberPay Mobile App
+        Join thousands who use CyberPay
         </h2>
 
         <div className="join_img">
