@@ -42,7 +42,7 @@ function Contact() {
               <h4 className="text-xl font-semibold">Our Office</h4>
               <p className=" text-left">
                 {" "}
-                Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.
+                Head Office: 12 Ologun Agbaje Street, VI Lagos.
               </p>
               <p className=" text-left"> Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja</p>
             </div>
@@ -55,9 +55,9 @@ function Contact() {
             <div className=" flex flex-col gap-3 mt-3">
               <h4 className="text-xl font-semibold">Phone Number</h4>
             <div className=" grid grid-cols-2 gap-3">
-            <p> 02015151118</p>
+            <p> 02015151118 ,</p>
               <p> 02015150277</p>
-              <p> 02015150173</p>
+              <p> 02015150173 ,</p>
               <p> 02015150140</p>
             </div>
             </div>
@@ -76,7 +76,7 @@ function Contact() {
         </div>
 
         {/* map */}
-        <div className="flex lg:flex-row gap-10 flex-col mt-20">
+        <div className="flex lg:flex-row gap-10 flex-col  mt-20">
           <div className="lg:w-[50%] w-full ">
             <div>
               <iframe
@@ -124,7 +124,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-[#DD0A35] text-white font-medium py-3"
+                className="bg-[#DD0A35] text-white font-medium py-3 rounded-lg"
               >
                 Submit Form
               </button>
