@@ -112,15 +112,15 @@ const LandingHomepage = () => {
   const transitionTime = 4000; // Transition time in milliseconds
   let slideInterval;
 
-  useEffect(() => {
-    // Auto change slide at intervals
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    slideInterval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
-    }, transitionTime);
+  // useEffect(() => {
+  //   // Auto change slide at intervals
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  //   slideInterval = setInterval(() => {
+  //     setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
+  //   }, transitionTime);
 
-    return () => clearInterval(slideInterval);
-  }, []);
+  //   return () => clearInterval(slideInterval);
+  // }, []);
 
   // const handleNextSlide = () => {
   //   setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
@@ -157,7 +157,7 @@ const LandingHomepage = () => {
               <div className="flex items-center gap-2">
                 <NavLink
                   to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem] !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
                   <span>
@@ -189,7 +189,7 @@ const LandingHomepage = () => {
               <div className="flex items-center gap-2">
                 <NavLink
                   to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem]  !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
                   <span>
@@ -221,7 +221,7 @@ const LandingHomepage = () => {
               <div className="flex items-center gap-2">
                 <NavLink
                   to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem]  !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
                   <span>
@@ -253,7 +253,7 @@ const LandingHomepage = () => {
               <div className="flex items-center gap-2">
                 <NavLink
                   to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
+                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem]  !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
                 >
                   Get Started
                   <span>
