@@ -174,7 +174,7 @@ const LandingFooter = () => {
       <div className="c_tag">
         <p>
           © 2024 CyberPay Limited. All Rights Reserved. |{" "}
-          <span className=" text-[#DD0A35]">
+          <span className=" text-[#DD0A35] dark:!text-[#DD0A35]">
             <NavLink to="/whistle-blower">Whistle Blower</NavLink>
           </span>
         </p>

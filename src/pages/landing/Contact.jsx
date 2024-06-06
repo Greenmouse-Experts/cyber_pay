@@ -77,7 +77,7 @@ function Contact() {
 
         {/* map */}
         <div className="flex lg:flex-row gap-10 flex-col mt-20">
-          <div className="w-[50%] ">
+          <div className="lg:w-[50%] w-full ">
             <div>
               <iframe
                 title="Contact Map"
