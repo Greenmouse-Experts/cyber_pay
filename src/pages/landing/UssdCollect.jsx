@@ -94,7 +94,7 @@ const UssdCollect = () => {
           <h2 className="h2">Benefits to the users</h2>
 
           <p className="flex items-center gap-1">
-            <GoDotFill className="text-bluePrimary dark:text-white" />A member can use code
+            <GoDotFill className="text-bluePrimary dark:text-white" />A user can use code
             with any bank account tied to his/her mobile number.
           </p>
 
@@ -255,8 +255,7 @@ const UssdCollect = () => {
           <h2 className="h2">Manage organisation account with ease</h2>
           <ul>
             <li className="para">
-              Share collection history via other convenient channels with
-              members of the board.
+              Share collection history via other convenient channels users.
             </li>
             <li className="para">
               Easy financial records, track history, settlements and

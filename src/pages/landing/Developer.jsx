@@ -23,7 +23,7 @@ const Developer = () => {
     <div className={`pension ${theme === "light" ? "" : "darkabout text-white"}`}>
       <Heading
        img="/img/developer-banner.png"
-        head="Developer Api"
+        head="Developer API"
         body="At CyberPay, we have put structures in place to ensure continuous high transaction success rate."
       />
       <div className="developer ">
@@ -49,20 +49,21 @@ const Developer = () => {
               Dashboard
             </p> */}
             <p className={`${tab === 7 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(7)}>
-              Withdrawal
+              
+              Settlement
             </p>
-            <p className={`${tab === 8 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(8)}>
+            {/* <p className={`${tab === 8 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(8)}>
               Charges
-            </p>
+            </p> */}
             {/* <p className={`${tab === 9 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(9)}>
               Management
             </p> */}
-            <p
+            {/* <p
               className={`${tab === 10 && "active"} min-w-32 h-[4.5rem] `}
               onClick={() => setTab(10)}
             >
               Security
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -74,9 +75,9 @@ const Developer = () => {
        {tab === 5 && <Payment/>}
        {/* {tab === 6 && <Dashboard/>} */}
        {tab === 7 && <Withdrawal/>}
-       {tab === 8 && <Charges/>}
+       {/* {tab === 8 && <Charges/>} */}
        {/* {tab === 9 && <Management/>} */}
-       {tab === 10 && <Security/>}
+       {/* {tab === 10 && <Security/>} */}
       </div>
     </div>
   );

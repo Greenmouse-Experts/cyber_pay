@@ -14,8 +14,8 @@ function Contact() {
   });
 
   const [center, setcenter] = useState({
-    lat: 6.427050,
-    lng: 3.416480,
+    lat: 6.42705,
+    lng: 3.41648,
   });
   //   if (loadError) {
   //     return <div>Error loading maps</div>;
@@ -73,17 +73,16 @@ function Contact() {
         {/* map */}
         <div className="flex lg:flex-row gap-10 flex-col mt-20">
           <div className="w-[50%] ">
-            {isLoaded ? (
-              <GoogleMap
-                mapContainerStyle={{ width: "100%", height: "100%" }}
-                zoom={16}
-                center={center}
-              >
-                <Marker position={center} />
-              </GoogleMap>
-            ) : (
-              <h4>Loading...</h4>
-            )}
+            <div>
+              <iframe
+                title="Contact Map"
+                width="100%"
+                height="600px"
+                style={{ border: 0 }}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.750165491411!2d3.4140952757533904!3d6.426135924285578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8acdaec4eb6b%3A0x86a6056ae99642d9!2s12%20Ologun%20Agbaje%20St%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1717680371715!5m2!1sen!2sng"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
           <div className=" text-black border border-gray-400 rounded-md dark:text-white px-8 2xl:py-[70px] py-10 md:w-[50%] w-full   md:ml-3 ml-0 shadow-md">
             <form
@@ -118,7 +117,10 @@ function Contact() {
                   className="bg-[#F4F4F4] border border-gray-300 rounded-lg text-black h-[120px] pl-5 w-full pt-4 placeholder:text-bluePrimary dark:placeholder:text-white"
                 />
               </div>
-              <button type="submit" className="bg-[#DD0A35] text-white font-medium py-3">
+              <button
+                type="submit"
+                className="bg-[#DD0A35] text-white font-medium py-3"
+              >
                 Submit Form
               </button>
             </form>

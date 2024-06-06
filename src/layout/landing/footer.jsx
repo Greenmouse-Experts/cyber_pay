@@ -9,7 +9,7 @@ import appledark from "../../assets/images/apple-logo.png";
 import { useTheme } from "@emotion/react";
 import { SiInstagram } from "react-icons/si";
 import { BiLogoFacebook } from "react-icons/bi";
-import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn, FaMobileRetro, FaXTwitter } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiMail, CiMobile1 } from "react-icons/ci";
 
@@ -122,7 +122,7 @@ const LandingFooter = () => {
 
 <span>
   {" "}
-  <CiMobile1 size={20} />
+  <FaMobileRetro size={20} />
 </span>
 02015151118
 </p>
@@ -130,7 +130,7 @@ const LandingFooter = () => {
 
               <span>
                 {" "}
-                <CiMobile1 size={20} />
+                <FaMobileRetro size={20} />
               </span>
               02015150277
             </p>
@@ -138,7 +138,7 @@ const LandingFooter = () => {
 
               <span>
                 {" "}
-                <CiMobile1 size={20} />
+                <FaMobileRetro size={20} />
               </span>
               02015150173
             </p>
@@ -146,7 +146,7 @@ const LandingFooter = () => {
 
               <span>
                 {" "}
-                <CiMobile1 size={20} />
+                <FaMobileRetro size={20} />
               </span>
               02015150140
             </p>
