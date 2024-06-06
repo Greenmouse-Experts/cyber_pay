@@ -45,9 +45,9 @@ const Developer = () => {
             <p className={`${tab === 5 && "active bg-[#dd0a35]"} min-w-28 h-[4.5rem] `} onClick={() => setTab(5)}>
               Payment
             </p>
-            <p className={`${tab === 6 && "active"} min-w-28 h-[4.5rem] `} onClick={() => setTab(6)}>
+            {/* <p className={`${tab === 6 && "active"} min-w-28 h-[4.5rem] `} onClick={() => setTab(6)}>
               Dashboard
-            </p>
+            </p> */}
             <p className={`${tab === 7 && "active"} min-w-28 h-[4.5rem] `} onClick={() => setTab(7)}>
               Withdrawal
             </p>
@@ -72,7 +72,7 @@ const Developer = () => {
        {tab === 3 && <Setting/>}
        {/* {tab === 4 && <Account/>} */}
        {tab === 5 && <Payment/>}
-       {tab === 6 && <Dashboard/>}
+       {/* {tab === 6 && <Dashboard/>} */}
        {tab === 7 && <Withdrawal/>}
        {tab === 8 && <Charges/>}
        {tab === 9 && <Management/>}
