@@ -51,7 +51,7 @@ function WhistleBlower() {
           <input type="file" name="" id="" className="mt-5"  style={{}}/>
         </div>
 
-        <div className="mt-20 flex justify-end ">
+        <div className="mt-20 flex justify-start ">
             <button type="submit" className="bg-[#DD0A35] px-10 py-3 para rounded-lg text-white  ">
                 submit
             </button>
