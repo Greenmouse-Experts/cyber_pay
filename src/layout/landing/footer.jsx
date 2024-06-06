@@ -109,7 +109,7 @@ const LandingFooter = () => {
                 {" "}
                 <IoLocationOutline size={20} />
               </span>
-              Abuja Office: 2B street Abacha Estate Wuse Zone , Abuja.
+              Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja
             </p>
             <p className="flex items-start gap-1">
               <span>

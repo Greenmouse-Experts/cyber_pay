@@ -31,7 +31,7 @@ const Cookie = () => {
                 >
                     <div className="cooks">
                     <p>
-                    Cyberpay uses cookies to improve your website experience. By enabling cookies, you help understand your <br className="break-on-mobile" /> usage, tailor marketing efforts and enhance navigation. Please view our <Link to="/privacy-policy" className="text-blue-500 underline">Privacy Policy </Link> for more information
+                    CyberPay uses cookies to improve your website experience. By enabling cookies, you help understand your <br className="break-on-mobile" /> usage, tailor marketing efforts and enhance navigation. Please view our <Link to="/privacy-policy" className="text-blue-500 underline">Privacy Policy </Link> for more information
                     </p>
                     <div className="cookie_btn">
                     <button
