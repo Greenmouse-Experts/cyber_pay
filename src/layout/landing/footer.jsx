@@ -110,14 +110,14 @@ const LandingFooter = () => {
               </span>
               Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja
             </p>
-            <span className="text-[#bdbdbd] flex items-start gap-1">  <span>
+            <p className="text-[#bdbdbd] flex items-start gap-1">  <span>
                 {" "}
                 <CiMail size={20} />
-              </span> hello@cyberpay.net.ng</span>
-            <span className="text-[#bdbdbd] flex items-start gap-1">  <span>
+              </span> hello@cyberpay.net.ng</p>
+            <p className="text-[#bdbdbd] flex items-start gap-1">  <span>
                 {" "}
                 <CiMail size={20} />
-              </span> support@cyberpay.net.ng</span>
+              </span> support@cyberpay.net.ng</p>
             <p className="flex items-start gap-1">
 
               <span>
