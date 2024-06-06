@@ -1,14 +1,14 @@
 
-import banner from "../../assets/images/terms.png";
 import { useTheme } from "../../ThemeContext";
-import Heading2 from "../../components/Heading2";
+
+import Heading from "../../layout/landing/Heading";
 
 function TermsAndCondition() {
   const { theme } = useTheme();
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading2
-        // img={banner}
+      <Heading
+        img="/img/terms-banner.png"
         head="Terms and Conditions"
         body=" We amend these terms from time to time. Every time you wish to use
         our site, please check these terms to ensure you understand the

@@ -8,8 +8,8 @@ function DataPolicy() {
   const { theme } = useTheme();
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading2
-        // img={banner}
+     <Heading
+        img="/img/policy-banner.png"
         head="Data Privacy Policy"
         body="Data Privacy Policy: Safeguarding Your Information"
       />
