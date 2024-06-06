@@ -1,5 +1,5 @@
 .about_main {
-  padding: 1rem 7%;
+  padding: 4rem 7%;
   .story {
     padding: 1rem 0;
     display: flex;
@@ -10,6 +10,10 @@
 
     .story_img {
       width: 42%;
+
+      img{
+        width: 100%;
+      }
     }
     .story_text {
       width: 50%;

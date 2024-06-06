@@ -37,7 +37,7 @@ const LandingAbout = () => {
             data-aos-duration="1000"
             className="story_img"
           >
-            <img src="/img/about-img1.png" alt="" />
+            <img src="/img/about-img1.jpg" alt="" className=" rounded-lg" />
           </div>
           <div
             data-aos="fade-left"
