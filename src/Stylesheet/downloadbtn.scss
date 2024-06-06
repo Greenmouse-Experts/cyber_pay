@@ -35,6 +35,13 @@
   }
 }
 
+.bg-first{
+  background: url(../assets/images/first-bg.png) !important;
+  background-position: unset !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+
+}
 .bgsection {
   background: url(../assets/images/background.png);
   background-position: center;
