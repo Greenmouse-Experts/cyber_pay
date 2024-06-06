@@ -40,11 +40,11 @@ function Contact() {
             </div>
             <div className=" flex flex-col gap-3 mt-3">
               <h4 className="text-xl font-semibold">Our Office</h4>
-              <p>
+              <p className=" text-left">
                 {" "}
                 Head Office: 12 Ologun Agbaje Street Victoria Island Lagos.
               </p>
-              <p> Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja</p>
+              <p className=" text-left"> Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja</p>
             </div>
           </div>
           <div className="bg-[#f4f4f4]  dark:bg-bluePrimary dark:text-white  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem] h-[14rem] w-full">
