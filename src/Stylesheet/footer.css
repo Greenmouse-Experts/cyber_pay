@@ -161,6 +161,9 @@ footer {
   .footer_body > div {
     /* text-align: center; */
     align-items: center !important;
+    @media screen and (max-width: 1200px) {
+        align-items: start !important;
+    }
   }
   .links {
     width: 100%;
