@@ -6,13 +6,13 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    gap: 2.5rem;
+    gap: 5rem;
 
     .story_img {
       width: 42%;
     }
     .story_text {
-      width: 68%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -70,7 +70,7 @@
     }
     .our_body {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 2.5rem;
       align-items: center;
       padding-top: 4rem;
@@ -83,7 +83,7 @@
         border-radius: 15px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        
         gap: 1rem;
         h2{
           color: black;
@@ -97,6 +97,7 @@
         .our_icon {
           padding: 2rem;
           font-size: 2rem;
+          background-color: white;
         }
       }
     }
