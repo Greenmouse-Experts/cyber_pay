@@ -46,7 +46,7 @@ const UssdCollect = () => {
       <Heading
         img="img/ussd-banner.png"
         head="USSD Collection"
-        body="The current circumstances have necessitated a change in the way things are done. The changes cut across every sphere of life and also affect the way things are done in our churches."
+        body="The current circumstances have necessitated a change in the way things are done. The changes cut across every sphere of life. "
       />
 
       <div className="seam">
@@ -62,7 +62,7 @@ const UssdCollect = () => {
             adapting to this new landscape, clinging to outdated processes.
             Lockdowns and restrictions due to the virus have catalyzed
             significant shifts in how we operate. These changes are pervasive,
-            impacting every aspect of life, including church operations.
+            impacting every aspect of life.
           </p>
           <Resuablebtn
               link="https://merchant.cyberpay.ng/signup"
@@ -91,7 +91,7 @@ const UssdCollect = () => {
           data-aos-duration="1000"
           className="seam_text"
         >
-          <h2 className="h2">Benefits to the members</h2>
+          <h2 className="h2">Benefits to the users</h2>
 
           <p className="flex items-center gap-1">
             <GoDotFill className="text-bluePrimary dark:text-white" />A member can use code
@@ -201,9 +201,9 @@ const UssdCollect = () => {
             <p>
               <GoDotFill /> Example: *5599#{" "}
             </p>
-            <p>
+            {/* <p>
               <GoDotFill /> XYZ Church as Single User{" "}
-            </p>
+            </p> */}
             <p>
               <GoDotFill /> Special Menu List Creation{" "}
             </p>
@@ -229,10 +229,10 @@ const UssdCollect = () => {
             <p>
               <GoDotFill /> *5599 String Code Shared with other users{" "}
             </p>
-            <p>
+            {/* <p>
               <GoDotFill /> Predetermined menu details: offering, tithe,
               e.t.c{" "}
-            </p>
+            </p> */}
             <p>
               <GoDotFill /> Multiple Settlement Account{" "}
             </p>
@@ -262,10 +262,7 @@ const UssdCollect = () => {
               Easy financial records, track history, settlements and
               reconciliation.
             </li>
-            <li className="para">Capture all members and/or donor details.</li>
-            <li className="para">
-              Capture and track time and volume of transaction.
-            </li>
+           
           </ul>
         </div>
 
