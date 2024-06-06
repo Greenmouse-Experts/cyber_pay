@@ -255,7 +255,7 @@ const UssdCollect = () => {
           <h2 className="h2">Manage organisation account with ease</h2>
           <ul>
             <li className="para">
-              Share collection history via other convenient channels users.
+              Share collection history via other convenient channels with users.
             </li>
             <li className="para">
               Easy financial records, track history, settlements and
