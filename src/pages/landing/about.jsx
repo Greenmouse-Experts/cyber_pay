@@ -47,7 +47,7 @@ const LandingAbout = () => {
             <h2 data-aos="zoom-out" data-aos-duration="1100" className="h2">
               About CyberPay
             </h2>
-            <p>
+            <p className="!text-black">
               At CyberPay, we pride ourselves in the understanding of the
               industry pain points and the various other challenges faced by the
               merchants and their customers alike. Hence, we have developed
@@ -74,31 +74,31 @@ const LandingAbout = () => {
             className=" mx-auto !text-black"
           >
             <h3 className=" font-semibold mt-10 text-3xl">Quick facts about us</h3>
-            <p className="text-xl font-medium mt-5">
+            <p className="text-[1.1rem] font-medium mt-5">
               We are CBN (PSSP and PTSP) Licensed payment processing service for
               gateway providers, acquirers and merchants.
             </p>
             <div className=" flex flex-col gap-4 mt-5">
-              <p className="text-xl font-medium flex items-start gap-2">
+              <p className="text-[1.1rem] font-medium flex items-start gap-2">
                 <span>
                   <GoDotFill size={14} />
                 </span>{" "}
                 We Accept multiple means of payment i.e. Cards, Bank Accounts,
                 USSD, Wallet, QR Code.
               </p>
-              <p className="text-xl font-medium flex items-start gap-2">
+              <p className="text-[1.1rem] font-medium flex items-start gap-2">
                 <span>
                   <GoDotFill size={14} />
                 </span>{" "}
                 Secure, hassle-free and seamless payment platform for customers.
               </p>
-              <p className="text-xl font-medium flex items-start gap-2">
+              <p className="text-[1.1rem] font-medium flex items-start gap-2">
                 <span>
                   <GoDotFill size={14} />
                 </span>{" "}
                 Our platform allows a simple API Integration.
               </p>
-              <p className="text-xl font-medium flex items-start gap-2">
+              <p className="text-[1.1rem] font-medium flex items-start gap-2">
                 <span>
                   <GoDotFill size={14} />
                 </span>{" "}
