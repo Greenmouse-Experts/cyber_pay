@@ -7,12 +7,12 @@ function PolicyFooter() {
     <Slider {...settings3}>
       <NavLink
         to="/isms"
-        className=" bg-[#DD0A35] w-full  rounded-2xl"
+        className=" bg-gray-100 w-full  rounded-2xl"
       >
-       <div  className=" bg-[#DD0A35] w-full px-5 py-3 flex justify-between  items-center rounded-2xl">
-       <div className="para text-white flex flex-col w-[70%]">
-          <span>ISMS - ISO</span>
-          <span> 27001:2022</span>
+       <div  className=" bg-gray-100 w-full px-5 py-3 flex justify-between  items-center rounded-2xl">
+       <div className="para text-black !font-semibold dark:text-black flex flex-col w-[70%]">
+          <span className="dark:!text-black">ISMS - ISO</span>
+          <span className="dark:!text-black"> 27001:2022</span>
         </div>
         <div className="w-[40%] flex justify-end">
           <img src="/img/isms.png" alt="" className=" w-20 h-20 rounded-full" />
@@ -21,12 +21,12 @@ function PolicyFooter() {
       </NavLink>
       <NavLink
         to="/bcms"
-        className=" bg-bluePrimary w-full  rounded-2xl"
+        className=" bg-gray-100 w-full  rounded-2xl"
       >
           <div  className=" w-full px-5 py-3 flex justify-between  items-center ">
-        <div className="para text-white flex flex-col  w-[70%]">
-          <span>BCMS - ISO </span>
-          <span> 22301:2019</span>
+        <div className="para text-black !font-semibold dark:text-black flex flex-col  w-[70%]">
+          <span className="dark:!text-black">BCMS - ISO </span>
+          <span className="dark:!text-black"> 22301:2019</span>
         </div>
         <div className="w-[40%] flex justify-end">
           <img
