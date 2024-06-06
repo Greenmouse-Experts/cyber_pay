@@ -112,15 +112,15 @@ const LandingHomepage = () => {
   const transitionTime = 4000; // Transition time in milliseconds
   let slideInterval;
 
-  // useEffect(() => {
-  //   // Auto change slide at intervals
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  //   slideInterval = setInterval(() => {
-  //     setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
-  //   }, transitionTime);
+  useEffect(() => {
+    // Auto change slide at intervals
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    slideInterval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
+    }, transitionTime);
 
-  //   return () => clearInterval(slideInterval);
-  // }, []);
+    return () => clearInterval(slideInterval);
+  }, []);
 
   // const handleNextSlide = () => {
   //   setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
