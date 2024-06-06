@@ -166,11 +166,7 @@ const LandingHomepage = () => {
                 </NavLink>
               </div>
 
-              <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Licensed by the CBN</span>
-
-                <img src={bank} alt="" />
-              </p>
+              
             </div>
           </div>
         )}
@@ -202,11 +198,7 @@ const LandingHomepage = () => {
                 </NavLink>
               </div>
 
-              <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Licensed by the CBN</span>
-
-                <img src={bank} alt="" />
-              </p>
+              
             </div>
           </div>
         )}
@@ -238,11 +230,7 @@ const LandingHomepage = () => {
                 </NavLink>
               </div>
 
-              <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Licensed by the CBN</span>
-
-                <img src={bank} alt="" />
-              </p>
+              
             </div>
           </div>
         )}
@@ -274,11 +262,7 @@ const LandingHomepage = () => {
                 </NavLink>
               </div>
 
-              <p className="flex !item-center gap-2 w-fit text-white">
-                <span>Licensed by the CBN</span>
-
-                <img src={bank} alt="" />
-              </p>
+              
             </div>
           </div>
         )}

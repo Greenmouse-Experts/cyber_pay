@@ -43,8 +43,8 @@ const UssdCollect = () => {
 
   return (
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"}`}>
-      <Heading2
-        // img="img/ussd-banner.png"
+      <Heading
+        img="img/ussd-banner.png"
         head="USSD Collection"
         body="The current circumstances have necessitated a change in the way things are done. The changes cut across every sphere of life and also affect the way things are done in our churches."
       />
