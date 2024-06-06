@@ -11,7 +11,8 @@ import { SiInstagram } from "react-icons/si";
 import { BiLogoFacebook } from "react-icons/bi";
 import { FaLinkedinIn, FaMobileRetro, FaXTwitter } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
-import { CiMail, CiMobile1 } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { FiPhone } from "react-icons/fi";
 
 const LandingFooter = () => {
   const { theme } = useTheme();
@@ -122,7 +123,7 @@ const LandingFooter = () => {
 
 <span>
   {" "}
-  <FaMobileRetro size={20} />
+  <FiPhone size={18} />
 </span>
 02015151118
 </p>
@@ -130,7 +131,7 @@ const LandingFooter = () => {
 
               <span>
                 {" "}
-                <FaMobileRetro size={20} />
+                <FiPhone size={18} />
               </span>
               02015150277
             </p>
@@ -138,7 +139,7 @@ const LandingFooter = () => {
 
               <span>
                 {" "}
-                <FaMobileRetro size={20} />
+                <FiPhone size={18} />
               </span>
               02015150173
             </p>
@@ -146,7 +147,7 @@ const LandingFooter = () => {
 
               <span>
                 {" "}
-                <FaMobileRetro size={20} />
+                <FiPhone size={18} />
               </span>
               02015150140
             </p>

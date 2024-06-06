@@ -111,7 +111,7 @@ const LandingAbout = () => {
             <div
               data-aos="zoom-in-right"
               data-aos-duration="1100"
-              className="our_card vision bg-bluePrimary"
+              className="our_card vision bg-bluePrimary !h-40"
             >
                <div className="our_icon bg-white bg-opacity-10 rounded-full ">
                 <img
@@ -132,7 +132,7 @@ const LandingAbout = () => {
             <div
               data-aos="zoom-in-left"
               data-aos-duration="1100"
-              className="our_card mission bg-bluePrimary"
+              className="our_card mission bg-bluePrimary !h-40"
             >
                 <div className="our_icon bg-white bg-opacity-10 rounded-full">
                 <img
