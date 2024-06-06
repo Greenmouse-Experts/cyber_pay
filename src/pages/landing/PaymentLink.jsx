@@ -37,7 +37,7 @@ const PaymentLink = () => {
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"} pb-20`}>
       <Heading
         img="/img/online-payment-banner.png"
-        head="Online Sales with Payment Links"
+        head="Online Sales with Payment Link"
         body="Welcome to a new era of online sales. With our Payment Links, small businesses without dedicated websites can now easily receive payments online. "
       />
 
@@ -49,7 +49,7 @@ const PaymentLink = () => {
         >
           <h2 className="h2">The power of simplicity</h2>
           <p className="para mb-8">
-            No website? No problem. With our Payment Links, you have the power
+            No website? No problem. With our Payment Link, you have the power
             to generate and share payment pages with your customers
             effortlessly. These pages cater to various payment methods,
             including cards, bank accounts, bank transfers, USSD, QR codes, Pay
