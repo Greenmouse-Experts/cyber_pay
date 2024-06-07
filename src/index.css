@@ -118,7 +118,7 @@
     #ebff70 99.34%
   );
   position: absolute;
-  filter: blur(20px);
+  filter: blur(70px);
 }
 
 * {

@@ -322,9 +322,9 @@ const LandingHomepage = () => {
             data-aos="flip-left"
             data-aos-easing="ease-in-sine"
             data-aos-duration="1200"
-            className="monitor_img md:mr-[-10%]"
+            className="monitor_img lg:mr-[-10%]"
           >
-            <div className="gradient2 left-24 bottom-28 w-[20rem] h-[13rem] "></div>
+            <div className="gradient2 lg:left-32 lg:bottom-44 bottom-20 w-[20rem] h-[13rem] "></div>
             {theme === "light" ? (
               <img src={user} alt="" />
             ) : (

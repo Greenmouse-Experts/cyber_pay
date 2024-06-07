@@ -111,6 +111,8 @@ const Faqs = () => {
     },
   ];
 
+  const [tab, setTab] = useState(true);
+
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
@@ -119,92 +121,110 @@ const Faqs = () => {
         body="Our Frequently Asked Questions"
       />
       <div className="mt-20 padding xl:!px-[20%]">
-      <h2 className="h2 mb-3">General</h2>
-        {faqs.map((faq, index) => (
-          <AccordionItem
-            key={index}
-            index={index}
-            open={openIndex === index}
-            title={faq.title}
-            answer={faq.answer}
-            toggleAccordion={toggleAccordion}
-          />
-        ))}
-      </div>
-      <div className="padding -mt-5 !pt-0 xl:!px-[20%]">
-        <h2 className="h2 mb-3">Security</h2>
-      <AccordionItem
-          title="How can I protect my company’s identity?"
-          answer={
-            <div>
-              <p>
-                Please note the following in order to protect your identity and
-                data:
-              </p>
+        <div className="flex items-center justify-center border-2 border-gray-500 rounded-[3rem] mb-20 gap-5 w-fit mx-auto px-2 py-2">
+          <h2 className={`h2 px-4 pt-1 cursor-pointer rounded-[3rem] ${tab && "bg-redPrimary text-white"}`} onClick={() => setTab(true)}>General</h2>
+          <h2 className={`h2 px-4 pt-1 cursor-pointer rounded-[3rem] ${!tab && "bg-redPrimary text-white"}`} onClick={() => setTab(false)}>Security</h2>
+        </div>
+        {tab && (
+          <div>
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={index}
+                index={index}
+                open={openIndex === index}
+                title={faq.title}
+                answer={faq.answer}
+                toggleAccordion={toggleAccordion}
+              />
+            ))}
+          </div>
+        )}
 
-              <div className="mt-5">
-                <p>
-                  – CyberPay will never ask you to prove your identity on behalf
-                  of other individuals or companies.
-                  <br />
-                  – Kindly ensure that as the account owner, only you should
-                  create and have access to your login details
-                  <br />
-                  – Do not send your ID or passport to unknown or unverified
-                  recipients.
-                  <br />
-                  – When asked to provide certain documents, please ensure you
-                  send to email provided by CyberPay only
-                  <br />– We will never ask for your username, password, or PIN
-                  codes outside the CyberPay merchant portal.
-                </p>
-              </div>
-            </div>
-          }
-          index={0}
-open={openIndex === 0}
-toggleAccordion={toggleAccordion}
-        />
-         <AccordionItem
-          title="How does CyberPay protect my money?"
-          answer={
-            <div>
-              <p>
-              Transactions are processed through our proactive risk and fraud management platforms to ensure and proactively prevent instances of fraud.
-              </p>
+        {!tab && (
+          <div>
+            <AccordionItem
+              title="How can I protect my company’s identity?"
+              answer={
+                <div>
+                  <p>
+                    Please note the following in order to protect your identity
+                    and data:
+                  </p>
 
-              <div className="mt-5">
-                <p>
-                CyberPay is also compliant with all the local and international standards on protection of payment data, transactions and funds.
-                </p>
-              </div>
-            </div>
-          }
-          index={1}
-open={openIndex === 1}
-toggleAccordion={toggleAccordion}
-        />
+                  <div className="mt-5">
+                    <p>
+                      – CyberPay will never ask you to prove your identity on
+                      behalf of other individuals or companies.
+                      <br />
+                      – Kindly ensure that as the account owner, only you should
+                      create and have access to your login details
+                      <br />
+                      – Do not send your ID or passport to unknown or unverified
+                      recipients.
+                      <br />
+                      – When asked to provide certain documents, please ensure
+                      you send to email provided by CyberPay only
+                      <br />– We will never ask for your username, password, or
+                      PIN codes outside the CyberPay merchant portal.
+                    </p>
+                  </div>
+                </div>
+              }
+              index={0}
+              open={openIndex === 0}
+              toggleAccordion={toggleAccordion}
+            />
+            <AccordionItem
+              title="How does CyberPay protect my money?"
+              answer={
+                <div>
+                  <p>
+                    Transactions are processed through our proactive risk and
+                    fraud management platforms to ensure and proactively prevent
+                    instances of fraud.
+                  </p>
 
-<AccordionItem
-          title="Why do CyberPay do checks on transactions?"
-          answer={
-            <div>
-              <p>
-              We are obliged by regulations from the Central Bank of Nigeria to monitor and check transactions from our merchants in line with the Nigerian laws on Money Laundering activities.
-              </p>
+                  <div className="mt-5">
+                    <p>
+                      CyberPay is also compliant with all the local and
+                      international standards on protection of payment data,
+                      transactions and funds.
+                    </p>
+                  </div>
+                </div>
+              }
+              index={1}
+              open={openIndex === 1}
+              toggleAccordion={toggleAccordion}
+            />
 
-              <div className="mt-5">
-                <p>
-                We also do this to proactively prevent instances of fraud and fraudulent practice and also ensure the safety of your funds as well as protecting the integrity of our networks and connections to you.
-                </p>
-              </div>
-            </div>
-          }
+            <AccordionItem
+              title="Why do CyberPay do checks on transactions?"
+              answer={
+                <div>
+                  <p>
+                    We are obliged by regulations from the Central Bank of
+                    Nigeria to monitor and check transactions from our merchants
+                    in line with the Nigerian laws on Money Laundering
+                    activities.
+                  </p>
 
-          index={2}
-open={openIndex === 2}
-toggleAccordion={toggleAccordion}
-        />
+                  <div className="mt-5">
+                    <p>
+                      We also do this to proactively prevent instances of fraud
+                      and fraudulent practice and also ensure the safety of your
+                      funds as well as protecting the integrity of our networks
+                      and connections to you.
+                    </p>
+                  </div>
+                </div>
+              }
+              index={2}
+              open={openIndex === 2}
+              toggleAccordion={toggleAccordion}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

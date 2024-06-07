@@ -14,7 +14,8 @@ export default {
           700: "#6F6F6F",
           800: "#969696",
         },
-        bluePrimary:"#042E46"
+        bluePrimary:"#042E46",
+        redPrimary:"#F40C3B"
       },
     },
   },
