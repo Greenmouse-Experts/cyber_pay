@@ -128,7 +128,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-[#DD0A35] text-white font-medium py-3 rounded-lg"
+                className="bg-[#DD0A35] text-white font-medium py-3 rounded-[5rem]"
               >
                 Submit Form
               </button>
