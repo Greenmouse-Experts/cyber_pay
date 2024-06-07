@@ -146,12 +146,12 @@ const LandingHomepage = () => {
         className={`hero-${currentSlide} h-[60%] w-full bg-center bg-cover landing  relative`}
       >
         <div className="w-full flex justify-between items-center absolute top-[40%]">
-          <div className="bg-[#ffffff7d] w-12 h-12 rounded-full flex justify-center items-center cursor-pointer -ml-[6.5%]" onClick={handlePrevSlide}>
-            <IoIosArrowBack  color="black" size={30}/>
+          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer -ml-[6.5%]" onClick={handlePrevSlide}>
+            <IoIosArrowBack  color="white" size={40}/>
           </div>
 
-          <div className="bg-[#ffffff8d] w-12 h-12 rounded-full flex justify-center items-center cursor-pointer  mr-[7.5%]" onClick={handleNextSlide}>
-            <IoIosArrowForward  color="black" size={30}/>
+          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer  mr-[7.5%]" onClick={handleNextSlide}>
+            <IoIosArrowForward  color="white" size={40}/>
           </div>
         </div>
 

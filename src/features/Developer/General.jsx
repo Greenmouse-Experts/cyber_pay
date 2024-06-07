@@ -5,7 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import { useState } from "react";
 function General({ theme }) {
   const [openIndex, setOpenIndex] = useState(null);
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState("");
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -17,7 +17,7 @@ function General({ theme }) {
 
   const highlightText = (text, highlight) => {
     if (!highlight) return text;
-    const regex = new RegExp(`(${highlight})`, 'gi');
+    const regex = new RegExp(`(${highlight})`, "gi");
     return text.replace(regex, '<span class="highlight">$1</span>');
   };
 
@@ -27,13 +27,25 @@ function General({ theme }) {
 
   return (
     <>
+      <div className="my-10 flex justify-end  relative md:w-[30rem] w-full h-14 border-2 border-bluePrimary dark:border-white rounded-2xl overflow-hidden ml-auto">
+        <BsSearch
+          color="#333"
+          size={20}
+          className="absolute right-4 2xl:top-4 top-3"
+        />
+        <input
+          type="text"
+          placeholder="Search erors"
+          className="w-full px-4 text-lg h-full"
+          value={searchInput}
+          onChange={handleSearchInput}
+        />
+      </div>
       <div
-        className={`developer_error  ${
-          theme === "light" ? "bg-[#FAFAF9] " : "bg-[#1a1a1a]"
-        } dark:!bg-[#1a1a1a] dark:text-white  px-6 pt-20`}
+        className={`developer_error   px-6 pt-20`}
       >
         <div className=" w-full mx-auto">
-          <h3 className="h3 text-center">Common Transaction Errors</h3>
+          <h2 className="h2 text-start">Common Transaction Errors</h2>
           <p className="para  dark:!text-white">
             At CyberPay, we have put structures in place to ensure continuous
             high transaction success rate. We are guaranteeing that your
@@ -48,32 +60,16 @@ function General({ theme }) {
           </p>
         </div>
 
-        <div className="my-10 flex justify-end  relative w-[30rem] h-14 border-2 border-bluePrimary dark:border-white rounded-2xl overflow-hidden ml-auto">
-          <BsSearch
-            color="#333"
-            size={20}
-            className="absolute right-4 2xl:top-4 top-3"
-          />
-          <input
-            type="text"
-            placeholder="Search erors"
-            className="w-full px-4 text-lg h-full"
-            value={searchInput}
-            onChange={handleSearchInput}
-          />
-        </div>
-
         <div className="mt-16">
           {filteredFaqs.map((faq, index) => (
-           <AccordionItem
-           key={index}
-           index={index}
-           open={openIndex === index}
-           title={highlightText(faq.title, searchInput)}
-           answer={faq.answer}
-           toggleAccordion={toggleAccordion}
-         />
-       
+            <AccordionItem
+              key={index}
+              index={index}
+              open={openIndex === index}
+              title={highlightText(faq.title, searchInput)}
+              answer={faq.answer}
+              toggleAccordion={toggleAccordion}
+            />
           ))}
         </div>
       </div>

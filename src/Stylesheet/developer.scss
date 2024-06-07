@@ -11,10 +11,10 @@
   &_tab {
     display: flex;
      flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 2rem;
+    padding: 2rem 2rem 2rem 1rem;
     align-items: start;
-    gap: 1rem;
+  
     flex-wrap: wrap;
     width: fit-content;
   
@@ -109,12 +109,6 @@
 
   &_error {
   
-    background-color: #565656;
-
-
-    p {
-      color: #565656;
-    }
 
     .grid-wrapper {
       margin-top: 1.5rem;

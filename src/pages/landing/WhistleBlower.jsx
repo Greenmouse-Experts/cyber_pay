@@ -52,7 +52,7 @@ function WhistleBlower() {
         </div>
 
         <div className="mt-20 flex justify-start ">
-            <button type="submit" className="bg-[#DD0A35] px-10 py-3 para rounded-lg text-white  ">
+            <button type="submit" className="bg-[#DD0A35] px-10 py-3 para rounded-[5rem] text-white  ">
                 submit
             </button>
         </div>
