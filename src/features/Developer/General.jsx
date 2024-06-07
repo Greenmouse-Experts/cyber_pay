@@ -48,9 +48,9 @@ function General({ theme }) {
           </p>
         </div>
 
-        <div className="my-10 flex justify-end  relative w-[30rem] h-14 border-2 border-bluePrimary rounded-2xl overflow-hidden ml-auto">
+        <div className="my-10 flex justify-end  relative w-[30rem] h-14 border-2 border-bluePrimary dark:border-white rounded-2xl overflow-hidden ml-auto">
           <BsSearch
-            color="#0080CF"
+            color="#333"
             size={20}
             className="absolute right-4 2xl:top-4 top-3"
           />
