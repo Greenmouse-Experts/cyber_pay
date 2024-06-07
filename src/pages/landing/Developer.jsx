@@ -15,72 +15,90 @@ import Charges from "../../features/Developer/Charges";
 import Management from "../../features/Developer/Management";
 import Security from "../../features/Developer/Security";
 
-
 const Developer = () => {
   const { theme } = useTheme();
-  const [tab, setTab] = useState(1);
+  const [tab, setTab] = useState(2);
   return (
-    <div className={`pension ${theme === "light" ? "" : "darkabout text-white"}`}>
+    <div
+      className={`pension ${theme === "light" ? "" : "darkabout text-white"}`}
+    >
       <Heading
-       img="/img/developer-banner.png"
+        img="/img/developer-banner.png"
         head="Developer API"
         body="At CyberPay, we have put structures in place to ensure continuous high transaction success rate."
       />
-      <div className="developer ">
-        <div className="padding developer_wrapper">
-          <div className="developer_tab">
-            
-            <p className={`${tab === 1 && "active bg-[#dd0a35]"} min-w-32 h-[4.5rem] `} onClick={() => setTab(1)}>
-              General
-            </p>
-            <p className={`${tab === 2 && "active bg-[#dd0a35]"} min-w-32 h-[4.5rem] `} onClick={() => setTab(2)}>
+      <div className="developer flex  w-full px-[3%] py-10 relative">
+       
+          <div className="developer_tab w-[20%]  top-10 left-10 h-screen ">
+           
+            <p
+              className={`${tab === 2 && "active !font-semibold"} `}
+              onClick={() => setTab(2)}
+            >
               Getting Started
             </p>
-            <p className={`${tab === 3 && "active bg-[#dd0a35]"} min-w-32 h-[4.5rem] `} onClick={() => setTab(3)}>
+            <p
+              className={`${tab === 3 && "active !font-semibold"} `}
+              onClick={() => setTab(3)}
+            >
               Setting Up
             </p>
-            {/* <p className={`${tab === 4 && "active bg-[#dd0a35]"} min-w-32 h-[4.5rem] `} onClick={() => setTab(4)}>
+            <p
+              className={`${tab === 1 && "active !font-semibold"} `}
+              onClick={() => setTab(1)}
+            >
+              Errors
+            </p>
+            {/* <p className={`${tab === 4 && "active !font-semibold"} `} onClick={() => setTab(4)}>
               Account
             </p> */}
-            <p className={`${tab === 5 && "active bg-[#dd0a35]"} min-w-32 h-[4.5rem] `} onClick={() => setTab(5)}>
+            <p
+              className={`${tab === 5 && "active !font-semibold"} `}
+              onClick={() => setTab(5)}
+            >
               Payment
             </p>
-            {/* <p className={`${tab === 6 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(6)}>
+            {/* <p className={`${tab === 6 && "active"} `} onClick={() => setTab(6)}>
               Dashboard
             </p> */}
-            <p className={`${tab === 7 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(7)}>
-              
+            <p
+              className={`${tab === 7 && "active"} `}
+              onClick={() => setTab(7)}
+            >
               Settlement
             </p>
-            {/* <p className={`${tab === 8 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(8)}>
+            {/* <p className={`${tab === 8 && "active"} `} onClick={() => setTab(8)}>
               Charges
             </p> */}
-            {/* <p className={`${tab === 9 && "active"} min-w-32 h-[4.5rem] `} onClick={() => setTab(9)}>
+            {/* <p className={`${tab === 9 && "active"} `} onClick={() => setTab(9)}>
               Management
             </p> */}
             {/* <p
-              className={`${tab === 10 && "active"} min-w-32 h-[4.5rem] `}
+              className={`${tab === 10 && "active"} `}
               onClick={() => setTab(10)}
             >
               Security
             </p> */}
           </div>
+        
+        <div className="w-[80%] px-10">
+          {tab === 2 && <Getstarted theme={theme} />}
+          {tab === 3 && <Setting />}
+          {tab === 1 && <General theme={theme} />}
+          {/* {tab === 4 && <Account/>} */}
+          {tab === 5 && <Payment />}
+          {/* {tab === 6 && <Dashboard/>} */}
+          {tab === 7 && <Withdrawal />}
+          {/* {tab === 8 && <Charges/>} */}
+          {/* {tab === 9 && <Management/>} */}
+          {/* {tab === 10 && <Security/>} */}
         </div>
-
-
-       {tab === 1 && <General theme={theme}/>}
-       {tab === 2 && <Getstarted  theme={theme}/>}
-       {tab === 3 && <Setting/>}
-       {/* {tab === 4 && <Account/>} */}
-       {tab === 5 && <Payment/>}
-       {/* {tab === 6 && <Dashboard/>} */}
-       {tab === 7 && <Withdrawal/>}
-       {/* {tab === 8 && <Charges/>} */}
-       {/* {tab === 9 && <Management/>} */}
-       {/* {tab === 10 && <Security/>} */}
       </div>
     </div>
   );
 };
 
 export default Developer;
+
+
+// overflow-y-scroll h-screen styled-scroll

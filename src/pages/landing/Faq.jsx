@@ -19,6 +19,11 @@ const Faqs = () => {
         "CyberPay is a Vibrant Fintech company with young and innovative minds that offers all your payment process solutions from Transfer solutions, Payment gateway, USSD, SMS binding, P.O.S, MicroPen, Disbursement, Collections etc.",
     },
     {
+      title: "What kind of companies/ businesses are eligible to use CyberPay?",
+      answer:
+        "CyberPay welcomes all companies and businesses, from the large international conglomerates to the small scale and fast-growing businesses. We have solutions that cater for all classes of business regardless of industry, year of existence, business model and size.",
+    },
+    {
       title: "Can I use my Bank account to make payments?",
       answer:
         "Yes, you can use your bank account to make payments through CyberPay. You can also use our USSD solutions for payments of bills, airtime, card payment solutions, Bank transfer, etc.",

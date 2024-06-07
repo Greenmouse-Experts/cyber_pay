@@ -170,11 +170,12 @@
     position: relative;
     padding: 0.4rem 2.2rem;
     color: white;
-    border-radius: 0.46288rem;
+    border-radius: 5rem;
     /* Removed background color */
     font-size: 1rem;
     border: 1px solid #DD0A35;
     transition: color 0.5s ease, background-color 0.5s ease;
+    
 }
 
 .login_btn:hover {
@@ -190,7 +191,7 @@
     width: 100%;
     height: 100%;
     background-color: #DD0A35;
-    border-radius: 0.46288rem;
+    border-radius: 5rem;
     transition: width 0.5s ease;
     z-index: -1;
 }

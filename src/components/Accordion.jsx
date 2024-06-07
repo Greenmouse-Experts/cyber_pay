@@ -25,9 +25,8 @@ const AccordionItem = ({ index, title, answer, open, toggleAccordion }) => {
             className={`para font-normal ${
               theme === "light" ? "text-[#565656]" : "text-white"
             }`}
-          >
-            {title}
-          </span>
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
           {open ? (
             <FaMinus size={10} className="text-black dark:text-white" />
           ) : (

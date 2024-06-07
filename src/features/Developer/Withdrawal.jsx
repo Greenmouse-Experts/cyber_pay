@@ -9,7 +9,7 @@ function Withdrawal() {
   };
   return (
     <>
-      <div className=" padding !pt-3">
+      <div className="  !pt-3">
         <h2 className="h2">How does Payout work on CyberPay?</h2>
         <p className="para mt-3">
           Both Beginner and Consolidated Businesses are to be settled within the
@@ -27,7 +27,7 @@ function Withdrawal() {
         </p>
       </div>
 
-      {/* <div className="padding">
+      {/* <div className="">
         <AccordionItem
           title="Can I accept payment in USD?"
           answer="This is currently not available on CyberPay.

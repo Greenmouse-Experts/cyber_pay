@@ -11,14 +11,14 @@ function Getstarted({theme}) {
   };
   return (
     <>
-      <div className=" padding !pt-3">
+      <div className=" px-6 py-20 !pt-3">
         <h2 className="h2">Getting Started</h2>
         <p className="para">
           What are the requirements for using Cyberpay as a Registered Business?
         </p>
       </div>
 
-      <div className="bg-[#E8F0FC] padding dark:bg-gray-900 dark:text-white">
+      <div className="bg-[#E8F0FC] px-6 py-20 dark:bg-gray-900 dark:text-white">
         <h3 className="h3">
           Business Requirements on CyberPay. Eligible merchants on CyberPay fall
           in two categories:
@@ -37,7 +37,7 @@ function Getstarted({theme}) {
         </div>
       </div>
 
-      <div className="bg-bluePrimary flex md:flex-row flex-col justify-between items-center padding dark:bg-gray-900 dark:text-white">
+      <div className="bg-bluePrimary flex md:flex-row flex-col justify-between items-center px-6 py-20 dark:bg-gray-900 dark:text-white">
         <div className="text-white md:w-[55%] w-full leading-10">
           <h3 className="h3">
             If your business is registered and you want to integrate to
@@ -55,7 +55,7 @@ function Getstarted({theme}) {
         </div>
       </div>
 
-      <div className=" !py-5 flex md:flex-row flex-col justify-between items-center padding">
+      <div className=" !py-5 flex md:flex-row flex-col justify-between items-center px-6 py-20">
         <div className="md:w-[30%] md:block hidden">
           <img src={wallet} className="w-full" alt="" />
         </div>
@@ -73,7 +73,7 @@ function Getstarted({theme}) {
           </p>
         </div>
       </div>
-      <div className={`padding ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"}`}>
+      <div className={`px-6 py-20 ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"}`}>
         <p className="para font-medium">
           In case you did not meet the requirements for Registered business, you
           have an option of been activated under the CyberPay Beginners Scheme
