@@ -43,7 +43,11 @@ import { motion } from "framer-motion";
 import { IoArrowForwardCircleOutline, IoEyeOutline } from "react-icons/io5";
 import Slider from "react-slick";
 import { settings, settings2 } from "../../lib/utils/helpers";
-import { IoMdArrowForward } from "react-icons/io";
+import {
+  IoIosArrowBack,
+  IoIosArrowForward,
+  IoMdArrowForward,
+} from "react-icons/io";
 import OurProducts from "../../components/HomeComp/OurProducts";
 import PolicyFooter from "../../components/PolicyFooter";
 
@@ -122,22 +126,35 @@ const LandingHomepage = () => {
     return () => clearInterval(slideInterval);
   }, []);
 
-  // const handleNextSlide = () => {
-  //   setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
-  // };
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
+  };
 
-  // const handlePrevSlide = () => {
-  //   setCurrentSlide((prevSlide) =>
-  //     prevSlide === 1 ? slideLength : prevSlide - 1
-  //   );
-  // };
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 1 ? slideLength : prevSlide - 1
+    );
+  };
+
+  
+
   return (
     <div className={`homepage ${theme === "light" ? "light" : "lbg"}`}>
       <Cookie />
 
       <div
-        className={`hero-${currentSlide} h-[60%] w-full bg-center bg-cover landing `}
+        className={`hero-${currentSlide} h-[60%] w-full bg-center bg-cover landing  relative`}
       >
+        <div className="w-full flex justify-between items-center absolute top-[40%]">
+          <div className="bg-[#ffffff7d] w-12 h-12 rounded-full flex justify-center items-center cursor-pointer -ml-[6.5%]" onClick={handlePrevSlide}>
+            <IoIosArrowBack  color="black" size={30}/>
+          </div>
+
+          <div className="bg-[#ffffff8d] w-12 h-12 rounded-full flex justify-center items-center cursor-pointer  mr-[7.5%]" onClick={handleNextSlide}>
+            <IoIosArrowForward  color="black" size={30}/>
+          </div>
+        </div>
+
         {currentSlide === 1 && (
           <div
             data-aos="fade-right"
@@ -165,8 +182,6 @@ const LandingHomepage = () => {
                   </span>
                 </NavLink>
               </div>
-
-              
             </div>
           </div>
         )}
@@ -197,8 +212,6 @@ const LandingHomepage = () => {
                   </span>
                 </NavLink>
               </div>
-
-              
             </div>
           </div>
         )}
@@ -229,8 +242,6 @@ const LandingHomepage = () => {
                   </span>
                 </NavLink>
               </div>
-
-              
             </div>
           </div>
         )}
@@ -261,8 +272,6 @@ const LandingHomepage = () => {
                   </span>
                 </NavLink>
               </div>
-
-              
             </div>
           </div>
         )}
@@ -591,9 +600,7 @@ const LandingHomepage = () => {
       {/* <Videomodal /> */}
 
       <div className="join flex flex-col items-center gap-8 bg-[url(/img/map.png)] dark:bg-[url(/)] dark:!bg-black bg-center bg-cover">
-        <h2 className="h2 text-center">
-        Join thousands who use CyberPay
-        </h2>
+        <h2 className="h2 text-center">Join thousands who use CyberPay</h2>
 
         <div className="join_img">
           <motion.img
@@ -775,12 +782,16 @@ const LandingHomepage = () => {
           </div>
         </Slider>
       </div>
-     <div className="padding">
-     <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2 text-center mb-5">
-           Our Certificates and Licenses
-          </h2>
-     <PolicyFooter/>
-     </div>
+      <div className="padding">
+        <h2
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          className="h2 text-center mb-5"
+        >
+          Our Certificates and Licenses
+        </h2>
+        <PolicyFooter />
+      </div>
       <div className="app">
         <div className="app_div">
           <h2 data-aos="zoom-in-up" data-aos-duration="1000" className="h2">
