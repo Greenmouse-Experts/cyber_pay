@@ -29,31 +29,31 @@ const Developer = () => {
       />
       <div className="developer flex  w-full px-[3%] py-10 relative">
        
-          <div className="developer_tab w-[20%]  top-10 left-10 h-screen ">
+          <div className="developer_tab w-[20%] bg-[#E8F0FC] dark:bg-gray-950  top-10 left-10 h-screen ">
            
             <p
-              className={`${tab === 2 && "active !font-semibold"} `}
+              className={`${tab === 2 && "active !font-semibold"}  `}
               onClick={() => setTab(2)}
             >
               Getting Started
             </p>
             <p
-              className={`${tab === 3 && "active !font-semibold"} `}
+              className={`${tab === 3 && "active !font-semibold"}  `}
               onClick={() => setTab(3)}
             >
               Setting Up
             </p>
             <p
-              className={`${tab === 1 && "active !font-semibold"} `}
+              className={`${tab === 1 && "active !font-semibold"}  `}
               onClick={() => setTab(1)}
             >
               Errors
             </p>
-            {/* <p className={`${tab === 4 && "active !font-semibold"} `} onClick={() => setTab(4)}>
+            {/* <p className={`${tab === 4 && "active !font-semibold"}  `} onClick={() => setTab(4)}>
               Account
             </p> */}
             <p
-              className={`${tab === 5 && "active !font-semibold"} `}
+              className={`${tab === 5 && "active !font-semibold"}  `}
               onClick={() => setTab(5)}
             >
               Payment
