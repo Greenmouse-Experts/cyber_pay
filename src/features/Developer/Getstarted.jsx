@@ -37,7 +37,7 @@ function Getstarted({theme}) {
         </div>
       </div>
 
-      <div className="bg-[#2F9BD6] flex md:flex-row flex-col justify-between items-center padding dark:bg-gray-900 dark:text-white">
+      <div className="bg-bluePrimary flex md:flex-row flex-col justify-between items-center padding dark:bg-gray-900 dark:text-white">
         <div className="text-white md:w-[55%] w-full leading-10">
           <h3 className="h3">
             If your business is registered and you want to integrate to
