@@ -26,7 +26,7 @@ function Getstarted({theme}) {
         <div className="flex md:flex-row flex-col justify-center items-center gap-6 mt-8 ">
           <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full md:h-36 ">
             <p className="para">
-              Registered services – CyberPay Consolidated Scheme (CCS)
+              Registered services – CyberPay Consolidated Scheme
             </p>
           </div>
           <div className="bg-white dark:bg-gray-600 dark:text-white rounded-2xl px-10 py-12 w-full md:h-36">
