@@ -27,7 +27,7 @@ function General({ theme }) {
 
   return (
     <>
-      <div className="my-10 flex justify-end  relative md:w-[30rem] w-full h-14 border-2 border-bluePrimary dark:border-white rounded-2xl overflow-hidden ml-auto">
+      <div className=" flex justify-end  relative md:w-[30rem] w-full h-14 border-2 border-bluePrimary dark:border-white rounded-2xl overflow-hidden ml-auto">
         <BsSearch
           color="#333"
           size={20}
@@ -42,7 +42,7 @@ function General({ theme }) {
         />
       </div>
       <div
-        className={`developer_error   px-6 pt-20`}
+        className={`developer_error   px-6 pt-10`}
       >
         <div className=" w-full mx-auto">
           <h2 className="h2 text-start">Common Transaction Errors</h2>
