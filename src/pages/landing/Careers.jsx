@@ -1,19 +1,8 @@
 import { useTheme } from "../../ThemeContext";
-import React from "react";
 import Header from "../../layout/landing/Heading";
-import { Link } from "react-router-dom";
-import about from "../../assets/images/about-header.png";
-import story from "../../assets/images/story.png";
-import { RiFlagFill } from "react-icons/ri";
-import { TbTargetArrow } from "react-icons/tb";
-import { RxArrowRight } from "react-icons/rx";
-import quick from "../../assets/images/quick.png";
-import { HiMiniArrowRightCircle } from "react-icons/hi2";
 import "../../Stylesheet/about.scss";
-import appledark from "../../assets/images/apple-logo.png";
-import DownloadButton from "../../components/DownloadButton";
-import play from "../../assets/images/play.png";
-import apple from "../../assets/images/apple.png";
+import CareerForm from "../../components/CareerForm";
+
 
 const Careers = () => {
   const { theme } = useTheme();
@@ -30,18 +19,13 @@ const Careers = () => {
 
       <div className="about_main">
         <div className="story">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="story_img"
-          >
-            <img src="/img/careers-main.webp" alt=""  className="rounded-xl"/>
-          </div>
+         <CareerForm/>
           <div
             data-aos="fade-left"
             data-aos-duration="1000"
             className="story_text"
           >
+            <img src="/img/careers-main.webp" alt=""  className="rounded-xl"/>
             <h2 data-aos="zoom-out" data-aos-duration="1100" className="h2">
               Join our Team
             </h2>
@@ -78,3 +62,12 @@ const Careers = () => {
 };
 
 export default Careers;
+
+
+{/* <div
+data-aos="fade-right"
+data-aos-duration="1000"
+className="story_img"
+>
+<img src="/img/careers-main.webp" alt=""  className="rounded-xl"/>
+</div> */}
