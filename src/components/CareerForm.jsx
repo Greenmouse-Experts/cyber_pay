@@ -18,7 +18,7 @@ export default function CareerForm() {
   };
 
   return (
-    <div className="lg:w-[45%] w-full flex flex-col gap-3">
+    <div className="lg:w-[45%] w-full flex flex-col gap-5">
       <InputText label="Name" placeholder="Enter your name" />
       <div className="font-monstrat flex flex-col gap-2 w-full ">
         <label className="text-lg font-montserrat font-semibold">Gender</label>
