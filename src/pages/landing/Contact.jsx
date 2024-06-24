@@ -33,7 +33,7 @@ function Contact() {
 
       <div className="padding">
         <div className="flex lg:flex-row flex-col gap-10 items-center">
-          <div className="bg-[#f4f4f4] dark:bg-bluePrimary dark:text-white   shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem]  w-full">
+          <div className="bg-[#f4f4f4] dark:bg-bluePrimary dark:text-white   shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[21rem]  w-full">
             <div className=" bg-bluePrimary p-4 rounded-full w-fit">
               {" "}
               <FaLocationDot color="white" size={50} />
@@ -51,7 +51,7 @@ function Contact() {
               <p className=" text-left"> Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja</p>
             </div>
           </div>
-          <div className="bg-[#f4f4f4]  dark:bg-bluePrimary dark:text-white  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem]  w-full">
+          <div className="bg-[#f4f4f4]  dark:bg-bluePrimary dark:text-white  shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[21rem]  w-full">
             <div className=" bg-bluePrimary p-4 rounded-full w-fit">
               {" "}
               <FaHeadset color="white" size={50} />
@@ -66,7 +66,7 @@ function Contact() {
             </div>
             </div>
           </div>
-          <div className="bg-[#f4f4f4] dark:bg-bluePrimary dark:text-white   shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[18rem]  w-full">
+          <div className="bg-[#f4f4f4] dark:bg-bluePrimary dark:text-white   shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[21rem]  w-full">
             <div className=" bg-bluePrimary p-4 rounded-full w-fit">
               {" "}
               <IoIosMail color="white" size={50} />

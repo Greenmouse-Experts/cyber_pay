@@ -35,7 +35,7 @@ function General({ theme }) {
         />
         <input
           type="text"
-          placeholder="Search erors"
+          placeholder="Search errors"
           className="w-full px-4 text-lg h-full"
           value={searchInput}
           onChange={handleSearchInput}
