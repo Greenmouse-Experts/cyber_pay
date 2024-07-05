@@ -237,7 +237,7 @@
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1140px) {
     .navbar.fixed .nav_div{
         height: calc(100vh - 5.8rem);
         
