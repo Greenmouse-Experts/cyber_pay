@@ -32,7 +32,7 @@ function Contact() {
       />
 
       <div className="padding">
-        <div className="flex lg:flex-row flex-col gap-10 items-center">
+        {/* <div className="flex lg:flex-row flex-col gap-10 items-center">
           <div className="bg-[#f4f4f4] dark:bg-bluePrimary dark:text-white   shadow-lg rounded-md p-5 flex flex-col items-center text-center lg:w-[33%] lg:h-[21rem]  w-full">
             <div className=" bg-bluePrimary p-4 rounded-full w-fit">
               {" "}
@@ -77,7 +77,7 @@ function Contact() {
               <p>support@cyberpay.net.ng</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* map */}
         <div className="flex lg:flex-row gap-10 flex-col  mt-20">
