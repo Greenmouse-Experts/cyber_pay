@@ -75,7 +75,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 20rem;
+    margin-top: 12rem;
     padding: 1.5rem;
     border-radius: 0.875rem;
     box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.14);
@@ -99,6 +99,7 @@
     align-items: center;
     gap: 0.85rem;
     height: inherit;
+
 }
 
 .drop_link a span {

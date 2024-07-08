@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../../Stylesheet/navbar.css";
 import logo from "../../assets/images/logo.png";
 import { RiMenuFill, RiCloseFill } from "react-icons/ri";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { BiSolidUserCircle, BiTransferAlt } from "react-icons/bi";
 import ToggleBtn from "../../components/Togglebtn";
@@ -29,6 +29,28 @@ const LandingHeader = () => {
   const [isOpen2, setIsOpen2] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
   const [aboutDropdownOpen2, setAboutDropdownOpen2] = useState(false);
+  const { pathname } = useLocation();
+
+  const checkActive1 = 
+  pathname === "/marketplace" ||
+      pathname === "/mobile-app" ||
+      pathname === "/disbursement-solutions" ||
+      pathname === "/bulksms" ||
+      pathname === "/direct-debit" ||
+      pathname === "/pos-service" ||
+      pathname === "/penremit" ||
+      pathname === "/payment-link" ||
+      pathname === "/ussdcollection" ||
+      pathname === "/payment"
+
+      const checkActive2 = 
+      pathname === "/about" ||
+          pathname === "/story" ||
+          pathname === "/people" ||
+          pathname === "/careers" ||
+          pathname === "/certifications"
+     
+ 
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -120,7 +142,7 @@ const LandingHeader = () => {
               }}
               className="nav_dropdown"
             >
-              <span>
+              <span className={checkActive2 ? "xl:!text-[#2F9BD6]" : ""}>
                 {" "}
                 Company <IoIosArrowDown />
               </span>
@@ -170,7 +192,12 @@ const LandingHeader = () => {
                     </span>{" "}
                     Careers
                   </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
+                  <NavLink
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/certifications"
+                  >
                     <span className="bg-stone-50 rounded-[9px]">
                       <PiCertificateBold className="text-red-500" />
                     </span>{" "}
@@ -213,7 +240,12 @@ const LandingHeader = () => {
                   >
                     Careers <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/certifications">
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/certifications"
+                  >
                     Our Certification
                     <RiArrowRightSLine />
                   </Link>
@@ -227,112 +259,164 @@ const LandingHeader = () => {
                 setAboutDropdownOpen2(false);
               }}
             >
-              <span>
+              <span className={checkActive1 ? "xl:!text-[#2F9BD6]" : ""}>
                 Solutions <IoIosArrowDown />
               </span>
               {aboutDropdownOpen && (
                 <div className="drop_link">
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/marketplace"
-                  >
-                    {" "}
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <FiShoppingBag className=" !text-blue-500" />
-                    </span>{" "}
-                    CyberPay Marketplace
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/mobile-app"
-                  >
-                    {" "}
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <BsPhone className="text-sky-950" />
-                    </span>{" "}
-                    CyberPay Mobile App
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/disbursement-solutions"
-                  >
-                    {" "}
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <LiaToolsSolid className=" !text-green-800" />
-                    </span>{" "}
-                    Disbursement Solution
-                  </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/bulksms">
-                    {" "}
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <MdOutlineTextsms className="text-sky-950" />
-                    </span>{" "}
-                    Bulk SMS
-                  </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/direct-debit">
-                    {" "}
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <GiReceiveMoney className=" !text-blue-500" />
-                    </span>{" "}
-                    Direct Debit
-                  </NavLink>
-                  <NavLink onClick={toggle} onBlur={hide} onFocus={show} to="/pos-service">
-                    {" "}
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <BsFilePostFill className="text-sky-950" />
-                    </span>{" "}
-                    POS Services
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/penremit"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <BiWallet className="text-rose-600" />
-                    </span>
-                    PenRemit
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/payment-link"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <IoLinkSharp className="text-rose-600" />
-                    </span>
-                    Online Sales with Payment Link
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/ussdcollection"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <TbPasswordMobilePhone className="text-sky-950" />
-                    </span>
-                    USSD Collection
-                  </NavLink>
-                  <NavLink
-                    onClick={toggle}
-                    onBlur={hide}
-                    onFocus={show}
-                    to="/payment"
-                  >
-                    <span className="bg-stone-50 rounded-[9px]">
-                      <FaMoneyBillTransfer className="text-green-800" />
-                    </span>
-                    CyberPay online (Web / Mobile) <br /> Payment Processing
-                  </NavLink>
+                  <div className="flex gap-10">
+                    <div className="flex flex-col gap-2">
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/marketplace"
+                      >
+                        {" "}
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <FiShoppingBag className=" !text-blue-500" />
+                        </span>{" "}
+                        CyberPay Marketplace
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/mobile-app"
+                      >
+                        {" "}
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <BsPhone className="text-sky-950" />
+                        </span>{" "}
+                        CyberPay Mobile App
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/disbursement-solutions"
+                      >
+                        {" "}
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <LiaToolsSolid className=" !text-green-800" />
+                        </span>{" "}
+                        Disbursement Solution
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/bulksms"
+                      >
+                        {" "}
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <MdOutlineTextsms className="text-sky-950" />
+                        </span>{" "}
+                        Bulk SMS
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/direct-debit"
+                      >
+                        {" "}
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <GiReceiveMoney className=" !text-blue-500" />
+                        </span>{" "}
+                        Direct Debit
+                      </NavLink>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/pos-service"
+                      >
+                        {" "}
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <BsFilePostFill className="text-sky-950" />
+                        </span>{" "}
+                        POS Services
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/penremit"
+                      >
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <BiWallet className="text-rose-600" />
+                        </span>
+                        PenRemit
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/payment-link"
+                      >
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <IoLinkSharp className="text-rose-600" />
+                        </span>
+                        Online Sales with Payment Link
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/ussdcollection"
+                      >
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <TbPasswordMobilePhone className="text-sky-950" />
+                        </span>
+                        USSD Collection
+                      </NavLink>
+                      <NavLink
+                        onClick={toggle}
+                        onBlur={hide}
+                        onFocus={show}
+                        className={({ isActive }) =>
+                          isActive ? "!text-[#2F9BD6] " : ""
+                        }
+                        to="/payment"
+                      >
+                        <span className="bg-stone-50 rounded-[9px]">
+                          <FaMoneyBillTransfer className="text-green-800" />
+                        </span>
+                        CyberPay online (Web / Mobile) <br /> Payment Processing
+                      </NavLink>
+                    </div>
+                  </div>
                 </div>
               )}
               {aboutDropdownOpen && (
@@ -369,10 +453,20 @@ const LandingHeader = () => {
                   >
                     Bulk SMS <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/direct-debit">
-                  Direct Debit <RiArrowRightSLine />
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/direct-debit"
+                  >
+                    Direct Debit <RiArrowRightSLine />
                   </Link>
-                  <Link onClick={toggle} onBlur={hide} onFocus={show} to="/pos-service">
+                  <Link
+                    onClick={toggle}
+                    onBlur={hide}
+                    onFocus={show}
+                    to="/pos-service"
+                  >
                     POS Services <RiArrowRightSLine />
                   </Link>
                   <Link
@@ -411,7 +505,7 @@ const LandingHeader = () => {
                 </div>
               )}
             </div>
-           
+
             <NavLink
               onClick={toggle}
               onBlur={hide}
