@@ -1,25 +1,12 @@
 import { useTheme } from "../../ThemeContext";
 import Header from "../../layout/landing/Heading";
-import about from "../../assets/images/contact-img.png";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaHeadset } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
-import { useState } from "react";
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+
 
 function Contact() {
   const { theme } = useTheme();
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDGaiubUdqf5Bypla2u6eSlVDmvopME5ew",
-  });
 
-  const [center, setcenter] = useState({
-    lat: 6.42705,
-    lng: 3.41648,
-  });
-  //   if (loadError) {
-  //     return <div>Error loading maps</div>;
-  //   }
+
+
 
   return (
     <div
@@ -98,7 +85,7 @@ function Contact() {
               className="flex flex-col 2xl:gap-8 gap-5 "
               onSubmit={(e) => e.preventDefault()}
             >
-              <h5 className="font-montserrat text-[22px] font-semibold  ">
+              <h5 className="font-montserrat text-xl font-semibold  ">
                 Contact Us
               </h5>
               <div className=" flex md:flex-row flex-col justify-between gap-8 ">

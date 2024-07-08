@@ -79,6 +79,16 @@ export default function CareerForm() {
         label="Graduating grade (first class, second class etc.)"
       />
       <InputText label="Year of graduation" type="date" placeholder="Year of graduation" />
+      <div className="font-monstrat flex flex-col gap-2 w-full ">
+          <label className="text-lg font-montserrat font-semibold">Add your CV</label>
+          <input
+            type="file"
+            placeholder="Submit your CV"
+            className="2xl:h-[60px] placeholder:text-[text-grayPrimary2] h-[50px]  w-full "
+            required
+          />
+        </div>
+      {/* <InputText label="Submit your CV" type="file" placeholder="Submit your CV" /> */}
       <div className="mt-8 flex justify-start ">
             <button type="submit" className="bg-[#DD0A35] px-10 py-3 para rounded-[5rem] text-white  ">
                 submit

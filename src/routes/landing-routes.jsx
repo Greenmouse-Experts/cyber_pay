@@ -29,6 +29,7 @@ import Certification from "../pages/landing/Certification";
 import PaymentLink from "../pages/landing/PaymentLink";
 import ISMS from "../pages/landing/ISMS";
 import BCMS from "../pages/landing/BCMS";
+import CareerFormPage from "../pages/landing/CareerForm";
 
 export const landingRoutes = [
   {
@@ -146,6 +147,10 @@ export const landingRoutes = [
       {
         path: "bcms",
         element: <BCMS />,
+      },
+      {
+        path: "career-form",
+        element: <CareerFormPage />,
       },
     
     ],
