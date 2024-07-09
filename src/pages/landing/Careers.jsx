@@ -58,8 +58,8 @@ const Careers = () => {
         <div className="bg-sky-950 flex flex-col items-center px-0 padding text-white text-center">
           <h2 className="h2">Recruitment scam warning</h2>
           <p className="para !font-semibold">
-            Cyber Space will never ask you for money to support any job
-            application. For general enquiries, please contact hr@email.com
+            CyberPay will never ask you for money to support any job
+            application. For general enquiries, please contact hello@cyberpay.net.ng
           </p>
         </div>
 
@@ -85,7 +85,7 @@ const Careers = () => {
               Join our team
             </h5>
             <p className="para">
-              Find our latest vacancies and apply to join the Seplat Energy
+              Find our latest vacancies and apply to join the CyberPay
               team.
             </p>
             <div className="flex gap-3">
@@ -93,7 +93,7 @@ const Careers = () => {
                 to=""
                 className="bg-[#DD0A35]  hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
               >
-                View Vacancies
+                View vacancies
               </NavLink>
             </div>
           </div>
@@ -106,10 +106,10 @@ const Careers = () => {
             data-aos-duration="1000"
           >
             <h5 className="font-montserrat text-xl font-semibold  ">
-              Submit Your Cv
+              Submit Your CV
             </h5>
             <p className="para">
-              Submit your Cv for a review when there is an opening for your
+              Submit your CV for a review when there is an opening for your
               desired career.
             </p>
             <div className="flex gap-3">
