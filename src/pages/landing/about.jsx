@@ -74,35 +74,35 @@ const LandingAbout = () => {
                 data-aos-delay="800"
                 className=" mx-auto !text-black"
               >
-                <h3 className=" font-semibold mt-10 text-3xl">
+                <h2 className="h2 font-semibold mt-10 ">
                   Quick facts about us
-                </h3>
-                <p className="font-medium mt-5">
+                </h2>
+                <p className="para mt-5">
                   We are CBN (PSSP and PTSP) Licensed payment processing service
                   for gateway providers, acquirers and merchants.
                 </p>
                 <div className=" flex flex-col gap-4 mt-5">
-                  <p className="font-medium flex items-center gap-2">
+                  <p className="para flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
                     We Accept multiple means of payment i.e. Cards, Bank
                     Accounts, USSD, Wallet, QR Code.
                   </p>
-                  <p className="font-medium flex items-center gap-2">
+                  <p className="para flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
                     Secure, hassle-free and seamless payment platform for
                     customers.
                   </p>
-                  <p className="font-medium flex items-center gap-2">
+                  <p className="para flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
                     Our platform allows a simple API Integration.
                   </p>
-                  <p className="font-medium flex items-center gap-2">
+                  <p className="para flex items-center gap-2">
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
