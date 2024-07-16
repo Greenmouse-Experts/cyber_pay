@@ -63,41 +63,7 @@ const Careers = () => {
           </p>
         </div>
 
-        <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
-          <div
-            className="lg:w-[40%] w-full "
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <img
-              src="/img/career-2.png"
-              alt=""
-              className="w-full rounded-2xl h-[20rem]"
-            />
-          </div>
-
-          <div
-            className="flex flex-col gap-5 lg:w-[60%] w-full"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <h5 className="font-montserrat text-xl font-semibold  ">
-              Join our team
-            </h5>
-            <p className="para">
-              Find our latest vacancies and apply to join the CyberPay
-              team.
-            </p>
-            <div className="flex gap-3">
-              <NavLink
-                to=""
-                className="bg-[#DD0A35]  hover:-translate-y-[2px] transition-all text-lg px-8 py-5 rounded-[4rem] text-white flex items-center gap-2 text-nowrap"
-              >
-                View vacancies
-              </NavLink>
-            </div>
-          </div>
-        </div>
+      
 
         <div className="padding flex lg:flex-row flex-col justify-between lg:gap-20 gap-10 items-center">
           <div
