@@ -14,7 +14,7 @@ function Getstarted({theme}) {
       <div className=" px-6 py-20 !pt-3">
         <h2 className="h2">Getting Started</h2>
         <p className="para">
-          What are the requirements for using Cyberpay as a Registered Business?
+          What are the requirements for using CyberPay as a Registered Business?
         </p>
       </div>
 

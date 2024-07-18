@@ -16,7 +16,7 @@ import TermsAndCondition from "../pages/landing/TermsAndCondition";
 import WhistleBlower from "../pages/landing/WhistleBlower";
 import Faqs from "../pages/landing/Faq";
 import MobileApp from "../pages/landing/MobileApp";
-import Contact from "../pages/landing/Contact";
+
 import Careers from "../pages/landing/Careers";
 import Story from "../pages/landing/Story";
 import People from "../pages/landing/OurPeople";
@@ -30,6 +30,7 @@ import PaymentLink from "../pages/landing/PaymentLink";
 import ISMS from "../pages/landing/ISMS";
 import BCMS from "../pages/landing/BCMS";
 import CareerFormPage from "../pages/landing/CareerForm";
+import Contact from "../pages/landing/Contact";
 
 export const landingRoutes = [
   {

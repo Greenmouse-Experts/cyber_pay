@@ -102,18 +102,18 @@ const Faqs = () => {
       answer:
         "You can get assistance through phone support, email support, and live chat. We also offer on-site support for more complex issues.",
     },
-    {
-      title: "Updating your CyberPay Account and Business Information",
-      answer: "Requires demo screens.",
-    },
-    {
-      title: "Resetting your CyberPay password",
-      answer: "Requires demo screens.",
-    },
-    {
-      title: "How do I create a CyberPay account?",
-      answer: "Requires demo screens.",
-    },
+    // {
+    //   title: "Updating your CyberPay Account and Business Information",
+    //   answer: "Requires demo screens.",
+    // },
+    // {
+    //   title: "Resetting your CyberPay password",
+    //   answer: "Requires demo screens.",
+    // },
+    // {
+    //   title: "How do I create a CyberPay account?",
+    //   answer: "Requires demo screens.",
+    // },
   ];
 
   const [tab, setTab] = useState(true);

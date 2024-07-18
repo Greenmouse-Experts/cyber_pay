@@ -227,6 +227,10 @@
 
 @media screen and (max-width: 1340px) {
 
+    .navbar{
+        padding: 2rem 4%;
+    }
+
     .nav_link {
         gap: 1.8rem;
         padding-right: 1.5rem;

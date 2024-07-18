@@ -106,7 +106,7 @@ const LandingAbout = () => {
                     <span>
                       <GoDotFill size={14} />
                     </span>{" "}
-                    Cyberpay is PCIDSS compliant.
+                    CyberPay is PCIDSS compliant.
                   </p>
                 </div>
               </div>

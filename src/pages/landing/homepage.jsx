@@ -159,7 +159,7 @@ const LandingHomepage = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="landing_text"
+            className="landing_text xl:h-[30rem]"
           >
             <h2 className={`h2 !text-white`}>
               Flexible Payment Options With CyberPay
@@ -189,7 +189,7 @@ const LandingHomepage = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="landing_text xl:!w-[50%]"
+            className="landing_text xl:h-[30rem] xl:!w-[50%]"
           >
             <h2 className={`h2 !text-white`}>
               Licensed Payment Terminal Service Provider
@@ -219,7 +219,7 @@ const LandingHomepage = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="landing_text  xl:!w-[50%]"
+            className="landing_text xl:h-[30rem]  xl:!w-[50%]"
           >
             <h2 className={`h2 !text-white`}>
               Send and Receive Funds Hassle-Free Around the World
@@ -249,7 +249,7 @@ const LandingHomepage = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="landing_text   xl:!w-[55%]"
+            className="landing_text xl:h-[30rem]   xl:!w-[55%]"
           >
             <h2 className={`h2 !text-white`}>
               Our Expertise as your Payment Solution Service Providers
