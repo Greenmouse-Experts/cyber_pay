@@ -75,9 +75,7 @@ function Getstarted({theme}) {
       </div>
       <div className={`px-6 py-20 ${theme === "light" ? "bg-[#FAFAF9] " : "bg-black"}`}>
         <p className="para font-medium">
-          In case you did not meet the requirements for Registered business, you
-          have an option of been activated under the CyberPay Beginners Scheme
-          after fulfilling the requirements for the beginner’s scheme above.
+        If you're unable to satisfy the criteria for a Registered Business, you may consider being enrolled in the CyberPay Beginners Scheme. This alternative is available provided you meet the specified conditions for the beginner's scheme as outlined previously.
         </p>
         <p className="para font-medium mt-10">
           Kindly access the Corporate Affairs Commission website for more

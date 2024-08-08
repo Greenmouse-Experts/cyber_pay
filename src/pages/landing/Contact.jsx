@@ -88,16 +88,16 @@ function Contact() {
               <h5 className="font-montserrat text-xl font-semibold  ">
                 Contact Us
               </h5>
-              <div className=" flex md:flex-row flex-col justify-between gap-8 ">
+              <div className=" flex md:flex-row flex-col justify-between gap-8 w-full ">
                 <input
                   type="text"
                   placeholder="Name"
-                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white h-[50px] pl-5 md:w-[373px] w-full"
+                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white h-[50px] pl-5  w-full"
                 />
                 <input
                   type="text"
                   placeholder="Email"
-                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg md:w-[373px] w-full 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white  h-[50px] pl-5"
+                  className="bg-[#F4F4F4] border border-gray-300 rounded-lg  w-full 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white  h-[50px] pl-5"
                 />
               </div>
               <div className=" ">

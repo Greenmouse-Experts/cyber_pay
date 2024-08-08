@@ -228,7 +228,8 @@
 @media screen and (max-width: 1340px) {
 
     .navbar{
-        padding: 2rem 4%;
+        padding: 2rem 4% !important;
+
     }
 
     .nav_link {
