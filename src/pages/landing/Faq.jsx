@@ -118,7 +118,7 @@ const Faqs = () => {
     // },
   ];
   const { isLoading, data: faqData  } = useQuery({
-    queryKey: ["banners"],
+    queryKey: ["faq"],
     queryFn: getFaqs,
   });
   const [tab, setTab] = useState(true);
