@@ -50,6 +50,7 @@ import {
 } from "react-icons/io";
 import OurProducts from "../../components/HomeComp/OurProducts";
 import PolicyFooter from "../../components/PolicyFooter";
+import Banner from "../../components/Banner";
 
 const LandingHomepage = () => {
   const [value, setValue] = useState(0);
@@ -111,171 +112,12 @@ const LandingHomepage = () => {
 
   const { theme } = useTheme();
 
-  const [currentSlide, setCurrentSlide] = useState(1);
-  const slideLength = 4; // Total number of slides
-  const transitionTime = 4000; // Transition time in milliseconds
-  let slideInterval;
-
-  useEffect(() => {
-    // Auto change slide at intervals
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    slideInterval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
-    }, transitionTime);
-
-    return () => clearInterval(slideInterval);
-  }, []);
-
-  const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
-  };
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 1 ? slideLength : prevSlide - 1
-    );
-  };
-
-  
 
   return (
     <div className={`homepage ${theme === "light" ? "light" : "lbg"}`}>
       <Cookie />
 
-      <div
-        className={`hero-${currentSlide} h-[60%] w-full bg-center bg-cover landing  relative`}
-      >
-        <div className="w-full flex justify-between items-center absolute top-[40%]">
-          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer -ml-[6.5%]" onClick={handlePrevSlide}>
-            <IoIosArrowBack  color="white" size={40}/>
-          </div>
-
-          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer  mr-[7.5%]" onClick={handleNextSlide}>
-            <IoIosArrowForward  color="white" size={40}/>
-          </div>
-        </div>
-
-        {currentSlide === 1 && (
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="landing_text xl:h-[30rem]"
-          >
-            <h2 className={`h2 !text-white`}>
-              Flexible Payment Options With CyberPay
-            </h2>
-            <p className="text-white">
-              Say goodbye to payment hassles and hello to effortless
-              transactions with CyberPay! Experience convenience like never
-              before with CyberPay's flexible payment options.
-            </p>
-
-            <div className="landing_link flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <NavLink
-                  to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem] !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
-                >
-                  Get Started
-                  <span>
-                    <IoMdArrowForward />
-                  </span>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        )}
-        {currentSlide === 2 && (
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="landing_text xl:h-[30rem] xl:!w-[50%]"
-          >
-            <h2 className={`h2 !text-white`}>
-              Licensed Payment Terminal Service Provider
-            </h2>
-            <p className="text-white">
-              Experience seamless transactions with our industry-compliant
-              solutions. Trust in our expertise for a reliable and secure
-              payment experience.
-            </p>
-
-            <div className="landing_link flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <NavLink
-                  to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem]  !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
-                >
-                  Get Started
-                  <span>
-                    <IoMdArrowForward />
-                  </span>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        )}
-        {currentSlide === 3 && (
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="landing_text xl:h-[30rem]  xl:!w-[50%]"
-          >
-            <h2 className={`h2 !text-white`}>
-              Send and Receive Funds Hassle-Free Around the World
-            </h2>
-            <p className="text-white">
-              Experience Global Money Transfers Made Easy: Send and Receive
-              Funds Anywhere with Smooth Transactions and Confidence in
-              Security.
-            </p>
-
-            <div className="landing_link flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <NavLink
-                  to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem]  !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
-                >
-                  Get Started
-                  <span>
-                    <IoMdArrowForward />
-                  </span>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        )}
-        {currentSlide === 4 && (
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="landing_text xl:h-[30rem]   xl:!w-[55%]"
-          >
-            <h2 className={`h2 !text-white`}>
-              Our Expertise as your Payment Solution Service Providers
-            </h2>
-            <p className="text-white">
-              Efficient, Secure, and Tailored: Partner with us for seamless
-              payment solutions. Our expertise ensures hassle-free transactions
-              and customer satisfaction.
-            </p>
-
-            <div className="landing_link flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <NavLink
-                  to="https://merchant.cyberpay.ng/signup"
-                  className="bg-[#DD0A35] hover:bg-[#dd0a37] hover:-translate-y-[2px] transition-all text-lg px-8 py-5 sm:rounded-[4rem]  !rounded-[15rem] text-white flex items-center gap-2 text-nowrap"
-                >
-                  Get Started
-                  <span>
-                    <IoMdArrowForward />
-                  </span>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
+      <Banner />
       <div className={`home ${theme === "light" ? "light" : "lbg"}`}>
         <div className="bg_first">
           <BgSection
