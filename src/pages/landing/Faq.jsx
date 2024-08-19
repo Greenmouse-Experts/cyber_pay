@@ -125,6 +125,8 @@ const Faqs = () => {
 
   // console.log(faq)
 
+  if(isLoading) return <div>Loading...</div>
+
   const general = faqData.filter((faq) => faq.type === "general")
   const security = faqData.filter((faq) => faq.type === "security")
 
