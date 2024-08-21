@@ -13,14 +13,14 @@ const Heading = ({ head, body, img }) => {
     queryFn: getBreadCrumbs,
   });
 
-  console.log( head, body, imgrumbs)
+  console.log( head, body, img)
 
  
 
   if (isLoading) {
     return (
       <SkeletonTheme baseColor="#042E46" highlightColor="#999">
-        <Skeleton height={"20rem"} />
+        <Skeleton height={"25rem"} />
       </SkeletonTheme>
     );
   }
