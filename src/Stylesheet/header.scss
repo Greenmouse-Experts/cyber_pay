@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    padding-top: 7rem;
+    // padding-top: 7rem;
     height: 25rem;
     
     
@@ -110,3 +110,15 @@
 
 
 }
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    background: linear-gradient(to right, #042d44 50%, #5c626592 100%);
+    /* Adjust colors and opacity as needed */
+  }

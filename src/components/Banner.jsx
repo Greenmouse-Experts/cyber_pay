@@ -7,6 +7,8 @@ import {
 } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Banner = () => {
   const { isLoading, data: banners = [] } = useQuery({
@@ -37,7 +39,7 @@ const Banner = () => {
   };
 
   if (isLoading || slideLength === 0) {
-    return <div>Loading...</div>;
+    return <div><Skeleton height={'30rem'} /></div>;
   }
 
   return (

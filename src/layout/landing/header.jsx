@@ -104,7 +104,7 @@ const LandingHeader = () => {
   return (
     <div
       className={`navbar ${fix ? "fixed" : ""} ${
-        theme === "light" ? "" : "nav_dark"
+        theme === "light" ? "bg-white" : "nav_dark bg-[#1a1a1a]"
       }`}
     >
       <div className="logo">

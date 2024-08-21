@@ -13,9 +13,19 @@ import { FaLinkedinIn, FaMobileRetro, FaXTwitter } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
+import { useQuery } from "@tanstack/react-query";
+import { getContacts } from "../../services/api";
 
 const LandingFooter = () => {
   const { theme } = useTheme();
+
+  const { data: contact } = useQuery({
+    queryKey: ["contact"],
+    queryFn: getContacts,
+  });
+
+  console.log(contact);
+
   return (
     <footer>
       <div className="footer_body !text-[#bdbdbd]">
@@ -98,83 +108,48 @@ const LandingFooter = () => {
         <div className="links">
           <h4>Contact Us</h4>
           <div>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <span>
-                {" "}
-                <IoLocationOutline size={20} />
-              </span>
-              Head Office: 12 Ologun Agbaje Street Victoria Island Lagos
-            </p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <span>
-                {" "}
-                <IoLocationOutline size={20} />
-              </span>
-              33, Saka Tinubu, Victoria Island,Lagos
-            </p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <span>
-                {" "}
-                <IoLocationOutline size={20} />
-              </span>
-              Plot 1722, Ademola Adetokunbo Crescent, Wuse 2, Abuja
-            </p>
-            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">
-              {" "}
-              <Link className="flex items-start gap-2" to="mailto:hello@cyberpay.net.ng">
-              <span>
-                {" "}
-                <CiMail size={20} />
-              </span>{" "}
-              hello@cyberpay.net.ng
-              </Link>
-            </p>
-            <p className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]">
-              {" "}
-              <Link className="flex items-start gap-2" to="mailto:hello@cyberpay.net.ng">
-              <span>
-                {" "}
-                <CiMail size={20} />
-              </span>{" "}
-              support@cyberpay.net.ng
-              </Link>
-            </p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link className="flex items-start gap-2" to="tel:02015151118">
+            {contact?.addresses?.map((item, index) => (
+              <p
+                className="flex items-start gap-1 dark:!text-[#BDBDBD]"
+                key={index}
+              >
                 <span>
                   {" "}
-                  <FiPhone size={18} />
+                  <IoLocationOutline size={20} />
                 </span>
-                02015151118
-              </Link>
-            </p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link className="flex items-start gap-2" to="tel:02015150277">
-                <span>
-                  {" "}
-                  <FiPhone size={18} />
-                </span>
-                02015150277
-              </Link>
-            </p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link className="flex items-start gap-2" to="tel:02015150173">
-                <span>
-                  {" "}
-                  <FiPhone size={18} />
-                </span>
-                02015150173
-              </Link>
-            </p>
-            <p className="flex items-start gap-1 dark:!text-[#BDBDBD]">
-              <Link className="flex items-start gap-2" to="tel:02015150140">
-                <span>
-                  {" "}
-                  <FiPhone size={18} />
-                </span>
-                02015150140
-              </Link>
-            </p>
+                {item}
+              </p>
+            ))}
+
+            {contact?.emails?.map((item, index) => (
+              <p
+                className="text-[#bdbdbd] flex items-start gap-1 dark:!text-[#BDBDBD]"
+                key={index}
+              >
+                {" "}
+                <Link className="flex items-start gap-2" to={`mailto:${item}`}>
+                  <span>
+                    {" "}
+                    <CiMail size={20} />
+                  </span>{" "}
+                  {item}
+                </Link>
+              </p>
+            ))}
+            {contact?.phones?.map((item, index) => (
+              <p
+                className="flex items-start gap-1 dark:!text-[#BDBDBD]"
+                key={index}
+              >
+                <Link className="flex items-start gap-2" to={`tel:${item}`}>
+                  <span>
+                    {" "}
+                    <FiPhone size={18} />
+                  </span>
+                  {item}
+                </Link>
+              </p>
+            ))}
           </div>
         </div>
       </div>

@@ -51,6 +51,7 @@ import {
 import OurProducts from "../../components/HomeComp/OurProducts";
 import PolicyFooter from "../../components/PolicyFooter";
 import Banner from "../../components/Banner";
+import CertificateSlider from "../../components/CertificateSlide";
 
 const LandingHomepage = () => {
   const [value, setValue] = useState(0);
@@ -632,7 +633,7 @@ const LandingHomepage = () => {
         >
           Our Certificates and Licenses
         </h2>
-        <PolicyFooter />
+        <CertificateSlider />
       </div>
       <div className="app">
         <div className="app_div">

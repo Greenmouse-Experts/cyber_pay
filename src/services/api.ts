@@ -17,3 +17,20 @@ export const getFaqs = async () => {
   return response.data.data;
 };
 
+export const getCertificates = async () => {
+  const response = await axiosInstance.get("/certificate/licenses"); 
+  return response.data.data;
+};
+
+export const getContacts = async () => {
+  const response = await axiosInstance.get("/office"); 
+  return response.data.data;
+};
+
+export const getBreadCrumbs = async () => {
+  const response = await axiosInstance.get("/breadcrumbs"); 
+  return response.data.data;
+};
+
+
+
