@@ -127,8 +127,8 @@ const Faqs = () => {
 
   if(isLoading) return <div>Loading...</div>
 
-  const general = faqData.filter((faq) => faq.type === "general")
-  const security = faqData.filter((faq) => faq.type === "security")
+  const general = faqData?.filter((faq) => faq.type === "general")
+  const security = faqData?.filter((faq) => faq.type === "security")
 
 
   return (
@@ -145,7 +145,7 @@ const Faqs = () => {
         </div>
         {tab && (
           <div>
-            {general.map((faq, index) => (
+            {general?.map((faq, index) => (
               <AccordionItem
                 key={index}
                 index={index}
@@ -160,7 +160,7 @@ const Faqs = () => {
 
         {!tab && (
          <div>
-         {security.map((faq, index) => (
+         {security?.map((faq, index) => (
            <AccordionItem
              key={index}
              index={index}

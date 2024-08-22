@@ -24,7 +24,7 @@ const Heading = ({ head, body, img }) => {
       </SkeletonTheme>
     );
   }
-  const currentPath  = breadcrumbs.find((item) => item.link === pathname)
+  const currentPath  = breadcrumbs && breadcrumbs?.find((item) => item.link === pathname)
 
  
 
