@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://cyberpay.victornwadinobi.com/api", 
+  baseURL: "https://cyberpay.greenmouseonline.com/api", 
   headers: {
     "Content-Type": "application/json",
   },
