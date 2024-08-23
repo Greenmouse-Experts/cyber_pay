@@ -32,7 +32,8 @@ const People = () => {
               key={item.id}
             >
               <h3 className="h3">{item.title}</h3>
-              <p className="para">{item.subtitle}</p>
+              <div className="mt-5"  dangerouslySetInnerHTML={{ __html: item?.subtitle }}/>
+              {/* <p className="para">{item.subtitle}</p> */}
             </div>
           ))}
       </div>
