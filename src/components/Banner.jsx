@@ -23,7 +23,7 @@ const Banner = () => {
     if (slideLength > 0) {
       const slideInterval = setInterval(() => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % slideLength);
-      }, 4000);
+      }, 5000);
       return () => clearInterval(slideInterval);
     }
   }, [slideLength]);
