@@ -32,5 +32,14 @@ export const getBreadCrumbs = async () => {
   return response.data.data;
 };
 
+export const getStory = async () => {
+  const response = await axiosInstance.get("/stories"); 
+  return response.data.data;
+};
+
+export const getPeople = async () => {
+  const response = await axiosInstance.get("/peoples"); 
+  return response.data.data;
+};
 
 

@@ -3,10 +3,22 @@ import Header from "../../layout/landing/Heading";
 import about from "../../assets/images/about-header.png";
 
 import "../../Stylesheet/about.scss";
+import { useQuery } from "@tanstack/react-query";
+import { getStory } from "../../services/api";
+import SkeletonLoader from "../../components/loader/SkeletonLoader";
 
 const Story = () => {
   const { theme } = useTheme();
 
+  const { isLoading, data: story } = useQuery({
+    queryKey: ["story"],
+    queryFn: getStory,
+  });
+
+  // console.log(story);
+  // if (isLoading ) {
+  //   return <div><Skeleton height={'10rem'} count={5} /></div>;
+  // }
   return (
     <div
       className={`landing-about ${theme === "light" ? "about" : "darkabout"}`}
@@ -17,7 +29,7 @@ const Story = () => {
         img="/img/story.png"
       />
 
-      <div className="flex lg:flex-row flex-col  padding justify-between items-start lg:gap-0 gap-5 dark:text-white">
+      {/* <div className="flex lg:flex-row flex-col  padding justify-between items-start lg:gap-0 gap-5 dark:text-white">
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
@@ -86,44 +98,20 @@ const Story = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a] dark:text-white ">
-        <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
-          <h3 className="h3">Seamlessness Redefined</h3>
-          <p className="para">
-            Our commitment to seamlessness is unwavering. Our products are
-            engineered to eliminate friction from every step of the payment
-            journey. From intuitive interfaces to lightning-fast transactions,
-            we're setting new standards for ease and efficiency.
-          </p>
-        </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
-          <h3 className="h3">Smarter, Together</h3>
-          <p className="para">
-            We believe in the power of smart solutions that simplify complexity.
-            With CyberPay, you're not just getting a payment platform; you're
-            getting a partner that helps you navigate the evolving world of
-            digital finance intelligently.
-          </p>
-        </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
-          <h3 className="h3">Safety Above All</h3>
-          <p className="para">
-            Security is at the heart of everything we do. We've implemented
-            cutting-edge measures to safeguard your transactions, ensuring your
-            peace of mind as you grow your business in the digital age.
-          </p>
-        </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900">
-          <h3 className="h3">Join Us on the Journey</h3>
-          <p className="para">
-            As we continue to innovate and adapt, we invite you to join us on
-            this transformative journey. Together, we'll rewrite the rules of
-            digital payments, creating a future where convenience, intelligence,
-            and security converge seamlessly.
-          </p>
-        </div>
+      {isLoading && <SkeletonLoader />}
+      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a] ">
+        {!isLoading &&
+          story?.map((item) => (
+            <div
+              className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900"
+              key={item.id}
+            >
+              <h3 className="h3">{item.title}</h3>
+              <p className="para">{item.subtitle}</p>
+            </div>
+          ))}
       </div>
 
       <div className="padding bg-[#FAFAF9] dark:bg-[#1a1a1a] dark:text-white flex justify-center items-center">

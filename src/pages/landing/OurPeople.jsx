@@ -3,10 +3,16 @@ import Header from "../../layout/landing/Heading";
 import about from "../../assets/images/about-header.png";
 
 import "../../Stylesheet/about.scss";
+import { getPeople } from "../../services/api";
+import { useQuery } from "@tanstack/react-query";
+import SkeletonLoader from "../../components/loader/SkeletonLoader";
 
 const People = () => {
   const { theme } = useTheme();
-
+  const { isLoading, data: people } = useQuery({
+    queryKey: ["people"],
+    queryFn: getPeople,
+  });
   return (
     <div
       className={`landing-about ${theme === "light" ? "about" : "darkabout"}`}
@@ -17,64 +23,18 @@ const People = () => {
         img="/img/people-banner.png"
       />
 
+      {isLoading && <SkeletonLoader />}
       <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a] ">
-        <div
-          className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h3 className="h3">Catalysts of Innovation</h3>
-          <p className="para">
-            At CyberPay, our team is more than just a collection of
-            professionals; we are a passionate group of individuals deeply
-            committed to harnessing world-changing technology. Our shared
-            mission is to not only understand the intricacies of this dynamic
-            field but to shape its evolution. Innovation is in our DNA, and we
-            thrive on pushing boundaries. We don't just adapt to change; we
-            drive it.
-          </p>
-        </div>
-        <div
-          className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
-          <h3 className="h3">Masters of Customization</h3>
-          <p className="para">
-            With years of experience under our belts, we excel in the art of
-            customization. We understand that every business is unique, and so
-            are its challenges. That's why we specialize in tailoring and
-            deploying products and solutions that are not just off-the-shelf but
-            finely tuned to add exceptional value to our partners' businesses.
-          </p>
-        </div>
-        <div
-          className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
-          <h3 className="h3">Navigators of Transformation</h3>
-          <p className="para">
-            In the ever-evolving tech landscape, we don't just keep pace; we
-            lead the way. Our team of visionaries understands that the future is
-            created through bold steps, and we're here to guide our partners on
-            that transformative journey.
-          </p>
-        </div>
-        <div
-          className="bg-white dark:bg-gray-900 dark:text-white p-6 rounded-2xl shadow-sm"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h3 className="h3">Partners in Innovation</h3>
-          <p className="para">
-            When you choose CyberPay, you're not just selecting a service
-            provider; you're entering into a partnership with individuals who
-            are as passionate about your success as you are. Our people are the
-            driving force behind our commitment to delivering excellence,
-            innovation, and lasting value.
-          </p>
-        </div>
+        {!isLoading &&
+          people?.map((item) => (
+            <div
+              className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900"
+              key={item.id}
+            >
+              <h3 className="h3">{item.title}</h3>
+              <p className="para">{item.subtitle}</p>
+            </div>
+          ))}
       </div>
 
       <div className="padding bg-[#FAFAF9] dark:bg-[#1a1a1a] dark:text-white flex justify-center items-center">
