@@ -52,6 +52,7 @@ import OurProducts from "../../components/HomeComp/OurProducts";
 import PolicyFooter from "../../components/PolicyFooter";
 import Banner from "../../components/Banner";
 import CertificateSlider from "../../components/CertificateSlide";
+import AdvertSection from "../../components/AdvertSection";
 
 const LandingHomepage = () => {
   const [value, setValue] = useState(0);
@@ -113,12 +114,14 @@ const LandingHomepage = () => {
 
   const { theme } = useTheme();
 
-
   return (
     <div className={`homepage ${theme === "light" ? "light" : "lbg"}`}>
       <Cookie />
 
       <Banner />
+      <div className="">
+        <AdvertSection />
+      </div>
       <div className={`home ${theme === "light" ? "light" : "lbg"}`}>
         <div className="bg_first">
           <BgSection

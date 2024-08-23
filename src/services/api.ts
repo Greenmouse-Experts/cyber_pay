@@ -42,4 +42,9 @@ export const getPeople = async () => {
   return response.data.data;
 };
 
+export const getAdsBanner = async () => {
+  const response = await axiosInstance.get("/ads/banners"); 
+  return response.data.data;
+};
+
 
