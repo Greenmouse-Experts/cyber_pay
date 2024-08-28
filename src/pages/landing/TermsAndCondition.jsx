@@ -1,10 +1,18 @@
-
+import { useQuery } from "@tanstack/react-query";
 import { useTheme } from "../../ThemeContext";
 
 import Heading from "../../layout/landing/Heading";
+import { getTerms } from "../../services/api";
+import SkeletonLoader from "../../components/loader/SkeletonLoader";
 
 function TermsAndCondition() {
   const { theme } = useTheme();
+  const { data: terms, isLoading } = useQuery({
+    queryKey: ["terms"],
+    queryFn: getTerms,
+  });
+  const contents = JSON.parse(terms.content) ?? [];
+
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
@@ -14,9 +22,18 @@ function TermsAndCondition() {
         our site, please check these terms to ensure you understand the
         terms that apply at that time."
       />
-
+      {isLoading && <SkeletonLoader />}
       <div className="padding mt-5 xl:!px-[20%]">
-        <div className="mb-12">
+        {!isLoading &&
+          contents?.map((item) => (
+            <div key={item.id} className="mb-12">
+              <h3 className="h3 mb-5">{item.title}</h3>
+              <div
+                dangerouslySetInnerHTML={{ __html: item?.description }}
+              ></div>
+            </div>
+          ))}
+        {/* <div className="mb-12">
           <h3 className="h3 mb-5">What’s in these terms?</h3>
           <p className="para text-[#565656]">
             These terms tell you the framework for using our site.
@@ -509,10 +526,8 @@ function TermsAndCondition() {
             15 (fifteen) days written notice. The dispute will be submitted to
             and decided by Mediation at the Lagos Multidoor Courthouse.
           </p>
-        </div>
+        </div> */}
       </div>
-
-    
     </div>
   );
 }

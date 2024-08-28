@@ -47,4 +47,24 @@ export const getAdsBanner = async () => {
   return response.data.data;
 };
 
+export const getWhy = async () => {
+  const response = await axiosInstance.get("/why/cyberpay"); 
+  return response.data.data;
+};
+export const getTerms = async () => {
+  const response = await axiosInstance.get("/terms/conditions"); 
+  return response.data.data;
+};
+export const getPolicy = async () => {
+  const response = await axiosInstance.get("/privacy/policies"); 
+  return response.data.data;
+};
+
+
+
+
+export const getCareerRole = async () => {
+  const response = await axiosInstance.get("/career/role"); 
+  return response.data.data;
+};
 

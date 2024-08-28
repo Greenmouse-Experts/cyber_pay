@@ -1,20 +1,37 @@
 import Heading from "../../layout/landing/Heading";
-import banner from "../../assets/images/privacy-policy.png";
 import { useTheme } from "../../ThemeContext";
-import PolicyFooter from "../../components/PolicyFooter";
-import Heading2 from "../../components/Heading2";
+import { useQuery } from "@tanstack/react-query";
+import { getPolicy } from "../../services/api";
+import SkeletonLoader from "../../components/loader/SkeletonLoader";
 
 function DataPolicy() {
   const { theme } = useTheme();
+
+  const { data: terms, isLoading } = useQuery({
+    queryKey: ["terms"],
+    queryFn: getPolicy,
+  });
+  const contents = JSON.parse(terms.content) ?? [];
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
-     <Heading
+      <Heading
         img="/img/policy-banner.png"
         head="Data Privacy Policy"
         body="Data Privacy Policy: Safeguarding Your Information"
       />
-
+      {isLoading && <SkeletonLoader />}
       <div className="padding mt-5 xl:!px-[20%]">
+        {!isLoading &&
+          contents?.map((item) => (
+            <div key={item.id} className="mb-12">
+              <h3 className="h3 mb-5">{item.title}</h3>
+              <div
+                dangerouslySetInnerHTML={{ __html: item?.description }}
+              ></div>
+            </div>
+          ))}
+      </div>
+      {/* <div className="padding mt-5 xl:!px-[20%]">
         <div className="mb-12">
           <h3 className="h3 mb-5">
             Data Privacy & Protection Policy at CyberPay Limited: Safeguarding
@@ -59,9 +76,7 @@ function DataPolicy() {
             employment or business relationship.
           </p>
         </div>
-      </div>
-
-     
+      </div> */}
     </div>
   );
 }

@@ -4,11 +4,14 @@ import "../../Stylesheet/about.scss";
 import CareerForm from "../../components/CareerForm";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { getCareerRole } from "../../services/api";
 
 const CareerFormPage = () => {
   const { theme } = useTheme();
 
   const [showForm, setShowForm] = useState(false)
+
 
   return (
     <div
