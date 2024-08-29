@@ -24,7 +24,7 @@ function TermsAndCondition() {
       />
       {isLoading && <SkeletonLoader />}
       <div className="padding mt-5 xl:!px-[20%]">
-        {!isLoading && !terms.content &&
+        {!isLoading && terms.content &&
           contents?.map((item) => (
             <div key={item.id} className="mb-12">
               <h3 className="h3 mb-5">{item.title}</h3>
