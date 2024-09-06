@@ -11,7 +11,7 @@ function DataPolicy() {
     queryKey: ["terms"],
     queryFn: getPolicy,
   });
-  const contents = JSON.parse(terms.content) ?? [];
+  const contents =terms && JSON.parse(terms.content);
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
@@ -21,7 +21,7 @@ function DataPolicy() {
       />
       {isLoading && <SkeletonLoader />}
       <div className="padding mt-5 xl:!px-[20%]">
-        {!isLoading && terms.content &&
+        {!isLoading && contents && terms.content &&
           contents?.map((item) => (
             <div key={item.id} className="mb-12">
               <h3 className="h3 mb-5">{item.title}</h3>
@@ -34,7 +34,7 @@ function DataPolicy() {
       {/* <div className="padding mt-5 xl:!px-[20%]">
         <div className="mb-12">
           <h3 className="h3 mb-5">
-            Data Privacy & Protection Policy at CyberPay Limited: Safeguarding
+   Data Privacy & Protection Policy at CyberPay Limited: Safeguarding
             Personal Data
           </h3>
           <p className="para text-[#565656] mb-10">

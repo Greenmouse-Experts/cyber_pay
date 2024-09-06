@@ -1,14 +1,14 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://cyberpay.greenmouseonline.com/api", 
+  baseURL: "https://backend.cyberpay.net.ng/api", 
   headers: {
     "Content-Type": "application/json",
   },
 });
 
 export const getBanners = async () => {
-  const response = await axiosInstance.get("/banners"); 
+  const response = await axiosInstance.get("/banners");
   return response.data.data;
 };
 

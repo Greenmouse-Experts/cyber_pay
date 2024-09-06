@@ -11,7 +11,7 @@ function TermsAndCondition() {
     queryKey: ["terms"],
     queryFn: getTerms,
   });
-  const contents = JSON.parse(terms.content) ?? [];
+  const contents = terms && JSON.parse(terms.content) ;
 
   return (
     <div className={`pension ${theme === "light" ? "" : "darkabout"}`}>
@@ -24,7 +24,7 @@ function TermsAndCondition() {
       />
       {isLoading && <SkeletonLoader />}
       <div className="padding mt-5 xl:!px-[20%]">
-        {!isLoading && terms.content &&
+        {!isLoading && contents && terms.content &&
           contents?.map((item) => (
             <div key={item.id} className="mb-12">
               <h3 className="h3 mb-5">{item.title}</h3>
