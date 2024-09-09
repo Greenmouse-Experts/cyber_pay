@@ -77,7 +77,7 @@ const WhyCyber = () => {
         img="/img/why-banner.png"
       />
       {isLoading && <SkeletonLoader />}
-      {!isLoading && (
+      {!isLoading && why && (
         <>
           <div className="why">
             <div className="comp">

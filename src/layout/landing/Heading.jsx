@@ -31,14 +31,14 @@ const Heading = ({ head, body, img }) => {
   return (
     <section className={`header relative`}>
       <img
-        src={currentPath ? currentPath.image : "/img/story.png"}
+        src={currentPath ? currentPath.image : img}
         alt=""
         className="w-full h-full object-cover object-center"
       />
       <div className="main_head lg:top-[8rem] top-20 items-center absolute">
         <div className="header_text">
-          <h1>{currentPath?.title ? currentPath?.title : " Add Page Title"}</h1>
-          <p>{currentPath?.subtitle ? currentPath?.subtitle : "App page text"}</p>
+          <h1>{currentPath?.title ? currentPath?.title : head}</h1>
+          <p>{currentPath?.subtitle ? currentPath?.subtitle : body}</p>
 
           {/* <Resuablebtn link='/whycyberpay' text="View our Solutions" icon={<RxArrowRight />} /> */}
         </div>
