@@ -31,7 +31,7 @@ function Contact() {
       console.log(values);
       try {
         const response = await axios.post(
-          `http://cyberpay.victornwadinobi.com/api/submit/contact/form`,
+          `https://backend.cyberpay.net.ng/api/submit/contact/form`,
           {
             ...values,
             full_name: values.name,
@@ -141,7 +141,7 @@ function Contact() {
               </div>
               <div>
                 <input
-                  type="tel"
+                  type="text"
                   name="subject"
                   placeholder="Subject"
                   className={`bg-[#F4F4F4] border border-gray-300 rounded-lg 2xl:h-[60px] placeholder:text-bluePrimary dark:placeholder:text-white h-[50px] pl-5 w-full ${

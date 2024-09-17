@@ -68,3 +68,50 @@ export const getCareerRole = async () => {
   return response.data.data;
 };
 
+
+//solutions
+
+export const getMarket = async () => {
+  const response = await axiosInstance.get("/solution/market/place"); 
+  return response.data.data;
+};
+
+export const getMobileApp = async () => {
+  const response = await axiosInstance.get("/solution/mobile/app"); 
+  return response.data.data;
+};
+
+export const getPaymentLink= async () => {
+  const response = await axiosInstance.get("/solution/payment/link"); 
+  return response.data.data;
+};
+
+export const getUssdSolution= async () => {
+  const response = await axiosInstance.get("/solution/ussd/collection"); 
+  return response.data.data;
+};
+
+export const getBulkSms= async () => {
+  const response = await axiosInstance.get("/solution/bulk/sms"); 
+  return response.data.data;
+};
+
+export const getDirectDebit= async () => {
+  const response = await axiosInstance.get("/solution/direct/debit"); 
+  return response.data.data;
+};
+
+export const getPenRemit= async () => {
+  const response = await axiosInstance.get("/solution/pen/remit"); 
+  return response.data.data;
+};
+
+export const getPayment= async () => {
+  const response = await axiosInstance.get("/solution/payment"); 
+  return response.data.data;
+};
+
+export const getDisbursement= async () => {
+  const response = await axiosInstance.get("/solution/disbursement"); 
+  return response.data.data;
+};

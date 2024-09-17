@@ -60,35 +60,33 @@ function Payment() {
         </div>
       </div> */}
       <div className="">
-        <AccordionItem title="Pay with Bank" answer={
-      
-        <div>
-        <p>CyberPay avails your customers the opportunity of paying directly from their bank accounts when they select the “Pay with Bank” option at the point of checkout.</p>
-      
-        <p className="mt-5">Note: We support all  banks.</p>
-      </div>
-        }
-        index={0}
-        open={openIndex === 0}
-        toggleAccordion={toggleAccordion}
+        <AccordionItem
+          title="Pay with Bank"
+          answer="CyberPay avails your customers the opportunity of paying directly from their bank accounts when they select the “Pay with Bank” option at the point of checkout. Note: We support all  banks."
+          index={0}
+          open={openIndex === 0}
+          toggleAccordion={toggleAccordion}
         />
-         <AccordionItem title="Pay with Card" answer={
-          <div>
-            <p>CyberPay accepts all card variants – Mastercard, Visa and Verve. This means that your customers can pay with any of these card variants from any bank in Nigeria.</p>
-            <p className="mt-5">We are currently working on acceptance of International cards and this will be available soon.</p>
-            <p className="mt-5">Charge per transaction is 1.58%</p>
-          </div>
-        }
-        index={3}
-        open={openIndex === 3}
-        toggleAccordion={toggleAccordion}
+        <AccordionItem
+          title="Pay with Card"
+          answer="  CyberPay accepts all card variants – Mastercard, Visa and Verve.
+                This means that your customers can pay with any of these card
+                variants from any bank in Nigeria. We are currently working on acceptance of International cards
+                and this will be available soon. Charge per transaction is 1.58% "
+          index={3}
+          open={openIndex === 3}
+          toggleAccordion={toggleAccordion}
         />
-        <AccordionItem title="USSD" answer="Require demo screens" 
+        <AccordionItem
+          title="USSD"
+          answer="Require demo screens"
           index={1}
           open={openIndex === 1}
           toggleAccordion={toggleAccordion}
         />
-        <AccordionItem title="E-Wallet" answer="Require demo screens" 
+        <AccordionItem
+          title="E-Wallet"
+          answer="Require demo screens"
           index={2}
           open={openIndex === 2}
           toggleAccordion={toggleAccordion}

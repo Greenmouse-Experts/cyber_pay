@@ -41,14 +41,14 @@ const AccordionItem = ({ index, title, answer, open, toggleAccordion }) => {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className={`overflow-hidden ${open ? "mb-6" : ""}`}>
-          <p
+        <div className={`overflow-hidden ${open ? "mb-6" : ""}`}  dangerouslySetInnerHTML={{ __html: answer }}>
+          {/* <p
             className={`leading-[30px] font-normal para ml-5 ${
               theme === "light" ? "" : "text-white"
             }`}
           >
             {answer}
-          </p>
+          </p> */}
         </div>
       </div>
     </>

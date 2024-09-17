@@ -38,7 +38,7 @@ function WhistleBlower() {
     }
   
     try {
-      const response = await axios.post(`https://cyberpay.victornwadinobi.com/api/submit/whistle/blower`, formData);
+      const response = await axios.post(`https://backend.cyberpay.net.ng/api/submit/whistle/blower`, formData);
     
       if (response.data.success === true) {
         toast.success(response.data.message);

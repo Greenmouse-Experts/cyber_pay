@@ -6,6 +6,9 @@ import solution from "../../assets/images/accept-pay.png";
 import payment from "../../assets/images/payment-global.jpg";
 import Resuablebtn from "../../components/Resuablebtn";
 import { RxArrowRight } from "react-icons/rx";
+import { useQuery } from "@tanstack/react-query";
+import { getPayment } from "../../services/api";
+import SkeletonLoader from "../../components/loader/SkeletonLoader";
 
 const Payment = () => {
   const { theme } = useTheme();
@@ -24,6 +27,14 @@ const Payment = () => {
     },
   ];
 
+  const { isLoading, data: payment } = useQuery({
+    queryKey: ["payment"],
+    queryFn: getPayment,
+  });
+
+  const content = payment && JSON.parse(payment?.setContent)
+  console.log(content)
+
   return (
     <div className={`pension solution ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
@@ -31,45 +42,54 @@ const Payment = () => {
         head="Accept Payments Securely on your Website"
         body="CyberPay offers a smart, convenient, and highly secure process of receiving payments from your customers all over the world"
       />
-      <div className="benefit pay ">
-        <div className="list_1">
-          <div data-aos="zoom-in-right" data-aos-duration="1100" className="">
-            <img src={payment} alt="" className="rounded-2xl scale-90" />
-          </div>
-          <div
-            data-aos="zoom-in-left"
-            data-aos-duration="1100"
-            className="lists_card "
-          >
-            <h2 className="h2">
-              Global Payment Solutions with CyberPay: Smart, Convenient, and
-              Secure
-            </h2>
-            <p className="para mb-8">
-              Explore the Comprehensive Features and Exclusive Benefits of Our
-              Services, Tailored to Enhance Your Experience and Maximize Your
-              Results.
-            </p>
-            <Resuablebtn
-              link="https://merchant.cyberpay.ng/signup"
-              place="center-bottom"
-              delay="1300"
-              style="zoom-in"
-              data-aos-duration="1100"
-              text="Get Started"
-              icon={<RxArrowRight />}
-            />
-          </div>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1100" className="list_2">
-          {data.map((item) => (
-            <div className="list_card">
-              <h3>{item.head}</h3>
-              <p>{item.body}</p>
+      {isLoading && <SkeletonLoader />}
+      {!isLoading && payment && (
+        <div className="benefit pay ">
+          <div className="list_1">
+            <div data-aos="zoom-in-right" data-aos-duration="1100" className="">
+              <img
+                src={payment?.setImage}
+                alt=""
+                className="rounded-2xl scale-90"
+              />
             </div>
-          ))}
+            <div
+              data-aos="zoom-in-left"
+              data-aos-duration="1100"
+              className="lists_card "
+            >
+              <div    dangerouslySetInnerHTML={{ __html: payment?.setDescription }}>
+
+              </div>
+              {/* <h2 className="h2">
+                Global Payment Solutions with CyberPay: Smart, Convenient, and
+                Secure
+              </h2>
+              <p className="para mb-8">
+                Explore the Comprehensive Features and Exclusive Benefits of Our
+                Services, Tailored to Enhance Your Experience and Maximize Your
+                Results.
+              </p> */}
+              <Resuablebtn
+                link="https://merchant.cyberpay.ng/signup"
+                place="center-bottom"
+                delay="1300"
+                style="zoom-in"
+                data-aos-duration="1100"
+                text="Get Started"
+                icon={<RxArrowRight />}
+              />
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1100" className="list_2">
+            {content.map((item, i) => (
+              <div className="list_card" dangerouslySetInnerHTML={{ __html: item?.description }} key={i}>
+               
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

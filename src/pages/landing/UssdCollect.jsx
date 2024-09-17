@@ -11,6 +11,9 @@ import ease from "../../assets/images/ease.png";
 import Resuablebtn from "../../components/Resuablebtn";
 import { RxArrowRight } from "react-icons/rx";
 import Heading2 from "../../components/Heading2";
+import { useQuery } from "@tanstack/react-query";
+import { getUssdSolution } from "../../services/api";
+import SkeletonLoader from "../../components/loader/SkeletonLoader";
 
 const UssdCollect = () => {
   const { theme } = useTheme();
@@ -41,6 +44,11 @@ const UssdCollect = () => {
     },
   ];
 
+  const { isLoading, data: ussd } = useQuery({
+    queryKey: ["ussd"],
+    queryFn: getUssdSolution,
+  });
+
   return (
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"}`}>
       <Heading
@@ -48,14 +56,17 @@ const UssdCollect = () => {
         head="USSD Collection"
         body="The current circumstances have necessitated a change in the way things are done. The changes cut across every sphere of life. "
       />
-
-      <div className="seam">
-        <div
-          data-aos="zoom-in-right"
-          data-aos-duration="1000"
-          className="seam_text"
-        >
-          <h2 className="h2">Seamless Payments Collection</h2>
+      {isLoading && <SkeletonLoader />}
+      {ussd && !isLoading && (
+        <div className="seam">
+          <div>
+            <div
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+              className="seam_text"
+              dangerouslySetInnerHTML={{ __html: ussd?.setDescription }}
+            ></div>
+            {/* <h2 className="h2">Seamless Payments Collection</h2>
           <p className="para mb-8">
             The COVID-19 pandemic has profoundly changed our world, accelerating
             digitalization. However, many established organizations lag in
@@ -63,8 +74,8 @@ const UssdCollect = () => {
             Lockdowns and restrictions due to the virus have catalyzed
             significant shifts in how we operate. These changes are pervasive,
             impacting every aspect of life.
-          </p>
-          <Resuablebtn
+          </p> */}
+            <Resuablebtn
               link="https://merchant.cyberpay.ng/signup"
               place="center-bottom"
               delay="1300"
@@ -73,18 +84,23 @@ const UssdCollect = () => {
               text="Get Started"
               icon={<RxArrowRight />}
             />
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="seam_img"
+          >
+            <img src={ussd?.setImage} alt="" />
+          </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000" className="seam_img">
-          <img src={seam1} alt="" />
-        </div>
-      </div>
+      )}
       <div className="seam seam2">
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
           className="seam_img"
         >
-          <img src={seam2} alt="" className="rounded-2xl"/>
+          <img src={seam2} alt="" className="rounded-2xl" />
         </div>
         <div
           data-aos="zoom-in-left"
@@ -94,8 +110,8 @@ const UssdCollect = () => {
           <h2 className="h2">Benefits to the Users</h2>
 
           <p className="flex items-center gap-1">
-            <GoDotFill className="text-bluePrimary dark:text-white" />A user can use code
-            with any bank account tied to his/her mobile number.
+            <GoDotFill className="text-bluePrimary dark:text-white" />A user can
+            use code with any bank account tied to his/her mobile number.
           </p>
 
           <p className="flex items-center gap-1">
@@ -174,14 +190,17 @@ const UssdCollect = () => {
       </div> */}
 
       <div className="procedure padding bg-sky-950">
-        <h2 className="h2 text-center text-white">
-        The USSD Procedure
-        </h2>
+        <h2 className="h2 text-center text-white">The USSD Procedure</h2>
 
         <div className="procedure_list">
           {data.map((item, index) => (
-            <div className="ussd_card dark:!bg-gray-600 dark:text-white rounded-[15px]" key={index}>
-              <span className="bg-rose-200  text-rose-600 dark:bg-rose-800">{item.num}</span>
+            <div
+              className="ussd_card dark:!bg-gray-600 dark:text-white rounded-[15px]"
+              key={index}
+            >
+              <span className="bg-rose-200  text-rose-600 dark:bg-rose-800">
+                {item.num}
+              </span>
               <p className="para">{item.body}</p>
             </div>
           ))}
@@ -261,7 +280,6 @@ const UssdCollect = () => {
               Easy financial records, track history, settlements and
               reconciliation.
             </li>
-           
           </ul>
         </div>
 

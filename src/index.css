@@ -80,6 +80,7 @@ p {
 }
 li{
   list-style: disc;
+  font-size: 1.1rem;
 }
 
 .para {
@@ -425,8 +426,8 @@ html {
 }
 
 .dark span {
-  color: white;
-  transition: color 0.3s;
+  color: white !important;
+  transition: color 0.3s ;
 }
 .dark li {
   color: white;
@@ -435,6 +436,7 @@ html {
 .dark p {
   color: white;
   transition: color 0.3s;
+  
 }
 .dark h3 {
   color: white;

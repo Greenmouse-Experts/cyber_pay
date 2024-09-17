@@ -1,7 +1,10 @@
 
+import { useQuery } from "@tanstack/react-query";
 import "../../Stylesheet/pension.scss";
 import { useTheme } from "../../ThemeContext";
 import Heading from "../../layout/landing/Heading";
+import { getPaymentLink } from "../../services/api";
+import SkeletonLoader from "../../components/loader/SkeletonLoader";
 
 
 const PaymentLink = () => {
@@ -33,6 +36,11 @@ const PaymentLink = () => {
     },
   ];
 
+  const { isLoading, data: payment } = useQuery({
+    queryKey: ["paymentLink"],
+    queryFn: getPaymentLink,
+  });
+
   return (
     <div className={`pension ussd ${theme === "light" ? "" : "darkabout"} pb-20`}>
       <Heading
@@ -40,32 +48,25 @@ const PaymentLink = () => {
         head="Online Sales with Payment Link"
         body="Welcome to a new era of online sales. With our Payment Links, small businesses without dedicated websites can now easily receive payments online. "
       />
-
+  { isLoading && <SkeletonLoader />}
+  { payment && !isLoading && 
       <div className="seam">
         <div
           data-aos="zoom-in-right"
           data-aos-duration="1000"
           className="seam_text"
+          dangerouslySetInnerHTML={{ __html: payment?.setDescription }}
         >
-          <h2 className="h2">The power of simplicity</h2>
-          <p className="para mb-8">
-            No website? No problem. With our Payment Link, you have the power
-            to generate and share payment pages with your customers
-            effortlessly. These pages cater to various payment methods,
-            including cards, bank accounts, bank transfers, USSD, QR codes, Pay
-            with phone, and more. Your customers get to choose their preferred
-            payment mode, providing them with the flexibility they deserve.
-          </p>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" className="seam_img">
           <img
-            src="/img/payment-1.jpg"
+            src={payment?.setImage}
             alt=""
             className="rounded-2xl md:h-[20rem]"
           />
         </div>
       </div>
-
+}
       <div className="procedure padding bg-sky-950 mb-20">
         <h2 className="h2 text-center text-white mb-5 ">
           Three simple steps to success:

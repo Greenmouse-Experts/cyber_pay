@@ -100,16 +100,16 @@ const Story = () => {
         </div>
       </div> */}
 
-      {isLoading && <SkeletonLoader />}
-      <div className=" grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-4 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a] ">
-        {!isLoading &&
+      { isLoading && <SkeletonLoader />}
+      <div className=" grid grid-cols-2 padding gap-10 bg-[#FAFAF9] dark:bg-[#1a1a1a] ">
+        { story && !isLoading &&
           story?.map((item) => (
             <div
-              className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900"
+              className="bg-white p-6 rounded-2xl shadow-sm dark:bg-gray-900 h-fit w-full"
               key={item.id}
             >
               <h3 className="h3">{item.title}</h3>
-              <div className="mt-5"  dangerouslySetInnerHTML={{ __html: item?.subtitle }}/>
+              <div className="mt-5 dark:text-white"  dangerouslySetInnerHTML={{ __html: item?.subtitle }}/>
             </div>
           ))}
       </div>

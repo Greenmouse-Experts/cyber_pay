@@ -7,6 +7,7 @@ import InputText from "./InputText";
 import SelectInput from "./SelectInput";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { useState } from "react";
 
 export default function CareerForm() {
   const { data, isLoading } = useQuery({
@@ -15,6 +16,7 @@ export default function CareerForm() {
   });
 
   const options = data?.map((role) => role?.role) || [];
+  const [loading, setloading] = useState(false)
 
   // Validation schema using Yup
   const validationSchema = Yup.object({
@@ -70,8 +72,9 @@ export default function CareerForm() {
         formData.append("cv", values.cv);
 
         try {
+          setloading(true); // Show loading spinner while submitting form
           const response = await axios.post(
-            `http://cyberpay.victornwadinobi.com/api/submit/career`,
+            `https://backend.cyberpay.net.ng/api/submit/career`,
             formData,
             {
               headers: {
@@ -85,9 +88,11 @@ export default function CareerForm() {
           } else {
             toast.error("Failed to submit form");
           }
+          setloading(false); // Hide loading spinner after submission
         } catch (error) {
           console.error("Error submitting form:", error);
           toast.error("Failed to submit form");
+          setloading(false); // Hide loading spinner after submission
         }
       }}
     >
@@ -278,7 +283,7 @@ export default function CareerForm() {
               type="submit"
               className="bg-[#DD0A35] px-10 py-3 para rounded-[5rem] text-white"
             >
-              Submit
+              {loading ? "Submitting" : "Submit"}
             </button>
           </div>
         </Form>

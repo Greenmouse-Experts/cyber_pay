@@ -13,8 +13,6 @@ const Heading = ({ head, body, img }) => {
     queryFn: getBreadCrumbs,
   });
 
-  console.log( head, body, img)
-
  
 
   if (isLoading) {
@@ -38,11 +36,10 @@ const Heading = ({ head, body, img }) => {
       <div className="main_head lg:top-[8rem] top-20 items-center absolute">
         <div className="header_text">
           <h1>{currentPath?.title ? currentPath?.title : head}</h1>
-          <p>{currentPath?.subtitle ? currentPath?.subtitle : body}</p>
+          <p className="">{currentPath?.subtitle ? currentPath?.subtitle : body}</p>
 
           {/* <Resuablebtn link='/whycyberpay' text="View our Solutions" icon={<RxArrowRight />} /> */}
-        </div>
-        {/* <div className="header_img">
+        </div>       {/* <div className="header_img">
           <img src={img} alt="" />
         </div> */}
       </div>
