@@ -55,7 +55,7 @@ function BulkSms() {
             <div dangerouslySetInnerHTML={{ __html: bulk?.setDescription }} />
 
             <div>
-              {faqs.map((item, i) => (
+              {faqs && faqs?.map((item, i) => (
                 <AccordionItem
                   key={item.id}
                   title={item.question}
@@ -70,7 +70,7 @@ function BulkSms() {
         </div>
       )}
 
-      {second.map((item, i) => (
+      {second && second?.map((item, i) => (
         <div
           className=" bg-[#FAFAF9] dark:bg-gray-900 dark:text-white padding text-center mt-10 pb-20 flex flex-col justify-center items-center"
           key={i}
