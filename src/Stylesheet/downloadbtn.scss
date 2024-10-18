@@ -172,12 +172,14 @@
     display: unset !important;
   }
   .cooks {
-    width: 100%;
+    width: 60%;
     padding: 1rem;
     height: 100%;
+    margin: 0 auto;
     background-color: white !important;
     border-radius: 8px;
     display: flex !important;
+    flex-direction: column;
     justify-content: space-between !important;
     p {
       font-size: 12px;
@@ -196,6 +198,7 @@
     .cooks {
       flex-direction: column;
       gap: 2rem;
+      width: 100%;
 
       p{
         .break-on-mobile {
